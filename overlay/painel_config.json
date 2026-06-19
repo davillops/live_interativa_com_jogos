@@ -1,0 +1,102 @@
+{
+  "_ajuda": {
+    "id": "Identificador da linha. Para comandos de chat use o gatilho (!barril); para presentes use o nome do presente em minusculas (controle de videogame). E o que liga o toast/cooldown a linha certa.",
+    "icone": "Use 'emoji' OU 'img' (caminho para assets/arquivo.png). img tem prioridade.",
+    "cooldown": "true mostra a barra de cooldown na linha (use nos comandos de chat que tem cooldown).",
+    "remover": "Para tirar uma interacao do painel, apague o bloco { } dela e salve. F5 no overlay (ou recarregar a fonte no Live Studio) aplica.",
+    "layout": "Por secao: 'lista' (1 coluna), 'grade' (2 colunas com nome) ou 'grade-icone' (2 colunas so com imagem grande e efeito, sem nome redundante)."
+  },
+  "secoes": [
+    {
+      "titulo": "⚡ Interações grátis",
+      "estilo": "padrao",
+      "layout": "grade",
+      "itens": [
+        {
+          "id": "seguir",
+          "img": "assets/ff.png",
+          "gatilho": "Seguir",
+          "efeito": "Pegar Fogo"
+        },
+        {
+          "id": "!drop",
+          "img": "assets/aa.png",
+          "gatilho": "!drop",
+          "efeito": "Cai Arma",
+          "cooldown": true
+        },
+        {
+          "id": "!barril",
+          "img": "assets/bb.png",
+          "gatilho": "!barril",
+          "efeito": "Fogo na Mira",
+          "cooldown": true
+        },
+        {
+          "id": "!voa",
+          "emoji": "✈️",
+          "gatilho": "!voa",
+          "efeito": "Voar",
+          "cooldown": true
+        },
+        {
+          "id": "!cura",
+          "emoji": "💚",
+          "gatilho": "!cura",
+          "efeito": "Vida Máx",
+          "cooldown": true
+        },
+        {
+          "id": "!formiga",
+          "emoji": "🐜",
+          "gatilho": "!formiga",
+          "efeito": "Encolher",
+          "cooldown": true
+        }
+      ]
+    },
+    {
+      "titulo": "🎁 Presentes",
+      "estilo": "presentes",
+      "layout": "grade-icone",
+      "itens": [
+        {
+          "id": "rose",
+          "img": "assets/rose.png",
+          "gatilho": "Rosa",
+          "efeito": "Galinha Explosiva"
+        },
+        {
+          "id": "ice cream cone",
+          "img": "assets/ice_cream_cone.png",
+          "gatilho": "Sorvete",
+          "efeito": "FNAF Nextbot"
+        },
+        {
+          "id": "gg",
+          "img": "assets/gg.png",
+          "gatilho": "gg",
+          "efeito": "Tyrant RE"
+        },
+        {
+          "id": "gamepad",
+          "img": "assets/gamepad.png",
+          "gatilho": "Controle",
+          "efeito": "Bomba 1000lb"
+        },
+        {
+          "id": "pop",
+          "img": "assets/pop.png",
+          "gatilho": "Pop",
+          "efeito": "T-Rex"
+        },
+        {
+          "id": "tiktok",
+          "img": "assets/tiktok.png",
+          "gatilho": "Tiktok",
+          "efeito": "Backrooms"
+        }
+      ]
+    }
+  ]
+}

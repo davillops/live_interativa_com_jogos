@@ -1,0 +1,124 @@
+{
+  "_ajuda": {
+    "keys": "Tecla simples: [\"f7\"]. Combo: [\"ctrl\", \"1\"] (segura ctrl, aperta 1).",
+    "tecla_mais": "Se a tecla '+' nao funcionar com \"=\", troque para \"add\" (+ do numpad).",
+    "cooldowns": "Em segundos. cooldown_global vale para todos; cooldown_user vale por viewer. 0 desativa.",
+    "novo_comando": "Copie um bloco, ajuste trigger/keys/label e salve. Nao precisa mexer no codigo.",
+    "presentes": "Secao 'gifts': presentes que o PYTHON executa. gift_name deve ser IGUAL ao nome do presente no TikTok (sem diferenciar maiusculas). Presentes nunca tem cooldown. Presentes do Tikfinity NAO entram aqui.",
+    "likes_meta": "Acao quando a meta de likes e batida. Modo 'file' manda 'zumbi' para a fila e o addon Lua spawna o zumbi com o nome. Apague esta secao para devolver os likes ao Tikfinity.",
+    "modos": "Cada interacao usa UM modo: 'file' (recomendado, escreve na fila do addon Lua, sem console e sem roubar foco), 'console' (digita no console - abre na tela), ou 'keys' (aperta tecla via bind). Para nome do doador no jogo, use 'file' e trate o nome no Lua.",
+    "follow_meta": "Acao quando alguem segue. Modo 'file' manda 'fogo' para a fila e o addon Lua poe fogo no jogador. Apague esta secao para devolver ao Tikfinity.",
+    "join_meta": "Acao quando alguem ENTRA na live (vira personagem com nome). So funciona se JOIN_ENABLED=true no .env. Cada pessoa spawna 1x por sessao. Use 'file' apontando para um evento no Lua (ex: 'espectador').",
+    "nuclear_meta": "Segunda barra de likes (evento epico). Ao bater NUCLEAR_GOAL likes (.env, padrao 1000), manda 'nuclear' para a fila e explode a bomba no jogo. Independente da meta do zumbi (likes_meta)."
+  },
+  "likes_meta": {
+    "file": "zumbi",
+    "label": "Zumbi",
+    "emoji": "🧟"
+  },
+  "nuclear_meta": {
+    "file": "nuclear",
+    "label": "Bomba Nuclear",
+    "emoji": "☢️"
+  },
+  "follow_meta": {
+    "file": "fogo",
+    "label": "Fogo",
+    "emoji": "🔥"
+  },
+  "join_meta": {
+    "file": "espectador",
+    "label": "Espectador",
+    "emoji": "👤"
+  },
+  "commands": [
+    {
+      "trigger": "!drop",
+      "keys": [
+        "f6"
+      ],
+      "label": "Cai Arma",
+      "emoji": "🔫",
+      "cooldown_global": 10,
+      "cooldown_user": 30
+    },
+    {
+      "trigger": "!barril",
+      "keys": [
+        "f7"
+      ],
+      "label": "Fogo Mira",
+      "emoji": "🛢️",
+      "cooldown_global": 8,
+      "cooldown_user": 25
+    },
+    {
+      "trigger": "!formiga",
+      "keys": [
+        "f9"
+      ],
+      "label": "Encolher",
+      "emoji": "🐜",
+      "cooldown_global": 15,
+      "cooldown_user": 45
+    },
+    {
+      "trigger": "!voa",
+      "keys": [
+        "f4"
+      ],
+      "label": "Voar",
+      "emoji": "✈️",
+      "cooldown_global": 15,
+      "cooldown_user": 45
+    },
+    {
+      "trigger": "!cura",
+      "keys": [
+        "f8"
+      ],
+      "label": "Vida Máx",
+      "emoji": "💚",
+      "cooldown_global": 20,
+      "cooldown_user": 60
+    }
+  ],
+  "gifts": [
+    {
+      "gift_name": "gamepad",
+      "file": "bomba",
+      "label": "Bomba 1000lb",
+      "emoji": "🎮"
+    },
+    {
+      "gift_name": "gg",
+      "file": "tyrant",
+      "label": "Tyrant RE",
+      "emoji": "GG"
+    },
+    {
+      "gift_name": "Rose",
+      "file": "galinha",
+      "label": "Rosa",
+      "emoji": "🌹"
+    },
+    {
+      "gift_name": "ice cream cone",
+      "file": "fnaf",
+      "label": "FNAF Nextbot",
+      "emoji": "🍦"
+    },
+    {
+      "gift_name": "pop",
+      "file": "trex",
+      "label": "T-Rex",
+      "emoji": "🎤"
+    },
+    {
+      "gift_name": "tiktok",
+      "file": "backrooms",
+      "label": "Backrooms",
+      "emoji": "🗿"
+    }
+  ]
+}

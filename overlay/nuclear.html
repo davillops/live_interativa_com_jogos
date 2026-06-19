@@ -1,0 +1,450 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<title>Barra Nuclear — Overlay</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@700;800;900&family=JetBrains+Mono:wght@700;800&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --bg:      rgba(15, 14, 20, 0.92);
+    --line:    rgba(255, 255, 255, 0.08);
+    --ink:     #f2f0f7;
+    --ink-dim: #8b8794;
+    --hot:     #ff3b30;   /* vermelho alerta */
+    --hot2:    #ff7a18;   /* laranja */
+    --warn:    #ffd34d;   /* amarelo */
+  }
+
+  * { box-sizing: border-box; }
+  html, body {
+    margin: 0; padding: 0; width: 100%; height: 100%;
+    background: transparent;
+    font-family: 'Inter', sans-serif; color: var(--ink);
+    -webkit-font-smoothing: antialiased; overflow: hidden;
+  }
+  body { display: flex; }
+
+  .card {
+    position: relative; width: 100%;
+    background: var(--bg);
+    border: 1px solid rgba(255, 59, 48, 0.35);
+    border-radius: 16px;
+    padding: 14px 16px 16px;
+    overflow: hidden;
+    transition: border-color .3s, box-shadow .3s;
+  }
+
+  /* quando perto de explodir, o card inteiro pulsa alerta */
+  .card.alerta {
+    animation: cardAlerta .8s ease-in-out infinite;
+  }
+  @keyframes cardAlerta {
+    0%,100% { border-color: rgba(255,59,48,0.4); box-shadow: 0 0 0 rgba(255,59,48,0); }
+    50%     { border-color: rgba(255,59,48,1);   box-shadow: 0 0 24px rgba(255,59,48,0.5); }
+  }
+
+  .head {
+    display: flex; align-items: center; gap: 10px;
+    margin-bottom: 12px;
+  }
+  /* GIROFLEX — luz piscando ao lado do titulo (suave desde o inicio) */
+  .giroflex {
+    width: 16px; height: 16px; border-radius: 50%;
+    background: var(--hot);
+    box-shadow: 0 0 10px var(--hot);
+    animation: giroSuave 1.6s ease-in-out infinite;
+  }
+  @keyframes giroSuave {
+    0%,100% { opacity: .9; box-shadow: 0 0 10px var(--hot); }
+    50%     { opacity: .4; box-shadow: 0 0 4px var(--hot); }
+  }
+  /* no alerta, o giroflex pisca rapido tipo sirene de verdade */
+  .card.alerta .giroflex {
+    animation: giro .5s steps(1) infinite;
+  }
+  @keyframes giro {
+    0%   { opacity: 1; background: var(--hot);  box-shadow: 0 0 16px var(--hot); }
+    50%  { opacity: .2; background: #5a0d0a;     box-shadow: 0 0 0 var(--hot); }
+  }
+
+  /* container que segura o canvas de raios ATRAS do texto */
+  .titulo-wrap {
+    position: relative;
+    flex: 1;
+    display: flex;
+    align-items: center;
+  }
+  .titulo-wrap canvas {
+    position: absolute;
+    inset: -10px -8px;   /* ultrapassa levemente o texto nos lados */
+    pointer-events: none;
+    z-index: 0;
+  }
+  .titulo {
+    position: relative;
+    z-index: 1;          /* texto na frente do canvas */
+    font-size: 15px; font-weight: 900;
+    letter-spacing: .5px; text-transform: uppercase;
+    color: #fff;
+    text-shadow:
+      0 0 8px rgba(255, 100, 20, 0.9),
+      0 0 18px rgba(255, 59, 48, 0.6);
+  }
+  @keyframes textoFlicker {
+    0%   { text-shadow: 0 0 6px #ff7a18, 0 0 12px #ff3b30, 0 0 20px rgba(255,59,48,0.6); }
+    7%   { text-shadow: 0 0 4px #ff7a18, 0 0 8px  #ff3b30; opacity: .82; }
+    9%   { text-shadow: 0 0 10px #ff9a3c, 0 0 22px #ff3b30, 0 0 34px rgba(255,59,48,0.7); opacity: 1; }
+    18%  { text-shadow: 0 0 6px #ff7a18, 0 0 12px #ff3b30, 0 0 20px rgba(255,59,48,0.6); }
+    20%  { text-shadow: 0 0 3px #ff7a18; opacity: .7; }            /* "apagao" rapido */
+    21%  { text-shadow: 0 0 11px #ff9a3c, 0 0 24px #ff3b30, 0 0 38px rgba(255,59,48,0.8); opacity: 1; }
+    45%  { text-shadow: 0 0 7px #ff7a18, 0 0 14px #ff3b30, 0 0 22px rgba(255,59,48,0.6); }
+    47%  { text-shadow: 0 0 4px #ff7a18, 0 0 8px  #ff3b30; opacity: .85; }
+    48%  { text-shadow: 0 0 10px #ff9a3c, 0 0 22px #ff3b30, 0 0 34px rgba(255,59,48,0.7); opacity: 1; }
+    70%  { text-shadow: 0 0 6px #ff7a18, 0 0 12px #ff3b30, 0 0 20px rgba(255,59,48,0.6); }
+    72%  { text-shadow: 0 0 3px #ff7a18; opacity: .68; }           /* outro flicker */
+    73%  { text-shadow: 0 0 12px #ff9a3c, 0 0 26px #ff3b30, 0 0 40px rgba(255,59,48,0.85); opacity: 1; }
+    100% { text-shadow: 0 0 6px #ff7a18, 0 0 12px #ff3b30, 0 0 20px rgba(255,59,48,0.6); }
+  }
+  .contador {
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 14px; font-weight: 800;
+    color: var(--warn);
+  }
+  .contador b { color: var(--ink); }
+
+  /* ===== a barra (chamativa desde o inicio, com glow de fogo pulsante) ===== */
+  .barra {
+    position: relative;
+    height: 26px; border-radius: 999px;
+    background: rgba(255, 80, 30, 0.10);
+    overflow: visible;                 /* deixa o glow vazar */
+    border: 1px solid rgba(255, 90, 40, 0.45);
+    animation: fogoPulse 1.6s ease-in-out infinite;
+  }
+  /* glow vermelho/laranja pulsando o tempo todo (estilo zumbi, tema fogo) */
+  @keyframes fogoPulse {
+    0%, 100% {
+      box-shadow: 0 0 8px rgba(255,90,40,0.6),
+                  0 0 16px rgba(255,59,48,0.3);
+      border-color: rgba(255,90,40,0.45);
+    }
+    50% {
+      box-shadow: 0 0 16px rgba(255,122,24,0.9),
+                  0 0 28px rgba(255,59,48,0.55),
+                  0 0 40px rgba(255,59,48,0.3);
+      border-color: rgba(255,122,24,0.8);
+    }
+  }
+  /* a trilha interna recorta o preenchimento (cantos arredondados) */
+  .barra .trilha {
+    position: absolute; inset: 0;
+    border-radius: 999px;
+    overflow: hidden;
+  }
+  .preenche {
+    position: absolute; inset: 0;
+    width: 0%;
+    border-radius: 999px;
+    background: linear-gradient(90deg, var(--warn), var(--hot2), var(--hot));
+    box-shadow: 0 0 12px rgba(255,59,48,0.6);
+    transition: width .5s cubic-bezier(.22,1,.36,1);
+  }
+  /* listras animadas dentro da barra (sensacao de energia) */
+  .preenche::after {
+    content: '';
+    position: absolute; inset: 0;
+    background-image: repeating-linear-gradient(
+      45deg, rgba(255,255,255,0.18) 0 10px, transparent 10px 20px
+    );
+    animation: listras 1s linear infinite;
+  }
+  @keyframes listras {
+    from { background-position: 0 0; }
+    to   { background-position: 28px 0; }
+  }
+  /* quando entra em ALERTA (80%+): o pulso de fogo fica mais rapido e forte */
+  .card.alerta .barra {
+    animation: fogoPulseForte .5s ease-in-out infinite;
+  }
+  @keyframes fogoPulseForte {
+    0%, 100% {
+      box-shadow: 0 0 14px rgba(255,90,40,0.9),
+                  0 0 26px rgba(255,59,48,0.5);
+      border-color: rgba(255,90,40,0.8);
+    }
+    50% {
+      box-shadow: 0 0 26px rgba(255,122,24,1),
+                  0 0 46px rgba(255,59,48,0.8),
+                  0 0 66px rgba(255,59,48,0.5);
+      border-color: rgba(255,59,48,1);
+    }
+  }
+  /* texto de porcentagem no centro da barra */
+  .pct {
+    position: absolute; inset: 0;
+    display: flex; align-items: center; justify-content: center;
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 13px; font-weight: 800;
+    color: #fff; text-shadow: 0 1px 3px rgba(0,0,0,0.6);
+    z-index: 2;
+  }
+
+  /* flash de explosao quando enche */
+  .flash {
+    position: fixed; inset: 0;
+    background: radial-gradient(circle, #fff, var(--hot));
+    opacity: 0; pointer-events: none; z-index: 99;
+  }
+  .flash.boom { animation: boom 1.2s ease-out; }
+  @keyframes boom {
+    0%   { opacity: 0; }
+    8%   { opacity: .95; }
+    100% { opacity: 0; }
+  }
+
+  @media (prefers-reduced-motion: reduce) {
+    *, *::before, *::after { animation: none !important; transition: none !important; }
+  }
+</style>
+</head>
+<body>
+
+<div class="card" id="card">
+  <div class="head">
+    <div class="giroflex" id="giroflex"></div>
+    <div class="titulo-wrap">
+      <canvas id="raiosCanvas"></canvas>
+      <div class="titulo">☢️ Bomba Nuclear</div>
+    </div>
+    <div class="contador"><b id="now">0</b>/<span id="goal">1000</span></div>
+  </div>
+  <div class="barra">
+    <div class="trilha"><div class="preenche" id="preenche"></div></div>
+    <div class="pct" id="pct">0%</div>
+  </div>
+</div>
+<div class="flash" id="flash"></div>
+
+<audio id="sirene" preload="auto" loop>
+  <source src="sons/sirene.mp3" type="audio/mpeg">
+</audio>
+
+<script>
+(function () {
+  'use strict';
+
+  var WS_URL = 'ws://localhost:8765';
+  var RECONNECT_MS = 5000;
+  var LIMIAR_ALERTA = 0.8;
+
+  /* ============ MOTOR DE RAIOS (canvas) ============
+     Desenha relampagos reais em ziguezague, sempre ligados,
+     com timing irregular (parece descarga eletrica de verdade).
+     Vermelho/laranja pra combinar com a barra de fogo. */
+  var canvas = document.getElementById('raiosCanvas');
+  var ctx = canvas.getContext('2d');
+
+  // cores dos raios: vermelho quente e laranja incandescente
+  var CORES = [
+    'rgba(255, 59, 48,  ALFA)',   // vermelho
+    'rgba(255, 122, 24, ALFA)',   // laranja
+    'rgba(255, 200, 50, ALFA)',   // amarelo-quente (ponta do raio)
+  ];
+
+  // calcula dimensoes do canvas baseado no wrapper
+  function redimensionar() {
+    var wrap = canvas.parentElement;
+    canvas.width  = wrap.offsetWidth  + 16;
+    canvas.height = wrap.offsetHeight + 20;
+  }
+  window.addEventListener('resize', redimensionar);
+
+  /* Gera um segmento de relampago de (x0,y0) a (x1,y1).
+     Divide recursivamente com desvio aleatorio — quanto mais profundo,
+     mais fino e ramificado. Retorna uma lista de pontos {x,y}. */
+  function gerarRelampago(x0, y0, x1, y1, profundidade) {
+    if (profundidade <= 0) return [{x:x0,y:y0},{x:x1,y:y1}];
+    var mxX = (x0+x1)/2 + (Math.random()-0.5) * (Math.abs(x1-x0) * 0.7 + 12);
+    var mxY = (y0+y1)/2 + (Math.random()-0.5) * (Math.abs(y1-y0) * 0.7 + 8);
+    var a = gerarRelampago(x0, y0, mxX, mxY, profundidade-1);
+    var b = gerarRelampago(mxX, mxY, x1, y1, profundidade-1);
+    b.shift(); // remove ponto duplicado do meio
+    return a.concat(b);
+  }
+
+  /* Desenha um raio completo no canvas com espessura e alfa variando */
+  function desenharRaio(pts, cor, grossura, alfa) {
+    if (pts.length < 2) return;
+    var corFinal = cor.replace('ALFA', alfa.toFixed(2));
+    // primeiro passo: o brilho externo (glow)
+    ctx.save();
+    ctx.strokeStyle = corFinal;
+    ctx.lineWidth = grossura * 3;
+    ctx.globalAlpha = alfa * 0.25;
+    ctx.shadowColor = corFinal;
+    ctx.shadowBlur = 12;
+    ctx.beginPath();
+    ctx.moveTo(pts[0].x, pts[0].y);
+    for (var i=1; i<pts.length; i++) ctx.lineTo(pts[i].x, pts[i].y);
+    ctx.stroke();
+    // segundo passo: o nucleo (mais fino e brilhante)
+    ctx.lineWidth = grossura;
+    ctx.globalAlpha = alfa;
+    ctx.shadowBlur = 6;
+    ctx.beginPath();
+    ctx.moveTo(pts[0].x, pts[0].y);
+    for (var j=1; j<pts.length; j++) ctx.lineTo(pts[j].x, pts[j].y);
+    ctx.stroke();
+    ctx.restore();
+  }
+
+  // estado de cada raio ativo
+  var raiosAtivos = [];
+
+  /* Cria um novo raio em posicao aleatoria ao redor do titulo */
+  function criarRaio() {
+    var w = canvas.width, h = canvas.height;
+    // ponto de origem: borda do canvas (qualquer lado)
+    var lado = Math.floor(Math.random()*4);
+    var x0, y0, x1, y1;
+    if (lado === 0) { x0 = Math.random()*w; y0 = 0; }
+    else if (lado === 1) { x0 = w; y0 = Math.random()*h; }
+    else if (lado === 2) { x0 = Math.random()*w; y0 = h; }
+    else { x0 = 0; y0 = Math.random()*h; }
+    // destino: perto do centro (onde esta o texto)
+    x1 = w*0.2 + Math.random()*w*0.6;
+    y1 = h*0.15 + Math.random()*h*0.7;
+    var corIdx = Math.floor(Math.random()*CORES.length);
+    return {
+      pts: gerarRelampago(x0, y0, x1, y1, 4),
+      cor: CORES[corIdx],
+      grossura: 0.8 + Math.random()*1.2,
+      vida: 0,           // frames desde criacao
+      duracao: 2 + Math.floor(Math.random()*4),  // 2-5 frames
+      alfa: 0.7 + Math.random()*0.3,
+    };
+  }
+
+  var frameCount = 0;
+  var proximoRaio = 0;  // frame em que nasce o proximo raio
+
+  function loop() {
+    requestAnimationFrame(loop);
+    if (canvas.width === 0) redimensionar();
+
+    ctx.clearRect(0, 0, canvas.width, canvas.height);
+
+    // cria novos raios com timing irregular (entre 3 e 18 frames)
+    if (frameCount >= proximoRaio) {
+      var qtd = 1 + Math.floor(Math.random()*2); // 1-2 raios de vez
+      for (var k=0; k<qtd; k++) raiosAtivos.push(criarRaio());
+      proximoRaio = frameCount + 3 + Math.floor(Math.random()*15);
+    }
+
+    // desenha e envelhece os raios ativos
+    raiosAtivos = raiosAtivos.filter(function(r) {
+      var alfaAtual = r.alfa * (1 - r.vida/r.duracao); // fade-out
+      desenharRaio(r.pts, r.cor, r.grossura, alfaAtual);
+      r.vida++;
+      return r.vida < r.duracao;
+    });
+
+    frameCount++;
+  }
+
+  // inicia apos o layout estar pronto (precisa do tamanho do wrapper)
+  window.addEventListener('load', function() {
+    redimensionar();
+    loop();
+  });
+  // fallback se load ja passou
+  if (document.readyState === 'complete') { redimensionar(); loop(); }
+  /* ============ FIM DO MOTOR DE RAIOS ============ */
+
+  var card = document.getElementById('card');
+  var preenche = document.getElementById('preenche');
+  var pct = document.getElementById('pct');
+  var nowEl = document.getElementById('now');
+  var goalEl = document.getElementById('goal');
+  var flash = document.getElementById('flash');
+  var sirene = document.getElementById('sirene');
+
+  var alertaAtivo = false;
+
+  function setSirene(ligar) {
+    try {
+      if (ligar) { sirene.volume = 0.7; sirene.play().catch(function(){}); }
+      else { sirene.pause(); sirene.currentTime = 0; }
+    } catch (e) {}
+  }
+
+  function atualizar(current, goal) {
+    goal = goal || 1000;
+    var frac = Math.min(1, current / goal);
+    var p = Math.round(frac * 100);
+    preenche.style.width = p + '%';
+    pct.textContent = p + '%';
+    nowEl.textContent = current;
+    goalEl.textContent = goal;
+
+    // perto de explodir: liga giroflex + sirene
+    var perto = frac >= LIMIAR_ALERTA && frac < 1;
+    if (perto && !alertaAtivo) {
+      alertaAtivo = true;
+      card.classList.add('alerta');
+      setSirene(true);
+    } else if (!perto && alertaAtivo) {
+      alertaAtivo = false;
+      card.classList.remove('alerta');
+      setSirene(false);
+    }
+  }
+
+  function explodir() {
+    // desliga alerta, dispara flash
+    alertaAtivo = false;
+    card.classList.remove('alerta');
+    setSirene(false);
+    flash.classList.remove('boom');
+    void flash.offsetWidth;
+    flash.classList.add('boom');
+    // zera a barra visualmente
+    preenche.style.width = '0%';
+    pct.textContent = '0%';
+    nowEl.textContent = '0';
+  }
+
+  // desbloqueio de autoplay (OBS: marque "controlar audio via OBS")
+  function unlock() {
+    try { var a = new Audio(); a.play().catch(function(){}); } catch(e){}
+    window.removeEventListener('click', unlock);
+    window.removeEventListener('keydown', unlock);
+  }
+  window.addEventListener('click', unlock);
+  window.addEventListener('keydown', unlock);
+
+  function handleMessage(msg) {
+    if (msg.type !== 'nuclear') return;
+    if (msg.triggered) {
+      explodir();
+    } else {
+      atualizar(msg.current, msg.goal);
+    }
+  }
+
+  function connect() {
+    var ws;
+    try { ws = new WebSocket(WS_URL); }
+    catch (err) { setTimeout(connect, RECONNECT_MS); return; }
+    ws.onmessage = function (event) {
+      try { handleMessage(JSON.parse(event.data)); } catch (e) {}
+    };
+    ws.onclose = function () { setTimeout(connect, RECONNECT_MS); };
+    ws.onerror = function () { ws.close(); };
+  }
+  connect();
+})();
+</script>
+</body>
+</html>

@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<title>Ranking Caos — Overlay</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@600;700;800;900&family=JetBrains+Mono:wght@700;800&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --bg:        rgba(15, 14, 20, 0.92);
+    --bg-soft:   rgba(255, 255, 255, 0.04);
+    --line:      rgba(255, 255, 255, 0.08);
+    --accent:    #a970ff;
+    --gold:      #ffd34d;
+    --silver:    #cfd6e0;
+    --bronze:    #e0915b;
+    --ink:       #f2f0f7;
+    --ink-dim:   #8b8794;
+  }
+
+  * { box-sizing: border-box; }
+
+  html, body {
+    margin: 0; padding: 0; width: 100%; height: 100%;
+    background: transparent;
+    font-family: 'Inter', sans-serif;
+    color: var(--ink);
+    -webkit-font-smoothing: antialiased;
+    overflow: hidden;
+  }
+  body { display: flex; }
+
+  .card {
+    position: relative;
+    width: 100%;
+    padding: 6px 8px 10px;
+    overflow: hidden;
+  }
+
+  /* ===== cabecalho com troca de modo ===== */
+  .head {
+    display: flex; align-items: center; justify-content: space-between;
+    padding: 8px 11px;
+    margin-bottom: 8px;
+    border-radius: 11px;
+    background: rgba(15, 14, 20, 0.55);
+    backdrop-filter: blur(4px);
+    -webkit-backdrop-filter: blur(4px);
+  }
+  .titulo {
+    display: flex; align-items: center; gap: 9px;
+    font-size: 15px; font-weight: 900;
+    letter-spacing: .5px; text-transform: uppercase;
+    text-shadow: 0 1px 4px rgba(0,0,0,0.7);
+  }
+  .titulo .troFeu { font-size: 18px; }
+  .badge {
+    font-size: 10px; font-weight: 800;
+    letter-spacing: 1px; text-transform: uppercase;
+    padding: 4px 9px; border-radius: 999px;
+    background: rgba(169,112,255,0.25);
+    color: #d9c2ff;
+    border: 1px solid rgba(169,112,255,0.5);
+    transition: opacity .3s;
+    text-shadow: 0 1px 3px rgba(0,0,0,0.6);
+  }
+
+  /* ===== lista ===== */
+  .lista { display: flex; flex-direction: column; gap: 7px; }
+
+  .linha {
+    display: flex; align-items: center; gap: 11px;
+    padding: 8px 11px;
+    border-radius: 11px;
+    background: rgba(15, 14, 20, 0.55);
+    backdrop-filter: blur(4px);
+    -webkit-backdrop-filter: blur(4px);
+    transition: transform .45s cubic-bezier(.22,1,.36,1), background .3s;
+  }
+  .linha .pos {
+    width: 26px; min-width: 26px; text-align: center;
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 16px; font-weight: 800;
+    color: var(--ink-dim);
+    text-shadow: 0 1px 3px rgba(0,0,0,0.6);
+  }
+  .linha .medal { font-size: 19px; width: 26px; min-width: 26px; text-align: center; }
+  .linha .nome {
+    flex: 1; min-width: 0;
+    font-size: 15px; font-weight: 700;
+    white-space: nowrap; overflow: hidden; text-overflow: ellipsis;
+    text-shadow: 0 1px 3px rgba(0,0,0,0.7);
+  }
+  .linha .pts {
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 15px; font-weight: 800;
+    color: var(--accent);
+    text-shadow: 0 1px 3px rgba(0,0,0,0.6);
+  }
+  .linha .pts small { font-size: 10px; color: var(--ink-dim); font-weight: 700; }
+
+  /* destaque dos 3 primeiros */
+  .linha.top1 {
+    background: linear-gradient(90deg,
+      rgba(255,211,77,0.22),
+      rgba(15, 14, 20, 0.55));
+    border: 1px solid rgba(255,211,77,0.4);
+  }
+  .linha.top1 .nome { color: var(--gold); font-weight: 800; }
+  .linha.top2 { border: 1px solid rgba(207,214,224,0.25); }
+  .linha.top2 .nome { color: var(--silver); }
+  .linha.top3 { border: 1px solid rgba(224,145,91,0.25); }
+  .linha.top3 .nome { color: var(--bronze); }
+
+  /* entrada de uma nova linha */
+  @keyframes linhaIn {
+    from { opacity: 0; transform: translateX(-16px); }
+    to   { opacity: 1; transform: translateX(0); }
+  }
+  .linha.nova { animation: linhaIn .4s cubic-bezier(.22,1,.36,1) both; }
+
+  /* quem subiu de posicao pisca */
+  @keyframes subiu {
+    0%,100% { background: var(--bg-soft); }
+    35%     { background: rgba(169,112,255,0.30); }
+  }
+  .linha.subiu { animation: subiu .9s ease; }
+
+  .vazio {
+    text-align: center; color: var(--ink-dim);
+    font-size: 13px; padding: 18px 0; font-weight: 600;
+  }
+
+  @media (prefers-reduced-motion: reduce) {
+    *, *::before, *::after { animation: none !important; transition: none !important; }
+  }
+</style>
+</head>
+<body>
+
+<div class="card">
+  <div class="head">
+    <div class="titulo"><span class="troFeu">🏆</span> Ranking</div>
+    <div class="badge" id="badge">Live</div>
+  </div>
+  <div class="lista" id="lista">
+    <div class="vazio">Aguardando interações…</div>
+  </div>
+</div>
+
+<script>
+(function () {
+  'use strict';
+
+  var WS_URL = 'ws://localhost:8765';
+  var RECONNECT_MS = 5000;
+  var TROCA_MS = 30000;   // alterna live <-> historico a cada 30s
+
+  var lista = document.getElementById('lista');
+  var badge = document.getElementById('badge');
+
+  var dados = { live: [], historico: [] };
+  var modo = 'live';                 // comeca mostrando a live
+  var posicaoAnterior = {};          // nome -> posicao (p/ detectar quem subiu)
+
+  var MEDALHAS = { 1: '🥇', 2: '🥈', 3: '🥉' };
+
+  function fmtPontos(n) {
+    // 1.2k em vez de 1200, fica compacto
+    if (n >= 1000) return (n / 1000).toFixed(n >= 10000 ? 0 : 1).replace('.0', '') + 'k';
+    return String(n);
+  }
+
+  function render() {
+    var arr = dados[modo] || [];
+    badge.textContent = (modo === 'live') ? 'Live' : 'Geral';
+
+    if (arr.length === 0) {
+      lista.innerHTML = '<div class="vazio">' +
+        (modo === 'live' ? 'Aguardando interações…' : 'Sem histórico ainda') +
+        '</div>';
+      return;
+    }
+
+    lista.innerHTML = '';
+    arr.forEach(function (e) {
+      var row = document.createElement('div');
+      row.className = 'linha';
+      if (e.posicao <= 3) row.classList.add('top' + e.posicao);
+
+      // animacao: quem subiu de posicao desde a ultima vez pisca
+      var chave = modo + ':' + e.nome;
+      var antes = posicaoAnterior[chave];
+      if (antes === undefined) {
+        row.classList.add('nova');
+      } else if (e.posicao < antes) {
+        row.classList.add('subiu');
+      }
+      posicaoAnterior[chave] = e.posicao;
+
+      var pos = document.createElement('div');
+      if (MEDALHAS[e.posicao]) {
+        pos.className = 'medal';
+        pos.textContent = MEDALHAS[e.posicao];
+      } else {
+        pos.className = 'pos';
+        pos.textContent = e.posicao + 'º';
+      }
+      row.appendChild(pos);
+
+      var nome = document.createElement('div');
+      nome.className = 'nome';
+      nome.textContent = e.nome;
+      row.appendChild(nome);
+
+      var pts = document.createElement('div');
+      pts.className = 'pts';
+      pts.innerHTML = fmtPontos(e.pontos) + ' <small>pts</small>';
+      row.appendChild(pts);
+
+      lista.appendChild(row);
+    });
+  }
+
+  // alterna o modo a cada TROCA_MS
+  setInterval(function () {
+    modo = (modo === 'live') ? 'historico' : 'live';
+    render();
+  }, TROCA_MS);
+
+  function handleMessage(msg) {
+    if (msg.type === 'ranking') {
+      dados.live = msg.live || [];
+      dados.historico = msg.historico || [];
+      render();
+    }
+  }
+
+  function connect() {
+    var ws;
+    try { ws = new WebSocket(WS_URL); }
+    catch (err) { setTimeout(connect, RECONNECT_MS); return; }
+    ws.onmessage = function (event) {
+      try { handleMessage(JSON.parse(event.data)); } catch (e) {}
+    };
+    ws.onclose = function () { setTimeout(connect, RECONNECT_MS); };
+    ws.onerror = function () { ws.close(); };
+  }
+  connect();
+})();
+</script>
+</body>
+</html>

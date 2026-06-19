@@ -1,0 +1,324 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<title>Notificações Caos — Overlay</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Chakra+Petch:wght@700&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --cyan: #00f0ff;
+    --yellow: #ffe600;
+    --red: #ff4d4d;
+    --green: #56ff9e;
+  }
+
+  * { box-sizing: border-box; }
+
+  body {
+    margin: 0;
+    background: transparent;
+    font-family: 'Chakra Petch', sans-serif;
+    overflow: hidden;
+  }
+
+  /* ===================== GIF CENTRAL ===================== */
+  .gif-layer {
+    position: fixed;
+    inset: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    pointer-events: none;
+    z-index: 5;            /* atras dos toasts (que sao z-index maior) */
+  }
+  .gif-layer img {
+    max-width: 55%;        /* sobrescrito via JS pelo gif_tamanho */
+    max-height: 70%;
+    object-fit: contain;
+    opacity: 0;
+    transform: scale(0.7);
+    filter: drop-shadow(0 8px 30px rgba(0,0,0,0.5));
+  }
+  .gif-layer img.show {
+    animation: gifIn .4s cubic-bezier(.18, 1.3, .4, 1) forwards;
+  }
+  .gif-layer img.hide {
+    animation: gifOut .45s ease-in forwards;
+  }
+  @keyframes gifIn {
+    from { opacity: 0; transform: scale(0.7); }
+    to   { opacity: 1; transform: scale(1); }
+  }
+  @keyframes gifOut {
+    from { opacity: 1; transform: scale(1); }
+    to   { opacity: 0; transform: scale(0.92); }
+  }
+
+  /* Pilha de notificacoes — centralizada na fonte do Live Studio.
+     Posicione a PROPRIA FONTE no meio da tela; os toasts nascem
+     no centro dela e empilham para baixo. */
+  .stack {
+    position: fixed;
+    inset: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    pointer-events: none;
+  }
+
+  .toast {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    max-width: 92vw;
+    padding: 14px 28px;
+    border-radius: 999px;
+    font-size: 26px;
+    font-weight: 700;
+    letter-spacing: .5px;
+    color: #06140d;
+    background: linear-gradient(90deg, var(--cyan), var(--green));
+    box-shadow: 0 0 28px rgba(0, 240, 255, .65),
+                0 4px 18px rgba(0, 0, 0, .45);
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    animation: toastIn .4s cubic-bezier(.18, 1.4, .4, 1) both,
+               toastOut .45s ease-in 3.6s both;
+  }
+
+  .toast .emoji { font-size: 32px; line-height: 1; }
+
+  .toast.gift {
+    background: linear-gradient(90deg, var(--yellow), var(--red));
+    box-shadow: 0 0 30px rgba(255, 77, 77, .7),
+                0 4px 18px rgba(0, 0, 0, .45);
+  }
+
+  .toast.meta {
+    background: linear-gradient(90deg, var(--yellow), var(--cyan));
+    box-shadow: 0 0 34px rgba(255, 230, 0, .8),
+                0 4px 18px rgba(0, 0, 0, .45);
+    animation: toastIn .4s cubic-bezier(.18, 1.4, .4, 1) both,
+               metaShake .5s ease .4s,
+               toastOut .45s ease-in 4.2s both;
+  }
+
+  @keyframes toastIn {
+    from { transform: translateY(24px) scale(.7); opacity: 0; }
+    to   { transform: translateY(0)    scale(1);  opacity: 1; }
+  }
+
+  @keyframes toastOut {
+    to { transform: translateY(-18px) scale(.92); opacity: 0; }
+  }
+
+  @keyframes metaShake {
+    0%, 100% { transform: translateX(0); }
+    25%      { transform: translateX(-6px) rotate(-1deg); }
+    75%      { transform: translateX(6px)  rotate(1deg); }
+  }
+
+  @media (prefers-reduced-motion: reduce) {
+    *, *::before, *::after { animation: none !important; }
+  }
+</style>
+</head>
+<body>
+
+<div class="gif-layer" id="gifLayer"></div>
+<div class="stack" id="stack"></div>
+
+<script>
+(function () {
+  'use strict';
+
+  var WS_URL = 'ws://localhost:8765';
+  var RECONNECT_MS = 5000;
+  var MAX_TOASTS = 3;
+  var TOAST_LIFETIME_MS = 4200;
+  var THROTTLE_MS = 2500;  // intervalo minimo entre toasts do MESMO evento
+
+  var stack = document.getElementById('stack');
+  var lastShown = {};  // chave do evento -> timestamp do ultimo toast
+
+  /* ============ MOTOR DE AUDIO ============
+     Som novo corta o anterior (uma "voz" so). Mapa de sons vem do
+     sons_config.json; se nao carregar, fica tudo mudo (sem erro). */
+  var SOUND_MAP = {};        // chave -> { arquivo, volume }
+  var DEFAULT_VOLUME = 0.8;
+  var currentAudio = null;   // som tocando agora (para cortar)
+
+  fetch('sons_config.json', { cache: 'no-store' })
+    .then(function (r) { if (!r.ok) throw new Error('sem sons_config'); return r.json(); })
+    .then(function (cfg) {
+      SOUND_MAP = cfg.sons || {};
+      if (typeof cfg.volume_padrao === 'number') DEFAULT_VOLUME = cfg.volume_padrao;
+      if (typeof cfg.gif_duracao_ms === 'number') GIF_DURACAO_MS = cfg.gif_duracao_ms;
+      if (cfg.gif_tamanho) GIF_TAMANHO = cfg.gif_tamanho;
+    })
+    .catch(function () { /* sem config: overlay fica mudo e sem gif, tudo bem */ });
+
+  function playSound(key) {
+    var entry = SOUND_MAP[String(key).toLowerCase()];
+    if (!entry || !entry.arquivo) return;  // sem som pra esse evento
+
+    // corta o som anterior (decisao: som novo sempre vence)
+    if (currentAudio) {
+      try { currentAudio.pause(); currentAudio.currentTime = 0; } catch (e) {}
+    }
+    var audio = new Audio(entry.arquivo);
+    audio.volume = (typeof entry.volume === 'number') ? entry.volume : DEFAULT_VOLUME;
+    currentAudio = audio;
+    // play() pode falhar se o arquivo nao existir — ignora sem quebrar
+    var p = audio.play();
+    if (p && p.catch) p.catch(function () {});
+  }
+
+  /* ============ MOTOR DE GIF ============
+     Mostra um GIF grande no centro junto com o som. GIF novo substitui
+     o anterior. Config vem do mesmo sons_config.json (campo "gif"). */
+  var GIF_DURACAO_MS = 3500;
+  var GIF_TAMANHO = '55%';
+  var gifLayer = document.getElementById('gifLayer');
+  var gifTimer = null;
+
+  function showGif(key) {
+    var entry = SOUND_MAP[String(key).toLowerCase()];
+    if (!entry || !entry.gif) return;  // esse evento nao tem gif
+
+    // remove gif anterior na hora (gif novo vence)
+    gifLayer.innerHTML = '';
+    if (gifTimer) { clearTimeout(gifTimer); gifTimer = null; }
+
+    var img = document.createElement('img');
+    img.style.maxWidth = GIF_TAMANHO;
+    // cache-bust pra reiniciar a animacao do gif do zero a cada disparo
+    img.src = entry.gif + '?t=' + Date.now();
+    img.className = 'show';
+    gifLayer.appendChild(img);
+
+    gifTimer = setTimeout(function () {
+      img.className = 'hide';
+      setTimeout(function () {
+        if (img.parentNode) img.parentNode.removeChild(img);
+      }, 500);
+    }, GIF_DURACAO_MS);
+  }
+
+  function showToast(emoji, text, variant) {
+    var el = document.createElement('div');
+    el.className = 'toast' + (variant ? ' ' + variant : '');
+    var ico = document.createElement('span');
+    ico.className = 'emoji';
+    ico.textContent = emoji;
+    var txt = document.createElement('span');
+    txt.textContent = text;
+    el.appendChild(ico);
+    el.appendChild(txt);
+    stack.appendChild(el);
+    while (stack.children.length > MAX_TOASTS) {
+      stack.removeChild(stack.firstChild);
+    }
+    setTimeout(function () {
+      if (el.parentNode) el.parentNode.removeChild(el);
+    }, TOAST_LIFETIME_MS + 600);
+  }
+
+  /* Mostra um toast so se o mesmo TIPO de evento nao apareceu ha pouco.
+     Evita que likes/comandos repetidos inundem a tela numa live agitada. */
+  function throttledToast(key, emoji, text, variant) {
+    var now = Date.now();
+    if (lastShown[key] && now - lastShown[key] < THROTTLE_MS) {
+      return;
+    }
+    lastShown[key] = now;
+    showToast(emoji, text, variant);
+  }
+
+  function handleMessage(msg) {
+    switch (msg.type) {
+      case 'executed':
+        playSound(msg.command);
+        showGif(msg.command);
+        // mensagem por tipo de evento (o trigger tecnico identifica os especiais)
+        if (msg.trigger === '__join__') {
+          throttledToast('join:' + msg.user, '👋', msg.user + ' entrou na live!', 'gift');
+        } else if (msg.trigger === '__follow__') {
+          throttledToast('follow', '🔥', msg.user + ' seguiu!');
+        } else if (msg.trigger === '__likes__') {
+          // a meta tem seu proprio toast no case 'likes'; aqui so o efeito
+          throttledToast('cmd:' + msg.command, msg.emoji || '⚡', msg.user + ' invocou ' + msg.command);
+        } else {
+          // comando normal de chat (!barril, !cura...)
+          throttledToast('cmd:' + msg.command, msg.emoji || '⚡', msg.user + ' enviou ' + msg.command);
+        }
+        break;
+      case 'likes':
+        if (msg.triggered) {
+          playSound('likes');
+          showGif('likes');
+          showToast('💥', 'META DE LIKES! ZUMBI INVOCADO', 'meta');
+        }
+        break;
+      case 'social':
+        if (msg.kind === 'follow') {
+          playSound('follow');
+          showGif('follow');
+          throttledToast('follow', '🔥', msg.user + ' seguiu!');
+        } else if (msg.kind === 'gift') {
+          playSound(msg.gift);
+          showGif(msg.gift);
+          showToast('🎁', msg.user + ' enviou ' + msg.gift + '!', 'gift');
+        }
+        break;
+      /* 'cooldown' e 'queue' sao ignorados aqui — sao assunto do painel */
+    }
+  }
+
+  /* Desbloqueio de autoplay: navegadores bloqueiam som ate uma interacao.
+     No OBS, marque "Controlar audio via OBS" na Browser Source (isso ja
+     conta como contexto de reproducao). Como reforco, destravamos no
+     primeiro clique/tecla caso voce abra o overlay direto no navegador. */
+  function unlockAudio() {
+    try {
+      var a = new Audio();
+      a.play().catch(function () {});
+    } catch (e) {}
+    window.removeEventListener('click', unlockAudio);
+    window.removeEventListener('keydown', unlockAudio);
+  }
+  window.addEventListener('click', unlockAudio);
+  window.addEventListener('keydown', unlockAudio);
+
+  function connect() {
+    var ws;
+    try {
+      ws = new WebSocket(WS_URL);
+    } catch (err) {
+      setTimeout(connect, RECONNECT_MS);
+      return;
+    }
+
+    ws.onopen = function () { /* conectado; overlay invisivel ate o 1o evento */ };
+
+    ws.onmessage = function (event) {
+      try {
+        handleMessage(JSON.parse(event.data));
+      } catch (err) {
+        /* mensagem malformada: ignora, nunca quebra na live */
+      }
+    };
+
+    ws.onclose = function () { setTimeout(connect, RECONNECT_MS); };
+    ws.onerror = function () { ws.close(); };
+  }
+
+  connect();
+})();
+</script>
+</body>
+</html>

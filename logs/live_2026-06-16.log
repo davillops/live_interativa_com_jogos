@@ -1,0 +1,47 @@
+2026-06-16 22:56:19,400 | INFO    | __main__ | Comandos: !barril, !cura, !drop, !formiga, !voa
+2026-06-16 22:56:19,401 | INFO    | __main__ | Presentes executaveis: gamepad, gg, ice cream cone, pop, rose, tiktok
+2026-06-16 22:56:19,401 | INFO    | __main__ | Acao de meta de likes: configurada (Python)
+2026-06-16 22:56:19,401 | INFO    | __main__ | Acao de seguir: configurada (Python)
+2026-06-16 22:56:19,401 | INFO    | __main__ | Acao de entrar na live: LIGADA
+2026-06-16 22:56:19,401 | INFO    | src.key_executor | Backend de teclado: pydirectinput
+2026-06-16 22:56:19,402 | INFO    | src.file_bridge | Ponte por arquivo: C:\Program Files (x86)\Steam\steamapps\common\GarrysMod\garrysmod\data\live_caos\fila.txt
+2026-06-16 22:56:19,602 | INFO    | websockets.server | server listening on 127.0.0.1:8765
+2026-06-16 22:56:19,602 | INFO    | websockets.server | server listening on [::1]:8765
+2026-06-16 22:56:19,603 | INFO    | src.panel_server | Painel WebSocket ouvindo em ws://localhost:8765
+2026-06-16 22:56:19,603 | INFO    | src.command_queue | Worker da fila iniciado
+2026-06-16 22:56:19,603 | INFO    | src.tiktok_listener | MODO SIMULACAO ativo — gerando eventos falsos
+2026-06-16 22:56:19,603 | INFO    | src.tiktok_listener | Simulacao vai sortear presentes: gamepad, gg, Rose, ice cream cone, pop, tiktok
+2026-06-16 22:56:22,310 | INFO    | websockets.server | connection open
+2026-06-16 22:56:22,310 | INFO    | src.panel_server | Overlay conectado (1 ativos)
+2026-06-16 22:56:22,524 | INFO    | src.tiktok_listener | Simulacao rodando (tick 0)
+2026-06-16 22:56:23,406 | INFO    | src.panel_server | Overlay desconectado (0 ativos)
+2026-06-16 22:56:23,407 | INFO    | __main__ | Encerrado pelo usuario (Ctrl+C)
+2026-06-16 23:03:28,965 | INFO    | __main__ | Comandos: !barril, !cura, !drop, !formiga, !voa
+2026-06-16 23:03:28,965 | INFO    | __main__ | Presentes executaveis: gamepad, gg, ice cream cone, pop, rose, tiktok
+2026-06-16 23:03:28,965 | INFO    | __main__ | Acao de meta de likes: configurada (Python)
+2026-06-16 23:03:28,965 | INFO    | __main__ | Acao de seguir: configurada (Python)
+2026-06-16 23:03:28,965 | INFO    | __main__ | Acao de entrar na live: LIGADA
+2026-06-16 23:03:28,966 | INFO    | src.key_executor | Backend de teclado: pydirectinput
+2026-06-16 23:03:28,966 | INFO    | src.file_bridge | Ponte por arquivo: C:\Program Files (x86)\Steam\steamapps\common\GarrysMod\garrysmod\data\live_caos\fila.txt
+2026-06-16 23:03:29,011 | INFO    | websockets.server | server listening on 127.0.0.1:8765
+2026-06-16 23:03:29,011 | INFO    | websockets.server | server listening on [::1]:8765
+2026-06-16 23:03:29,011 | INFO    | src.panel_server | Painel WebSocket ouvindo em ws://localhost:8765
+2026-06-16 23:03:29,012 | INFO    | src.command_queue | Worker da fila iniciado
+2026-06-16 23:03:29,012 | INFO    | src.tiktok_listener | MODO SIMULACAO ativo — gerando eventos falsos
+2026-06-16 23:03:29,012 | INFO    | src.tiktok_listener | Simulacao vai sortear presentes: gamepad, gg, Rose, ice cream cone, pop, tiktok
+2026-06-16 23:03:29,091 | INFO    | websockets.server | connection open
+2026-06-16 23:03:29,098 | INFO    | src.panel_server | Overlay conectado (1 ativos)
+2026-06-16 23:03:31,029 | INFO    | websockets.server | connection open
+2026-06-16 23:03:31,029 | INFO    | src.panel_server | Overlay conectado (2 ativos)
+2026-06-16 23:03:32,527 | INFO    | src.tiktok_listener | Entrada na live: @ana.gamer -> personagem
+2026-06-16 23:03:32,528 | INFO    | src.command_queue | Enfileirado: __join__ por @ana.gamer (fila=1)
+2026-06-16 23:03:32,529 | INFO    | src.tiktok_listener | Simulacao rodando (tick 0)
+2026-06-16 23:03:32,530 | INFO    | src.command_queue | Executado: __join__ por @ana.gamer
+2026-06-16 23:03:34,137 | INFO    | src.command_queue | Enfileirado: !formiga por @ana.gamer (fila=1)
+2026-06-16 23:03:34,140 | WARNING | src.command_queue | Jogo fora de foco; descartando !formiga
+2026-06-16 23:03:36,779 | INFO    | src.tiktok_listener | Novo seguidor @pedrocaos -> fogo
+2026-06-16 23:03:36,780 | INFO    | src.command_queue | Enfileirado: __follow__ por @pedrocaos (fila=1)
+2026-06-16 23:03:36,782 | INFO    | src.command_queue | Executado: __follow__ por @pedrocaos
+2026-06-16 23:03:50,728 | INFO    | src.panel_server | Overlay desconectado (1 ativos)
+2026-06-16 23:03:50,729 | INFO    | src.panel_server | Overlay desconectado (0 ativos)
+2026-06-16 23:03:50,730 | INFO    | __main__ | Encerrado pelo usuario (Ctrl+C)

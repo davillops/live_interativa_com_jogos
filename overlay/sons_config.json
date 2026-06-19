@@ -1,0 +1,59 @@
+{
+  "_ajuda": {
+    "como_funciona": "Mapeia cada evento a um arquivo de som tocado no overlay (toasts.html). Som novo corta o anterior. Coloque os arquivos em overlay/sons/.",
+    "chaves": "Para COMANDOS de chat use o gatilho exato (ex: '!barril'). Para PRESENTES use o nome do presente em minusculas (ex: 'capybara'). Eventos especiais: 'likes' (meta do zumbi) e 'follow' (seguir).",
+    "remover_som": "Apague a linha do evento (ou deixe o valor vazio) para ele ficar mudo.",
+    "volume": "0.0 a 1.0 por som (opcional). Se omitido, usa volume_padrao.",
+    "formato_aceito": ".mp3 ou .ogg",
+    "gif": "Campo opcional 'gif' por evento (ex: 'gifs/tyrant.gif'). Coloque os arquivos em overlay/gifs/. Sem 'gif', o evento nao mostra imagem.",
+    "gif_global": "gif_duracao_ms = tempo na tela; gif_tamanho = largura (ex: '55%' da tela ou '500px')."
+  },
+  "volume_padrao": 0.5,
+  "sons": {
+    "!drop": {
+      "arquivo": "sons/drop.mp3",
+      "gif": "gifs/drop.gif"
+    },
+    "!barril": {
+      "arquivo": "sons/barril.mp3",
+      "gif": "gifs/barril.gif"
+    },
+    "!cura": {
+      "arquivo": "sons/cura.mp3",
+      "gif": "gifs/cura.gif"
+    },
+    "!formiga": {
+      "arquivo": "sons/formiga.mp3",
+      "gif": "gifs/formiga.gif"
+    },
+    "likes": {
+      "arquivo": "sons/morte-roblox.mp3",
+      "volume": 1.0,
+      "gif": "gifs/morte-roblox.gif"
+    },
+    "follow": {
+      "arquivo": "sons/fogo.mp3",
+      "gif": "gifs/fogo.gif"
+    },
+    "rose": {
+      "arquivo": "sons/galinha.mp3",
+      "gif": "gifs/galinha.gif"
+    },
+    "mishka bear": {
+      "arquivo": "sons/fnaf.mp3",
+      "gif": "gifs/fnaf.gif"
+    },
+    "gg": {
+      "arquivo": "sons/zerei-todos.mp3",
+      "volume": 1.0,
+      "gif": "gifs/zerei-todos.jpeg"
+    },
+    "gamepad": {
+      "arquivo": "sons/bomba.mp3",
+      "volume": 1.0,
+      "gif": "gifs/bomba.gif"
+    }
+  },
+  "gif_duracao_ms": 3000,
+  "gif_tamanho": "35%"
+}

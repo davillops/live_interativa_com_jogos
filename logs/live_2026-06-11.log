@@ -1,0 +1,761 @@
+2026-06-11 23:28:30,450 | INFO    | __main__ | Comandos carregados: !barco, !barril, !cura, !drop, !formiga
+2026-06-11 23:28:30,451 | INFO    | src.key_executor | Backend de teclado: pydirectinput
+2026-06-11 23:28:30,633 | INFO    | websockets.server | server listening on [::1]:8765
+2026-06-11 23:28:30,633 | INFO    | websockets.server | server listening on 127.0.0.1:8765
+2026-06-11 23:28:30,634 | INFO    | src.panel_server | Painel WebSocket ouvindo em ws://localhost:8765
+2026-06-11 23:28:30,634 | INFO    | src.command_queue | Worker da fila iniciado
+2026-06-11 23:28:30,634 | INFO    | src.tiktok_listener | MODO SIMULACAO ativo — gerando eventos falsos
+2026-06-11 23:28:30,789 | INFO    | websockets.server | connection open
+2026-06-11 23:28:30,790 | INFO    | src.panel_server | Overlay conectado (1 ativos)
+2026-06-11 23:28:32,179 | INFO    | src.tiktok_listener | Simulacao rodando (tick 0)
+2026-06-11 23:28:34,498 | INFO    | websockets.server | connection open
+2026-06-11 23:28:34,499 | INFO    | src.panel_server | Overlay conectado (2 ativos)
+2026-06-11 23:28:35,670 | INFO    | src.command_queue | Enfileirado: !cura por @joao_zoeira (fila=1)
+2026-06-11 23:28:35,672 | WARNING | src.command_queue | Jogo fora de foco; reagendando !cura em 2.0s
+2026-06-11 23:28:37,681 | WARNING | src.command_queue | Jogo fora de foco; reagendando !cura em 2.0s
+2026-06-11 23:28:39,691 | WARNING | src.command_queue | Jogo fora de foco; reagendando !cura em 2.0s
+2026-06-11 23:28:41,701 | WARNING | src.command_queue | Jogo fora de foco; reagendando !cura em 2.0s
+2026-06-11 23:28:43,200 | INFO    | src.command_queue | Enfileirado: !drop por @lua_fps (fila=1)
+2026-06-11 23:28:43,711 | WARNING | src.command_queue | Jogo fora de foco; reagendando !drop em 2.0s
+2026-06-11 23:28:45,720 | WARNING | src.command_queue | Jogo fora de foco; reagendando !cura em 2.0s
+2026-06-11 23:28:46,402 | INFO    | src.command_queue | Enfileirado: !barril por @joao_zoeira (fila=2)
+2026-06-11 23:28:47,887 | INFO    | src.command_queue | Executado: !drop por @lua_fps
+2026-06-11 23:28:49,545 | INFO    | src.command_queue | Executado: !barril por @joao_zoeira
+2026-06-11 23:28:49,626 | INFO    | src.cooldown | Descartado por cooldown global: !drop (user=@ana.gamer)
+2026-06-11 23:28:51,204 | INFO    | src.command_queue | Executado: !cura por @joao_zoeira
+2026-06-11 23:28:53,422 | INFO    | src.command_queue | Enfileirado: !drop por @pedrocaos (fila=1)
+2026-06-11 23:28:53,423 | WARNING | src.command_queue | Jogo fora de foco; reagendando !drop em 2.0s
+2026-06-11 23:28:55,432 | WARNING | src.command_queue | Jogo fora de foco; reagendando !drop em 2.0s
+2026-06-11 23:28:56,822 | INFO    | src.command_queue | Enfileirado: !barril por @lua_fps (fila=1)
+2026-06-11 23:28:57,441 | WARNING | src.command_queue | Jogo fora de foco; reagendando !barril em 2.0s
+2026-06-11 23:28:58,353 | INFO    | src.cooldown | Descartado por cooldown global: !barril (user=@lua_fps)
+2026-06-11 23:28:59,448 | WARNING | src.command_queue | Jogo fora de foco; reagendando !drop em 2.0s
+2026-06-11 23:29:01,456 | WARNING | src.command_queue | Jogo fora de foco; reagendando !barril em 2.0s
+2026-06-11 23:29:01,749 | INFO    | src.cooldown | Descartado por cooldown global: !barril (user=@joao_zoeira)
+2026-06-11 23:29:03,619 | INFO    | src.command_queue | Executado: !drop por @pedrocaos
+2026-06-11 23:29:04,226 | INFO    | src.command_queue | Enfileirado: !drop por @ana.gamer (fila=2)
+2026-06-11 23:29:05,277 | INFO    | src.command_queue | Executado: !barril por @lua_fps
+2026-06-11 23:29:06,782 | WARNING | src.command_queue | Jogo fora de foco; reagendando !drop em 2.0s
+2026-06-11 23:29:07,801 | INFO    | src.command_queue | Enfileirado: !cura por @ana.gamer (fila=1)
+2026-06-11 23:29:08,791 | WARNING | src.command_queue | Jogo fora de foco; reagendando !cura em 2.0s
+2026-06-11 23:29:09,733 | INFO    | src.cooldown | Descartado por cooldown de usuario: !barril (user=@lua_fps)
+2026-06-11 23:29:10,801 | WARNING | src.command_queue | Jogo fora de foco; reagendando !drop em 2.0s
+2026-06-11 23:29:12,472 | INFO    | src.command_queue | Enfileirado: !barril por @ana.gamer (fila=2)
+2026-06-11 23:29:12,813 | WARNING | src.command_queue | Jogo fora de foco; reagendando !cura em 2.0s
+2026-06-11 23:29:14,821 | WARNING | src.command_queue | Jogo fora de foco; reagendando !barril em 2.0s
+2026-06-11 23:29:16,832 | WARNING | src.command_queue | Jogo fora de foco; reagendando !drop em 2.0s
+2026-06-11 23:29:18,845 | WARNING | src.command_queue | Jogo fora de foco; reagendando !cura em 2.0s
+2026-06-11 23:29:20,854 | WARNING | src.command_queue | Jogo fora de foco; reagendando !barril em 2.0s
+2026-06-11 23:29:22,863 | WARNING | src.command_queue | Jogo fora de foco; reagendando !drop em 2.0s
+2026-06-11 23:29:24,874 | WARNING | src.command_queue | Jogo fora de foco; reagendando !cura em 2.0s
+2026-06-11 23:29:24,889 | INFO    | src.command_queue | Enfileirado: !barril por @joao_zoeira (fila=3)
+2026-06-11 23:29:26,883 | WARNING | src.command_queue | Jogo fora de foco; reagendando !barril em 2.0s
+2026-06-11 23:29:27,316 | INFO    | src.tiktok_listener | Simulacao rodando (tick 20)
+2026-06-11 23:29:28,895 | WARNING | src.command_queue | Jogo fora de foco; reagendando !drop em 2.0s
+2026-06-11 23:29:30,348 | INFO    | src.cooldown | Descartado por cooldown global: !barril (user=@lua_fps)
+2026-06-11 23:29:30,904 | WARNING | src.command_queue | Jogo fora de foco; reagendando !barril em 2.0s
+2026-06-11 23:29:32,914 | WARNING | src.command_queue | Jogo fora de foco; reagendando !cura em 2.0s
+2026-06-11 23:29:34,925 | WARNING | src.command_queue | Jogo fora de foco; reagendando !barril em 2.0s
+2026-06-11 23:29:35,851 | INFO    | src.command_queue | Enfileirado: !barril por @lua_fps (fila=4)
+2026-06-11 23:29:36,932 | WARNING | src.command_queue | Jogo fora de foco; reagendando !drop em 2.0s
+2026-06-11 23:29:38,942 | WARNING | src.command_queue | Jogo fora de foco; reagendando !barril em 2.0s
+2026-06-11 23:29:39,451 | INFO    | src.cooldown | Descartado por cooldown global: !barril (user=@lua_fps)
+2026-06-11 23:29:40,950 | WARNING | src.command_queue | Jogo fora de foco; reagendando !cura em 2.0s
+2026-06-11 23:29:42,961 | WARNING | src.command_queue | Jogo fora de foco; reagendando !barril em 2.0s
+2026-06-11 23:29:44,535 | INFO    | src.command_queue | Enfileirado: !barco por @joao_zoeira (fila=5)
+2026-06-11 23:29:44,967 | WARNING | src.command_queue | Jogo fora de foco; reagendando !barril em 2.0s
+2026-06-11 23:29:46,360 | INFO    | src.cooldown | Descartado por cooldown de usuario: !cura (user=@ana.gamer)
+2026-06-11 23:29:46,979 | WARNING | src.command_queue | Jogo fora de foco; reagendando !drop em 2.0s
+2026-06-11 23:29:48,988 | WARNING | src.command_queue | Jogo fora de foco; reagendando !barril em 2.0s
+2026-06-11 23:29:50,996 | WARNING | src.command_queue | Jogo fora de foco; reagendando !cura em 2.0s
+2026-06-11 23:29:53,007 | WARNING | src.command_queue | Jogo fora de foco; reagendando !barco em 2.0s
+2026-06-11 23:29:54,120 | INFO    | src.command_queue | Enfileirado: !barril por @pedrocaos (fila=6)
+2026-06-11 23:29:55,017 | WARNING | src.command_queue | Jogo fora de foco; reagendando !barril em 2.0s
+2026-06-11 23:29:57,027 | WARNING | src.command_queue | Jogo fora de foco; reagendando !barril em 2.0s
+2026-06-11 23:29:59,035 | WARNING | src.command_queue | Jogo fora de foco; reagendando !drop em 2.0s
+2026-06-11 23:30:01,047 | WARNING | src.command_queue | Jogo fora de foco; reagendando !barril em 2.0s
+2026-06-11 23:30:03,055 | WARNING | src.command_queue | Jogo fora de foco; reagendando !cura em 2.0s
+2026-06-11 23:30:05,063 | WARNING | src.command_queue | Jogo fora de foco; reagendando !barril em 2.0s
+2026-06-11 23:30:05,372 | INFO    | src.cooldown | Descartado por cooldown de usuario: !barco (user=@joao_zoeira)
+2026-06-11 23:30:07,072 | WARNING | src.command_queue | Jogo fora de foco; reagendando !barco em 2.0s
+2026-06-11 23:30:09,080 | WARNING | src.command_queue | Jogo fora de foco; reagendando !barril em 2.0s
+2026-06-11 23:30:10,812 | INFO    | src.command_queue | Enfileirado: !barril por @ana.gamer (fila=7)
+2026-06-11 23:30:11,091 | WARNING | src.command_queue | Jogo fora de foco; reagendando !barril em 2.0s
+2026-06-11 23:30:13,097 | WARNING | src.command_queue | Jogo fora de foco; reagendando !drop em 2.0s
+2026-06-11 23:30:15,107 | WARNING | src.command_queue | Jogo fora de foco; reagendando !barril em 2.0s
+2026-06-11 23:30:16,250 | INFO    | src.cooldown | Descartado por cooldown global: !barril (user=@ana.gamer)
+2026-06-11 23:30:17,117 | WARNING | src.command_queue | Jogo fora de foco; reagendando !cura em 2.0s
+2026-06-11 23:30:18,168 | INFO    | src.command_queue | Enfileirado: !formiga por @pedrocaos (fila=8)
+2026-06-11 23:30:19,127 | WARNING | src.command_queue | Jogo fora de foco; reagendando !barril em 2.0s
+2026-06-11 23:30:20,239 | INFO    | src.command_queue | Enfileirado: !cura por @ana.gamer (fila=9)
+2026-06-11 23:30:21,136 | WARNING | src.command_queue | Jogo fora de foco; reagendando !barco em 2.0s
+2026-06-11 23:30:23,097 | INFO    | src.tiktok_listener | Simulacao rodando (tick 40)
+2026-06-11 23:30:23,144 | WARNING | src.command_queue | Jogo fora de foco; reagendando !barril em 2.0s
+2026-06-11 23:30:25,153 | WARNING | src.command_queue | Jogo fora de foco; reagendando !barril em 2.0s
+2026-06-11 23:30:26,667 | INFO    | src.cooldown | Descartado por cooldown de usuario: !barril (user=@ana.gamer)
+2026-06-11 23:30:27,163 | WARNING | src.command_queue | Jogo fora de foco; reagendando !barril em 2.0s
+2026-06-11 23:30:28,537 | INFO    | src.command_queue | Enfileirado: !barco por @ana.gamer (fila=10)
+2026-06-11 23:30:29,171 | WARNING | src.command_queue | Jogo fora de foco; reagendando !drop em 2.0s
+2026-06-11 23:30:30,500 | INFO    | src.cooldown | Descartado por cooldown global: !barco (user=@lua_fps)
+2026-06-11 23:30:31,180 | WARNING | src.command_queue | Jogo fora de foco; reagendando !barril em 2.0s
+2026-06-11 23:30:32,433 | INFO    | src.cooldown | Descartado por cooldown global: !cura (user=@pedrocaos)
+2026-06-11 23:30:33,192 | WARNING | src.command_queue | Jogo fora de foco; reagendando !formiga em 2.0s
+2026-06-11 23:30:35,202 | WARNING | src.command_queue | Jogo fora de foco; reagendando !cura em 2.0s
+2026-06-11 23:30:37,211 | WARNING | src.command_queue | Jogo fora de foco; reagendando !cura em 2.0s
+2026-06-11 23:30:39,173 | INFO    | src.command_queue | Enfileirado: !formiga por @lua_fps (fila=11)
+2026-06-11 23:30:39,220 | WARNING | src.command_queue | Jogo fora de foco; reagendando !barril em 2.0s
+2026-06-11 23:30:41,230 | WARNING | src.command_queue | Jogo fora de foco; reagendando !barco em 2.0s
+2026-06-11 23:30:43,391 | INFO    | src.command_queue | Executado: !barril por @ana.gamer
+2026-06-11 23:30:45,049 | INFO    | src.command_queue | Executado: !barril por @lua_fps
+2026-06-11 23:30:46,707 | INFO    | src.command_queue | Executado: !barco por @ana.gamer
+2026-06-11 23:30:48,365 | INFO    | src.command_queue | Executado: !barril por @ana.gamer
+2026-06-11 23:30:50,024 | INFO    | src.command_queue | Executado: !drop por @ana.gamer
+2026-06-11 23:30:51,314 | INFO    | src.command_queue | Enfileirado: !barril por @ana.gamer (fila=8)
+2026-06-11 23:30:51,683 | INFO    | src.command_queue | Executado: !barril por @joao_zoeira
+2026-06-11 23:30:53,342 | INFO    | src.command_queue | Executado: !formiga por @pedrocaos
+2026-06-11 23:30:54,999 | INFO    | src.command_queue | Executado: !cura por @ana.gamer
+2026-06-11 23:30:56,658 | INFO    | src.command_queue | Executado: !formiga por @lua_fps
+2026-06-11 23:30:58,317 | INFO    | src.command_queue | Executado: !cura por @ana.gamer
+2026-06-11 23:30:58,366 | INFO    | src.cooldown | Descartado por cooldown global: !barril (user=@pedrocaos)
+2026-06-11 23:30:59,975 | INFO    | src.command_queue | Executado: !barril por @pedrocaos
+2026-06-11 23:31:01,634 | INFO    | src.command_queue | Executado: !barco por @joao_zoeira
+2026-06-11 23:31:03,292 | INFO    | src.command_queue | Executado: !barril por @ana.gamer
+2026-06-11 23:31:06,348 | INFO    | src.command_queue | Enfileirado: !formiga por @joao_zoeira (fila=1)
+2026-06-11 23:31:06,501 | INFO    | src.command_queue | Executado: !formiga por @joao_zoeira
+2026-06-11 23:31:10,904 | INFO    | src.command_queue | Enfileirado: !barril por @lua_fps (fila=1)
+2026-06-11 23:31:10,905 | WARNING | src.command_queue | Jogo fora de foco; reagendando !barril em 2.0s
+2026-06-11 23:31:12,915 | WARNING | src.command_queue | Jogo fora de foco; reagendando !barril em 2.0s
+2026-06-11 23:31:14,922 | WARNING | src.command_queue | Jogo fora de foco; reagendando !barril em 2.0s
+2026-06-11 23:31:16,081 | INFO    | src.cooldown | Descartado por cooldown global: !formiga (user=@pedrocaos)
+2026-06-11 23:31:16,081 | INFO    | src.tiktok_listener | Simulacao rodando (tick 60)
+2026-06-11 23:31:16,930 | WARNING | src.command_queue | Jogo fora de foco; reagendando !barril em 2.0s
+2026-06-11 23:31:18,938 | WARNING | src.command_queue | Jogo fora de foco; reagendando !barril em 2.0s
+2026-06-11 23:31:20,944 | WARNING | src.command_queue | Jogo fora de foco; reagendando !barril em 2.0s
+2026-06-11 23:31:22,953 | WARNING | src.command_queue | Jogo fora de foco; reagendando !barril em 2.0s
+2026-06-11 23:31:24,961 | WARNING | src.command_queue | Jogo fora de foco; reagendando !barril em 2.0s
+2026-06-11 23:31:26,971 | WARNING | src.command_queue | Jogo fora de foco; reagendando !barril em 2.0s
+2026-06-11 23:31:28,981 | WARNING | src.command_queue | Jogo fora de foco; reagendando !barril em 2.0s
+2026-06-11 23:31:30,665 | INFO    | src.command_queue | Enfileirado: !formiga por @lua_fps (fila=1)
+2026-06-11 23:31:30,989 | WARNING | src.command_queue | Jogo fora de foco; reagendando !formiga em 2.0s
+2026-06-11 23:31:32,999 | WARNING | src.command_queue | Jogo fora de foco; reagendando !barril em 2.0s
+2026-06-11 23:31:34,020 | INFO    | src.command_queue | Enfileirado: !cura por @joao_zoeira (fila=2)
+2026-06-11 23:31:35,006 | WARNING | src.command_queue | Jogo fora de foco; reagendando !formiga em 2.0s
+2026-06-11 23:31:37,016 | WARNING | src.command_queue | Jogo fora de foco; reagendando !cura em 2.0s
+2026-06-11 23:31:37,062 | INFO    | src.command_queue | Enfileirado: !drop por @ana.gamer (fila=3)
+2026-06-11 23:31:39,025 | WARNING | src.command_queue | Jogo fora de foco; reagendando !barril em 2.0s
+2026-06-11 23:31:39,706 | INFO    | src.command_queue | Enfileirado: !barril por @ana.gamer (fila=4)
+2026-06-11 23:31:41,035 | WARNING | src.command_queue | Jogo fora de foco; reagendando !formiga em 2.0s
+2026-06-11 23:31:43,044 | WARNING | src.command_queue | Jogo fora de foco; reagendando !drop em 2.0s
+2026-06-11 23:31:45,053 | WARNING | src.command_queue | Jogo fora de foco; reagendando !cura em 2.0s
+2026-06-11 23:31:45,315 | INFO    | src.command_queue | Enfileirado: !barco por @lua_fps (fila=5)
+2026-06-11 23:31:47,064 | WARNING | src.command_queue | Jogo fora de foco; reagendando !barril em 2.0s
+2026-06-11 23:31:49,074 | WARNING | src.command_queue | Jogo fora de foco; reagendando !barril em 2.0s
+2026-06-11 23:31:51,081 | WARNING | src.command_queue | Jogo fora de foco; reagendando !formiga em 2.0s
+2026-06-11 23:31:51,405 | INFO    | src.cooldown | Descartado por cooldown global: !cura (user=@joao_zoeira)
+2026-06-11 23:31:53,088 | WARNING | src.command_queue | Jogo fora de foco; reagendando !drop em 2.0s
+2026-06-11 23:31:53,490 | INFO    | src.command_queue | Enfileirado: !drop por @joao_zoeira (fila=6)
+2026-06-11 23:31:55,099 | WARNING | src.command_queue | Jogo fora de foco; reagendando !barco em 2.0s
+2026-06-11 23:31:55,423 | INFO    | src.command_queue | Enfileirado: !barril por @joao_zoeira (fila=7)
+2026-06-11 23:31:57,107 | WARNING | src.command_queue | Jogo fora de foco; reagendando !cura em 2.0s
+2026-06-11 23:31:59,116 | WARNING | src.command_queue | Jogo fora de foco; reagendando !barril em 2.0s
+2026-06-11 23:32:01,124 | WARNING | src.command_queue | Jogo fora de foco; reagendando !barril em 2.0s
+2026-06-11 23:32:03,130 | WARNING | src.command_queue | Jogo fora de foco; reagendando !formiga em 2.0s
+2026-06-11 23:32:05,136 | WARNING | src.command_queue | Jogo fora de foco; reagendando !drop em 2.0s
+2026-06-11 23:32:07,143 | WARNING | src.command_queue | Jogo fora de foco; reagendando !drop em 2.0s
+2026-06-11 23:32:08,209 | INFO    | src.command_queue | Enfileirado: !barril por @pedrocaos (fila=8)
+2026-06-11 23:32:08,209 | INFO    | src.tiktok_listener | Simulacao rodando (tick 80)
+2026-06-11 23:32:09,153 | WARNING | src.command_queue | Jogo fora de foco; reagendando !barril em 2.0s
+2026-06-11 23:32:11,163 | WARNING | src.command_queue | Jogo fora de foco; reagendando !barco em 2.0s
+2026-06-11 23:32:13,173 | WARNING | src.command_queue | Jogo fora de foco; reagendando !cura em 2.0s
+2026-06-11 23:32:15,182 | WARNING | src.command_queue | Jogo fora de foco; reagendando !barril em 2.0s
+2026-06-11 23:32:17,190 | WARNING | src.command_queue | Jogo fora de foco; reagendando !barril em 2.0s
+2026-06-11 23:32:19,196 | WARNING | src.command_queue | Jogo fora de foco; reagendando !formiga em 2.0s
+2026-06-11 23:32:21,204 | WARNING | src.command_queue | Jogo fora de foco; reagendando !drop em 2.0s
+2026-06-11 23:32:23,181 | INFO    | src.command_queue | Enfileirado: !barril por @lua_fps (fila=9)
+2026-06-11 23:32:23,212 | WARNING | src.command_queue | Jogo fora de foco; reagendando !barril em 2.0s
+2026-06-11 23:32:25,222 | WARNING | src.command_queue | Jogo fora de foco; reagendando !drop em 2.0s
+2026-06-11 23:32:27,233 | WARNING | src.command_queue | Jogo fora de foco; reagendando !barril em 2.0s
+2026-06-11 23:32:27,974 | INFO    | src.cooldown | Descartado por cooldown global: !barril (user=@joao_zoeira)
+2026-06-11 23:32:29,244 | WARNING | src.command_queue | Jogo fora de foco; reagendando !barco em 2.0s
+2026-06-11 23:32:31,253 | WARNING | src.command_queue | Jogo fora de foco; reagendando !cura em 2.0s
+2026-06-11 23:32:33,264 | WARNING | src.command_queue | Jogo fora de foco; reagendando !barril em 2.0s
+2026-06-11 23:32:35,272 | WARNING | src.command_queue | Jogo fora de foco; reagendando !barril em 2.0s
+2026-06-11 23:32:36,370 | INFO    | src.command_queue | Enfileirado: !barril por @joao_zoeira (fila=10)
+2026-06-11 23:32:37,283 | WARNING | src.command_queue | Jogo fora de foco; reagendando !formiga em 2.0s
+2026-06-11 23:32:38,982 | INFO    | src.command_queue | Enfileirado: !formiga por @pedrocaos (fila=11)
+2026-06-11 23:32:39,291 | WARNING | src.command_queue | Jogo fora de foco; reagendando !barril em 2.0s
+2026-06-11 23:32:41,301 | WARNING | src.command_queue | Jogo fora de foco; reagendando !drop em 2.0s
+2026-06-11 23:32:43,310 | WARNING | src.command_queue | Jogo fora de foco; reagendando !barril em 2.0s
+2026-06-11 23:32:44,776 | INFO    | src.cooldown | Descartado por cooldown de usuario: !barril (user=@lua_fps)
+2026-06-11 23:32:45,316 | WARNING | src.command_queue | Jogo fora de foco; reagendando !drop em 2.0s
+2026-06-11 23:32:46,613 | INFO    | src.command_queue | Enfileirado: !barco por @lua_fps (fila=12)
+2026-06-11 23:32:47,326 | WARNING | src.command_queue | Jogo fora de foco; reagendando !barril em 2.0s
+2026-06-11 23:32:49,333 | WARNING | src.command_queue | Jogo fora de foco; reagendando !barco em 2.0s
+2026-06-11 23:32:50,539 | INFO    | src.command_queue | Enfileirado: !drop por @ana.gamer (fila=13)
+2026-06-11 23:32:51,343 | WARNING | src.command_queue | Jogo fora de foco; reagendando !cura em 2.0s
+2026-06-11 23:32:53,352 | WARNING | src.command_queue | Jogo fora de foco; reagendando !barril em 2.0s
+2026-06-11 23:32:55,361 | WARNING | src.command_queue | Jogo fora de foco; reagendando !barril em 2.0s
+2026-06-11 23:32:57,371 | WARNING | src.command_queue | Jogo fora de foco; reagendando !barril em 2.0s
+2026-06-11 23:32:57,803 | INFO    | src.cooldown | Descartado por cooldown global: !barco (user=@pedrocaos)
+2026-06-11 23:32:59,380 | WARNING | src.command_queue | Jogo fora de foco; reagendando !formiga em 2.0s
+2026-06-11 23:33:01,391 | WARNING | src.command_queue | Jogo fora de foco; reagendando !formiga em 2.0s
+2026-06-11 23:33:02,673 | INFO    | src.tiktok_listener | Simulacao rodando (tick 100)
+2026-06-11 23:33:03,401 | WARNING | src.command_queue | Jogo fora de foco; reagendando !barril em 2.0s
+2026-06-11 23:33:05,411 | WARNING | src.command_queue | Jogo fora de foco; reagendando !drop em 2.0s
+2026-06-11 23:33:05,982 | INFO    | src.cooldown | Descartado por cooldown de usuario: !drop (user=@ana.gamer)
+2026-06-11 23:33:07,420 | WARNING | src.command_queue | Jogo fora de foco; reagendando !barril em 2.0s
+2026-06-11 23:33:08,532 | INFO    | src.command_queue | Enfileirado: !barco por @joao_zoeira (fila=14)
+2026-06-11 23:33:09,429 | WARNING | src.command_queue | Jogo fora de foco; reagendando !barco em 2.0s
+2026-06-11 23:33:11,439 | WARNING | src.command_queue | Jogo fora de foco; reagendando !drop em 2.0s
+2026-06-11 23:33:12,365 | INFO    | src.command_queue | Enfileirado: !barril por @pedrocaos (fila=15)
+2026-06-11 23:33:13,447 | WARNING | src.command_queue | Jogo fora de foco; reagendando !barril em 2.0s
+2026-06-11 23:33:14,593 | INFO    | src.cooldown | Descartado por cooldown global: !barril (user=@ana.gamer)
+2026-06-11 23:33:15,459 | WARNING | src.command_queue | Jogo fora de foco; reagendando !drop em 2.0s
+2026-06-11 23:33:17,298 | INFO    | src.cooldown | Descartado por cooldown global: !barril (user=@joao_zoeira)
+2026-06-11 23:33:17,468 | WARNING | src.command_queue | Jogo fora de foco; reagendando !barco em 2.0s
+2026-06-11 23:33:18,997 | INFO    | src.cooldown | Descartado por cooldown global: !barco (user=@joao_zoeira)
+2026-06-11 23:33:19,477 | WARNING | src.command_queue | Jogo fora de foco; reagendando !cura em 2.0s
+2026-06-11 23:33:20,851 | INFO    | src.command_queue | Enfileirado: !barril por @joao_zoeira (fila=16)
+2026-06-11 23:33:21,486 | WARNING | src.command_queue | Jogo fora de foco; reagendando !barril em 2.0s
+2026-06-11 23:33:23,497 | WARNING | src.command_queue | Jogo fora de foco; reagendando !barril em 2.0s
+2026-06-11 23:33:25,508 | WARNING | src.command_queue | Jogo fora de foco; reagendando !barril em 2.0s
+2026-06-11 23:33:27,517 | WARNING | src.command_queue | Jogo fora de foco; reagendando !formiga em 2.0s
+2026-06-11 23:33:29,524 | WARNING | src.command_queue | Jogo fora de foco; reagendando !formiga em 2.0s
+2026-06-11 23:33:31,535 | WARNING | src.command_queue | Jogo fora de foco; reagendando !barril em 2.0s
+2026-06-11 23:33:33,543 | WARNING | src.command_queue | Jogo fora de foco; reagendando !drop em 2.0s
+2026-06-11 23:33:34,947 | INFO    | src.command_queue | Enfileirado: !formiga por @pedrocaos (fila=17)
+2026-06-11 23:33:35,550 | WARNING | src.command_queue | Jogo fora de foco; reagendando !barco em 2.0s
+2026-06-11 23:33:37,562 | WARNING | src.command_queue | Jogo fora de foco; reagendando !barril em 2.0s
+2026-06-11 23:33:37,685 | INFO    | src.cooldown | Descartado por cooldown global: !formiga (user=@joao_zoeira)
+2026-06-11 23:33:39,574 | WARNING | src.command_queue | Jogo fora de foco; reagendando !barco em 2.0s
+2026-06-11 23:33:41,289 | INFO    | src.command_queue | Enfileirado: !drop por @pedrocaos (fila=18)
+2026-06-11 23:33:41,583 | WARNING | src.command_queue | Jogo fora de foco; reagendando !barril em 2.0s
+2026-06-11 23:33:43,590 | WARNING | src.command_queue | Jogo fora de foco; reagendando !drop em 2.0s
+2026-06-11 23:33:45,597 | WARNING | src.command_queue | Jogo fora de foco; reagendando !barril em 2.0s
+2026-06-11 23:33:47,606 | WARNING | src.command_queue | Jogo fora de foco; reagendando !drop em 2.0s
+2026-06-11 23:33:49,615 | WARNING | src.command_queue | Jogo fora de foco; reagendando !barco em 2.0s
+2026-06-11 23:33:51,628 | WARNING | src.command_queue | Jogo fora de foco; reagendando !barril em 2.0s
+2026-06-11 23:33:53,635 | WARNING | src.command_queue | Jogo fora de foco; reagendando !cura em 2.0s
+2026-06-11 23:33:55,644 | WARNING | src.command_queue | Jogo fora de foco; reagendando !barril em 2.0s
+2026-06-11 23:33:57,653 | WARNING | src.command_queue | Jogo fora de foco; reagendando !barril em 2.0s
+2026-06-11 23:33:59,029 | INFO    | src.command_queue | Enfileirado: !barril por @lua_fps (fila=19)
+2026-06-11 23:33:59,030 | INFO    | src.tiktok_listener | Simulacao rodando (tick 120)
+2026-06-11 23:33:59,663 | WARNING | src.command_queue | Jogo fora de foco; reagendando !barril em 2.0s
+2026-06-11 23:34:01,671 | WARNING | src.command_queue | Jogo fora de foco; reagendando !formiga em 2.0s
+2026-06-11 23:34:01,964 | INFO    | src.command_queue | Enfileirado: !cura por @joao_zoeira (fila=20)
+2026-06-11 23:34:03,680 | WARNING | src.command_queue | Jogo fora de foco; reagendando !formiga em 2.0s
+2026-06-11 23:34:05,689 | WARNING | src.command_queue | Jogo fora de foco; reagendando !barril em 2.0s
+2026-06-11 23:34:07,698 | WARNING | src.command_queue | Jogo fora de foco; reagendando !formiga em 2.0s
+2026-06-11 23:34:07,837 | INFO    | src.cooldown | Descartado por cooldown de usuario: !barril (user=@lua_fps)
+2026-06-11 23:34:09,710 | WARNING | src.command_queue | Jogo fora de foco; reagendando !drop em 2.0s
+2026-06-11 23:34:11,718 | WARNING | src.command_queue | Jogo fora de foco; reagendando !barco em 2.0s
+2026-06-11 23:34:13,727 | WARNING | src.command_queue | Jogo fora de foco; reagendando !barril em 2.0s
+2026-06-11 23:34:15,057 | INFO    | src.command_queue | Enfileirado: !barril por @ana.gamer (fila=21)
+2026-06-11 23:34:15,737 | WARNING | src.command_queue | Jogo fora de foco; reagendando !drop em 2.0s
+2026-06-11 23:34:17,746 | WARNING | src.command_queue | Jogo fora de foco; reagendando !barco em 2.0s
+2026-06-11 23:34:19,755 | WARNING | src.command_queue | Jogo fora de foco; reagendando !barril em 2.0s
+2026-06-11 23:34:21,764 | WARNING | src.command_queue | Jogo fora de foco; reagendando !drop em 2.0s
+2026-06-11 23:34:22,181 | INFO    | src.cooldown | Descartado por cooldown global: !barril (user=@lua_fps)
+2026-06-11 23:34:23,772 | WARNING | src.command_queue | Jogo fora de foco; reagendando !barril em 2.0s
+2026-06-11 23:34:23,958 | INFO    | src.command_queue | Enfileirado: !barril por @pedrocaos (fila=22)
+2026-06-11 23:34:25,781 | WARNING | src.command_queue | Jogo fora de foco; reagendando !drop em 2.0s
+2026-06-11 23:34:27,790 | WARNING | src.command_queue | Jogo fora de foco; reagendando !barco em 2.0s
+2026-06-11 23:34:28,748 | INFO    | src.command_queue | Enfileirado: !drop por @joao_zoeira (fila=23)
+2026-06-11 23:34:29,799 | WARNING | src.command_queue | Jogo fora de foco; reagendando !barril em 2.0s
+2026-06-11 23:34:31,807 | WARNING | src.command_queue | Jogo fora de foco; reagendando !cura em 2.0s
+2026-06-11 23:34:33,815 | WARNING | src.command_queue | Jogo fora de foco; reagendando !barril em 2.0s
+2026-06-11 23:34:34,742 | INFO    | src.command_queue | Enfileirado: !barco por @lua_fps (fila=24)
+2026-06-11 23:34:35,824 | WARNING | src.command_queue | Jogo fora de foco; reagendando !barril em 2.0s
+2026-06-11 23:34:37,834 | WARNING | src.command_queue | Jogo fora de foco; reagendando !barril em 2.0s
+2026-06-11 23:34:39,844 | WARNING | src.command_queue | Jogo fora de foco; reagendando !barril em 2.0s
+2026-06-11 23:34:41,856 | WARNING | src.command_queue | Jogo fora de foco; reagendando !cura em 2.0s
+2026-06-11 23:34:42,998 | INFO    | src.command_queue | Enfileirado: !cura por @pedrocaos (fila=25)
+2026-06-11 23:34:43,862 | WARNING | src.command_queue | Jogo fora de foco; reagendando !formiga em 2.0s
+2026-06-11 23:34:46,029 | INFO    | src.command_queue | Executado: !formiga por @lua_fps
+2026-06-11 23:34:47,533 | WARNING | src.command_queue | Jogo fora de foco; reagendando !barril em 2.0s
+2026-06-11 23:34:47,625 | INFO    | src.command_queue | Enfileirado: !formiga por @joao_zoeira (fila=25)
+2026-06-11 23:34:49,544 | WARNING | src.command_queue | Jogo fora de foco; reagendando !formiga em 2.0s
+2026-06-11 23:34:50,980 | INFO    | src.cooldown | Descartado por cooldown global: !formiga (user=@pedrocaos)
+2026-06-11 23:34:51,552 | WARNING | src.command_queue | Jogo fora de foco; reagendando !drop em 2.0s
+2026-06-11 23:34:53,561 | WARNING | src.command_queue | Jogo fora de foco; reagendando !barco em 2.0s
+2026-06-11 23:34:55,572 | WARNING | src.command_queue | Jogo fora de foco; reagendando !barril em 2.0s
+2026-06-11 23:34:56,961 | INFO    | src.command_queue | Enfileirado: !barco por @pedrocaos (fila=26)
+2026-06-11 23:34:56,962 | INFO    | src.tiktok_listener | Simulacao rodando (tick 140)
+2026-06-11 23:34:57,581 | WARNING | src.command_queue | Jogo fora de foco; reagendando !barril em 2.0s
+2026-06-11 23:34:59,748 | INFO    | src.command_queue | Executado: !drop por @pedrocaos
+2026-06-11 23:35:01,407 | INFO    | src.command_queue | Executado: !barco por @lua_fps
+2026-06-11 23:35:03,065 | INFO    | src.command_queue | Executado: !barril por @pedrocaos
+2026-06-11 23:35:04,724 | INFO    | src.command_queue | Executado: !drop por @ana.gamer
+2026-06-11 23:35:06,382 | INFO    | src.command_queue | Executado: !barril por @pedrocaos
+2026-06-11 23:35:08,042 | INFO    | src.command_queue | Executado: !barril por @joao_zoeira
+2026-06-11 23:35:09,699 | INFO    | src.command_queue | Executado: !drop por @ana.gamer
+2026-06-11 23:35:10,291 | INFO    | src.command_queue | Enfileirado: !barril por @lua_fps (fila=21)
+2026-06-11 23:35:11,358 | INFO    | src.command_queue | Executado: !drop por @joao_zoeira
+2026-06-11 23:35:13,016 | INFO    | src.command_queue | Executado: !barco por @lua_fps
+2026-06-11 23:35:14,119 | INFO    | src.cooldown | Descartado por cooldown global: !barril (user=@ana.gamer)
+2026-06-11 23:35:14,674 | INFO    | src.command_queue | Executado: !barril por @joao_zoeira
+2026-06-11 23:35:16,332 | INFO    | src.command_queue | Executado: !cura por @joao_zoeira
+2026-06-11 23:35:16,738 | INFO    | src.cooldown | Descartado por cooldown de usuario: !formiga (user=@joao_zoeira)
+2026-06-11 23:35:17,992 | INFO    | src.command_queue | Executado: !barco por @lua_fps
+2026-06-11 23:35:19,650 | INFO    | src.command_queue | Executado: !barril por @ana.gamer
+2026-06-11 23:35:20,350 | INFO    | src.command_queue | Enfileirado: !drop por @lua_fps (fila=16)
+2026-06-11 23:35:21,309 | INFO    | src.command_queue | Executado: !barril por @lua_fps
+2026-06-11 23:35:22,966 | INFO    | src.command_queue | Executado: !barril por @joao_zoeira
+2026-06-11 23:35:23,682 | INFO    | src.command_queue | Enfileirado: !barril por @joao_zoeira (fila=15)
+2026-06-11 23:35:24,625 | INFO    | src.command_queue | Executado: !barril por @lua_fps
+2026-06-11 23:35:26,283 | INFO    | src.command_queue | Executado: !cura por @pedrocaos
+2026-06-11 23:35:27,942 | INFO    | src.command_queue | Executado: !cura por @joao_zoeira
+2026-06-11 23:35:29,600 | INFO    | src.command_queue | Executado: !formiga por @pedrocaos
+2026-06-11 23:35:31,259 | INFO    | src.command_queue | Executado: !formiga por @joao_zoeira
+2026-06-11 23:35:32,688 | INFO    | src.command_queue | Enfileirado: !formiga por @ana.gamer (fila=11)
+2026-06-11 23:35:32,917 | INFO    | src.command_queue | Executado: !barril por @lua_fps
+2026-06-11 23:35:34,576 | INFO    | src.command_queue | Executado: !formiga por @pedrocaos
+2026-06-11 23:35:36,234 | INFO    | src.command_queue | Executado: !drop por @joao_zoeira
+2026-06-11 23:35:37,893 | INFO    | src.command_queue | Executado: !barco por @joao_zoeira
+2026-06-11 23:35:39,551 | INFO    | src.command_queue | Executado: !barco por @pedrocaos
+2026-06-11 23:35:41,210 | INFO    | src.command_queue | Executado: !barril por @ana.gamer
+2026-06-11 23:35:42,869 | INFO    | src.command_queue | Executado: !barril por @pedrocaos
+2026-06-11 23:35:43,073 | INFO    | src.cooldown | Descartado por cooldown de usuario: !barril (user=@joao_zoeira)
+2026-06-11 23:35:44,527 | INFO    | src.command_queue | Executado: !barril por @lua_fps
+2026-06-11 23:35:46,185 | INFO    | src.command_queue | Executado: !drop por @lua_fps
+2026-06-11 23:35:46,777 | INFO    | src.command_queue | Enfileirado: !barril por @pedrocaos (fila=3)
+2026-06-11 23:35:47,844 | INFO    | src.command_queue | Executado: !barril por @joao_zoeira
+2026-06-11 23:35:49,502 | INFO    | src.command_queue | Executado: !formiga por @ana.gamer
+2026-06-11 23:35:50,513 | INFO    | src.cooldown | Descartado por cooldown global: !barril (user=@ana.gamer)
+2026-06-11 23:35:51,161 | INFO    | src.command_queue | Executado: !barril por @pedrocaos
+2026-06-11 23:35:56,093 | INFO    | src.command_queue | Enfileirado: !drop por @joao_zoeira (fila=1)
+2026-06-11 23:35:56,245 | INFO    | src.command_queue | Executado: !drop por @joao_zoeira
+2026-06-11 23:35:59,007 | INFO    | src.cooldown | Descartado por cooldown global: !drop (user=@lua_fps)
+2026-06-11 23:35:59,007 | INFO    | src.tiktok_listener | Simulacao rodando (tick 160)
+2026-06-11 23:36:01,347 | INFO    | src.command_queue | Enfileirado: !cura por @ana.gamer (fila=1)
+2026-06-11 23:36:01,500 | INFO    | src.command_queue | Executado: !cura por @ana.gamer
+2026-06-11 23:36:02,928 | INFO    | src.command_queue | Enfileirado: !barril por @joao_zoeira (fila=1)
+2026-06-11 23:36:03,158 | INFO    | src.command_queue | Executado: !barril por @joao_zoeira
+2026-06-11 23:36:06,555 | INFO    | src.cooldown | Descartado por cooldown de usuario: !drop (user=@joao_zoeira)
+2026-06-11 23:36:08,322 | INFO    | src.cooldown | Descartado por cooldown global: !barril (user=@pedrocaos)
+2026-06-11 23:36:14,485 | INFO    | src.cooldown | Descartado por cooldown global: !cura (user=@ana.gamer)
+2026-06-11 23:36:33,653 | INFO    | src.command_queue | Enfileirado: !cura por @lua_fps (fila=1)
+2026-06-11 23:36:33,653 | WARNING | src.command_queue | Jogo fora de foco; reagendando !cura em 2.0s
+2026-06-11 23:36:35,665 | WARNING | src.command_queue | Jogo fora de foco; reagendando !cura em 2.0s
+2026-06-11 23:36:37,458 | INFO    | src.command_queue | Enfileirado: !formiga por @joao_zoeira (fila=1)
+2026-06-11 23:36:37,675 | WARNING | src.command_queue | Jogo fora de foco; reagendando !formiga em 2.0s
+2026-06-11 23:36:39,686 | WARNING | src.command_queue | Jogo fora de foco; reagendando !cura em 2.0s
+2026-06-11 23:36:41,697 | WARNING | src.command_queue | Jogo fora de foco; reagendando !formiga em 2.0s
+2026-06-11 23:36:43,708 | WARNING | src.command_queue | Jogo fora de foco; reagendando !cura em 2.0s
+2026-06-11 23:36:45,719 | WARNING | src.command_queue | Jogo fora de foco; reagendando !formiga em 2.0s
+2026-06-11 23:36:47,727 | WARNING | src.command_queue | Jogo fora de foco; reagendando !cura em 2.0s
+2026-06-11 23:36:49,738 | WARNING | src.command_queue | Jogo fora de foco; reagendando !formiga em 2.0s
+2026-06-11 23:36:51,114 | INFO    | src.cooldown | Descartado por cooldown global: !formiga (user=@joao_zoeira)
+2026-06-11 23:36:51,748 | WARNING | src.command_queue | Jogo fora de foco; reagendando !cura em 2.0s
+2026-06-11 23:36:53,760 | WARNING | src.command_queue | Jogo fora de foco; reagendando !formiga em 2.0s
+2026-06-11 23:36:54,006 | INFO    | src.command_queue | Enfileirado: !barco por @pedrocaos (fila=2)
+2026-06-11 23:36:55,770 | WARNING | src.command_queue | Jogo fora de foco; reagendando !cura em 2.0s
+2026-06-11 23:36:55,816 | INFO    | src.command_queue | Enfileirado: !formiga por @pedrocaos (fila=3)
+2026-06-11 23:36:55,817 | INFO    | src.tiktok_listener | Simulacao rodando (tick 180)
+2026-06-11 23:36:57,394 | INFO    | src.cooldown | Descartado por cooldown global: !barco (user=@lua_fps)
+2026-06-11 23:36:57,782 | WARNING | src.command_queue | Jogo fora de foco; reagendando !barco em 2.0s
+2026-06-11 23:36:59,792 | WARNING | src.command_queue | Jogo fora de foco; reagendando !formiga em 2.0s
+2026-06-11 23:37:01,800 | WARNING | src.command_queue | Jogo fora de foco; reagendando !formiga em 2.0s
+2026-06-11 23:37:03,810 | WARNING | src.command_queue | Jogo fora de foco; reagendando !cura em 2.0s
+2026-06-11 23:37:05,821 | WARNING | src.command_queue | Jogo fora de foco; reagendando !barco em 2.0s
+2026-06-11 23:37:06,702 | INFO    | src.command_queue | Enfileirado: !barril por @lua_fps (fila=4)
+2026-06-11 23:37:07,833 | WARNING | src.command_queue | Jogo fora de foco; reagendando !formiga em 2.0s
+2026-06-11 23:37:08,930 | INFO    | src.cooldown | Descartado por cooldown de usuario: !cura (user=@lua_fps)
+2026-06-11 23:37:09,843 | WARNING | src.command_queue | Jogo fora de foco; reagendando !formiga em 2.0s
+2026-06-11 23:37:11,127 | INFO    | src.command_queue | Enfileirado: !cura por @ana.gamer (fila=5)
+2026-06-11 23:37:11,853 | WARNING | src.command_queue | Jogo fora de foco; reagendando !cura em 2.0s
+2026-06-11 23:37:12,640 | INFO    | src.command_queue | Enfileirado: !drop por @lua_fps (fila=6)
+2026-06-11 23:37:13,863 | WARNING | src.command_queue | Jogo fora de foco; reagendando !barril em 2.0s
+2026-06-11 23:37:15,874 | WARNING | src.command_queue | Jogo fora de foco; reagendando !barco em 2.0s
+2026-06-11 23:37:18,041 | INFO    | src.command_queue | Executado: !formiga por @joao_zoeira
+2026-06-11 23:37:19,699 | INFO    | src.command_queue | Executado: !cura por @ana.gamer
+2026-06-11 23:37:21,357 | INFO    | src.command_queue | Executado: !formiga por @pedrocaos
+2026-06-11 23:37:23,016 | INFO    | src.command_queue | Executado: !drop por @lua_fps
+2026-06-11 23:37:24,212 | INFO    | src.command_queue | Enfileirado: !barril por @pedrocaos (fila=4)
+2026-06-11 23:37:24,675 | INFO    | src.command_queue | Executado: !cura por @lua_fps
+2026-06-11 23:37:25,995 | INFO    | src.cooldown | Descartado por cooldown global: !barril (user=@ana.gamer)
+2026-06-11 23:37:26,333 | INFO    | src.command_queue | Executado: !barril por @lua_fps
+2026-06-11 23:37:27,991 | INFO    | src.command_queue | Executado: !barco por @pedrocaos
+2026-06-11 23:37:29,496 | WARNING | src.command_queue | Jogo fora de foco; reagendando !barril em 2.0s
+2026-06-11 23:37:31,505 | WARNING | src.command_queue | Jogo fora de foco; reagendando !barril em 2.0s
+2026-06-11 23:37:32,217 | INFO    | src.cooldown | Descartado por cooldown de usuario: !cura (user=@lua_fps)
+2026-06-11 23:37:33,515 | WARNING | src.command_queue | Jogo fora de foco; reagendando !barril em 2.0s
+2026-06-11 23:37:35,525 | WARNING | src.command_queue | Jogo fora de foco; reagendando !barril em 2.0s
+2026-06-11 23:37:35,725 | INFO    | src.command_queue | Enfileirado: !drop por @ana.gamer (fila=1)
+2026-06-11 23:37:37,537 | WARNING | src.command_queue | Jogo fora de foco; reagendando !drop em 2.0s
+2026-06-11 23:37:39,548 | WARNING | src.command_queue | Jogo fora de foco; reagendando !barril em 2.0s
+2026-06-11 23:37:41,557 | WARNING | src.command_queue | Jogo fora de foco; reagendando !drop em 2.0s
+2026-06-11 23:37:43,569 | WARNING | src.command_queue | Jogo fora de foco; reagendando !barril em 2.0s
+2026-06-11 23:37:45,579 | WARNING | src.command_queue | Jogo fora de foco; reagendando !drop em 2.0s
+2026-06-11 23:37:46,073 | INFO    | src.cooldown | Descartado por cooldown de usuario: !barril (user=@pedrocaos)
+2026-06-11 23:37:47,589 | WARNING | src.command_queue | Jogo fora de foco; reagendando !barril em 2.0s
+2026-06-11 23:37:48,224 | INFO    | src.tiktok_listener | Simulacao rodando (tick 200)
+2026-06-11 23:37:49,600 | WARNING | src.command_queue | Jogo fora de foco; reagendando !drop em 2.0s
+2026-06-11 23:37:49,832 | INFO    | src.command_queue | Enfileirado: !formiga por @ana.gamer (fila=2)
+2026-06-11 23:37:51,611 | WARNING | src.command_queue | Jogo fora de foco; reagendando !barril em 2.0s
+2026-06-11 23:37:53,621 | WARNING | src.command_queue | Jogo fora de foco; reagendando !formiga em 2.0s
+2026-06-11 23:37:55,631 | WARNING | src.command_queue | Jogo fora de foco; reagendando !drop em 2.0s
+2026-06-11 23:37:57,641 | WARNING | src.command_queue | Jogo fora de foco; reagendando !barril em 2.0s
+2026-06-11 23:37:59,652 | WARNING | src.command_queue | Jogo fora de foco; reagendando !formiga em 2.0s
+2026-06-11 23:38:01,664 | WARNING | src.command_queue | Jogo fora de foco; reagendando !drop em 2.0s
+2026-06-11 23:38:03,674 | WARNING | src.command_queue | Jogo fora de foco; reagendando !barril em 2.0s
+2026-06-11 23:38:04,616 | INFO    | src.cooldown | Descartado por cooldown de usuario: !drop (user=@ana.gamer)
+2026-06-11 23:38:05,682 | WARNING | src.command_queue | Jogo fora de foco; reagendando !formiga em 2.0s
+2026-06-11 23:38:06,239 | INFO    | src.command_queue | Enfileirado: !formiga por @pedrocaos (fila=3)
+2026-06-11 23:38:07,691 | WARNING | src.command_queue | Jogo fora de foco; reagendando !drop em 2.0s
+2026-06-11 23:38:09,594 | INFO    | src.command_queue | Enfileirado: !cura por @joao_zoeira (fila=4)
+2026-06-11 23:38:09,703 | WARNING | src.command_queue | Jogo fora de foco; reagendando !barril em 2.0s
+2026-06-11 23:38:11,712 | WARNING | src.command_queue | Jogo fora de foco; reagendando !formiga em 2.0s
+2026-06-11 23:38:13,721 | WARNING | src.command_queue | Jogo fora de foco; reagendando !formiga em 2.0s
+2026-06-11 23:38:15,728 | WARNING | src.command_queue | Jogo fora de foco; reagendando !cura em 2.0s
+2026-06-11 23:38:17,741 | WARNING | src.command_queue | Jogo fora de foco; reagendando !drop em 2.0s
+2026-06-11 23:38:19,751 | WARNING | src.command_queue | Jogo fora de foco; reagendando !barril em 2.0s
+2026-06-11 23:38:21,760 | WARNING | src.command_queue | Jogo fora de foco; reagendando !formiga em 2.0s
+2026-06-11 23:38:23,767 | WARNING | src.command_queue | Jogo fora de foco; reagendando !formiga em 2.0s
+2026-06-11 23:38:25,775 | WARNING | src.command_queue | Jogo fora de foco; reagendando !cura em 2.0s
+2026-06-11 23:38:26,255 | INFO    | src.cooldown | Descartado por cooldown de usuario: !formiga (user=@ana.gamer)
+2026-06-11 23:38:27,785 | WARNING | src.command_queue | Jogo fora de foco; reagendando !drop em 2.0s
+2026-06-11 23:38:29,794 | WARNING | src.command_queue | Jogo fora de foco; reagendando !barril em 2.0s
+2026-06-11 23:38:31,806 | WARNING | src.command_queue | Jogo fora de foco; reagendando !formiga em 2.0s
+2026-06-11 23:38:33,815 | WARNING | src.command_queue | Jogo fora de foco; reagendando !formiga em 2.0s
+2026-06-11 23:38:35,019 | INFO    | src.cooldown | Descartado por cooldown de usuario: !formiga (user=@pedrocaos)
+2026-06-11 23:38:35,824 | WARNING | src.command_queue | Jogo fora de foco; reagendando !cura em 2.0s
+2026-06-11 23:38:37,835 | WARNING | src.command_queue | Jogo fora de foco; reagendando !drop em 2.0s
+2026-06-11 23:38:39,305 | INFO    | src.command_queue | Enfileirado: !barril por @pedrocaos (fila=5)
+2026-06-11 23:38:39,305 | INFO    | src.tiktok_listener | Simulacao rodando (tick 220)
+2026-06-11 23:38:39,845 | WARNING | src.command_queue | Jogo fora de foco; reagendando !barril em 2.0s
+2026-06-11 23:38:41,851 | WARNING | src.command_queue | Jogo fora de foco; reagendando !formiga em 2.0s
+2026-06-11 23:38:42,901 | INFO    | src.command_queue | Enfileirado: !cura por @pedrocaos (fila=6)
+2026-06-11 23:38:43,861 | WARNING | src.command_queue | Jogo fora de foco; reagendando !formiga em 2.0s
+2026-06-11 23:38:45,869 | WARNING | src.command_queue | Jogo fora de foco; reagendando !cura em 2.0s
+2026-06-11 23:38:47,878 | WARNING | src.command_queue | Jogo fora de foco; reagendando !barril em 2.0s
+2026-06-11 23:38:48,109 | INFO    | src.command_queue | Enfileirado: !barril por @joao_zoeira (fila=7)
+2026-06-11 23:38:49,885 | WARNING | src.command_queue | Jogo fora de foco; reagendando !drop em 2.0s
+2026-06-11 23:38:51,771 | INFO    | src.command_queue | Enfileirado: !drop por @joao_zoeira (fila=8)
+2026-06-11 23:38:51,895 | WARNING | src.command_queue | Jogo fora de foco; reagendando !barril em 2.0s
+2026-06-11 23:38:53,903 | WARNING | src.command_queue | Jogo fora de foco; reagendando !cura em 2.0s
+2026-06-11 23:38:55,913 | WARNING | src.command_queue | Jogo fora de foco; reagendando !formiga em 2.0s
+2026-06-11 23:38:57,922 | WARNING | src.command_queue | Jogo fora de foco; reagendando !formiga em 2.0s
+2026-06-11 23:38:59,885 | INFO    | src.cooldown | Descartado por cooldown global: !cura (user=@lua_fps)
+2026-06-11 23:38:59,932 | WARNING | src.command_queue | Jogo fora de foco; reagendando !cura em 2.0s
+2026-06-11 23:39:01,942 | WARNING | src.command_queue | Jogo fora de foco; reagendando !barril em 2.0s
+2026-06-11 23:39:03,749 | INFO    | src.command_queue | Enfileirado: !formiga por @ana.gamer (fila=9)
+2026-06-11 23:39:03,951 | WARNING | src.command_queue | Jogo fora de foco; reagendando !barril em 2.0s
+2026-06-11 23:39:05,960 | WARNING | src.command_queue | Jogo fora de foco; reagendando !drop em 2.0s
+2026-06-11 23:39:06,777 | INFO    | src.cooldown | Descartado por cooldown de usuario: !drop (user=@joao_zoeira)
+2026-06-11 23:39:07,968 | WARNING | src.command_queue | Jogo fora de foco; reagendando !drop em 2.0s
+2026-06-11 23:39:08,863 | INFO    | src.cooldown | Descartado por cooldown de usuario: !barril (user=@joao_zoeira)
+2026-06-11 23:39:09,977 | WARNING | src.command_queue | Jogo fora de foco; reagendando !barril em 2.0s
+2026-06-11 23:39:11,987 | WARNING | src.command_queue | Jogo fora de foco; reagendando !cura em 2.0s
+2026-06-11 23:39:13,998 | WARNING | src.command_queue | Jogo fora de foco; reagendando !formiga em 2.0s
+2026-06-11 23:39:16,010 | WARNING | src.command_queue | Jogo fora de foco; reagendando !formiga em 2.0s
+2026-06-11 23:39:18,019 | WARNING | src.command_queue | Jogo fora de foco; reagendando !cura em 2.0s
+2026-06-11 23:39:20,028 | WARNING | src.command_queue | Jogo fora de foco; reagendando !formiga em 2.0s
+2026-06-11 23:39:22,038 | WARNING | src.command_queue | Jogo fora de foco; reagendando !barril em 2.0s
+2026-06-11 23:39:22,284 | INFO    | src.command_queue | Enfileirado: !cura por @lua_fps (fila=10)
+2026-06-11 23:39:24,046 | WARNING | src.command_queue | Jogo fora de foco; reagendando !barril em 2.0s
+2026-06-11 23:39:25,159 | INFO    | src.command_queue | Enfileirado: !barco por @joao_zoeira (fila=11)
+2026-06-11 23:39:26,057 | WARNING | src.command_queue | Jogo fora de foco; reagendando !drop em 2.0s
+2026-06-11 23:39:26,675 | INFO    | src.cooldown | Descartado por cooldown global: !barco (user=@pedrocaos)
+2026-06-11 23:39:28,066 | WARNING | src.command_queue | Jogo fora de foco; reagendando !drop em 2.0s
+2026-06-11 23:39:29,565 | INFO    | src.tiktok_listener | Simulacao rodando (tick 240)
+2026-06-11 23:39:30,073 | WARNING | src.command_queue | Jogo fora de foco; reagendando !barril em 2.0s
+2026-06-11 23:39:32,083 | WARNING | src.command_queue | Jogo fora de foco; reagendando !cura em 2.0s
+2026-06-11 23:39:32,283 | INFO    | src.command_queue | Enfileirado: !formiga por @pedrocaos (fila=12)
+2026-06-11 23:39:34,091 | WARNING | src.command_queue | Jogo fora de foco; reagendando !formiga em 2.0s
+2026-06-11 23:39:34,894 | INFO    | src.command_queue | Enfileirado: !barril por @ana.gamer (fila=13)
+2026-06-11 23:39:36,100 | WARNING | src.command_queue | Jogo fora de foco; reagendando !formiga em 2.0s
+2026-06-11 23:39:38,108 | WARNING | src.command_queue | Jogo fora de foco; reagendando !cura em 2.0s
+2026-06-11 23:39:40,118 | WARNING | src.command_queue | Jogo fora de foco; reagendando !formiga em 2.0s
+2026-06-11 23:39:42,129 | WARNING | src.command_queue | Jogo fora de foco; reagendando !cura em 2.0s
+2026-06-11 23:39:43,210 | INFO    | src.cooldown | Descartado por cooldown de usuario: !barril (user=@ana.gamer)
+2026-06-11 23:39:44,137 | WARNING | src.command_queue | Jogo fora de foco; reagendando !barril em 2.0s
+2026-06-11 23:39:45,048 | INFO    | src.command_queue | Enfileirado: !barril por @pedrocaos (fila=14)
+2026-06-11 23:39:46,146 | WARNING | src.command_queue | Jogo fora de foco; reagendando !barco em 2.0s
+2026-06-11 23:39:48,156 | WARNING | src.command_queue | Jogo fora de foco; reagendando !barril em 2.0s
+2026-06-11 23:39:49,716 | INFO    | src.command_queue | Enfileirado: !cura por @pedrocaos (fila=15)
+2026-06-11 23:39:50,165 | WARNING | src.command_queue | Jogo fora de foco; reagendando !drop em 2.0s
+2026-06-11 23:39:52,175 | WARNING | src.command_queue | Jogo fora de foco; reagendando !drop em 2.0s
+2026-06-11 23:39:54,185 | WARNING | src.command_queue | Jogo fora de foco; reagendando !barril em 2.0s
+2026-06-11 23:39:56,196 | WARNING | src.command_queue | Jogo fora de foco; reagendando !formiga em 2.0s
+2026-06-11 23:39:56,380 | INFO    | src.command_queue | Enfileirado: !drop por @pedrocaos (fila=16)
+2026-06-11 23:39:58,205 | WARNING | src.command_queue | Jogo fora de foco; reagendando !cura em 2.0s
+2026-06-11 23:39:59,583 | INFO    | src.cooldown | Descartado por cooldown de usuario: !barril (user=@pedrocaos)
+2026-06-11 23:40:00,217 | WARNING | src.command_queue | Jogo fora de foco; reagendando !barril em 2.0s
+2026-06-11 23:40:02,225 | WARNING | src.command_queue | Jogo fora de foco; reagendando !formiga em 2.0s
+2026-06-11 23:40:04,233 | WARNING | src.command_queue | Jogo fora de foco; reagendando !formiga em 2.0s
+2026-06-11 23:40:05,700 | INFO    | src.cooldown | Descartado por cooldown global: !drop (user=@lua_fps)
+2026-06-11 23:40:06,242 | WARNING | src.command_queue | Jogo fora de foco; reagendando !cura em 2.0s
+2026-06-11 23:40:08,250 | WARNING | src.command_queue | Jogo fora de foco; reagendando !formiga em 2.0s
+2026-06-11 23:40:09,116 | INFO    | src.command_queue | Enfileirado: !formiga por @joao_zoeira (fila=17)
+2026-06-11 23:40:10,260 | WARNING | src.command_queue | Jogo fora de foco; reagendando !cura em 2.0s
+2026-06-11 23:40:12,269 | WARNING | src.command_queue | Jogo fora de foco; reagendando !barril em 2.0s
+2026-06-11 23:40:14,278 | WARNING | src.command_queue | Jogo fora de foco; reagendando !barril em 2.0s
+2026-06-11 23:40:16,289 | WARNING | src.command_queue | Jogo fora de foco; reagendando !barco em 2.0s
+2026-06-11 23:40:18,299 | WARNING | src.command_queue | Jogo fora de foco; reagendando !cura em 2.0s
+2026-06-11 23:40:20,309 | WARNING | src.command_queue | Jogo fora de foco; reagendando !barril em 2.0s
+2026-06-11 23:40:22,317 | WARNING | src.command_queue | Jogo fora de foco; reagendando !drop em 2.0s
+2026-06-11 23:40:24,325 | WARNING | src.command_queue | Jogo fora de foco; reagendando !drop em 2.0s
+2026-06-11 23:40:24,433 | INFO    | src.command_queue | Enfileirado: !drop por @ana.gamer (fila=18)
+2026-06-11 23:40:24,433 | INFO    | src.tiktok_listener | Simulacao rodando (tick 260)
+2026-06-11 23:40:26,333 | WARNING | src.command_queue | Jogo fora de foco; reagendando !barril em 2.0s
+2026-06-11 23:40:28,342 | WARNING | src.command_queue | Jogo fora de foco; reagendando !drop em 2.0s
+2026-06-11 23:40:28,620 | INFO    | src.command_queue | Enfileirado: !barril por @lua_fps (fila=19)
+2026-06-11 23:40:30,350 | WARNING | src.command_queue | Jogo fora de foco; reagendando !formiga em 2.0s
+2026-06-11 23:40:32,360 | WARNING | src.command_queue | Jogo fora de foco; reagendando !cura em 2.0s
+2026-06-11 23:40:34,372 | WARNING | src.command_queue | Jogo fora de foco; reagendando !barril em 2.0s
+2026-06-11 23:40:36,382 | WARNING | src.command_queue | Jogo fora de foco; reagendando !formiga em 2.0s
+2026-06-11 23:40:38,393 | WARNING | src.command_queue | Jogo fora de foco; reagendando !formiga em 2.0s
+2026-06-11 23:40:40,400 | WARNING | src.command_queue | Jogo fora de foco; reagendando !cura em 2.0s
+2026-06-11 23:40:42,407 | WARNING | src.command_queue | Jogo fora de foco; reagendando !formiga em 2.0s
+2026-06-11 23:40:44,417 | WARNING | src.command_queue | Jogo fora de foco; reagendando !formiga em 2.0s
+2026-06-11 23:40:46,427 | WARNING | src.command_queue | Jogo fora de foco; reagendando !cura em 2.0s
+2026-06-11 23:40:48,433 | WARNING | src.command_queue | Jogo fora de foco; reagendando !barril em 2.0s
+2026-06-11 23:40:50,442 | WARNING | src.command_queue | Jogo fora de foco; reagendando !barril em 2.0s
+2026-06-11 23:40:52,450 | WARNING | src.command_queue | Jogo fora de foco; reagendando !barco em 2.0s
+2026-06-11 23:40:54,459 | WARNING | src.command_queue | Jogo fora de foco; reagendando !cura em 2.0s
+2026-06-11 23:40:55,384 | INFO    | src.command_queue | Enfileirado: !barril por @lua_fps (fila=20)
+2026-06-11 23:40:56,467 | WARNING | src.command_queue | Jogo fora de foco; reagendando !barril em 2.0s
+2026-06-11 23:40:56,914 | INFO    | src.command_queue | Enfileirado: !formiga por @ana.gamer (fila=21)
+2026-06-11 23:40:58,444 | INFO    | src.cooldown | Descartado por cooldown global: !barril (user=@ana.gamer)
+2026-06-11 23:40:58,475 | WARNING | src.command_queue | Jogo fora de foco; reagendando !drop em 2.0s
+2026-06-11 23:41:00,486 | WARNING | src.command_queue | Jogo fora de foco; reagendando !drop em 2.0s
+2026-06-11 23:41:01,799 | INFO    | src.cooldown | Descartado por cooldown global: !barril (user=@ana.gamer)
+2026-06-11 23:41:02,493 | WARNING | src.command_queue | Jogo fora de foco; reagendando !drop em 2.0s
+2026-06-11 23:41:04,500 | WARNING | src.command_queue | Jogo fora de foco; reagendando !barril em 2.0s
+2026-06-11 23:41:06,510 | WARNING | src.command_queue | Jogo fora de foco; reagendando !barril em 2.0s
+2026-06-11 23:41:08,518 | WARNING | src.command_queue | Jogo fora de foco; reagendando !drop em 2.0s
+2026-06-11 23:41:09,044 | INFO    | src.command_queue | Enfileirado: !barril por @joao_zoeira (fila=22)
+2026-06-11 23:41:10,528 | WARNING | src.command_queue | Jogo fora de foco; reagendando !formiga em 2.0s
+2026-06-11 23:41:11,053 | INFO    | src.cooldown | Descartado por cooldown global: !barril (user=@lua_fps)
+2026-06-11 23:41:12,538 | WARNING | src.command_queue | Jogo fora de foco; reagendando !cura em 2.0s
+2026-06-11 23:41:13,668 | INFO    | src.tiktok_listener | Simulacao rodando (tick 280)
+2026-06-11 23:41:14,550 | WARNING | src.command_queue | Jogo fora de foco; reagendando !barril em 2.0s
+2026-06-11 23:41:16,559 | WARNING | src.command_queue | Jogo fora de foco; reagendando !formiga em 2.0s
+2026-06-11 23:41:18,567 | WARNING | src.command_queue | Jogo fora de foco; reagendando !formiga em 2.0s
+2026-06-11 23:41:20,576 | WARNING | src.command_queue | Jogo fora de foco; reagendando !cura em 2.0s
+2026-06-11 23:41:22,586 | WARNING | src.command_queue | Jogo fora de foco; reagendando !formiga em 2.0s
+2026-06-11 23:41:24,595 | WARNING | src.command_queue | Jogo fora de foco; reagendando !formiga em 2.0s
+2026-06-11 23:41:24,626 | INFO    | src.command_queue | Enfileirado: !formiga por @joao_zoeira (fila=23)
+2026-06-11 23:41:26,604 | WARNING | src.command_queue | Jogo fora de foco; reagendando !cura em 2.0s
+2026-06-11 23:41:28,458 | INFO    | src.command_queue | Enfileirado: !barco por @ana.gamer (fila=24)
+2026-06-11 23:41:28,613 | WARNING | src.command_queue | Jogo fora de foco; reagendando !barril em 2.0s
+2026-06-11 23:41:30,623 | WARNING | src.command_queue | Jogo fora de foco; reagendando !barril em 2.0s
+2026-06-11 23:41:32,370 | INFO    | src.cooldown | Descartado por cooldown global: !formiga (user=@ana.gamer)
+2026-06-11 23:41:32,634 | WARNING | src.command_queue | Jogo fora de foco; reagendando !barco em 2.0s
+2026-06-11 23:41:34,642 | WARNING | src.command_queue | Jogo fora de foco; reagendando !barril em 2.0s
+2026-06-11 23:41:36,652 | WARNING | src.command_queue | Jogo fora de foco; reagendando !cura em 2.0s
+2026-06-11 23:41:38,662 | WARNING | src.command_queue | Jogo fora de foco; reagendando !formiga em 2.0s
+2026-06-11 23:41:38,754 | INFO    | src.command_queue | Enfileirado: !barril por @ana.gamer (fila=25)
+2026-06-11 23:41:40,670 | WARNING | src.command_queue | Jogo fora de foco; reagendando !barril em 2.0s
+2026-06-11 23:41:42,618 | INFO    | src.cooldown | Descartado por cooldown global: !barril (user=@joao_zoeira)
+2026-06-11 23:41:42,680 | WARNING | src.command_queue | Jogo fora de foco; reagendando !drop em 2.0s
+2026-06-11 23:41:44,688 | WARNING | src.command_queue | Jogo fora de foco; reagendando !drop em 2.0s
+2026-06-11 23:41:45,168 | INFO    | src.command_queue | Enfileirado: !barco por @lua_fps (fila=26)
+2026-06-11 23:41:46,700 | WARNING | src.command_queue | Jogo fora de foco; reagendando !drop em 2.0s
+2026-06-11 23:41:48,707 | WARNING | src.command_queue | Jogo fora de foco; reagendando !barril em 2.0s
+2026-06-11 23:41:48,815 | INFO    | src.command_queue | Enfileirado: !drop por @ana.gamer (fila=27)
+2026-06-11 23:41:50,717 | WARNING | src.command_queue | Jogo fora de foco; reagendando !barril em 2.0s
+2026-06-11 23:41:52,725 | WARNING | src.command_queue | Jogo fora de foco; reagendando !barril em 2.0s
+2026-06-11 23:41:54,717 | INFO    | src.command_queue | Enfileirado: !cura por @joao_zoeira (fila=28)
+2026-06-11 23:41:54,733 | WARNING | src.command_queue | Jogo fora de foco; reagendando !drop em 2.0s
+2026-06-11 23:41:56,744 | WARNING | src.command_queue | Jogo fora de foco; reagendando !formiga em 2.0s
+2026-06-11 23:41:57,237 | INFO    | src.command_queue | Enfileirado: !barril por @joao_zoeira (fila=29)
+2026-06-11 23:41:58,751 | WARNING | src.command_queue | Jogo fora de foco; reagendando !cura em 2.0s
+2026-06-11 23:42:00,759 | WARNING | src.command_queue | Jogo fora de foco; reagendando !barril em 2.0s
+2026-06-11 23:42:02,768 | WARNING | src.command_queue | Jogo fora de foco; reagendando !formiga em 2.0s
+2026-06-11 23:42:04,778 | WARNING | src.command_queue | Jogo fora de foco; reagendando !formiga em 2.0s
+2026-06-11 23:42:05,752 | INFO    | src.cooldown | Descartado por cooldown de usuario: !barril (user=@joao_zoeira)
+2026-06-11 23:42:06,788 | WARNING | src.command_queue | Jogo fora de foco; reagendando !cura em 2.0s
+2026-06-11 23:42:07,621 | INFO    | src.cooldown | Descartado por cooldown global: !cura (user=@lua_fps)
+2026-06-11 23:42:08,797 | WARNING | src.command_queue | Jogo fora de foco; reagendando !formiga em 2.0s
+2026-06-11 23:42:10,805 | WARNING | src.command_queue | Jogo fora de foco; reagendando !formiga em 2.0s
+2026-06-11 23:42:12,383 | INFO    | src.tiktok_listener | Simulacao rodando (tick 300)
+2026-06-11 23:42:12,815 | WARNING | src.command_queue | Jogo fora de foco; reagendando !formiga em 2.0s
+2026-06-11 23:42:14,822 | WARNING | src.command_queue | Jogo fora de foco; reagendando !barco em 2.0s
+2026-06-11 23:42:16,060 | INFO    | src.command_queue | Enfileirado: !barril por @lua_fps (fila=30)
+2026-06-11 23:42:16,834 | WARNING | src.command_queue | Jogo fora de foco; reagendando !cura em 2.0s
+2026-06-11 23:42:18,843 | WARNING | src.command_queue | Jogo fora de foco; reagendando !barril em 2.0s
+2026-06-11 23:42:20,851 | WARNING | src.command_queue | Jogo fora de foco; reagendando !barril em 2.0s
+2026-06-11 23:42:22,860 | WARNING | src.command_queue | Jogo fora de foco; reagendando !barco em 2.0s
+2026-06-11 23:42:24,868 | WARNING | src.command_queue | Jogo fora de foco; reagendando !barril em 2.0s
+2026-06-11 23:42:26,876 | WARNING | src.command_queue | Jogo fora de foco; reagendando !cura em 2.0s
+2026-06-11 23:42:28,885 | WARNING | src.command_queue | Jogo fora de foco; reagendando !barril em 2.0s
+2026-06-11 23:42:30,896 | WARNING | src.command_queue | Jogo fora de foco; reagendando !formiga em 2.0s
+2026-06-11 23:42:32,657 | INFO    | src.command_queue | Enfileirado: !formiga por @pedrocaos (fila=31)
+2026-06-11 23:42:32,904 | WARNING | src.command_queue | Jogo fora de foco; reagendando !barril em 2.0s
+2026-06-11 23:42:34,911 | WARNING | src.command_queue | Jogo fora de foco; reagendando !drop em 2.0s
+2026-06-11 23:42:36,918 | WARNING | src.command_queue | Jogo fora de foco; reagendando !barco em 2.0s
+2026-06-11 23:42:38,927 | WARNING | src.command_queue | Jogo fora de foco; reagendando !drop em 2.0s
+2026-06-11 23:42:38,958 | INFO    | src.command_queue | Enfileirado: !barril por @ana.gamer (fila=32)
+2026-06-11 23:42:40,936 | WARNING | src.command_queue | Jogo fora de foco; reagendando !drop em 2.0s
+2026-06-11 23:42:42,727 | INFO    | src.command_queue | Enfileirado: !barco por @ana.gamer (fila=33)
+2026-06-11 23:42:42,944 | WARNING | src.command_queue | Jogo fora de foco; reagendando !drop em 2.0s
+2026-06-11 23:42:44,953 | WARNING | src.command_queue | Jogo fora de foco; reagendando !barril em 2.0s
+2026-06-11 23:42:46,281 | INFO    | src.cooldown | Descartado por cooldown global: !barril (user=@joao_zoeira)
+2026-06-11 23:42:46,961 | WARNING | src.command_queue | Jogo fora de foco; reagendando !barril em 2.0s
+2026-06-11 23:42:48,970 | WARNING | src.command_queue | Jogo fora de foco; reagendando !cura em 2.0s
+2026-06-11 23:42:49,956 | INFO    | src.command_queue | Enfileirado: !formiga por @joao_zoeira (fila=34)
+2026-06-11 23:42:50,976 | WARNING | src.command_queue | Jogo fora de foco; reagendando !barril em 2.0s
+2026-06-11 23:42:51,875 | INFO    | src.cooldown | Descartado por cooldown global: !barco (user=@lua_fps)
+2026-06-11 23:42:52,991 | WARNING | src.command_queue | Jogo fora de foco; reagendando !drop em 2.0s
+2026-06-11 23:42:53,609 | INFO    | src.command_queue | Enfileirado: !barril por @lua_fps (fila=35)
+2026-06-11 23:42:55,004 | WARNING | src.command_queue | Jogo fora de foco; reagendando !barril em 2.0s
+2026-06-11 23:42:57,015 | WARNING | src.command_queue | Jogo fora de foco; reagendando !formiga em 2.0s
+2026-06-11 23:42:58,205 | INFO    | src.command_queue | Enfileirado: !cura por @pedrocaos (fila=36)
+2026-06-11 23:42:59,024 | WARNING | src.command_queue | Jogo fora de foco; reagendando !cura em 2.0s
+2026-06-11 23:43:01,031 | WARNING | src.command_queue | Jogo fora de foco; reagendando !barril em 2.0s
+2026-06-11 23:43:03,040 | WARNING | src.command_queue | Jogo fora de foco; reagendando !formiga em 2.0s
+2026-06-11 23:43:05,049 | WARNING | src.command_queue | Jogo fora de foco; reagendando !formiga em 2.0s
+2026-06-11 23:43:06,195 | INFO    | src.tiktok_listener | Simulacao rodando (tick 320)
+2026-06-11 23:43:07,060 | WARNING | src.command_queue | Jogo fora de foco; reagendando !cura em 2.0s
+2026-06-11 23:43:09,071 | WARNING | src.command_queue | Jogo fora de foco; reagendando !formiga em 2.0s
+2026-06-11 23:43:09,380 | INFO    | src.command_queue | Enfileirado: !barril por @pedrocaos (fila=37)
+2026-06-11 23:43:11,082 | WARNING | src.command_queue | Jogo fora de foco; reagendando !formiga em 2.0s
+2026-06-11 23:43:12,225 | INFO    | src.cooldown | Descartado por cooldown global: !cura (user=@ana.gamer)
+2026-06-11 23:43:13,091 | WARNING | src.command_queue | Jogo fora de foco; reagendando !formiga em 2.0s
+2026-06-11 23:43:14,173 | INFO    | src.cooldown | Descartado por cooldown global: !barril (user=@pedrocaos)
+2026-06-11 23:43:15,103 | WARNING | src.command_queue | Jogo fora de foco; reagendando !barril em 2.0s
+2026-06-11 23:43:17,110 | WARNING | src.command_queue | Jogo fora de foco; reagendando !barco em 2.0s
+2026-06-11 23:43:17,959 | INFO    | src.command_queue | Enfileirado: !drop por @pedrocaos (fila=38)
+2026-06-11 23:43:19,119 | WARNING | src.command_queue | Jogo fora de foco; reagendando !cura em 2.0s
+2026-06-11 23:43:21,129 | WARNING | src.command_queue | Jogo fora de foco; reagendando !barril em 2.0s
+2026-06-11 23:43:23,140 | WARNING | src.command_queue | Jogo fora de foco; reagendando !barril em 2.0s
+2026-06-11 23:43:25,152 | WARNING | src.command_queue | Jogo fora de foco; reagendando !barco em 2.0s
+2026-06-11 23:43:26,773 | INFO    | src.cooldown | Descartado por cooldown de usuario: !barril (user=@pedrocaos)
+2026-06-11 23:43:27,161 | WARNING | src.command_queue | Jogo fora de foco; reagendando !barril em 2.0s
+2026-06-11 23:43:29,170 | WARNING | src.command_queue | Jogo fora de foco; reagendando !cura em 2.0s
+2026-06-11 23:43:29,402 | INFO    | src.command_queue | Enfileirado: !formiga por @lua_fps (fila=39)
+2026-06-11 23:43:31,183 | WARNING | src.command_queue | Jogo fora de foco; reagendando !barril em 2.0s
+2026-06-11 23:43:33,194 | WARNING | src.command_queue | Jogo fora de foco; reagendando !formiga em 2.0s
+2026-06-11 23:43:35,206 | WARNING | src.command_queue | Jogo fora de foco; reagendando !formiga em 2.0s
+2026-06-11 23:43:36,769 | INFO    | src.cooldown | Descartado por cooldown global: !formiga (user=@pedrocaos)
+2026-06-11 23:43:37,219 | WARNING | src.command_queue | Jogo fora de foco; reagendando !barril em 2.0s
+2026-06-11 23:43:39,228 | WARNING | src.command_queue | Jogo fora de foco; reagendando !drop em 2.0s
+2026-06-11 23:43:41,238 | WARNING | src.command_queue | Jogo fora de foco; reagendando !barco em 2.0s
+2026-06-11 23:43:41,486 | INFO    | src.command_queue | Enfileirado: !cura por @ana.gamer (fila=40)
+2026-06-11 23:43:43,401 | INFO    | src.command_queue | Executado: !barril por @ana.gamer
+2026-06-11 23:43:45,060 | INFO    | src.command_queue | Executado: !drop por @ana.gamer
+2026-06-11 23:43:45,559 | INFO    | src.command_queue | Enfileirado: !drop por @lua_fps (fila=40)
+2026-06-11 23:43:46,718 | INFO    | src.command_queue | Executado: !barco por @ana.gamer
+2026-06-11 23:43:48,377 | INFO    | src.command_queue | Executado: !drop por @ana.gamer
+2026-06-11 23:43:50,035 | INFO    | src.command_queue | Executado: !drop por @ana.gamer
+2026-06-11 23:43:51,694 | INFO    | src.command_queue | Executado: !barril por @pedrocaos
+2026-06-11 23:43:52,937 | INFO    | src.cooldown | Descartado por cooldown global: !drop (user=@ana.gamer)
+2026-06-11 23:43:53,352 | INFO    | src.command_queue | Executado: !barril por @lua_fps
+2026-06-11 23:43:55,011 | INFO    | src.command_queue | Executado: !formiga por @joao_zoeira
+2026-06-11 23:43:56,670 | INFO    | src.command_queue | Executado: !cura por @joao_zoeira
+2026-06-11 23:43:58,328 | INFO    | src.command_queue | Executado: !barril por @joao_zoeira
+2026-06-11 23:43:59,987 | INFO    | src.command_queue | Executado: !barril por @lua_fps
+2026-06-11 23:44:01,645 | INFO    | src.command_queue | Executado: !drop por @pedrocaos
+2026-06-11 23:44:03,303 | INFO    | src.command_queue | Executado: !barril por @joao_zoeira
+2026-06-11 23:44:04,531 | INFO    | src.tiktok_listener | Simulacao rodando (tick 340)
+2026-06-11 23:44:04,962 | INFO    | src.command_queue | Executado: !cura por @pedrocaos
+2026-06-11 23:44:06,620 | INFO    | src.command_queue | Executado: !formiga por @pedrocaos
+2026-06-11 23:44:08,279 | INFO    | src.command_queue | Executado: !cura por @pedrocaos
+2026-06-11 23:44:09,937 | INFO    | src.command_queue | Executado: !barril por @ana.gamer
+2026-06-11 23:44:11,596 | INFO    | src.command_queue | Executado: !formiga por @pedrocaos
+2026-06-11 23:44:13,255 | INFO    | src.command_queue | Executado: !formiga por @ana.gamer
+2026-06-11 23:44:14,913 | INFO    | src.command_queue | Executado: !cura por @joao_zoeira
+2026-06-11 23:44:16,571 | INFO    | src.command_queue | Executado: !barril por @pedrocaos
+2026-06-11 23:44:16,621 | INFO    | src.command_queue | Enfileirado: !barril por @lua_fps (fila=22)
+2026-06-11 23:44:18,230 | INFO    | src.command_queue | Executado: !formiga por @joao_zoeira
+2026-06-11 23:44:19,888 | INFO    | src.command_queue | Executado: !formiga por @joao_zoeira
+2026-06-11 23:44:21,547 | INFO    | src.command_queue | Executado: !formiga por @ana.gamer
+2026-06-11 23:44:23,205 | INFO    | src.command_queue | Executado: !barril por @lua_fps
+2026-06-11 23:44:24,863 | INFO    | src.command_queue | Executado: !drop por @pedrocaos
+2026-06-11 23:44:24,990 | INFO    | src.command_queue | Enfileirado: !drop por @pedrocaos (fila=18)
+2026-06-11 23:44:26,522 | INFO    | src.command_queue | Executado: !barco por @ana.gamer
+2026-06-11 23:44:26,928 | INFO    | src.command_queue | Enfileirado: !barril por @pedrocaos (fila=18)
+2026-06-11 23:44:28,180 | INFO    | src.command_queue | Executado: !cura por @lua_fps
+2026-06-11 23:44:29,160 | INFO    | src.cooldown | Descartado por cooldown global: !drop (user=@lua_fps)
+2026-06-11 23:44:29,839 | INFO    | src.command_queue | Executado: !barril por @pedrocaos
+2026-06-11 23:44:31,497 | INFO    | src.command_queue | Executado: !barril por @joao_zoeira
+2026-06-11 23:44:33,156 | INFO    | src.command_queue | Executado: !barco por @joao_zoeira
+2026-06-11 23:44:34,815 | INFO    | src.command_queue | Executado: !barril por @lua_fps
+2026-06-11 23:44:36,473 | INFO    | src.command_queue | Executado: !formiga por @lua_fps
+2026-06-11 23:44:38,131 | INFO    | src.command_queue | Executado: !cura por @pedrocaos
+2026-06-11 23:44:39,791 | INFO    | src.command_queue | Executado: !barril por @ana.gamer
+2026-06-11 23:44:41,449 | INFO    | src.command_queue | Executado: !formiga por @pedrocaos
+2026-06-11 23:44:43,107 | INFO    | src.command_queue | Executado: !formiga por @ana.gamer
+2026-06-11 23:44:44,459 | INFO    | src.command_queue | Enfileirado: !barril por @ana.gamer (fila=9)
+2026-06-11 23:44:44,766 | INFO    | src.command_queue | Executado: !barril por @pedrocaos
+2026-06-11 23:44:46,424 | INFO    | src.command_queue | Executado: !drop por @joao_zoeira
+2026-06-11 23:44:48,083 | INFO    | src.command_queue | Executado: !cura por @ana.gamer
+2026-06-11 23:44:49,742 | INFO    | src.command_queue | Executado: !barco por @lua_fps
+2026-06-11 23:44:51,400 | INFO    | src.command_queue | Executado: !drop por @lua_fps
+2026-06-11 23:44:53,058 | INFO    | src.command_queue | Executado: !barril por @lua_fps
+2026-06-11 23:44:53,696 | INFO    | src.command_queue | Enfileirado: !barril por @pedrocaos (fila=4)
+2026-06-11 23:44:54,717 | INFO    | src.command_queue | Executado: !drop por @pedrocaos
+2026-06-11 23:44:55,308 | INFO    | src.cooldown | Descartado por cooldown global: !barril (user=@ana.gamer)
+2026-06-11 23:44:55,309 | INFO    | src.tiktok_listener | Simulacao rodando (tick 360)
+2026-06-11 23:44:56,375 | INFO    | src.command_queue | Executado: !barril por @pedrocaos
+2026-06-11 23:44:57,540 | INFO    | src.command_queue | Enfileirado: !drop por @pedrocaos (fila=3)
+2026-06-11 23:44:58,034 | INFO    | src.command_queue | Executado: !barril por @ana.gamer
+2026-06-11 23:44:59,692 | INFO    | src.command_queue | Executado: !barril por @pedrocaos
+2026-06-11 23:45:01,292 | INFO    | src.cooldown | Descartado por cooldown global: !barril (user=@ana.gamer)
+2026-06-11 23:45:01,351 | INFO    | src.command_queue | Executado: !drop por @pedrocaos
+2026-06-11 23:45:03,865 | INFO    | src.cooldown | Descartado por cooldown global: !drop (user=@lua_fps)
+2026-06-11 23:45:16,187 | INFO    | src.command_queue | Enfileirado: !formiga por @pedrocaos (fila=1)
+2026-06-11 23:45:16,341 | INFO    | src.command_queue | Executado: !formiga por @pedrocaos
+2026-06-11 23:45:19,163 | INFO    | src.command_queue | Enfileirado: !barril por @pedrocaos (fila=1)
+2026-06-11 23:45:19,316 | INFO    | src.command_queue | Executado: !barril por @pedrocaos
+2026-06-11 23:45:22,139 | INFO    | src.cooldown | Descartado por cooldown global: !barril (user=@pedrocaos)
+2026-06-11 23:45:29,238 | INFO    | src.cooldown | Descartado por cooldown global: !formiga (user=@pedrocaos)
+2026-06-11 23:45:33,501 | INFO    | src.command_queue | Enfileirado: !formiga por @lua_fps (fila=1)
+2026-06-11 23:45:33,653 | INFO    | src.command_queue | Executado: !formiga por @lua_fps
+2026-06-11 23:45:40,553 | INFO    | src.command_queue | Enfileirado: !cura por @lua_fps (fila=1)
+2026-06-11 23:45:40,707 | INFO    | src.command_queue | Executado: !cura por @lua_fps
+2026-06-11 23:45:46,149 | INFO    | src.command_queue | Enfileirado: !barril por @joao_zoeira (fila=1)
+2026-06-11 23:45:46,301 | INFO    | src.command_queue | Executado: !barril por @joao_zoeira
+2026-06-11 23:45:48,923 | INFO    | src.cooldown | Descartado por cooldown global: !barril (user=@ana.gamer)
+2026-06-11 23:45:48,923 | INFO    | src.tiktok_listener | Simulacao rodando (tick 380)
+2026-06-11 23:45:53,557 | INFO    | src.cooldown | Descartado por cooldown global: !barril (user=@joao_zoeira)
+2026-06-11 23:46:00,827 | INFO    | src.command_queue | Enfileirado: !barril por @lua_fps (fila=1)
+2026-06-11 23:46:00,980 | INFO    | src.command_queue | Executado: !barril por @lua_fps
+2026-06-11 23:46:03,664 | INFO    | src.command_queue | Enfileirado: !drop por @lua_fps (fila=1)
+2026-06-11 23:46:03,816 | INFO    | src.command_queue | Executado: !drop por @lua_fps
+2026-06-11 23:46:06,578 | INFO    | src.command_queue | Enfileirado: !barco por @ana.gamer (fila=1)
+2026-06-11 23:46:06,730 | INFO    | src.command_queue | Executado: !barco por @ana.gamer
+2026-06-11 23:46:11,026 | INFO    | src.cooldown | Descartado por cooldown de usuario: !barril (user=@joao_zoeira)
+2026-06-11 23:46:25,868 | INFO    | src.cooldown | Descartado por cooldown de usuario: !barco (user=@ana.gamer)
+2026-06-11 23:46:27,650 | INFO    | src.command_queue | Enfileirado: !barril por @joao_zoeira (fila=1)
+2026-06-11 23:46:27,803 | INFO    | src.command_queue | Executado: !barril por @joao_zoeira
+2026-06-11 23:46:33,835 | INFO    | src.cooldown | Descartado por cooldown global: !barril (user=@joao_zoeira)
+2026-06-11 23:46:39,368 | INFO    | src.command_queue | Enfileirado: !drop por @ana.gamer (fila=1)
+2026-06-11 23:46:39,522 | INFO    | src.command_queue | Executado: !drop por @ana.gamer
+2026-06-11 23:46:41,709 | INFO    | src.command_queue | Enfileirado: !formiga por @ana.gamer (fila=1)
+2026-06-11 23:46:41,862 | INFO    | src.command_queue | Executado: !formiga por @ana.gamer
+2026-06-11 23:46:45,491 | INFO    | src.tiktok_listener | Simulacao rodando (tick 400)
+2026-06-11 23:46:58,369 | INFO    | src.command_queue | Enfileirado: !formiga por @lua_fps (fila=1)
+2026-06-11 23:46:58,522 | INFO    | src.command_queue | Executado: !formiga por @lua_fps
+2026-06-11 23:47:00,291 | INFO    | src.command_queue | Enfileirado: !barco por @pedrocaos (fila=1)
+2026-06-11 23:47:00,447 | INFO    | src.command_queue | Executado: !barco por @pedrocaos
+2026-06-11 23:47:03,856 | INFO    | src.command_queue | Enfileirado: !barril por @joao_zoeira (fila=1)
+2026-06-11 23:47:04,009 | INFO    | src.command_queue | Executado: !barril por @joao_zoeira
+2026-06-11 23:47:11,978 | INFO    | src.cooldown | Descartado por cooldown de usuario: !barril (user=@joao_zoeira)
+2026-06-11 23:47:14,350 | INFO    | src.command_queue | Enfileirado: !barco por @joao_zoeira (fila=1)
+2026-06-11 23:47:14,503 | INFO    | src.command_queue | Executado: !barco por @joao_zoeira
+2026-06-11 23:47:28,331 | INFO    | src.command_queue | Enfileirado: !barco por @lua_fps (fila=1)
+2026-06-11 23:47:28,483 | INFO    | src.command_queue | Executado: !barco por @lua_fps
+2026-06-11 23:47:38,731 | INFO    | src.command_queue | Enfileirado: !formiga por @ana.gamer (fila=1)
+2026-06-11 23:47:38,884 | INFO    | src.command_queue | Executado: !formiga por @ana.gamer
+2026-06-11 23:47:42,389 | INFO    | src.command_queue | Enfileirado: !barril por @ana.gamer (fila=1)
+2026-06-11 23:47:42,390 | INFO    | src.tiktok_listener | Simulacao rodando (tick 420)
+2026-06-11 23:47:42,542 | INFO    | src.command_queue | Executado: !barril por @ana.gamer
+2026-06-11 23:47:59,005 | INFO    | src.command_queue | Enfileirado: !barril por @joao_zoeira (fila=1)
+2026-06-11 23:47:59,158 | INFO    | src.command_queue | Executado: !barril por @joao_zoeira
+2026-06-11 23:48:21,186 | INFO    | src.command_queue | Enfileirado: !formiga por @pedrocaos (fila=1)
+2026-06-11 23:48:21,338 | INFO    | src.command_queue | Executado: !formiga por @pedrocaos
+2026-06-11 23:48:23,387 | INFO    | src.command_queue | Enfileirado: !barril por @lua_fps (fila=1)
+2026-06-11 23:48:23,539 | INFO    | src.command_queue | Executado: !barril por @lua_fps
+2026-06-11 23:48:29,928 | INFO    | src.command_queue | Enfileirado: !cura por @lua_fps (fila=1)
+2026-06-11 23:48:30,080 | INFO    | src.command_queue | Executado: !cura por @lua_fps
+2026-06-11 23:48:32,377 | INFO    | src.cooldown | Descartado por cooldown global: !cura (user=@lua_fps)
+2026-06-11 23:48:37,182 | INFO    | src.tiktok_listener | Simulacao rodando (tick 440)
+2026-06-11 23:48:40,637 | INFO    | src.cooldown | Descartado por cooldown de usuario: !formiga (user=@pedrocaos)
+2026-06-11 23:48:42,970 | INFO    | src.command_queue | Enfileirado: !drop por @ana.gamer (fila=1)
+2026-06-11 23:48:42,971 | WARNING | src.command_queue | Jogo fora de foco; reagendando !drop em 2.0s
+2026-06-11 23:48:43,930 | INFO    | src.panel_server | Overlay desconectado (1 ativos)
+2026-06-11 23:48:43,931 | INFO    | src.panel_server | Overlay desconectado (0 ativos)
+2026-06-11 23:48:43,932 | INFO    | __main__ | Encerrado pelo usuario (Ctrl+C)

@@ -1,0 +1,1318 @@
+2026-06-14 01:36:43,572 | INFO    | __main__ | Comandos: !barril, !cura, !drop
+2026-06-14 01:36:43,573 | INFO    | __main__ | Presentes executaveis: capybara, rose, tiny diny
+2026-06-14 01:36:43,573 | INFO    | __main__ | Acao de meta de likes: configurada (Python)
+2026-06-14 01:36:43,573 | INFO    | __main__ | Acao de seguir: configurada (Python)
+2026-06-14 01:36:43,573 | INFO    | src.key_executor | Backend de teclado: pydirectinput
+2026-06-14 01:36:43,574 | INFO    | src.file_bridge | Ponte por arquivo: C:\Program Files (x86)\Steam\steamapps\common\GarrysMod\garrysmod\data\live_caos\fila.txt
+2026-06-14 01:36:43,649 | INFO    | websockets.server | server listening on [::1]:8765
+2026-06-14 01:36:43,649 | INFO    | websockets.server | server listening on 127.0.0.1:8765
+2026-06-14 01:36:43,650 | INFO    | src.panel_server | Painel WebSocket ouvindo em ws://localhost:8765
+2026-06-14 01:36:43,650 | INFO    | src.command_queue | Worker da fila iniciado
+2026-06-14 01:36:43,650 | INFO    | src.tiktok_listener | MODO SIMULACAO ativo — gerando eventos falsos
+2026-06-14 01:36:43,659 | INFO    | websockets.server | connection open
+2026-06-14 01:36:43,660 | INFO    | src.panel_server | Overlay conectado (1 ativos)
+2026-06-14 01:36:45,315 | INFO    | src.command_queue | Enfileirado: !drop por @ana.gamer (fila=1)
+2026-06-14 01:36:45,319 | INFO    | src.tiktok_listener | Simulacao rodando (tick 0)
+2026-06-14 01:36:45,471 | INFO    | src.command_queue | Executado: !drop por @ana.gamer
+2026-06-14 01:36:45,704 | INFO    | websockets.server | connection open
+2026-06-14 01:36:45,704 | INFO    | src.panel_server | Overlay conectado (2 ativos)
+2026-06-14 01:36:58,644 | INFO    | src.tiktok_listener | Novo seguidor @ana.gamer -> fogo
+2026-06-14 01:36:58,644 | INFO    | src.command_queue | Enfileirado: __follow__ por @ana.gamer (fila=1)
+2026-06-14 01:36:58,647 | INFO    | src.command_queue | Executado: __follow__ por @ana.gamer
+2026-06-14 01:37:02,209 | INFO    | src.command_queue | Enfileirado: !barril por @lua_fps (fila=1)
+2026-06-14 01:37:02,362 | INFO    | src.command_queue | Executado: !barril por @lua_fps
+2026-06-14 01:37:04,007 | INFO    | src.command_queue | Enfileirado: !drop por @joao_zoeira (fila=1)
+2026-06-14 01:37:04,160 | INFO    | src.command_queue | Executado: !drop por @joao_zoeira
+2026-06-14 01:37:12,672 | INFO    | src.tiktok_listener | Novo seguidor @pedrocaos -> fogo
+2026-06-14 01:37:12,672 | INFO    | src.command_queue | Enfileirado: __follow__ por @pedrocaos (fila=1)
+2026-06-14 01:37:12,678 | INFO    | src.command_queue | Executado: __follow__ por @pedrocaos
+2026-06-14 01:37:26,682 | INFO    | src.command_queue | Enfileirado: !barril por @ana.gamer (fila=1)
+2026-06-14 01:37:26,683 | WARNING | src.command_queue | Jogo fora de foco; descartando !barril
+2026-06-14 01:37:30,093 | INFO    | src.command_queue | Enfileirado: !drop por @lua_fps (fila=1)
+2026-06-14 01:37:30,094 | WARNING | src.command_queue | Jogo fora de foco; descartando !drop
+2026-06-14 01:37:34,775 | INFO    | src.command_queue | Enfileirado: !barril por @pedrocaos (fila=1)
+2026-06-14 01:37:34,775 | WARNING | src.command_queue | Jogo fora de foco; descartando !barril
+2026-06-14 01:37:36,706 | INFO    | src.command_queue | Enfileirado: !cura por @joao_zoeira (fila=1)
+2026-06-14 01:37:36,707 | WARNING | src.command_queue | Jogo fora de foco; descartando !cura
+2026-06-14 01:37:40,460 | INFO    | src.tiktok_listener | Meta de likes batida por @joao_zoeira -> zumbi
+2026-06-14 01:37:40,460 | INFO    | src.command_queue | Enfileirado: __likes__ por @joao_zoeira (fila=1)
+2026-06-14 01:37:40,460 | INFO    | src.tiktok_listener | Simulacao rodando (tick 20)
+2026-06-14 01:37:40,479 | INFO    | src.command_queue | Executado: __likes__ por @joao_zoeira
+2026-06-14 01:37:50,508 | INFO    | src.tiktok_listener | Novo seguidor @pedrocaos -> fogo
+2026-06-14 01:37:50,508 | INFO    | src.command_queue | Enfileirado: __follow__ por @pedrocaos (fila=1)
+2026-06-14 01:37:50,517 | INFO    | src.command_queue | Executado: __follow__ por @pedrocaos
+2026-06-14 01:37:54,481 | INFO    | src.cooldown | Descartado por cooldown global: !cura (user=@lua_fps)
+2026-06-14 01:37:58,814 | INFO    | src.command_queue | Enfileirado: !cura por @ana.gamer (fila=1)
+2026-06-14 01:37:58,966 | INFO    | src.command_queue | Executado: !cura por @ana.gamer
+2026-06-14 01:38:02,798 | INFO    | src.command_queue | Enfileirado: !barril por @ana.gamer (fila=1)
+2026-06-14 01:38:02,950 | INFO    | src.command_queue | Executado: !barril por @ana.gamer
+2026-06-14 01:38:05,743 | INFO    | src.tiktok_listener | Meta de likes batida por @ana.gamer -> zumbi
+2026-06-14 01:38:05,743 | INFO    | src.command_queue | Enfileirado: __likes__ por @ana.gamer (fila=1)
+2026-06-14 01:38:05,747 | INFO    | src.command_queue | Executado: __likes__ por @ana.gamer
+2026-06-14 01:38:14,438 | INFO    | src.command_queue | Enfileirado: !barril por @lua_fps (fila=1)
+2026-06-14 01:38:14,590 | INFO    | src.command_queue | Executado: !barril por @lua_fps
+2026-06-14 01:38:27,229 | INFO    | src.command_queue | Enfileirado: !drop por @ana.gamer (fila=1)
+2026-06-14 01:38:27,381 | INFO    | src.command_queue | Executado: !drop por @ana.gamer
+2026-06-14 01:38:29,259 | INFO    | src.command_queue | Enfileirado: !barril por @joao_zoeira (fila=1)
+2026-06-14 01:38:29,412 | INFO    | src.command_queue | Executado: !barril por @joao_zoeira
+2026-06-14 01:38:35,707 | INFO    | src.tiktok_listener | Meta de likes batida por @lua_fps -> zumbi
+2026-06-14 01:38:35,708 | INFO    | src.command_queue | Enfileirado: __likes__ por @lua_fps (fila=1)
+2026-06-14 01:38:35,713 | INFO    | src.command_queue | Executado: __likes__ por @lua_fps
+2026-06-14 01:38:39,722 | INFO    | src.tiktok_listener | Simulacao rodando (tick 40)
+2026-06-14 01:38:43,426 | INFO    | src.tiktok_listener | Novo seguidor @ana.gamer -> fogo
+2026-06-14 01:38:43,427 | INFO    | src.command_queue | Enfileirado: __follow__ por @ana.gamer (fila=1)
+2026-06-14 01:38:43,436 | INFO    | src.command_queue | Executado: __follow__ por @ana.gamer
+2026-06-14 01:38:49,641 | INFO    | src.tiktok_listener | Novo seguidor @lua_fps -> fogo
+2026-06-14 01:38:49,642 | INFO    | src.command_queue | Enfileirado: __follow__ por @lua_fps (fila=1)
+2026-06-14 01:38:49,645 | INFO    | src.command_queue | Executado: __follow__ por @lua_fps
+2026-06-14 01:38:55,469 | INFO    | src.tiktok_listener | Novo seguidor @pedrocaos -> fogo
+2026-06-14 01:38:55,470 | INFO    | src.command_queue | Enfileirado: __follow__ por @pedrocaos (fila=1)
+2026-06-14 01:38:55,488 | INFO    | src.command_queue | Executado: __follow__ por @pedrocaos
+2026-06-14 01:39:03,962 | INFO    | src.panel_server | Overlay desconectado (1 ativos)
+2026-06-14 01:39:03,990 | INFO    | src.panel_server | Overlay desconectado (0 ativos)
+2026-06-14 01:39:04,588 | INFO    | websockets.server | connection open
+2026-06-14 01:39:04,589 | INFO    | src.panel_server | Overlay conectado (1 ativos)
+2026-06-14 01:39:04,732 | INFO    | websockets.server | connection open
+2026-06-14 01:39:04,732 | INFO    | src.panel_server | Overlay conectado (2 ativos)
+2026-06-14 01:39:04,840 | INFO    | src.tiktok_listener | Meta de likes batida por @joao_zoeira -> zumbi
+2026-06-14 01:39:04,840 | INFO    | src.command_queue | Enfileirado: __likes__ por @joao_zoeira (fila=1)
+2026-06-14 01:39:04,844 | INFO    | src.command_queue | Executado: __likes__ por @joao_zoeira
+2026-06-14 01:39:09,800 | INFO    | src.command_queue | Enfileirado: !barril por @pedrocaos (fila=1)
+2026-06-14 01:39:09,801 | WARNING | src.command_queue | Jogo fora de foco; descartando !barril
+2026-06-14 01:39:15,100 | INFO    | src.command_queue | Enfileirado: !cura por @joao_zoeira (fila=1)
+2026-06-14 01:39:15,101 | WARNING | src.command_queue | Jogo fora de foco; descartando !cura
+2026-06-14 01:39:18,652 | INFO    | src.command_queue | Enfileirado: !barril por @lua_fps (fila=1)
+2026-06-14 01:39:18,653 | WARNING | src.command_queue | Jogo fora de foco; descartando !barril
+2026-06-14 01:39:28,312 | INFO    | src.command_queue | Enfileirado: !drop por @lua_fps (fila=1)
+2026-06-14 01:39:28,313 | WARNING | src.command_queue | Jogo fora de foco; descartando !drop
+2026-06-14 01:39:31,788 | INFO    | src.tiktok_listener | Novo seguidor @pedrocaos -> fogo
+2026-06-14 01:39:31,788 | INFO    | src.command_queue | Enfileirado: __follow__ por @pedrocaos (fila=1)
+2026-06-14 01:39:31,796 | INFO    | src.command_queue | Executado: __follow__ por @pedrocaos
+2026-06-14 01:39:34,090 | INFO    | src.command_queue | Enfileirado: !barril por @joao_zoeira (fila=1)
+2026-06-14 01:39:34,091 | WARNING | src.command_queue | Jogo fora de foco; descartando !barril
+2026-06-14 01:39:41,025 | INFO    | src.cooldown | Descartado por cooldown de usuario: !drop (user=@lua_fps)
+2026-06-14 01:39:41,026 | INFO    | src.tiktok_listener | Simulacao rodando (tick 60)
+2026-06-14 01:39:46,898 | INFO    | src.command_queue | Enfileirado: !barril por @lua_fps (fila=1)
+2026-06-14 01:39:46,899 | WARNING | src.command_queue | Jogo fora de foco; descartando !barril
+2026-06-14 01:39:51,949 | INFO    | src.tiktok_listener | Novo seguidor @ana.gamer -> fogo
+2026-06-14 01:39:51,950 | INFO    | src.command_queue | Enfileirado: __follow__ por @ana.gamer (fila=1)
+2026-06-14 01:39:51,957 | INFO    | src.command_queue | Executado: __follow__ por @ana.gamer
+2026-06-14 01:40:14,506 | INFO    | src.command_queue | Enfileirado: !barril por @pedrocaos (fila=1)
+2026-06-14 01:40:14,658 | INFO    | src.command_queue | Executado: !barril por @pedrocaos
+2026-06-14 01:40:20,551 | INFO    | src.tiktok_listener | Meta de likes batida por @lua_fps -> zumbi
+2026-06-14 01:40:20,551 | INFO    | src.command_queue | Enfileirado: __likes__ por @lua_fps (fila=1)
+2026-06-14 01:40:20,562 | INFO    | src.command_queue | Executado: __likes__ por @lua_fps
+2026-06-14 01:40:30,192 | INFO    | src.tiktok_listener | Meta de likes batida por @pedrocaos -> zumbi
+2026-06-14 01:40:30,192 | INFO    | src.command_queue | Enfileirado: __likes__ por @pedrocaos (fila=1)
+2026-06-14 01:40:30,206 | INFO    | src.command_queue | Executado: __likes__ por @pedrocaos
+2026-06-14 01:40:37,756 | INFO    | src.tiktok_listener | Simulacao rodando (tick 80)
+2026-06-14 01:40:39,367 | INFO    | src.tiktok_listener | Novo seguidor @ana.gamer -> fogo
+2026-06-14 01:40:39,368 | INFO    | src.command_queue | Enfileirado: __follow__ por @ana.gamer (fila=1)
+2026-06-14 01:40:39,373 | INFO    | src.command_queue | Executado: __follow__ por @ana.gamer
+2026-06-14 01:40:42,762 | INFO    | src.command_queue | Enfileirado: !barril por @lua_fps (fila=1)
+2026-06-14 01:40:42,914 | INFO    | src.command_queue | Executado: !barril por @lua_fps
+2026-06-14 01:40:44,684 | INFO    | src.tiktok_listener | Novo seguidor @pedrocaos -> fogo
+2026-06-14 01:40:44,684 | INFO    | src.command_queue | Enfileirado: __follow__ por @pedrocaos (fila=1)
+2026-06-14 01:40:44,686 | INFO    | src.command_queue | Executado: __follow__ por @pedrocaos
+2026-06-14 01:40:46,916 | INFO    | src.tiktok_listener | Meta de likes batida por @joao_zoeira -> zumbi
+2026-06-14 01:40:46,916 | INFO    | src.command_queue | Enfileirado: __likes__ por @joao_zoeira (fila=1)
+2026-06-14 01:40:46,918 | INFO    | src.command_queue | Executado: __likes__ por @joao_zoeira
+2026-06-14 01:41:05,227 | INFO    | src.cooldown | Descartado por cooldown de usuario: !barril (user=@lua_fps)
+2026-06-14 01:41:11,768 | INFO    | src.tiktok_listener | Novo seguidor @lua_fps -> fogo
+2026-06-14 01:41:11,768 | INFO    | src.command_queue | Enfileirado: __follow__ por @lua_fps (fila=1)
+2026-06-14 01:41:11,776 | INFO    | src.command_queue | Executado: __follow__ por @lua_fps
+2026-06-14 01:41:13,793 | INFO    | src.tiktok_listener | Novo seguidor @ana.gamer -> fogo
+2026-06-14 01:41:13,793 | INFO    | src.command_queue | Enfileirado: __follow__ por @ana.gamer (fila=1)
+2026-06-14 01:41:13,797 | INFO    | src.command_queue | Executado: __follow__ por @ana.gamer
+2026-06-14 01:41:22,025 | INFO    | src.command_queue | Enfileirado: !barril por @joao_zoeira (fila=1)
+2026-06-14 01:41:22,026 | WARNING | src.command_queue | Jogo fora de foco; descartando !barril
+2026-06-14 01:41:24,453 | INFO    | src.command_queue | Enfileirado: !drop por @ana.gamer (fila=1)
+2026-06-14 01:41:24,453 | WARNING | src.command_queue | Jogo fora de foco; descartando !drop
+2026-06-14 01:41:33,057 | INFO    | src.command_queue | Enfileirado: !barril por @ana.gamer (fila=1)
+2026-06-14 01:41:33,058 | WARNING | src.command_queue | Jogo fora de foco; descartando !barril
+2026-06-14 01:41:33,058 | INFO    | src.tiktok_listener | Simulacao rodando (tick 100)
+2026-06-14 01:41:35,237 | INFO    | src.tiktok_listener | Novo seguidor @ana.gamer -> fogo
+2026-06-14 01:41:35,238 | INFO    | src.command_queue | Enfileirado: __follow__ por @ana.gamer (fila=1)
+2026-06-14 01:41:35,254 | INFO    | src.command_queue | Executado: __follow__ por @ana.gamer
+2026-06-14 01:41:40,958 | INFO    | src.cooldown | Descartado por cooldown global: !barril (user=@ana.gamer)
+2026-06-14 01:41:44,282 | INFO    | src.command_queue | Enfileirado: !barril por @pedrocaos (fila=1)
+2026-06-14 01:41:44,283 | WARNING | src.command_queue | Jogo fora de foco; descartando !barril
+2026-06-14 01:41:54,138 | INFO    | src.tiktok_listener | Meta de likes batida por @pedrocaos -> zumbi
+2026-06-14 01:41:54,138 | INFO    | src.command_queue | Enfileirado: __likes__ por @pedrocaos (fila=1)
+2026-06-14 01:41:54,140 | INFO    | src.command_queue | Executado: __likes__ por @pedrocaos
+2026-06-14 01:42:07,784 | INFO    | src.tiktok_listener | Meta de likes batida por @joao_zoeira -> zumbi
+2026-06-14 01:42:07,784 | INFO    | src.command_queue | Enfileirado: __likes__ por @joao_zoeira (fila=1)
+2026-06-14 01:42:07,786 | INFO    | src.command_queue | Executado: __likes__ por @joao_zoeira
+2026-06-14 01:42:30,691 | INFO    | src.tiktok_listener | Novo seguidor @lua_fps -> fogo
+2026-06-14 01:42:30,691 | INFO    | src.command_queue | Enfileirado: __follow__ por @lua_fps (fila=1)
+2026-06-14 01:42:30,700 | INFO    | src.command_queue | Executado: __follow__ por @lua_fps
+2026-06-14 01:42:32,562 | INFO    | src.tiktok_listener | Novo seguidor @pedrocaos -> fogo
+2026-06-14 01:42:32,562 | INFO    | src.command_queue | Enfileirado: __follow__ por @pedrocaos (fila=1)
+2026-06-14 01:42:32,563 | INFO    | src.tiktok_listener | Simulacao rodando (tick 120)
+2026-06-14 01:42:32,564 | INFO    | src.command_queue | Executado: __follow__ por @pedrocaos
+2026-06-14 01:42:36,086 | INFO    | src.tiktok_listener | Novo seguidor @lua_fps -> fogo
+2026-06-14 01:42:36,086 | INFO    | src.command_queue | Enfileirado: __follow__ por @lua_fps (fila=1)
+2026-06-14 01:42:36,090 | INFO    | src.command_queue | Executado: __follow__ por @lua_fps
+2026-06-14 01:42:41,573 | INFO    | src.command_queue | Enfileirado: !barril por @joao_zoeira (fila=1)
+2026-06-14 01:42:41,574 | WARNING | src.command_queue | Jogo fora de foco; descartando !barril
+2026-06-14 01:42:46,723 | INFO    | src.cooldown | Descartado por cooldown global: !barril (user=@pedrocaos)
+2026-06-14 01:42:53,017 | INFO    | src.command_queue | Enfileirado: !cura por @joao_zoeira (fila=1)
+2026-06-14 01:42:53,170 | INFO    | src.command_queue | Executado: !cura por @joao_zoeira
+2026-06-14 01:42:58,659 | INFO    | src.tiktok_listener | Meta de likes batida por @joao_zoeira -> zumbi
+2026-06-14 01:42:58,660 | INFO    | src.command_queue | Enfileirado: __likes__ por @joao_zoeira (fila=1)
+2026-06-14 01:42:58,670 | INFO    | src.command_queue | Executado: __likes__ por @joao_zoeira
+2026-06-14 01:43:01,527 | INFO    | src.cooldown | Descartado por cooldown de usuario: !barril (user=@joao_zoeira)
+2026-06-14 01:43:07,318 | INFO    | src.command_queue | Enfileirado: !barril por @pedrocaos (fila=1)
+2026-06-14 01:43:07,319 | WARNING | src.command_queue | Jogo fora de foco; descartando !barril
+2026-06-14 01:43:19,457 | INFO    | src.cooldown | Descartado por cooldown de usuario: !barril (user=@pedrocaos)
+2026-06-14 01:43:22,482 | INFO    | src.command_queue | Enfileirado: !barril por @ana.gamer (fila=1)
+2026-06-14 01:43:22,635 | INFO    | src.command_queue | Executado: !barril por @ana.gamer
+2026-06-14 01:43:29,810 | INFO    | src.cooldown | Descartado por cooldown global: !barril (user=@lua_fps)
+2026-06-14 01:43:32,880 | INFO    | src.command_queue | Enfileirado: !drop por @ana.gamer (fila=1)
+2026-06-14 01:43:32,881 | INFO    | src.tiktok_listener | Simulacao rodando (tick 140)
+2026-06-14 01:43:33,032 | INFO    | src.command_queue | Executado: !drop por @ana.gamer
+2026-06-14 01:43:36,520 | INFO    | src.cooldown | Descartado por cooldown de usuario: !cura (user=@joao_zoeira)
+2026-06-14 01:43:45,013 | INFO    | src.tiktok_listener | Novo seguidor @pedrocaos -> fogo
+2026-06-14 01:43:45,013 | INFO    | src.command_queue | Enfileirado: __follow__ por @pedrocaos (fila=1)
+2026-06-14 01:43:45,016 | INFO    | src.command_queue | Executado: __follow__ por @pedrocaos
+2026-06-14 01:43:48,748 | INFO    | src.command_queue | Enfileirado: !cura por @ana.gamer (fila=1)
+2026-06-14 01:43:48,900 | INFO    | src.command_queue | Executado: !cura por @ana.gamer
+2026-06-14 01:43:51,243 | INFO    | src.command_queue | Enfileirado: !barril por @ana.gamer (fila=1)
+2026-06-14 01:43:51,396 | INFO    | src.command_queue | Executado: !barril por @ana.gamer
+2026-06-14 01:43:57,348 | INFO    | src.cooldown | Descartado por cooldown global: !barril (user=@joao_zoeira)
+2026-06-14 01:43:59,332 | INFO    | src.command_queue | Enfileirado: !drop por @lua_fps (fila=1)
+2026-06-14 01:43:59,484 | INFO    | src.command_queue | Executado: !drop por @lua_fps
+2026-06-14 01:44:02,646 | INFO    | src.tiktok_listener | Meta de likes batida por @joao_zoeira -> zumbi
+2026-06-14 01:44:02,646 | INFO    | src.command_queue | Enfileirado: __likes__ por @joao_zoeira (fila=1)
+2026-06-14 01:44:02,649 | INFO    | src.command_queue | Executado: __likes__ por @joao_zoeira
+2026-06-14 01:44:05,311 | INFO    | src.cooldown | Descartado por cooldown de usuario: !barril (user=@ana.gamer)
+2026-06-14 01:44:10,759 | INFO    | src.command_queue | Enfileirado: !drop por @joao_zoeira (fila=1)
+2026-06-14 01:44:10,911 | INFO    | src.command_queue | Executado: !drop por @joao_zoeira
+2026-06-14 01:44:13,331 | INFO    | src.tiktok_listener | Novo seguidor @lua_fps -> fogo
+2026-06-14 01:44:13,331 | INFO    | src.command_queue | Enfileirado: __follow__ por @lua_fps (fila=1)
+2026-06-14 01:44:13,335 | INFO    | src.command_queue | Executado: __follow__ por @lua_fps
+2026-06-14 01:44:16,477 | INFO    | src.command_queue | Enfileirado: !barril por @lua_fps (fila=1)
+2026-06-14 01:44:16,629 | INFO    | src.command_queue | Executado: !barril por @lua_fps
+2026-06-14 01:44:19,903 | INFO    | src.command_queue | Enfileirado: !cura por @joao_zoeira (fila=1)
+2026-06-14 01:44:20,055 | INFO    | src.command_queue | Executado: !cura por @joao_zoeira
+2026-06-14 01:44:23,886 | INFO    | src.cooldown | Descartado por cooldown global: !barril (user=@ana.gamer)
+2026-06-14 01:44:26,645 | INFO    | src.tiktok_listener | Novo seguidor @ana.gamer -> fogo
+2026-06-14 01:44:26,645 | INFO    | src.command_queue | Enfileirado: __follow__ por @ana.gamer (fila=1)
+2026-06-14 01:44:26,658 | INFO    | src.command_queue | Executado: __follow__ por @ana.gamer
+2026-06-14 01:44:28,613 | INFO    | src.command_queue | Enfileirado: !barril por @pedrocaos (fila=1)
+2026-06-14 01:44:28,615 | INFO    | src.tiktok_listener | Simulacao rodando (tick 160)
+2026-06-14 01:44:28,767 | INFO    | src.command_queue | Executado: !barril por @pedrocaos
+2026-06-14 01:44:31,744 | INFO    | src.cooldown | Descartado por cooldown global: !barril (user=@pedrocaos)
+2026-06-14 01:44:39,176 | INFO    | src.tiktok_listener | Novo seguidor @lua_fps -> fogo
+2026-06-14 01:44:39,176 | INFO    | src.command_queue | Enfileirado: __follow__ por @lua_fps (fila=1)
+2026-06-14 01:44:39,179 | INFO    | src.command_queue | Executado: __follow__ por @lua_fps
+2026-06-14 01:44:41,981 | INFO    | src.command_queue | Enfileirado: !drop por @pedrocaos (fila=1)
+2026-06-14 01:44:42,134 | INFO    | src.command_queue | Executado: !drop por @pedrocaos
+2026-06-14 01:44:50,442 | INFO    | src.cooldown | Descartado por cooldown global: !drop (user=@ana.gamer)
+2026-06-14 01:44:54,317 | INFO    | src.tiktok_listener | Novo seguidor @ana.gamer -> fogo
+2026-06-14 01:44:54,317 | INFO    | src.command_queue | Enfileirado: __follow__ por @ana.gamer (fila=1)
+2026-06-14 01:44:54,320 | INFO    | src.command_queue | Executado: __follow__ por @ana.gamer
+2026-06-14 01:44:56,595 | INFO    | src.tiktok_listener | Novo seguidor @pedrocaos -> fogo
+2026-06-14 01:44:56,595 | INFO    | src.command_queue | Enfileirado: __follow__ por @pedrocaos (fila=1)
+2026-06-14 01:44:56,598 | INFO    | src.command_queue | Executado: __follow__ por @pedrocaos
+2026-06-14 01:45:00,980 | INFO    | src.command_queue | Enfileirado: !barril por @joao_zoeira (fila=1)
+2026-06-14 01:45:01,133 | INFO    | src.command_queue | Executado: !barril por @joao_zoeira
+2026-06-14 01:45:02,670 | INFO    | src.cooldown | Descartado por cooldown global: !barril (user=@ana.gamer)
+2026-06-14 01:45:09,167 | INFO    | src.cooldown | Descartado por cooldown de usuario: !barril (user=@joao_zoeira)
+2026-06-14 01:45:14,623 | INFO    | src.command_queue | Enfileirado: !barril por @pedrocaos (fila=1)
+2026-06-14 01:45:14,775 | INFO    | src.command_queue | Executado: !barril por @pedrocaos
+2026-06-14 01:45:22,326 | INFO    | src.tiktok_listener | Meta de likes batida por @lua_fps -> zumbi
+2026-06-14 01:45:22,327 | INFO    | src.command_queue | Enfileirado: __likes__ por @lua_fps (fila=1)
+2026-06-14 01:45:22,339 | INFO    | src.command_queue | Executado: __likes__ por @lua_fps
+2026-06-14 01:45:24,713 | INFO    | src.cooldown | Descartado por cooldown de usuario: !barril (user=@pedrocaos)
+2026-06-14 01:45:24,713 | INFO    | src.tiktok_listener | Simulacao rodando (tick 180)
+2026-06-14 01:45:39,093 | INFO    | src.tiktok_listener | Novo seguidor @joao_zoeira -> fogo
+2026-06-14 01:45:39,093 | INFO    | src.command_queue | Enfileirado: __follow__ por @joao_zoeira (fila=1)
+2026-06-14 01:45:39,095 | INFO    | src.command_queue | Executado: __follow__ por @joao_zoeira
+2026-06-14 01:45:45,398 | INFO    | src.command_queue | Enfileirado: !barril por @joao_zoeira (fila=1)
+2026-06-14 01:45:45,550 | INFO    | src.command_queue | Executado: !barril por @joao_zoeira
+2026-06-14 01:45:52,502 | INFO    | src.cooldown | Descartado por cooldown global: !barril (user=@lua_fps)
+2026-06-14 01:46:01,941 | INFO    | src.command_queue | Enfileirado: !drop por @pedrocaos (fila=1)
+2026-06-14 01:46:02,093 | INFO    | src.command_queue | Executado: !drop por @pedrocaos
+2026-06-14 01:46:07,800 | INFO    | src.tiktok_listener | Novo seguidor @pedrocaos -> fogo
+2026-06-14 01:46:07,800 | INFO    | src.command_queue | Enfileirado: __follow__ por @pedrocaos (fila=1)
+2026-06-14 01:46:07,804 | INFO    | src.command_queue | Executado: __follow__ por @pedrocaos
+2026-06-14 01:46:13,845 | INFO    | src.command_queue | Enfileirado: !barril por @joao_zoeira (fila=1)
+2026-06-14 01:46:13,997 | INFO    | src.command_queue | Executado: !barril por @joao_zoeira
+2026-06-14 01:46:19,611 | INFO    | src.command_queue | Enfileirado: !cura por @lua_fps (fila=1)
+2026-06-14 01:46:19,612 | INFO    | src.tiktok_listener | Simulacao rodando (tick 200)
+2026-06-14 01:46:19,764 | INFO    | src.command_queue | Executado: !cura por @lua_fps
+2026-06-14 01:46:29,760 | INFO    | src.tiktok_listener | Meta de likes batida por @ana.gamer -> zumbi
+2026-06-14 01:46:29,760 | INFO    | src.command_queue | Enfileirado: __likes__ por @ana.gamer (fila=1)
+2026-06-14 01:46:29,764 | INFO    | src.command_queue | Executado: __likes__ por @ana.gamer
+2026-06-14 01:46:33,721 | INFO    | src.tiktok_listener | Novo seguidor @lua_fps -> fogo
+2026-06-14 01:46:33,722 | INFO    | src.command_queue | Enfileirado: __follow__ por @lua_fps (fila=1)
+2026-06-14 01:46:33,724 | INFO    | src.command_queue | Executado: __follow__ por @lua_fps
+2026-06-14 01:46:35,750 | INFO    | src.cooldown | Descartado por cooldown global: !cura (user=@ana.gamer)
+2026-06-14 01:46:38,230 | INFO    | src.tiktok_listener | Novo seguidor @lua_fps -> fogo
+2026-06-14 01:46:38,231 | INFO    | src.command_queue | Enfileirado: __follow__ por @lua_fps (fila=1)
+2026-06-14 01:46:38,235 | INFO    | src.command_queue | Executado: __follow__ por @lua_fps
+2026-06-14 01:46:42,229 | INFO    | src.command_queue | Enfileirado: !cura por @ana.gamer (fila=1)
+2026-06-14 01:46:42,382 | INFO    | src.command_queue | Executado: !cura por @ana.gamer
+2026-06-14 01:46:44,182 | INFO    | src.cooldown | Descartado por cooldown global: !cura (user=@lua_fps)
+2026-06-14 01:46:47,154 | INFO    | src.command_queue | Enfileirado: !barril por @lua_fps (fila=1)
+2026-06-14 01:46:47,306 | INFO    | src.command_queue | Executado: !barril por @lua_fps
+2026-06-14 01:46:52,057 | INFO    | src.cooldown | Descartado por cooldown global: !barril (user=@ana.gamer)
+2026-06-14 01:46:54,982 | INFO    | src.cooldown | Descartado por cooldown global: !barril (user=@lua_fps)
+2026-06-14 01:47:00,960 | INFO    | src.command_queue | Enfileirado: !barril por @ana.gamer (fila=1)
+2026-06-14 01:47:01,112 | INFO    | src.command_queue | Executado: !barril por @ana.gamer
+2026-06-14 01:47:04,832 | INFO    | src.cooldown | Descartado por cooldown global: !barril (user=@pedrocaos)
+2026-06-14 01:47:10,885 | INFO    | src.command_queue | Enfileirado: !barril por @pedrocaos (fila=1)
+2026-06-14 01:47:11,038 | INFO    | src.command_queue | Executado: !barril por @pedrocaos
+2026-06-14 01:47:17,268 | INFO    | src.tiktok_listener | Simulacao rodando (tick 220)
+2026-06-14 01:47:19,436 | INFO    | src.tiktok_listener | Meta de likes batida por @pedrocaos -> zumbi
+2026-06-14 01:47:19,437 | INFO    | src.command_queue | Enfileirado: __likes__ por @pedrocaos (fila=1)
+2026-06-14 01:47:19,441 | INFO    | src.command_queue | Executado: __likes__ por @pedrocaos
+2026-06-14 01:47:23,617 | INFO    | src.command_queue | Enfileirado: !drop por @joao_zoeira (fila=1)
+2026-06-14 01:47:23,770 | INFO    | src.command_queue | Executado: !drop por @joao_zoeira
+2026-06-14 01:47:27,273 | INFO    | src.tiktok_listener | Novo seguidor @joao_zoeira -> fogo
+2026-06-14 01:47:27,273 | INFO    | src.command_queue | Enfileirado: __follow__ por @joao_zoeira (fila=1)
+2026-06-14 01:47:27,287 | INFO    | src.command_queue | Executado: __follow__ por @joao_zoeira
+2026-06-14 01:47:30,028 | INFO    | src.cooldown | Descartado por cooldown global: !drop (user=@lua_fps)
+2026-06-14 01:47:34,024 | INFO    | src.cooldown | Descartado por cooldown de usuario: !barril (user=@pedrocaos)
+2026-06-14 01:47:40,760 | INFO    | src.tiktok_listener | Meta de likes batida por @lua_fps -> zumbi
+2026-06-14 01:47:40,760 | INFO    | src.command_queue | Enfileirado: __likes__ por @lua_fps (fila=1)
+2026-06-14 01:47:40,777 | INFO    | src.command_queue | Executado: __likes__ por @lua_fps
+2026-06-14 01:47:42,589 | INFO    | src.command_queue | Enfileirado: !barril por @pedrocaos (fila=1)
+2026-06-14 01:47:42,742 | INFO    | src.command_queue | Executado: !barril por @pedrocaos
+2026-06-14 01:47:50,858 | INFO    | src.command_queue | Enfileirado: !barril por @ana.gamer (fila=1)
+2026-06-14 01:47:51,011 | INFO    | src.command_queue | Executado: !barril por @ana.gamer
+2026-06-14 01:48:01,421 | INFO    | src.tiktok_listener | Novo seguidor @lua_fps -> fogo
+2026-06-14 01:48:01,422 | INFO    | src.command_queue | Enfileirado: __follow__ por @lua_fps (fila=1)
+2026-06-14 01:48:01,424 | INFO    | src.command_queue | Executado: __follow__ por @lua_fps
+2026-06-14 01:48:03,870 | INFO    | src.tiktok_listener | Novo seguidor @lua_fps -> fogo
+2026-06-14 01:48:03,871 | INFO    | src.command_queue | Enfileirado: __follow__ por @lua_fps (fila=1)
+2026-06-14 01:48:03,895 | INFO    | src.command_queue | Executado: __follow__ por @lua_fps
+2026-06-14 01:48:09,466 | INFO    | src.tiktok_listener | Simulacao rodando (tick 240)
+2026-06-14 01:48:15,231 | INFO    | src.command_queue | Enfileirado: !barril por @pedrocaos (fila=1)
+2026-06-14 01:48:15,383 | INFO    | src.command_queue | Executado: !barril por @pedrocaos
+2026-06-14 01:48:20,605 | INFO    | src.tiktok_listener | Novo seguidor @lua_fps -> fogo
+2026-06-14 01:48:20,605 | INFO    | src.command_queue | Enfileirado: __follow__ por @lua_fps (fila=1)
+2026-06-14 01:48:20,621 | INFO    | src.command_queue | Executado: __follow__ por @lua_fps
+2026-06-14 01:48:26,386 | INFO    | src.command_queue | Enfileirado: !barril por @ana.gamer (fila=1)
+2026-06-14 01:48:26,539 | INFO    | src.command_queue | Executado: !barril por @ana.gamer
+2026-06-14 01:48:28,603 | INFO    | src.tiktok_listener | Novo seguidor @pedrocaos -> fogo
+2026-06-14 01:48:28,603 | INFO    | src.command_queue | Enfileirado: __follow__ por @pedrocaos (fila=1)
+2026-06-14 01:48:28,615 | INFO    | src.command_queue | Executado: __follow__ por @pedrocaos
+2026-06-14 01:48:42,767 | INFO    | src.tiktok_listener | Meta de likes batida por @pedrocaos -> zumbi
+2026-06-14 01:48:42,768 | INFO    | src.command_queue | Enfileirado: __likes__ por @pedrocaos (fila=1)
+2026-06-14 01:48:42,770 | INFO    | src.command_queue | Executado: __likes__ por @pedrocaos
+2026-06-14 01:48:48,930 | INFO    | src.tiktok_listener | Novo seguidor @pedrocaos -> fogo
+2026-06-14 01:48:48,930 | INFO    | src.command_queue | Enfileirado: __follow__ por @pedrocaos (fila=1)
+2026-06-14 01:48:48,948 | INFO    | src.command_queue | Executado: __follow__ por @pedrocaos
+2026-06-14 01:49:01,495 | INFO    | src.command_queue | Enfileirado: !barril por @ana.gamer (fila=1)
+2026-06-14 01:49:01,647 | INFO    | src.command_queue | Executado: !barril por @ana.gamer
+2026-06-14 01:49:04,145 | INFO    | src.cooldown | Descartado por cooldown global: !barril (user=@ana.gamer)
+2026-06-14 01:49:04,146 | INFO    | src.tiktok_listener | Simulacao rodando (tick 260)
+2026-06-14 01:49:15,283 | INFO    | src.cooldown | Descartado por cooldown de usuario: !barril (user=@ana.gamer)
+2026-06-14 01:49:19,276 | INFO    | src.tiktok_listener | Novo seguidor @ana.gamer -> fogo
+2026-06-14 01:49:19,277 | INFO    | src.command_queue | Enfileirado: __follow__ por @ana.gamer (fila=1)
+2026-06-14 01:49:19,281 | INFO    | src.command_queue | Executado: __follow__ por @ana.gamer
+2026-06-14 01:49:35,356 | INFO    | src.command_queue | Enfileirado: !barril por @pedrocaos (fila=1)
+2026-06-14 01:49:35,508 | INFO    | src.command_queue | Executado: !barril por @pedrocaos
+2026-06-14 01:49:48,729 | INFO    | src.command_queue | Enfileirado: !cura por @joao_zoeira (fila=1)
+2026-06-14 01:49:48,881 | INFO    | src.command_queue | Executado: !cura por @joao_zoeira
+2026-06-14 01:49:50,589 | INFO    | src.cooldown | Descartado por cooldown de usuario: !barril (user=@pedrocaos)
+2026-06-14 01:49:57,796 | INFO    | src.command_queue | Enfileirado: !drop por @lua_fps (fila=1)
+2026-06-14 01:49:57,949 | INFO    | src.command_queue | Executado: !drop por @lua_fps
+2026-06-14 01:50:02,942 | INFO    | src.tiktok_listener | Meta de likes batida por @pedrocaos -> zumbi
+2026-06-14 01:50:02,942 | INFO    | src.command_queue | Enfileirado: __likes__ por @pedrocaos (fila=1)
+2026-06-14 01:50:02,943 | INFO    | src.tiktok_listener | Simulacao rodando (tick 280)
+2026-06-14 01:50:02,955 | INFO    | src.command_queue | Executado: __likes__ por @pedrocaos
+2026-06-14 01:50:08,972 | INFO    | src.tiktok_listener | Novo seguidor @joao_zoeira -> fogo
+2026-06-14 01:50:08,972 | INFO    | src.command_queue | Enfileirado: __follow__ por @joao_zoeira (fila=1)
+2026-06-14 01:50:08,974 | INFO    | src.command_queue | Executado: __follow__ por @joao_zoeira
+2026-06-14 01:50:21,031 | INFO    | src.command_queue | Enfileirado: !barril por @joao_zoeira (fila=1)
+2026-06-14 01:50:21,184 | INFO    | src.command_queue | Executado: !barril por @joao_zoeira
+2026-06-14 01:50:23,681 | INFO    | src.command_queue | Enfileirado: !cura por @pedrocaos (fila=1)
+2026-06-14 01:50:23,834 | INFO    | src.command_queue | Executado: !cura por @pedrocaos
+2026-06-14 01:50:33,942 | INFO    | src.cooldown | Descartado por cooldown de usuario: !barril (user=@joao_zoeira)
+2026-06-14 01:50:37,476 | INFO    | src.command_queue | Enfileirado: !barril por @pedrocaos (fila=1)
+2026-06-14 01:50:37,629 | INFO    | src.command_queue | Executado: !barril por @pedrocaos
+2026-06-14 01:50:57,013 | INFO    | src.tiktok_listener | Simulacao rodando (tick 300)
+2026-06-14 01:51:00,563 | INFO    | src.command_queue | Enfileirado: !barril por @joao_zoeira (fila=1)
+2026-06-14 01:51:00,715 | INFO    | src.command_queue | Executado: !barril por @joao_zoeira
+2026-06-14 01:51:05,135 | INFO    | src.tiktok_listener | Novo seguidor @pedrocaos -> fogo
+2026-06-14 01:51:05,135 | INFO    | src.command_queue | Enfileirado: __follow__ por @pedrocaos (fila=1)
+2026-06-14 01:51:05,148 | INFO    | src.command_queue | Executado: __follow__ por @pedrocaos
+2026-06-14 01:51:08,251 | INFO    | src.cooldown | Descartado por cooldown global: !barril (user=@lua_fps)
+2026-06-14 01:51:11,273 | INFO    | src.tiktok_listener | Meta de likes batida por @pedrocaos -> zumbi
+2026-06-14 01:51:11,273 | INFO    | src.command_queue | Enfileirado: __likes__ por @pedrocaos (fila=1)
+2026-06-14 01:51:11,290 | INFO    | src.command_queue | Executado: __likes__ por @pedrocaos
+2026-06-14 01:51:17,954 | INFO    | src.cooldown | Descartado por cooldown de usuario: !barril (user=@joao_zoeira)
+2026-06-14 01:51:20,666 | INFO    | src.cooldown | Descartado por cooldown de usuario: !barril (user=@joao_zoeira)
+2026-06-14 01:51:27,997 | INFO    | src.command_queue | Enfileirado: !barril por @ana.gamer (fila=1)
+2026-06-14 01:51:28,150 | INFO    | src.command_queue | Executado: !barril por @ana.gamer
+2026-06-14 01:51:31,128 | INFO    | src.cooldown | Descartado por cooldown global: !barril (user=@ana.gamer)
+2026-06-14 01:51:41,715 | INFO    | src.tiktok_listener | Meta de likes batida por @joao_zoeira -> zumbi
+2026-06-14 01:51:41,715 | INFO    | src.command_queue | Enfileirado: __likes__ por @joao_zoeira (fila=1)
+2026-06-14 01:51:41,719 | INFO    | src.command_queue | Executado: __likes__ por @joao_zoeira
+2026-06-14 01:51:45,698 | INFO    | src.tiktok_listener | Novo seguidor @ana.gamer -> fogo
+2026-06-14 01:51:45,699 | INFO    | src.command_queue | Enfileirado: __follow__ por @ana.gamer (fila=1)
+2026-06-14 01:51:45,714 | INFO    | src.command_queue | Executado: __follow__ por @ana.gamer
+2026-06-14 01:51:48,907 | INFO    | src.cooldown | Descartado por cooldown de usuario: !barril (user=@ana.gamer)
+2026-06-14 01:51:54,704 | INFO    | src.tiktok_listener | Simulacao rodando (tick 320)
+2026-06-14 01:52:27,840 | INFO    | src.tiktok_listener | Meta de likes batida por @pedrocaos -> zumbi
+2026-06-14 01:52:27,841 | INFO    | src.command_queue | Enfileirado: __likes__ por @pedrocaos (fila=1)
+2026-06-14 01:52:27,843 | INFO    | src.command_queue | Executado: __likes__ por @pedrocaos
+2026-06-14 01:52:33,093 | INFO    | src.tiktok_listener | Novo seguidor @ana.gamer -> fogo
+2026-06-14 01:52:33,094 | INFO    | src.command_queue | Enfileirado: __follow__ por @ana.gamer (fila=1)
+2026-06-14 01:52:33,096 | INFO    | src.command_queue | Executado: __follow__ por @ana.gamer
+2026-06-14 01:52:35,309 | INFO    | src.command_queue | Enfileirado: !cura por @joao_zoeira (fila=1)
+2026-06-14 01:52:35,462 | INFO    | src.command_queue | Executado: !cura por @joao_zoeira
+2026-06-14 01:52:39,029 | INFO    | src.command_queue | Enfileirado: !barril por @lua_fps (fila=1)
+2026-06-14 01:52:39,181 | INFO    | src.command_queue | Executado: !barril por @lua_fps
+2026-06-14 01:52:43,785 | INFO    | src.cooldown | Descartado por cooldown global: !barril (user=@ana.gamer)
+2026-06-14 01:52:49,518 | INFO    | src.command_queue | Enfileirado: !drop por @pedrocaos (fila=1)
+2026-06-14 01:52:49,670 | INFO    | src.command_queue | Executado: !drop por @pedrocaos
+2026-06-14 01:52:52,184 | INFO    | src.tiktok_listener | Simulacao rodando (tick 340)
+2026-06-14 01:53:00,764 | INFO    | src.command_queue | Enfileirado: !cura por @ana.gamer (fila=1)
+2026-06-14 01:53:00,917 | INFO    | src.command_queue | Executado: !cura por @ana.gamer
+2026-06-14 01:53:02,702 | INFO    | src.cooldown | Descartado por cooldown global: !cura (user=@lua_fps)
+2026-06-14 01:53:05,833 | INFO    | src.command_queue | Enfileirado: !barril por @ana.gamer (fila=1)
+2026-06-14 01:53:05,985 | INFO    | src.command_queue | Executado: !barril por @ana.gamer
+2026-06-14 01:53:09,224 | INFO    | src.cooldown | Descartado por cooldown global: !barril (user=@pedrocaos)
+2026-06-14 01:53:23,980 | INFO    | src.tiktok_listener | Meta de likes batida por @joao_zoeira -> zumbi
+2026-06-14 01:53:23,980 | INFO    | src.command_queue | Enfileirado: __likes__ por @joao_zoeira (fila=1)
+2026-06-14 01:53:23,984 | INFO    | src.command_queue | Executado: __likes__ por @joao_zoeira
+2026-06-14 01:53:30,982 | INFO    | src.tiktok_listener | Meta de likes batida por @joao_zoeira -> zumbi
+2026-06-14 01:53:30,983 | INFO    | src.command_queue | Enfileirado: __likes__ por @joao_zoeira (fila=1)
+2026-06-14 01:53:30,996 | INFO    | src.command_queue | Executado: __likes__ por @joao_zoeira
+2026-06-14 01:53:35,986 | INFO    | src.command_queue | Enfileirado: !barril por @joao_zoeira (fila=1)
+2026-06-14 01:53:36,139 | INFO    | src.command_queue | Executado: !barril por @joao_zoeira
+2026-06-14 01:53:41,845 | INFO    | src.tiktok_listener | Novo seguidor @pedrocaos -> fogo
+2026-06-14 01:53:41,845 | INFO    | src.command_queue | Enfileirado: __follow__ por @pedrocaos (fila=1)
+2026-06-14 01:53:41,859 | INFO    | src.command_queue | Executado: __follow__ por @pedrocaos
+2026-06-14 01:53:43,612 | INFO    | src.tiktok_listener | Simulacao rodando (tick 360)
+2026-06-14 01:53:54,212 | INFO    | src.command_queue | Enfileirado: !barril por @lua_fps (fila=1)
+2026-06-14 01:53:54,364 | INFO    | src.command_queue | Executado: !barril por @lua_fps
+2026-06-14 01:53:59,450 | INFO    | src.command_queue | Enfileirado: !cura por @pedrocaos (fila=1)
+2026-06-14 01:53:59,603 | INFO    | src.command_queue | Executado: !cura por @pedrocaos
+2026-06-14 01:54:08,467 | INFO    | src.cooldown | Descartado por cooldown de usuario: !barril (user=@lua_fps)
+2026-06-14 01:54:12,124 | INFO    | src.command_queue | Enfileirado: !barril por @ana.gamer (fila=1)
+2026-06-14 01:54:12,276 | INFO    | src.command_queue | Executado: !barril por @ana.gamer
+2026-06-14 01:54:18,308 | INFO    | src.command_queue | Enfileirado: !drop por @lua_fps (fila=1)
+2026-06-14 01:54:18,461 | INFO    | src.command_queue | Executado: !drop por @lua_fps
+2026-06-14 01:54:19,951 | INFO    | src.cooldown | Descartado por cooldown global: !barril (user=@pedrocaos)
+2026-06-14 01:54:27,562 | INFO    | src.command_queue | Enfileirado: !barril por @joao_zoeira (fila=1)
+2026-06-14 01:54:27,714 | INFO    | src.command_queue | Executado: !barril por @joao_zoeira
+2026-06-14 01:54:30,025 | INFO    | src.cooldown | Descartado por cooldown global: !barril (user=@joao_zoeira)
+2026-06-14 01:54:37,279 | INFO    | src.command_queue | Enfileirado: !barril por @ana.gamer (fila=1)
+2026-06-14 01:54:37,280 | INFO    | src.tiktok_listener | Simulacao rodando (tick 380)
+2026-06-14 01:54:37,431 | INFO    | src.command_queue | Executado: !barril por @ana.gamer
+2026-06-14 01:54:39,355 | INFO    | src.cooldown | Descartado por cooldown global: !barril (user=@ana.gamer)
+2026-06-14 01:54:48,251 | INFO    | src.tiktok_listener | Novo seguidor @ana.gamer -> fogo
+2026-06-14 01:54:48,251 | INFO    | src.command_queue | Enfileirado: __follow__ por @ana.gamer (fila=1)
+2026-06-14 01:54:48,253 | INFO    | src.command_queue | Executado: __follow__ por @ana.gamer
+2026-06-14 01:54:51,565 | INFO    | src.tiktok_listener | Meta de likes batida por @ana.gamer -> zumbi
+2026-06-14 01:54:51,565 | INFO    | src.command_queue | Enfileirado: __likes__ por @ana.gamer (fila=1)
+2026-06-14 01:54:51,575 | INFO    | src.command_queue | Executado: __likes__ por @ana.gamer
+2026-06-14 01:54:53,811 | INFO    | src.command_queue | Enfileirado: !drop por @joao_zoeira (fila=1)
+2026-06-14 01:54:53,964 | INFO    | src.command_queue | Executado: !drop por @joao_zoeira
+2026-06-14 01:54:56,477 | INFO    | src.command_queue | Enfileirado: !cura por @lua_fps (fila=1)
+2026-06-14 01:54:56,630 | INFO    | src.command_queue | Executado: !cura por @lua_fps
+2026-06-14 01:55:00,460 | INFO    | src.command_queue | Enfileirado: !barril por @joao_zoeira (fila=1)
+2026-06-14 01:55:00,612 | INFO    | src.command_queue | Executado: !barril por @joao_zoeira
+2026-06-14 01:55:09,264 | INFO    | src.command_queue | Enfileirado: !barril por @pedrocaos (fila=1)
+2026-06-14 01:55:09,417 | INFO    | src.command_queue | Executado: !barril por @pedrocaos
+2026-06-14 01:55:18,749 | INFO    | src.command_queue | Enfileirado: !drop por @lua_fps (fila=1)
+2026-06-14 01:55:18,901 | INFO    | src.command_queue | Executado: !drop por @lua_fps
+2026-06-14 01:55:20,407 | INFO    | src.cooldown | Descartado por cooldown de usuario: !barril (user=@pedrocaos)
+2026-06-14 01:55:25,708 | INFO    | src.cooldown | Descartado por cooldown de usuario: !barril (user=@pedrocaos)
+2026-06-14 01:55:32,000 | INFO    | src.tiktok_listener | Simulacao rodando (tick 400)
+2026-06-14 01:55:33,968 | INFO    | src.tiktok_listener | Novo seguidor @pedrocaos -> fogo
+2026-06-14 01:55:33,968 | INFO    | src.command_queue | Enfileirado: __follow__ por @pedrocaos (fila=1)
+2026-06-14 01:55:33,988 | INFO    | src.command_queue | Executado: __follow__ por @pedrocaos
+2026-06-14 01:55:38,587 | INFO    | src.command_queue | Enfileirado: !barril por @joao_zoeira (fila=1)
+2026-06-14 01:55:38,740 | INFO    | src.command_queue | Executado: !barril por @joao_zoeira
+2026-06-14 01:55:41,842 | INFO    | src.command_queue | Enfileirado: !drop por @pedrocaos (fila=1)
+2026-06-14 01:55:41,995 | INFO    | src.command_queue | Executado: !drop por @pedrocaos
+2026-06-14 01:55:45,283 | INFO    | src.cooldown | Descartado por cooldown global: !barril (user=@pedrocaos)
+2026-06-14 01:55:49,261 | INFO    | src.cooldown | Descartado por cooldown de usuario: !cura (user=@lua_fps)
+2026-06-14 01:55:59,319 | INFO    | src.command_queue | Enfileirado: !drop por @lua_fps (fila=1)
+2026-06-14 01:55:59,320 | WARNING | src.command_queue | Jogo fora de foco; descartando !drop
+2026-06-14 01:56:03,167 | INFO    | src.command_queue | Enfileirado: !barril por @lua_fps (fila=1)
+2026-06-14 01:56:03,168 | WARNING | src.command_queue | Jogo fora de foco; descartando !barril
+2026-06-14 01:56:09,380 | INFO    | src.cooldown | Descartado por cooldown global: !barril (user=@pedrocaos)
+2026-06-14 01:56:12,271 | INFO    | src.command_queue | Enfileirado: !cura por @pedrocaos (fila=1)
+2026-06-14 01:56:12,272 | WARNING | src.command_queue | Jogo fora de foco; descartando !cura
+2026-06-14 01:56:17,376 | INFO    | src.tiktok_listener | Meta de likes batida por @lua_fps -> zumbi
+2026-06-14 01:56:17,377 | INFO    | src.command_queue | Enfileirado: __likes__ por @lua_fps (fila=1)
+2026-06-14 01:56:17,384 | INFO    | src.command_queue | Executado: __likes__ por @lua_fps
+2026-06-14 01:56:22,217 | INFO    | src.command_queue | Enfileirado: !drop por @pedrocaos (fila=1)
+2026-06-14 01:56:22,218 | WARNING | src.command_queue | Jogo fora de foco; descartando !drop
+2026-06-14 01:56:29,404 | INFO    | src.tiktok_listener | Simulacao rodando (tick 420)
+2026-06-14 01:56:33,703 | INFO    | src.command_queue | Enfileirado: !drop por @lua_fps (fila=1)
+2026-06-14 01:56:33,704 | WARNING | src.command_queue | Jogo fora de foco; descartando !drop
+2026-06-14 01:56:36,767 | INFO    | src.tiktok_listener | Novo seguidor @joao_zoeira -> fogo
+2026-06-14 01:56:36,768 | INFO    | src.command_queue | Enfileirado: __follow__ por @joao_zoeira (fila=1)
+2026-06-14 01:56:36,786 | INFO    | src.command_queue | Executado: __follow__ por @joao_zoeira
+2026-06-14 01:56:42,754 | INFO    | src.cooldown | Descartado por cooldown global: !drop (user=@pedrocaos)
+2026-06-14 01:56:51,216 | INFO    | src.tiktok_listener | Novo seguidor @ana.gamer -> fogo
+2026-06-14 01:56:51,216 | INFO    | src.command_queue | Enfileirado: __follow__ por @ana.gamer (fila=1)
+2026-06-14 01:56:51,224 | INFO    | src.command_queue | Executado: __follow__ por @ana.gamer
+2026-06-14 01:56:54,263 | INFO    | src.tiktok_listener | Novo seguidor @joao_zoeira -> fogo
+2026-06-14 01:56:54,264 | INFO    | src.command_queue | Enfileirado: __follow__ por @joao_zoeira (fila=1)
+2026-06-14 01:56:54,267 | INFO    | src.command_queue | Executado: __follow__ por @joao_zoeira
+2026-06-14 01:56:58,964 | INFO    | src.command_queue | Enfileirado: !barril por @lua_fps (fila=1)
+2026-06-14 01:56:58,964 | WARNING | src.command_queue | Jogo fora de foco; descartando !barril
+2026-06-14 01:57:02,563 | INFO    | src.command_queue | Enfileirado: !cura por @ana.gamer (fila=1)
+2026-06-14 01:57:02,564 | WARNING | src.command_queue | Jogo fora de foco; descartando !cura
+2026-06-14 01:57:07,969 | INFO    | src.tiktok_listener | Meta de likes batida por @lua_fps -> zumbi
+2026-06-14 01:57:07,969 | INFO    | src.command_queue | Enfileirado: __likes__ por @lua_fps (fila=1)
+2026-06-14 01:57:07,987 | INFO    | src.command_queue | Executado: __likes__ por @lua_fps
+2026-06-14 01:57:12,514 | INFO    | src.tiktok_listener | Novo seguidor @pedrocaos -> fogo
+2026-06-14 01:57:12,514 | INFO    | src.command_queue | Enfileirado: __follow__ por @pedrocaos (fila=1)
+2026-06-14 01:57:12,518 | INFO    | src.command_queue | Executado: __follow__ por @pedrocaos
+2026-06-14 01:57:14,402 | INFO    | src.command_queue | Enfileirado: !drop por @joao_zoeira (fila=1)
+2026-06-14 01:57:14,403 | WARNING | src.command_queue | Jogo fora de foco; descartando !drop
+2026-06-14 01:57:16,906 | INFO    | src.command_queue | Enfileirado: !barril por @joao_zoeira (fila=1)
+2026-06-14 01:57:16,906 | WARNING | src.command_queue | Jogo fora de foco; descartando !barril
+2026-06-14 01:57:19,054 | INFO    | src.tiktok_listener | Novo seguidor @lua_fps -> fogo
+2026-06-14 01:57:19,055 | INFO    | src.command_queue | Enfileirado: __follow__ por @lua_fps (fila=1)
+2026-06-14 01:57:19,060 | INFO    | src.command_queue | Executado: __follow__ por @lua_fps
+2026-06-14 01:57:21,389 | INFO    | src.tiktok_listener | Simulacao rodando (tick 440)
+2026-06-14 01:57:24,172 | INFO    | src.cooldown | Descartado por cooldown global: !barril (user=@lua_fps)
+2026-06-14 01:57:28,096 | INFO    | src.command_queue | Enfileirado: !barril por @lua_fps (fila=1)
+2026-06-14 01:57:28,096 | WARNING | src.command_queue | Jogo fora de foco; descartando !barril
+2026-06-14 01:57:33,844 | INFO    | src.cooldown | Descartado por cooldown global: !barril (user=@lua_fps)
+2026-06-14 01:57:37,106 | INFO    | src.command_queue | Enfileirado: !cura por @joao_zoeira (fila=1)
+2026-06-14 01:57:37,107 | WARNING | src.command_queue | Jogo fora de foco; descartando !cura
+2026-06-14 01:57:41,080 | INFO    | src.cooldown | Descartado por cooldown global: !cura (user=@ana.gamer)
+2026-06-14 01:57:46,148 | INFO    | src.command_queue | Enfileirado: !barril por @ana.gamer (fila=1)
+2026-06-14 01:57:46,148 | WARNING | src.command_queue | Jogo fora de foco; descartando !barril
+2026-06-14 01:57:47,768 | INFO    | src.cooldown | Descartado por cooldown global: !barril (user=@joao_zoeira)
+2026-06-14 01:57:56,160 | INFO    | src.command_queue | Enfileirado: !barril por @joao_zoeira (fila=1)
+2026-06-14 01:57:56,160 | WARNING | src.command_queue | Jogo fora de foco; descartando !barril
+2026-06-14 01:57:58,545 | INFO    | src.tiktok_listener | Novo seguidor @pedrocaos -> fogo
+2026-06-14 01:57:58,545 | INFO    | src.command_queue | Enfileirado: __follow__ por @pedrocaos (fila=1)
+2026-06-14 01:57:58,549 | INFO    | src.command_queue | Executado: __follow__ por @pedrocaos
+2026-06-14 01:58:01,427 | INFO    | src.cooldown | Descartado por cooldown global: !barril (user=@pedrocaos)
+2026-06-14 01:58:09,290 | INFO    | src.cooldown | Descartado por cooldown de usuario: !barril (user=@joao_zoeira)
+2026-06-14 01:58:12,427 | INFO    | src.command_queue | Enfileirado: !drop por @lua_fps (fila=1)
+2026-06-14 01:58:12,428 | WARNING | src.command_queue | Jogo fora de foco; descartando !drop
+2026-06-14 01:58:12,428 | INFO    | src.tiktok_listener | Simulacao rodando (tick 460)
+2026-06-14 01:58:15,845 | INFO    | src.tiktok_listener | Novo seguidor @lua_fps -> fogo
+2026-06-14 01:58:15,845 | INFO    | src.command_queue | Enfileirado: __follow__ por @lua_fps (fila=1)
+2026-06-14 01:58:15,850 | INFO    | src.command_queue | Executado: __follow__ por @lua_fps
+2026-06-14 01:58:19,695 | INFO    | src.command_queue | Enfileirado: !cura por @pedrocaos (fila=1)
+2026-06-14 01:58:19,696 | WARNING | src.command_queue | Jogo fora de foco; descartando !cura
+2026-06-14 01:58:23,021 | INFO    | src.tiktok_listener | Novo seguidor @ana.gamer -> fogo
+2026-06-14 01:58:23,021 | INFO    | src.command_queue | Enfileirado: __follow__ por @ana.gamer (fila=1)
+2026-06-14 01:58:23,025 | INFO    | src.command_queue | Executado: __follow__ por @ana.gamer
+2026-06-14 01:58:27,148 | INFO    | src.command_queue | Enfileirado: !drop por @pedrocaos (fila=1)
+2026-06-14 01:58:27,149 | WARNING | src.command_queue | Jogo fora de foco; descartando !drop
+2026-06-14 01:58:30,927 | INFO    | src.cooldown | Descartado por cooldown global: !cura (user=@lua_fps)
+2026-06-14 01:58:48,400 | INFO    | src.command_queue | Enfileirado: !barril por @ana.gamer (fila=1)
+2026-06-14 01:58:48,401 | WARNING | src.command_queue | Jogo fora de foco; descartando !barril
+2026-06-14 01:58:52,236 | INFO    | src.cooldown | Descartado por cooldown global: !barril (user=@lua_fps)
+2026-06-14 01:58:54,200 | INFO    | src.cooldown | Descartado por cooldown global: !barril (user=@ana.gamer)
+2026-06-14 01:58:58,020 | INFO    | src.tiktok_listener | Meta de likes batida por @joao_zoeira -> zumbi
+2026-06-14 01:58:58,020 | INFO    | src.command_queue | Enfileirado: __likes__ por @joao_zoeira (fila=1)
+2026-06-14 01:58:58,026 | INFO    | src.command_queue | Executado: __likes__ por @joao_zoeira
+2026-06-14 01:59:10,083 | INFO    | src.tiktok_listener | Simulacao rodando (tick 480)
+2026-06-14 01:59:12,388 | INFO    | src.command_queue | Enfileirado: !barril por @lua_fps (fila=1)
+2026-06-14 01:59:12,388 | WARNING | src.command_queue | Jogo fora de foco; descartando !barril
+2026-06-14 01:59:27,443 | INFO    | src.command_queue | Enfileirado: !cura por @lua_fps (fila=1)
+2026-06-14 01:59:27,444 | WARNING | src.command_queue | Jogo fora de foco; descartando !cura
+2026-06-14 01:59:30,074 | INFO    | src.command_queue | Enfileirado: !barril por @pedrocaos (fila=1)
+2026-06-14 01:59:30,075 | WARNING | src.command_queue | Jogo fora de foco; descartando !barril
+2026-06-14 01:59:33,040 | INFO    | src.cooldown | Descartado por cooldown global: !barril (user=@lua_fps)
+2026-06-14 01:59:34,556 | INFO    | src.tiktok_listener | Meta de likes batida por @joao_zoeira -> zumbi
+2026-06-14 01:59:34,557 | INFO    | src.command_queue | Enfileirado: __likes__ por @joao_zoeira (fila=1)
+2026-06-14 01:59:34,564 | INFO    | src.command_queue | Executado: __likes__ por @joao_zoeira
+2026-06-14 01:59:48,060 | INFO    | src.command_queue | Enfileirado: !barril por @ana.gamer (fila=1)
+2026-06-14 01:59:48,061 | WARNING | src.command_queue | Jogo fora de foco; descartando !barril
+2026-06-14 01:59:50,580 | INFO    | src.cooldown | Descartado por cooldown global: !barril (user=@pedrocaos)
+2026-06-14 01:59:55,379 | INFO    | src.tiktok_listener | Novo seguidor @pedrocaos -> fogo
+2026-06-14 01:59:55,379 | INFO    | src.command_queue | Enfileirado: __follow__ por @pedrocaos (fila=1)
+2026-06-14 01:59:55,382 | INFO    | src.command_queue | Executado: __follow__ por @pedrocaos
+2026-06-14 01:59:57,530 | INFO    | src.command_queue | Enfileirado: !barril por @lua_fps (fila=1)
+2026-06-14 01:59:57,531 | WARNING | src.command_queue | Jogo fora de foco; descartando !barril
+2026-06-14 01:59:59,568 | INFO    | src.cooldown | Descartado por cooldown global: !barril (user=@joao_zoeira)
+2026-06-14 01:59:59,568 | INFO    | src.tiktok_listener | Simulacao rodando (tick 500)
+2026-06-14 02:00:10,134 | INFO    | src.command_queue | Enfileirado: !barril por @joao_zoeira (fila=1)
+2026-06-14 02:00:10,135 | WARNING | src.command_queue | Jogo fora de foco; descartando !barril
+2026-06-14 02:00:13,542 | INFO    | src.cooldown | Descartado por cooldown global: !barril (user=@pedrocaos)
+2026-06-14 02:00:16,843 | INFO    | src.cooldown | Descartado por cooldown de usuario: !cura (user=@lua_fps)
+2026-06-14 02:00:21,136 | INFO    | src.tiktok_listener | Meta de likes batida por @pedrocaos -> zumbi
+2026-06-14 02:00:21,136 | INFO    | src.command_queue | Enfileirado: __likes__ por @pedrocaos (fila=1)
+2026-06-14 02:00:21,143 | INFO    | src.command_queue | Executado: __likes__ por @pedrocaos
+2026-06-14 02:00:22,700 | INFO    | src.command_queue | Enfileirado: !drop por @joao_zoeira (fila=1)
+2026-06-14 02:00:22,853 | INFO    | src.command_queue | Executado: !drop por @joao_zoeira
+2026-06-14 02:00:25,397 | INFO    | src.command_queue | Enfileirado: !barril por @lua_fps (fila=1)
+2026-06-14 02:00:25,550 | INFO    | src.command_queue | Executado: !barril por @lua_fps
+2026-06-14 02:00:27,194 | INFO    | src.cooldown | Descartado por cooldown global: !barril (user=@lua_fps)
+2026-06-14 02:00:42,458 | INFO    | src.command_queue | Enfileirado: !cura por @joao_zoeira (fila=1)
+2026-06-14 02:00:42,459 | WARNING | src.command_queue | Jogo fora de foco; descartando !cura
+2026-06-14 02:00:48,125 | INFO    | src.cooldown | Descartado por cooldown global: !cura (user=@pedrocaos)
+2026-06-14 02:00:51,819 | INFO    | src.tiktok_listener | Novo seguidor @lua_fps -> fogo
+2026-06-14 02:00:51,819 | INFO    | src.command_queue | Enfileirado: __follow__ por @lua_fps (fila=1)
+2026-06-14 02:00:51,834 | INFO    | src.command_queue | Executado: __follow__ por @lua_fps
+2026-06-14 02:00:55,409 | INFO    | src.command_queue | Enfileirado: !barril por @pedrocaos (fila=1)
+2026-06-14 02:00:55,410 | WARNING | src.command_queue | Jogo fora de foco; descartando !barril
+2026-06-14 02:00:55,410 | INFO    | src.tiktok_listener | Simulacao rodando (tick 520)
+2026-06-14 02:01:07,182 | INFO    | src.command_queue | Enfileirado: !barril por @joao_zoeira (fila=1)
+2026-06-14 02:01:07,183 | WARNING | src.command_queue | Jogo fora de foco; descartando !barril
+2026-06-14 02:01:20,824 | INFO    | src.command_queue | Enfileirado: !barril por @ana.gamer (fila=1)
+2026-06-14 02:01:20,827 | WARNING | src.command_queue | Jogo fora de foco; descartando !barril
+2026-06-14 02:01:28,496 | INFO    | src.tiktok_listener | Meta de likes batida por @pedrocaos -> zumbi
+2026-06-14 02:01:28,497 | INFO    | src.command_queue | Enfileirado: __likes__ por @pedrocaos (fila=1)
+2026-06-14 02:01:28,505 | INFO    | src.command_queue | Executado: __likes__ por @pedrocaos
+2026-06-14 02:01:37,450 | INFO    | src.command_queue | Enfileirado: !barril por @joao_zoeira (fila=1)
+2026-06-14 02:01:37,451 | WARNING | src.command_queue | Jogo fora de foco; descartando !barril
+2026-06-14 02:01:42,776 | INFO    | src.command_queue | Enfileirado: !drop por @lua_fps (fila=1)
+2026-06-14 02:01:42,776 | WARNING | src.command_queue | Jogo fora de foco; descartando !drop
+2026-06-14 02:01:46,550 | INFO    | src.cooldown | Descartado por cooldown de usuario: !barril (user=@joao_zoeira)
+2026-06-14 02:01:49,393 | INFO    | src.tiktok_listener | Novo seguidor @joao_zoeira -> fogo
+2026-06-14 02:01:49,394 | INFO    | src.command_queue | Enfileirado: __follow__ por @joao_zoeira (fila=1)
+2026-06-14 02:01:49,404 | INFO    | src.command_queue | Executado: __follow__ por @joao_zoeira
+2026-06-14 02:01:52,240 | INFO    | src.tiktok_listener | Novo seguidor @joao_zoeira -> fogo
+2026-06-14 02:01:52,241 | INFO    | src.command_queue | Enfileirado: __follow__ por @joao_zoeira (fila=1)
+2026-06-14 02:01:52,247 | INFO    | src.command_queue | Executado: __follow__ por @joao_zoeira
+2026-06-14 02:01:53,942 | INFO    | src.tiktok_listener | Simulacao rodando (tick 540)
+2026-06-14 02:01:58,908 | INFO    | src.command_queue | Enfileirado: !barril por @ana.gamer (fila=1)
+2026-06-14 02:01:58,908 | WARNING | src.command_queue | Jogo fora de foco; descartando !barril
+2026-06-14 02:02:01,630 | INFO    | src.command_queue | Enfileirado: !cura por @pedrocaos (fila=1)
+2026-06-14 02:02:01,631 | WARNING | src.command_queue | Jogo fora de foco; descartando !cura
+2026-06-14 02:02:05,805 | INFO    | src.tiktok_listener | Novo seguidor @joao_zoeira -> fogo
+2026-06-14 02:02:05,805 | INFO    | src.command_queue | Enfileirado: __follow__ por @joao_zoeira (fila=1)
+2026-06-14 02:02:05,820 | INFO    | src.command_queue | Executado: __follow__ por @joao_zoeira
+2026-06-14 02:02:15,005 | INFO    | src.command_queue | Enfileirado: !barril por @joao_zoeira (fila=1)
+2026-06-14 02:02:15,005 | WARNING | src.command_queue | Jogo fora de foco; descartando !barril
+2026-06-14 02:02:16,984 | INFO    | src.cooldown | Descartado por cooldown global: !cura (user=@pedrocaos)
+2026-06-14 02:02:21,674 | INFO    | src.command_queue | Enfileirado: !cura por @ana.gamer (fila=1)
+2026-06-14 02:02:21,675 | WARNING | src.command_queue | Jogo fora de foco; descartando !cura
+2026-06-14 02:02:26,183 | INFO    | src.tiktok_listener | Novo seguidor @lua_fps -> fogo
+2026-06-14 02:02:26,184 | INFO    | src.command_queue | Enfileirado: __follow__ por @lua_fps (fila=1)
+2026-06-14 02:02:26,186 | INFO    | src.command_queue | Executado: __follow__ por @lua_fps
+2026-06-14 02:02:29,602 | INFO    | src.command_queue | Enfileirado: !barril por @pedrocaos (fila=1)
+2026-06-14 02:02:29,603 | WARNING | src.command_queue | Jogo fora de foco; descartando !barril
+2026-06-14 02:02:33,545 | INFO    | src.tiktok_listener | Meta de likes batida por @ana.gamer -> zumbi
+2026-06-14 02:02:33,545 | INFO    | src.command_queue | Enfileirado: __likes__ por @ana.gamer (fila=1)
+2026-06-14 02:02:33,562 | INFO    | src.command_queue | Executado: __likes__ por @ana.gamer
+2026-06-14 02:02:36,728 | INFO    | src.command_queue | Enfileirado: !drop por @joao_zoeira (fila=1)
+2026-06-14 02:02:36,728 | WARNING | src.command_queue | Jogo fora de foco; descartando !drop
+2026-06-14 02:02:45,099 | INFO    | src.command_queue | Enfileirado: !barril por @lua_fps (fila=1)
+2026-06-14 02:02:45,100 | WARNING | src.command_queue | Jogo fora de foco; descartando !barril
+2026-06-14 02:02:45,100 | INFO    | src.tiktok_listener | Simulacao rodando (tick 560)
+2026-06-14 02:02:50,372 | INFO    | src.cooldown | Descartado por cooldown global: !barril (user=@joao_zoeira)
+2026-06-14 02:02:55,629 | INFO    | src.cooldown | Descartado por cooldown de usuario: !barril (user=@lua_fps)
+2026-06-14 02:03:08,621 | INFO    | src.command_queue | Enfileirado: !barril por @joao_zoeira (fila=1)
+2026-06-14 02:03:08,622 | WARNING | src.command_queue | Jogo fora de foco; descartando !barril
+2026-06-14 02:03:13,630 | INFO    | src.cooldown | Descartado por cooldown global: !barril (user=@pedrocaos)
+2026-06-14 02:03:19,026 | INFO    | src.command_queue | Enfileirado: !cura por @joao_zoeira (fila=1)
+2026-06-14 02:03:19,027 | WARNING | src.command_queue | Jogo fora de foco; descartando !cura
+2026-06-14 02:03:25,138 | INFO    | src.command_queue | Enfileirado: !barril por @pedrocaos (fila=1)
+2026-06-14 02:03:25,138 | WARNING | src.command_queue | Jogo fora de foco; descartando !barril
+2026-06-14 02:03:30,715 | INFO    | src.cooldown | Descartado por cooldown global: !barril (user=@lua_fps)
+2026-06-14 02:03:33,963 | INFO    | src.tiktok_listener | Novo seguidor @ana.gamer -> fogo
+2026-06-14 02:03:33,964 | INFO    | src.command_queue | Enfileirado: __follow__ por @ana.gamer (fila=1)
+2026-06-14 02:03:33,967 | INFO    | src.command_queue | Executado: __follow__ por @ana.gamer
+2026-06-14 02:03:39,271 | INFO    | src.tiktok_listener | Simulacao rodando (tick 580)
+2026-06-14 02:03:42,518 | INFO    | src.command_queue | Enfileirado: !barril por @joao_zoeira (fila=1)
+2026-06-14 02:03:42,518 | WARNING | src.command_queue | Jogo fora de foco; descartando !barril
+2026-06-14 02:03:44,866 | INFO    | src.command_queue | Enfileirado: !cura por @lua_fps (fila=1)
+2026-06-14 02:03:44,867 | WARNING | src.command_queue | Jogo fora de foco; descartando !cura
+2026-06-14 02:03:48,082 | INFO    | src.cooldown | Descartado por cooldown global: !barril (user=@lua_fps)
+2026-06-14 02:03:52,028 | INFO    | src.command_queue | Enfileirado: !barril por @ana.gamer (fila=1)
+2026-06-14 02:03:52,029 | WARNING | src.command_queue | Jogo fora de foco; descartando !barril
+2026-06-14 02:04:05,317 | INFO    | src.tiktok_listener | Meta de likes batida por @ana.gamer -> zumbi
+2026-06-14 02:04:05,318 | INFO    | src.command_queue | Enfileirado: __likes__ por @ana.gamer (fila=1)
+2026-06-14 02:04:05,332 | INFO    | src.command_queue | Executado: __likes__ por @ana.gamer
+2026-06-14 02:04:06,863 | INFO    | src.cooldown | Descartado por cooldown de usuario: !barril (user=@joao_zoeira)
+2026-06-14 02:04:13,742 | INFO    | src.command_queue | Enfileirado: !drop por @pedrocaos (fila=1)
+2026-06-14 02:04:13,743 | WARNING | src.command_queue | Jogo fora de foco; descartando !drop
+2026-06-14 02:04:20,191 | INFO    | src.tiktok_listener | Novo seguidor @joao_zoeira -> fogo
+2026-06-14 02:04:20,192 | INFO    | src.command_queue | Enfileirado: __follow__ por @joao_zoeira (fila=1)
+2026-06-14 02:04:20,195 | INFO    | src.command_queue | Executado: __follow__ por @joao_zoeira
+2026-06-14 02:04:28,821 | INFO    | src.command_queue | Enfileirado: !barril por @ana.gamer (fila=1)
+2026-06-14 02:04:28,821 | WARNING | src.command_queue | Jogo fora de foco; descartando !barril
+2026-06-14 02:04:36,198 | INFO    | src.tiktok_listener | Simulacao rodando (tick 600)
+2026-06-14 02:04:39,089 | INFO    | src.command_queue | Enfileirado: !barril por @lua_fps (fila=1)
+2026-06-14 02:04:39,090 | WARNING | src.command_queue | Jogo fora de foco; descartando !barril
+2026-06-14 02:04:41,269 | INFO    | src.cooldown | Descartado por cooldown de usuario: !drop (user=@pedrocaos)
+2026-06-14 02:04:43,236 | INFO    | src.tiktok_listener | Meta de likes batida por @ana.gamer -> zumbi
+2026-06-14 02:04:43,236 | INFO    | src.command_queue | Enfileirado: __likes__ por @ana.gamer (fila=1)
+2026-06-14 02:04:43,248 | INFO    | src.command_queue | Executado: __likes__ por @ana.gamer
+2026-06-14 02:04:56,149 | INFO    | src.tiktok_listener | Meta de likes batida por @joao_zoeira -> zumbi
+2026-06-14 02:04:56,150 | INFO    | src.command_queue | Enfileirado: __likes__ por @joao_zoeira (fila=1)
+2026-06-14 02:04:56,162 | INFO    | src.command_queue | Executado: __likes__ por @joao_zoeira
+2026-06-14 02:05:12,351 | INFO    | src.tiktok_listener | Novo seguidor @ana.gamer -> fogo
+2026-06-14 02:05:12,351 | INFO    | src.command_queue | Enfileirado: __follow__ por @ana.gamer (fila=1)
+2026-06-14 02:05:12,355 | INFO    | src.command_queue | Executado: __follow__ por @ana.gamer
+2026-06-14 02:05:14,330 | INFO    | src.command_queue | Enfileirado: !barril por @joao_zoeira (fila=1)
+2026-06-14 02:05:14,331 | WARNING | src.command_queue | Jogo fora de foco; descartando !barril
+2026-06-14 02:05:17,762 | INFO    | src.tiktok_listener | Novo seguidor @ana.gamer -> fogo
+2026-06-14 02:05:17,763 | INFO    | src.command_queue | Enfileirado: __follow__ por @ana.gamer (fila=1)
+2026-06-14 02:05:17,765 | INFO    | src.command_queue | Executado: __follow__ por @ana.gamer
+2026-06-14 02:05:20,097 | INFO    | src.cooldown | Descartado por cooldown global: !barril (user=@joao_zoeira)
+2026-06-14 02:05:25,080 | INFO    | src.tiktok_listener | Meta de likes batida por @joao_zoeira -> zumbi
+2026-06-14 02:05:25,081 | INFO    | src.command_queue | Enfileirado: __likes__ por @joao_zoeira (fila=1)
+2026-06-14 02:05:25,083 | INFO    | src.command_queue | Executado: __likes__ por @joao_zoeira
+2026-06-14 02:05:27,831 | INFO    | src.tiktok_listener | Simulacao rodando (tick 620)
+2026-06-14 02:05:30,611 | INFO    | src.command_queue | Enfileirado: !barril por @pedrocaos (fila=1)
+2026-06-14 02:05:30,612 | WARNING | src.command_queue | Jogo fora de foco; descartando !barril
+2026-06-14 02:05:42,687 | INFO    | src.tiktok_listener | Novo seguidor @pedrocaos -> fogo
+2026-06-14 02:05:42,687 | INFO    | src.command_queue | Enfileirado: __follow__ por @pedrocaos (fila=1)
+2026-06-14 02:05:42,691 | INFO    | src.command_queue | Executado: __follow__ por @pedrocaos
+2026-06-14 02:05:44,742 | INFO    | src.command_queue | Enfileirado: !drop por @pedrocaos (fila=1)
+2026-06-14 02:05:44,742 | WARNING | src.command_queue | Jogo fora de foco; descartando !drop
+2026-06-14 02:05:59,641 | INFO    | src.tiktok_listener | Novo seguidor @joao_zoeira -> fogo
+2026-06-14 02:05:59,642 | INFO    | src.command_queue | Enfileirado: __follow__ por @joao_zoeira (fila=1)
+2026-06-14 02:05:59,645 | INFO    | src.command_queue | Executado: __follow__ por @joao_zoeira
+2026-06-14 02:06:03,121 | INFO    | src.tiktok_listener | Meta de likes batida por @ana.gamer -> zumbi
+2026-06-14 02:06:03,121 | INFO    | src.command_queue | Enfileirado: __likes__ por @ana.gamer (fila=1)
+2026-06-14 02:06:03,131 | INFO    | src.command_queue | Executado: __likes__ por @ana.gamer
+2026-06-14 02:06:06,293 | INFO    | src.command_queue | Enfileirado: !cura por @pedrocaos (fila=1)
+2026-06-14 02:06:06,294 | WARNING | src.command_queue | Jogo fora de foco; descartando !cura
+2026-06-14 02:06:09,309 | INFO    | src.tiktok_listener | Novo seguidor @pedrocaos -> fogo
+2026-06-14 02:06:09,310 | INFO    | src.command_queue | Enfileirado: __follow__ por @pedrocaos (fila=1)
+2026-06-14 02:06:09,319 | INFO    | src.command_queue | Executado: __follow__ por @pedrocaos
+2026-06-14 02:06:23,505 | INFO    | src.command_queue | Enfileirado: !barril por @pedrocaos (fila=1)
+2026-06-14 02:06:23,505 | WARNING | src.command_queue | Jogo fora de foco; descartando !barril
+2026-06-14 02:06:27,169 | INFO    | src.cooldown | Descartado por cooldown global: !barril (user=@lua_fps)
+2026-06-14 02:06:27,170 | INFO    | src.tiktok_listener | Simulacao rodando (tick 640)
+2026-06-14 02:06:37,555 | INFO    | src.command_queue | Enfileirado: !barril por @ana.gamer (fila=1)
+2026-06-14 02:06:37,556 | WARNING | src.command_queue | Jogo fora de foco; descartando !barril
+2026-06-14 02:06:39,255 | INFO    | src.command_queue | Enfileirado: !cura por @joao_zoeira (fila=1)
+2026-06-14 02:06:39,256 | WARNING | src.command_queue | Jogo fora de foco; descartando !cura
+2026-06-14 02:06:47,632 | INFO    | src.tiktok_listener | Meta de likes batida por @ana.gamer -> zumbi
+2026-06-14 02:06:47,632 | INFO    | src.command_queue | Enfileirado: __likes__ por @ana.gamer (fila=1)
+2026-06-14 02:06:47,640 | INFO    | src.command_queue | Executado: __likes__ por @ana.gamer
+2026-06-14 02:06:52,101 | INFO    | src.command_queue | Enfileirado: !drop por @ana.gamer (fila=1)
+2026-06-14 02:06:52,102 | WARNING | src.command_queue | Jogo fora de foco; descartando !drop
+2026-06-14 02:06:54,976 | INFO    | src.cooldown | Descartado por cooldown global: !drop (user=@pedrocaos)
+2026-06-14 02:07:12,730 | INFO    | src.command_queue | Enfileirado: !barril por @joao_zoeira (fila=1)
+2026-06-14 02:07:12,731 | WARNING | src.command_queue | Jogo fora de foco; descartando !barril
+2026-06-14 02:07:14,323 | INFO    | src.command_queue | Enfileirado: !cura por @ana.gamer (fila=1)
+2026-06-14 02:07:14,324 | WARNING | src.command_queue | Jogo fora de foco; descartando !cura
+2026-06-14 02:07:15,947 | INFO    | src.cooldown | Descartado por cooldown global: !barril (user=@joao_zoeira)
+2026-06-14 02:07:15,948 | INFO    | src.tiktok_listener | Simulacao rodando (tick 660)
+2026-06-14 02:07:20,898 | INFO    | src.tiktok_listener | Novo seguidor @pedrocaos -> fogo
+2026-06-14 02:07:20,899 | INFO    | src.command_queue | Enfileirado: __follow__ por @pedrocaos (fila=1)
+2026-06-14 02:07:20,907 | INFO    | src.command_queue | Executado: __follow__ por @pedrocaos
+2026-06-14 02:07:24,225 | INFO    | src.tiktok_listener | Novo seguidor @ana.gamer -> fogo
+2026-06-14 02:07:24,225 | INFO    | src.command_queue | Enfileirado: __follow__ por @ana.gamer (fila=1)
+2026-06-14 02:07:24,229 | INFO    | src.command_queue | Executado: __follow__ por @ana.gamer
+2026-06-14 02:07:28,060 | INFO    | src.command_queue | Enfileirado: !barril por @pedrocaos (fila=1)
+2026-06-14 02:07:28,060 | WARNING | src.command_queue | Jogo fora de foco; descartando !barril
+2026-06-14 02:07:31,726 | INFO    | src.tiktok_listener | Meta de likes batida por @lua_fps -> zumbi
+2026-06-14 02:07:31,726 | INFO    | src.command_queue | Enfileirado: __likes__ por @lua_fps (fila=1)
+2026-06-14 02:07:31,729 | INFO    | src.command_queue | Executado: __likes__ por @lua_fps
+2026-06-14 02:07:40,137 | INFO    | src.command_queue | Enfileirado: !barril por @ana.gamer (fila=1)
+2026-06-14 02:07:40,138 | WARNING | src.command_queue | Jogo fora de foco; descartando !barril
+2026-06-14 02:07:51,471 | INFO    | src.command_queue | Enfileirado: !drop por @lua_fps (fila=1)
+2026-06-14 02:07:51,472 | WARNING | src.command_queue | Jogo fora de foco; descartando !drop
+2026-06-14 02:08:03,181 | INFO    | src.command_queue | Enfileirado: !barril por @pedrocaos (fila=1)
+2026-06-14 02:08:03,182 | WARNING | src.command_queue | Jogo fora de foco; descartando !barril
+2026-06-14 02:08:06,183 | INFO    | src.cooldown | Descartado por cooldown global: !barril (user=@ana.gamer)
+2026-06-14 02:08:09,143 | INFO    | src.panel_server | Overlay desconectado (1 ativos)
+2026-06-14 02:08:09,145 | INFO    | src.panel_server | Overlay desconectado (0 ativos)
+2026-06-14 02:08:09,929 | INFO    | websockets.server | connection open
+2026-06-14 02:08:09,929 | INFO    | src.panel_server | Overlay conectado (1 ativos)
+2026-06-14 02:08:10,134 | INFO    | websockets.server | connection open
+2026-06-14 02:08:10,135 | INFO    | src.panel_server | Overlay conectado (2 ativos)
+2026-06-14 02:08:11,828 | INFO    | src.panel_server | Overlay desconectado (1 ativos)
+2026-06-14 02:08:11,838 | INFO    | src.panel_server | Overlay desconectado (0 ativos)
+2026-06-14 02:08:12,098 | INFO    | src.tiktok_listener | Simulacao rodando (tick 680)
+2026-06-14 02:08:12,683 | INFO    | websockets.server | connection open
+2026-06-14 02:08:12,684 | INFO    | src.panel_server | Overlay conectado (1 ativos)
+2026-06-14 02:08:12,920 | INFO    | websockets.server | connection open
+2026-06-14 02:08:12,922 | INFO    | src.panel_server | Overlay conectado (2 ativos)
+2026-06-14 02:08:27,036 | INFO    | src.command_queue | Enfileirado: !barril por @joao_zoeira (fila=1)
+2026-06-14 02:08:27,036 | WARNING | src.command_queue | Jogo fora de foco; descartando !barril
+2026-06-14 02:08:29,478 | INFO    | src.tiktok_listener | Meta de likes batida por @lua_fps -> zumbi
+2026-06-14 02:08:29,479 | INFO    | src.command_queue | Enfileirado: __likes__ por @lua_fps (fila=1)
+2026-06-14 02:08:29,482 | INFO    | src.command_queue | Executado: __likes__ por @lua_fps
+2026-06-14 02:08:34,836 | INFO    | src.cooldown | Descartado por cooldown global: !barril (user=@lua_fps)
+2026-06-14 02:08:40,201 | INFO    | src.command_queue | Enfileirado: !barril por @lua_fps (fila=1)
+2026-06-14 02:08:40,202 | WARNING | src.command_queue | Jogo fora de foco; descartando !barril
+2026-06-14 02:08:45,069 | INFO    | src.command_queue | Enfileirado: !cura por @pedrocaos (fila=1)
+2026-06-14 02:08:45,070 | WARNING | src.command_queue | Jogo fora de foco; descartando !cura
+2026-06-14 02:08:50,331 | INFO    | src.tiktok_listener | Novo seguidor @joao_zoeira -> fogo
+2026-06-14 02:08:50,331 | INFO    | src.command_queue | Enfileirado: __follow__ por @joao_zoeira (fila=1)
+2026-06-14 02:08:50,334 | INFO    | src.command_queue | Executado: __follow__ por @joao_zoeira
+2026-06-14 02:08:58,205 | INFO    | src.tiktok_listener | Novo seguidor @pedrocaos -> fogo
+2026-06-14 02:08:58,206 | INFO    | src.command_queue | Enfileirado: __follow__ por @pedrocaos (fila=1)
+2026-06-14 02:08:58,209 | INFO    | src.command_queue | Executado: __follow__ por @pedrocaos
+2026-06-14 02:09:00,898 | INFO    | src.tiktok_listener | Novo seguidor @ana.gamer -> fogo
+2026-06-14 02:09:00,899 | INFO    | src.command_queue | Enfileirado: __follow__ por @ana.gamer (fila=1)
+2026-06-14 02:09:00,902 | INFO    | src.command_queue | Executado: __follow__ por @ana.gamer
+2026-06-14 02:09:03,512 | INFO    | src.tiktok_listener | Novo seguidor @joao_zoeira -> fogo
+2026-06-14 02:09:03,512 | INFO    | src.command_queue | Enfileirado: __follow__ por @joao_zoeira (fila=1)
+2026-06-14 02:09:03,516 | INFO    | src.command_queue | Executado: __follow__ por @joao_zoeira
+2026-06-14 02:09:05,123 | INFO    | src.command_queue | Enfileirado: !drop por @joao_zoeira (fila=1)
+2026-06-14 02:09:05,124 | WARNING | src.command_queue | Jogo fora de foco; descartando !drop
+2026-06-14 02:09:05,124 | INFO    | src.tiktok_listener | Simulacao rodando (tick 700)
+2026-06-14 02:09:15,545 | INFO    | src.tiktok_listener | Meta de likes batida por @ana.gamer -> zumbi
+2026-06-14 02:09:15,545 | INFO    | src.command_queue | Enfileirado: __likes__ por @ana.gamer (fila=1)
+2026-06-14 02:09:15,547 | INFO    | src.command_queue | Executado: __likes__ por @ana.gamer
+2026-06-14 02:09:18,653 | INFO    | src.tiktok_listener | Novo seguidor @lua_fps -> fogo
+2026-06-14 02:09:18,654 | INFO    | src.command_queue | Enfileirado: __follow__ por @lua_fps (fila=1)
+2026-06-14 02:09:18,670 | INFO    | src.command_queue | Executado: __follow__ por @lua_fps
+2026-06-14 02:09:29,940 | INFO    | src.command_queue | Enfileirado: !barril por @ana.gamer (fila=1)
+2026-06-14 02:09:29,941 | WARNING | src.command_queue | Jogo fora de foco; descartando !barril
+2026-06-14 02:09:34,949 | INFO    | src.cooldown | Descartado por cooldown global: !barril (user=@ana.gamer)
+2026-06-14 02:09:36,681 | INFO    | src.cooldown | Descartado por cooldown global: !barril (user=@ana.gamer)
+2026-06-14 02:09:41,597 | INFO    | src.command_queue | Enfileirado: !barril por @lua_fps (fila=1)
+2026-06-14 02:09:41,598 | WARNING | src.command_queue | Jogo fora de foco; descartando !barril
+2026-06-14 02:09:47,750 | INFO    | src.command_queue | Enfileirado: !cura por @lua_fps (fila=1)
+2026-06-14 02:09:47,751 | WARNING | src.command_queue | Jogo fora de foco; descartando !cura
+2026-06-14 02:09:53,220 | INFO    | src.tiktok_listener | Meta de likes batida por @ana.gamer -> zumbi
+2026-06-14 02:09:53,221 | INFO    | src.command_queue | Enfileirado: __likes__ por @ana.gamer (fila=1)
+2026-06-14 02:09:53,223 | INFO    | src.command_queue | Executado: __likes__ por @ana.gamer
+2026-06-14 02:09:56,975 | INFO    | src.tiktok_listener | Simulacao rodando (tick 720)
+2026-06-14 02:10:00,285 | INFO    | src.command_queue | Enfileirado: !barril por @ana.gamer (fila=1)
+2026-06-14 02:10:00,286 | WARNING | src.command_queue | Jogo fora de foco; descartando !barril
+2026-06-14 02:10:04,953 | INFO    | src.cooldown | Descartado por cooldown global: !barril (user=@joao_zoeira)
+2026-06-14 02:10:08,339 | INFO    | src.command_queue | Enfileirado: !drop por @ana.gamer (fila=1)
+2026-06-14 02:10:08,340 | WARNING | src.command_queue | Jogo fora de foco; descartando !drop
+2026-06-14 02:10:10,858 | INFO    | src.command_queue | Enfileirado: !barril por @joao_zoeira (fila=1)
+2026-06-14 02:10:10,859 | WARNING | src.command_queue | Jogo fora de foco; descartando !barril
+2026-06-14 02:10:16,995 | INFO    | src.tiktok_listener | Novo seguidor @joao_zoeira -> fogo
+2026-06-14 02:10:16,995 | INFO    | src.command_queue | Enfileirado: __follow__ por @joao_zoeira (fila=1)
+2026-06-14 02:10:16,998 | INFO    | src.command_queue | Executado: __follow__ por @joao_zoeira
+2026-06-14 02:10:18,634 | INFO    | src.tiktok_listener | Novo seguidor @joao_zoeira -> fogo
+2026-06-14 02:10:18,634 | INFO    | src.command_queue | Enfileirado: __follow__ por @joao_zoeira (fila=1)
+2026-06-14 02:10:18,637 | INFO    | src.command_queue | Executado: __follow__ por @joao_zoeira
+2026-06-14 02:10:21,680 | INFO    | src.tiktok_listener | Novo seguidor @joao_zoeira -> fogo
+2026-06-14 02:10:21,680 | INFO    | src.command_queue | Enfileirado: __follow__ por @joao_zoeira (fila=1)
+2026-06-14 02:10:21,683 | INFO    | src.command_queue | Executado: __follow__ por @joao_zoeira
+2026-06-14 02:10:27,431 | INFO    | src.command_queue | Enfileirado: !drop por @joao_zoeira (fila=1)
+2026-06-14 02:10:27,432 | WARNING | src.command_queue | Jogo fora de foco; descartando !drop
+2026-06-14 02:10:35,147 | INFO    | src.tiktok_listener | Novo seguidor @ana.gamer -> fogo
+2026-06-14 02:10:35,147 | INFO    | src.command_queue | Enfileirado: __follow__ por @ana.gamer (fila=1)
+2026-06-14 02:10:35,149 | INFO    | src.command_queue | Executado: __follow__ por @ana.gamer
+2026-06-14 02:10:36,970 | INFO    | src.tiktok_listener | Meta de likes batida por @pedrocaos -> zumbi
+2026-06-14 02:10:36,971 | INFO    | src.command_queue | Enfileirado: __likes__ por @pedrocaos (fila=1)
+2026-06-14 02:10:36,972 | INFO    | src.command_queue | Executado: __likes__ por @pedrocaos
+2026-06-14 02:10:51,541 | INFO    | src.tiktok_listener | Novo seguidor @joao_zoeira -> fogo
+2026-06-14 02:10:51,541 | INFO    | src.command_queue | Enfileirado: __follow__ por @joao_zoeira (fila=1)
+2026-06-14 02:10:51,543 | INFO    | src.command_queue | Executado: __follow__ por @joao_zoeira
+2026-06-14 02:10:53,411 | INFO    | src.tiktok_listener | Simulacao rodando (tick 740)
+2026-06-14 02:11:00,864 | INFO    | src.command_queue | Enfileirado: !cura por @joao_zoeira (fila=1)
+2026-06-14 02:11:00,864 | WARNING | src.command_queue | Jogo fora de foco; descartando !cura
+2026-06-14 02:11:08,485 | INFO    | src.command_queue | Enfileirado: !drop por @joao_zoeira (fila=1)
+2026-06-14 02:11:08,485 | WARNING | src.command_queue | Jogo fora de foco; descartando !drop
+2026-06-14 02:11:10,464 | INFO    | src.tiktok_listener | Novo seguidor @ana.gamer -> fogo
+2026-06-14 02:11:10,464 | INFO    | src.command_queue | Enfileirado: __follow__ por @ana.gamer (fila=1)
+2026-06-14 02:11:10,468 | INFO    | src.command_queue | Executado: __follow__ por @ana.gamer
+2026-06-14 02:11:19,818 | INFO    | src.cooldown | Descartado por cooldown de usuario: !drop (user=@joao_zoeira)
+2026-06-14 02:11:24,283 | INFO    | src.command_queue | Enfileirado: !barril por @ana.gamer (fila=1)
+2026-06-14 02:11:24,283 | WARNING | src.command_queue | Jogo fora de foco; descartando !barril
+2026-06-14 02:11:41,576 | INFO    | src.command_queue | Enfileirado: !barril por @lua_fps (fila=1)
+2026-06-14 02:11:41,576 | WARNING | src.command_queue | Jogo fora de foco; descartando !barril
+2026-06-14 02:11:43,788 | INFO    | src.tiktok_listener | Meta de likes batida por @lua_fps -> zumbi
+2026-06-14 02:11:43,788 | INFO    | src.command_queue | Enfileirado: __likes__ por @lua_fps (fila=1)
+2026-06-14 02:11:43,792 | INFO    | src.command_queue | Executado: __likes__ por @lua_fps
+2026-06-14 02:11:47,254 | INFO    | src.command_queue | Enfileirado: !cura por @lua_fps (fila=1)
+2026-06-14 02:11:47,255 | INFO    | src.tiktok_listener | Simulacao rodando (tick 760)
+2026-06-14 02:11:47,407 | INFO    | src.command_queue | Executado: !cura por @lua_fps
+2026-06-14 02:11:53,965 | INFO    | src.cooldown | Descartado por cooldown de usuario: !barril (user=@lua_fps)
+2026-06-14 02:11:56,506 | INFO    | src.cooldown | Descartado por cooldown global: !cura (user=@joao_zoeira)
+2026-06-14 02:12:00,179 | INFO    | src.cooldown | Descartado por cooldown global: !cura (user=@ana.gamer)
+2026-06-14 02:12:03,772 | INFO    | src.cooldown | Descartado por cooldown de usuario: !barril (user=@lua_fps)
+2026-06-14 02:12:09,622 | INFO    | src.cooldown | Descartado por cooldown de usuario: !cura (user=@lua_fps)
+2026-06-14 02:12:15,597 | INFO    | src.command_queue | Enfileirado: !barril por @ana.gamer (fila=1)
+2026-06-14 02:12:15,597 | WARNING | src.command_queue | Jogo fora de foco; descartando !barril
+2026-06-14 02:12:33,279 | INFO    | src.command_queue | Enfileirado: !drop por @joao_zoeira (fila=1)
+2026-06-14 02:12:33,280 | WARNING | src.command_queue | Jogo fora de foco; descartando !drop
+2026-06-14 02:12:35,590 | INFO    | src.cooldown | Descartado por cooldown global: !drop (user=@pedrocaos)
+2026-06-14 02:12:44,019 | INFO    | src.tiktok_listener | Simulacao rodando (tick 780)
+2026-06-14 02:12:44,759 | INFO    | src.panel_server | Overlay desconectado (1 ativos)
+2026-06-14 02:12:44,759 | INFO    | src.panel_server | Overlay desconectado (0 ativos)
+2026-06-14 02:12:44,760 | INFO    | __main__ | Encerrado pelo usuario (Ctrl+C)
+2026-06-14 02:12:48,659 | INFO    | __main__ | Comandos: !barril, !cura, !drop
+2026-06-14 02:12:48,659 | INFO    | __main__ | Presentes executaveis: gg, rose, tiny diny
+2026-06-14 02:12:48,659 | INFO    | __main__ | Acao de meta de likes: configurada (Python)
+2026-06-14 02:12:48,659 | INFO    | __main__ | Acao de seguir: configurada (Python)
+2026-06-14 02:12:48,660 | INFO    | src.key_executor | Backend de teclado: pydirectinput
+2026-06-14 02:12:48,660 | INFO    | src.file_bridge | Ponte por arquivo: C:\Program Files (x86)\Steam\steamapps\common\GarrysMod\garrysmod\data\live_caos\fila.txt
+2026-06-14 02:12:48,716 | INFO    | websockets.server | server listening on [::1]:8765
+2026-06-14 02:12:48,716 | INFO    | websockets.server | server listening on 127.0.0.1:8765
+2026-06-14 02:12:48,716 | INFO    | src.panel_server | Painel WebSocket ouvindo em ws://localhost:8765
+2026-06-14 02:12:48,716 | INFO    | src.command_queue | Worker da fila iniciado
+2026-06-14 02:12:48,717 | INFO    | src.tiktok_listener | MODO SIMULACAO ativo — gerando eventos falsos
+2026-06-14 02:12:49,776 | INFO    | websockets.server | connection open
+2026-06-14 02:12:49,776 | INFO    | src.panel_server | Overlay conectado (1 ativos)
+2026-06-14 02:12:49,798 | INFO    | websockets.server | connection open
+2026-06-14 02:12:49,798 | INFO    | src.panel_server | Overlay conectado (2 ativos)
+2026-06-14 02:12:51,404 | INFO    | src.command_queue | Enfileirado: !drop por @pedrocaos (fila=1)
+2026-06-14 02:12:51,405 | INFO    | src.tiktok_listener | Simulacao rodando (tick 0)
+2026-06-14 02:12:51,557 | INFO    | src.command_queue | Executado: !drop por @pedrocaos
+2026-06-14 02:12:54,928 | INFO    | src.command_queue | Enfileirado: !barril por @lua_fps (fila=1)
+2026-06-14 02:12:55,080 | INFO    | src.command_queue | Executado: !barril por @lua_fps
+2026-06-14 02:13:07,195 | INFO    | src.tiktok_listener | Novo seguidor @ana.gamer -> fogo
+2026-06-14 02:13:07,196 | INFO    | src.command_queue | Enfileirado: __follow__ por @ana.gamer (fila=1)
+2026-06-14 02:13:07,199 | INFO    | src.command_queue | Executado: __follow__ por @ana.gamer
+2026-06-14 02:13:09,055 | INFO    | src.command_queue | Enfileirado: !cura por @pedrocaos (fila=1)
+2026-06-14 02:13:09,208 | INFO    | src.command_queue | Executado: !cura por @pedrocaos
+2026-06-14 02:13:11,194 | INFO    | src.tiktok_listener | Novo seguidor @lua_fps -> fogo
+2026-06-14 02:13:11,194 | INFO    | src.command_queue | Enfileirado: __follow__ por @lua_fps (fila=1)
+2026-06-14 02:13:11,198 | INFO    | src.command_queue | Executado: __follow__ por @lua_fps
+2026-06-14 02:13:14,308 | INFO    | src.command_queue | Enfileirado: !barril por @pedrocaos (fila=1)
+2026-06-14 02:13:14,461 | INFO    | src.command_queue | Executado: !barril por @pedrocaos
+2026-06-14 02:13:21,497 | INFO    | src.command_queue | Enfileirado: !drop por @joao_zoeira (fila=1)
+2026-06-14 02:13:21,649 | INFO    | src.command_queue | Executado: !drop por @joao_zoeira
+2026-06-14 02:13:24,192 | INFO    | src.tiktok_listener | Meta de likes batida por @lua_fps -> zumbi
+2026-06-14 02:13:24,192 | INFO    | src.command_queue | Enfileirado: __likes__ por @lua_fps (fila=1)
+2026-06-14 02:13:24,195 | INFO    | src.command_queue | Executado: __likes__ por @lua_fps
+2026-06-14 02:13:27,461 | INFO    | src.cooldown | Descartado por cooldown de usuario: !barril (user=@pedrocaos)
+2026-06-14 02:13:44,178 | INFO    | src.tiktok_listener | Novo seguidor @lua_fps -> fogo
+2026-06-14 02:13:44,179 | INFO    | src.command_queue | Enfileirado: __follow__ por @lua_fps (fila=1)
+2026-06-14 02:13:44,181 | INFO    | src.command_queue | Executado: __follow__ por @lua_fps
+2026-06-14 02:13:52,249 | INFO    | src.tiktok_listener | Novo seguidor @joao_zoeira -> fogo
+2026-06-14 02:13:52,249 | INFO    | src.command_queue | Enfileirado: __follow__ por @joao_zoeira (fila=1)
+2026-06-14 02:13:52,250 | INFO    | src.tiktok_listener | Simulacao rodando (tick 20)
+2026-06-14 02:13:52,253 | INFO    | src.command_queue | Executado: __follow__ por @joao_zoeira
+2026-06-14 02:13:57,287 | INFO    | src.tiktok_listener | Novo seguidor @pedrocaos -> fogo
+2026-06-14 02:13:57,287 | INFO    | src.command_queue | Enfileirado: __follow__ por @pedrocaos (fila=1)
+2026-06-14 02:13:57,290 | INFO    | src.command_queue | Executado: __follow__ por @pedrocaos
+2026-06-14 02:14:02,974 | INFO    | src.command_queue | Enfileirado: !drop por @joao_zoeira (fila=1)
+2026-06-14 02:14:03,126 | INFO    | src.command_queue | Executado: !drop por @joao_zoeira
+2026-06-14 02:14:06,101 | INFO    | src.tiktok_listener | Meta de likes batida por @joao_zoeira -> zumbi
+2026-06-14 02:14:06,101 | INFO    | src.command_queue | Enfileirado: __likes__ por @joao_zoeira (fila=1)
+2026-06-14 02:14:06,112 | INFO    | src.command_queue | Executado: __likes__ por @joao_zoeira
+2026-06-14 02:14:12,822 | INFO    | src.cooldown | Descartado por cooldown global: !drop (user=@lua_fps)
+2026-06-14 02:14:17,992 | INFO    | src.command_queue | Enfileirado: !barril por @joao_zoeira (fila=1)
+2026-06-14 02:14:18,144 | INFO    | src.command_queue | Executado: !barril por @joao_zoeira
+2026-06-14 02:14:20,220 | INFO    | src.tiktok_listener | Novo seguidor @pedrocaos -> fogo
+2026-06-14 02:14:20,221 | INFO    | src.command_queue | Enfileirado: __follow__ por @pedrocaos (fila=1)
+2026-06-14 02:14:20,223 | INFO    | src.command_queue | Executado: __follow__ por @pedrocaos
+2026-06-14 02:14:25,065 | INFO    | src.command_queue | Enfileirado: !drop por @lua_fps (fila=1)
+2026-06-14 02:14:25,217 | INFO    | src.command_queue | Executado: !drop por @lua_fps
+2026-06-14 02:14:27,465 | INFO    | src.command_queue | Enfileirado: !barril por @lua_fps (fila=1)
+2026-06-14 02:14:27,617 | INFO    | src.command_queue | Executado: !barril por @lua_fps
+2026-06-14 02:14:30,915 | INFO    | src.tiktok_listener | Novo seguidor @joao_zoeira -> fogo
+2026-06-14 02:14:30,916 | INFO    | src.command_queue | Enfileirado: __follow__ por @joao_zoeira (fila=1)
+2026-06-14 02:14:30,931 | INFO    | src.command_queue | Executado: __follow__ por @joao_zoeira
+2026-06-14 02:14:32,481 | INFO    | src.tiktok_listener | Novo seguidor @pedrocaos -> fogo
+2026-06-14 02:14:32,481 | INFO    | src.command_queue | Enfileirado: __follow__ por @pedrocaos (fila=1)
+2026-06-14 02:14:32,514 | INFO    | src.command_queue | Executado: __follow__ por @pedrocaos
+2026-06-14 02:14:37,036 | INFO    | src.command_queue | Enfileirado: !drop por @pedrocaos (fila=1)
+2026-06-14 02:14:37,188 | INFO    | src.command_queue | Executado: !drop por @pedrocaos
+2026-06-14 02:14:39,204 | INFO    | src.command_queue | Enfileirado: !barril por @ana.gamer (fila=1)
+2026-06-14 02:14:39,356 | INFO    | src.command_queue | Executado: !barril por @ana.gamer
+2026-06-14 02:14:43,696 | INFO    | src.cooldown | Descartado por cooldown global: !barril (user=@lua_fps)
+2026-06-14 02:14:43,696 | INFO    | src.tiktok_listener | Simulacao rodando (tick 40)
+2026-06-14 02:14:48,035 | INFO    | src.tiktok_listener | Novo seguidor @joao_zoeira -> fogo
+2026-06-14 02:14:48,036 | INFO    | src.command_queue | Enfileirado: __follow__ por @joao_zoeira (fila=1)
+2026-06-14 02:14:48,039 | INFO    | src.command_queue | Executado: __follow__ por @joao_zoeira
+2026-06-14 02:15:11,083 | INFO    | src.command_queue | Enfileirado: !barril por @lua_fps (fila=1)
+2026-06-14 02:15:11,085 | WARNING | src.command_queue | Jogo fora de foco; descartando !barril
+2026-06-14 02:15:14,080 | INFO    | src.cooldown | Descartado por cooldown global: !barril (user=@joao_zoeira)
+2026-06-14 02:15:18,971 | INFO    | src.cooldown | Descartado por cooldown global: !barril (user=@lua_fps)
+2026-06-14 02:15:26,411 | INFO    | src.command_queue | Enfileirado: !barril por @ana.gamer (fila=1)
+2026-06-14 02:15:26,564 | INFO    | src.command_queue | Executado: !barril por @ana.gamer
+2026-06-14 02:15:32,764 | INFO    | src.tiktok_listener | Meta de likes batida por @joao_zoeira -> zumbi
+2026-06-14 02:15:32,765 | INFO    | src.command_queue | Enfileirado: __likes__ por @joao_zoeira (fila=1)
+2026-06-14 02:15:32,768 | INFO    | src.command_queue | Executado: __likes__ por @joao_zoeira
+2026-06-14 02:15:35,113 | INFO    | src.tiktok_listener | Novo seguidor @joao_zoeira -> fogo
+2026-06-14 02:15:35,113 | INFO    | src.command_queue | Enfileirado: __follow__ por @joao_zoeira (fila=1)
+2026-06-14 02:15:35,116 | INFO    | src.command_queue | Executado: __follow__ por @joao_zoeira
+2026-06-14 02:15:37,554 | INFO    | src.command_queue | Enfileirado: !barril por @pedrocaos (fila=1)
+2026-06-14 02:15:37,555 | WARNING | src.command_queue | Jogo fora de foco; descartando !barril
+2026-06-14 02:15:40,387 | INFO    | src.cooldown | Descartado por cooldown global: !barril (user=@lua_fps)
+2026-06-14 02:15:40,387 | INFO    | src.tiktok_listener | Simulacao rodando (tick 60)
+2026-06-14 02:15:42,914 | INFO    | src.command_queue | Enfileirado: !cura por @ana.gamer (fila=1)
+2026-06-14 02:15:43,066 | INFO    | src.command_queue | Executado: !cura por @ana.gamer
+2026-06-14 02:15:49,266 | INFO    | src.tiktok_listener | Novo seguidor @ana.gamer -> fogo
+2026-06-14 02:15:49,267 | INFO    | src.command_queue | Enfileirado: __follow__ por @ana.gamer (fila=1)
+2026-06-14 02:15:49,270 | INFO    | src.command_queue | Executado: __follow__ por @ana.gamer
+2026-06-14 02:15:51,140 | INFO    | src.cooldown | Descartado por cooldown global: !cura (user=@lua_fps)
+2026-06-14 02:15:53,277 | INFO    | src.command_queue | Enfileirado: !barril por @ana.gamer (fila=1)
+2026-06-14 02:15:53,278 | WARNING | src.command_queue | Jogo fora de foco; descartando !barril
+2026-06-14 02:15:59,495 | INFO    | src.command_queue | Enfileirado: !drop por @ana.gamer (fila=1)
+2026-06-14 02:15:59,495 | WARNING | src.command_queue | Jogo fora de foco; descartando !drop
+2026-06-14 02:16:02,941 | INFO    | src.cooldown | Descartado por cooldown de usuario: !cura (user=@ana.gamer)
+2026-06-14 02:16:05,615 | INFO    | src.command_queue | Enfileirado: !barril por @joao_zoeira (fila=1)
+2026-06-14 02:16:05,616 | WARNING | src.command_queue | Jogo fora de foco; descartando !barril
+2026-06-14 02:16:12,260 | INFO    | src.cooldown | Descartado por cooldown global: !barril (user=@ana.gamer)
+2026-06-14 02:16:18,582 | INFO    | src.tiktok_listener | Novo seguidor @lua_fps -> fogo
+2026-06-14 02:16:18,582 | INFO    | src.command_queue | Enfileirado: __follow__ por @lua_fps (fila=1)
+2026-06-14 02:16:18,585 | INFO    | src.command_queue | Executado: __follow__ por @lua_fps
+2026-06-14 02:16:25,293 | INFO    | src.cooldown | Descartado por cooldown de usuario: !cura (user=@ana.gamer)
+2026-06-14 02:16:31,132 | INFO    | src.command_queue | Enfileirado: !barril por @pedrocaos (fila=1)
+2026-06-14 02:16:31,133 | WARNING | src.command_queue | Jogo fora de foco; descartando !barril
+2026-06-14 02:16:33,248 | INFO    | src.tiktok_listener | Novo seguidor @ana.gamer -> fogo
+2026-06-14 02:16:33,249 | INFO    | src.command_queue | Enfileirado: __follow__ por @ana.gamer (fila=1)
+2026-06-14 02:16:33,251 | INFO    | src.command_queue | Executado: __follow__ por @ana.gamer
+2026-06-14 02:16:35,383 | INFO    | src.command_queue | Enfileirado: !drop por @lua_fps (fila=1)
+2026-06-14 02:16:35,384 | WARNING | src.command_queue | Jogo fora de foco; descartando !drop
+2026-06-14 02:16:35,385 | INFO    | src.tiktok_listener | Simulacao rodando (tick 80)
+2026-06-14 02:16:38,556 | INFO    | src.cooldown | Descartado por cooldown global: !barril (user=@joao_zoeira)
+2026-06-14 02:16:42,344 | INFO    | src.cooldown | Descartado por cooldown de usuario: !cura (user=@ana.gamer)
+2026-06-14 02:16:46,812 | INFO    | src.tiktok_listener | Novo seguidor @ana.gamer -> fogo
+2026-06-14 02:16:46,812 | INFO    | src.command_queue | Enfileirado: __follow__ por @ana.gamer (fila=1)
+2026-06-14 02:16:46,816 | INFO    | src.command_queue | Executado: __follow__ por @ana.gamer
+2026-06-14 02:16:59,348 | INFO    | src.command_queue | Enfileirado: !drop por @ana.gamer (fila=1)
+2026-06-14 02:16:59,349 | WARNING | src.command_queue | Jogo fora de foco; descartando !drop
+2026-06-14 02:17:01,946 | INFO    | src.tiktok_listener | Novo seguidor @joao_zoeira -> fogo
+2026-06-14 02:17:01,947 | INFO    | src.command_queue | Enfileirado: __follow__ por @joao_zoeira (fila=1)
+2026-06-14 02:17:01,950 | INFO    | src.command_queue | Executado: __follow__ por @joao_zoeira
+2026-06-14 02:17:07,869 | INFO    | src.command_queue | Enfileirado: !barril por @lua_fps (fila=1)
+2026-06-14 02:17:07,870 | WARNING | src.command_queue | Jogo fora de foco; descartando !barril
+2026-06-14 02:17:13,665 | INFO    | src.tiktok_listener | Meta de likes batida por @pedrocaos -> zumbi
+2026-06-14 02:17:13,666 | INFO    | src.command_queue | Enfileirado: __likes__ por @pedrocaos (fila=1)
+2026-06-14 02:17:13,670 | INFO    | src.command_queue | Executado: __likes__ por @pedrocaos
+2026-06-14 02:17:16,988 | INFO    | src.command_queue | Enfileirado: !cura por @ana.gamer (fila=1)
+2026-06-14 02:17:16,989 | WARNING | src.command_queue | Jogo fora de foco; descartando !cura
+2026-06-14 02:17:20,358 | INFO    | src.cooldown | Descartado por cooldown global: !cura (user=@pedrocaos)
+2026-06-14 02:17:25,426 | INFO    | src.command_queue | Enfileirado: !barril por @ana.gamer (fila=1)
+2026-06-14 02:17:25,427 | WARNING | src.command_queue | Jogo fora de foco; descartando !barril
+2026-06-14 02:17:28,888 | INFO    | src.cooldown | Descartado por cooldown global: !barril (user=@lua_fps)
+2026-06-14 02:17:28,888 | INFO    | src.tiktok_listener | Simulacao rodando (tick 100)
+2026-06-14 02:17:36,246 | INFO    | src.cooldown | Descartado por cooldown global: !cura (user=@joao_zoeira)
+2026-06-14 02:17:39,244 | INFO    | src.command_queue | Enfileirado: !barril por @pedrocaos (fila=1)
+2026-06-14 02:17:39,245 | WARNING | src.command_queue | Jogo fora de foco; descartando !barril
+2026-06-14 02:17:44,499 | INFO    | src.command_queue | Enfileirado: !drop por @lua_fps (fila=1)
+2026-06-14 02:17:44,500 | WARNING | src.command_queue | Jogo fora de foco; descartando !drop
+2026-06-14 02:17:48,054 | INFO    | src.cooldown | Descartado por cooldown global: !drop (user=@pedrocaos)
+2026-06-14 02:17:49,584 | INFO    | src.command_queue | Enfileirado: !barril por @lua_fps (fila=1)
+2026-06-14 02:17:49,585 | WARNING | src.command_queue | Jogo fora de foco; descartando !barril
+2026-06-14 02:17:56,928 | INFO    | src.command_queue | Enfileirado: !drop por @ana.gamer (fila=1)
+2026-06-14 02:17:56,929 | WARNING | src.command_queue | Jogo fora de foco; descartando !drop
+2026-06-14 02:17:58,550 | INFO    | src.command_queue | Enfileirado: !barril por @joao_zoeira (fila=1)
+2026-06-14 02:17:58,551 | WARNING | src.command_queue | Jogo fora de foco; descartando !barril
+2026-06-14 02:18:00,730 | INFO    | src.tiktok_listener | Meta de likes batida por @joao_zoeira -> zumbi
+2026-06-14 02:18:00,730 | INFO    | src.command_queue | Enfileirado: __likes__ por @joao_zoeira (fila=1)
+2026-06-14 02:18:00,735 | INFO    | src.command_queue | Executado: __likes__ por @joao_zoeira
+2026-06-14 02:18:07,660 | INFO    | src.command_queue | Enfileirado: !barril por @pedrocaos (fila=1)
+2026-06-14 02:18:07,661 | WARNING | src.command_queue | Jogo fora de foco; descartando !barril
+2026-06-14 02:18:10,213 | INFO    | src.command_queue | Enfileirado: !cura por @lua_fps (fila=1)
+2026-06-14 02:18:10,213 | WARNING | src.command_queue | Jogo fora de foco; descartando !cura
+2026-06-14 02:18:25,366 | INFO    | src.tiktok_listener | Novo seguidor @pedrocaos -> fogo
+2026-06-14 02:18:25,366 | INFO    | src.command_queue | Enfileirado: __follow__ por @pedrocaos (fila=1)
+2026-06-14 02:18:25,370 | INFO    | src.command_queue | Executado: __follow__ por @pedrocaos
+2026-06-14 02:18:30,236 | INFO    | src.tiktok_listener | Simulacao rodando (tick 120)
+2026-06-14 02:18:31,812 | INFO    | src.command_queue | Enfileirado: !cura por @ana.gamer (fila=1)
+2026-06-14 02:18:31,813 | WARNING | src.command_queue | Jogo fora de foco; descartando !cura
+2026-06-14 02:18:34,533 | INFO    | src.cooldown | Descartado por cooldown global: !cura (user=@joao_zoeira)
+2026-06-14 02:18:36,157 | INFO    | src.command_queue | Enfileirado: !barril por @joao_zoeira (fila=1)
+2026-06-14 02:18:36,158 | WARNING | src.command_queue | Jogo fora de foco; descartando !barril
+2026-06-14 02:18:44,105 | INFO    | src.cooldown | Descartado por cooldown global: !barril (user=@ana.gamer)
+2026-06-14 02:18:46,872 | INFO    | src.cooldown | Descartado por cooldown global: !cura (user=@pedrocaos)
+2026-06-14 02:18:48,634 | INFO    | src.tiktok_listener | Meta de likes batida por @joao_zoeira -> zumbi
+2026-06-14 02:18:48,635 | INFO    | src.command_queue | Enfileirado: __likes__ por @joao_zoeira (fila=1)
+2026-06-14 02:18:48,639 | INFO    | src.command_queue | Executado: __likes__ por @joao_zoeira
+2026-06-14 02:18:56,770 | INFO    | src.cooldown | Descartado por cooldown de usuario: !cura (user=@ana.gamer)
+2026-06-14 02:19:04,851 | INFO    | src.tiktok_listener | Novo seguidor @joao_zoeira -> fogo
+2026-06-14 02:19:04,851 | INFO    | src.command_queue | Enfileirado: __follow__ por @joao_zoeira (fila=1)
+2026-06-14 02:19:04,855 | INFO    | src.command_queue | Executado: __follow__ por @joao_zoeira
+2026-06-14 02:19:10,987 | INFO    | src.command_queue | Enfileirado: !drop por @pedrocaos (fila=1)
+2026-06-14 02:19:10,988 | WARNING | src.command_queue | Jogo fora de foco; descartando !drop
+2026-06-14 02:19:16,089 | INFO    | src.tiktok_listener | Novo seguidor @ana.gamer -> fogo
+2026-06-14 02:19:16,089 | INFO    | src.command_queue | Enfileirado: __follow__ por @ana.gamer (fila=1)
+2026-06-14 02:19:16,093 | INFO    | src.command_queue | Executado: __follow__ por @ana.gamer
+2026-06-14 02:19:22,737 | INFO    | src.tiktok_listener | Simulacao rodando (tick 140)
+2026-06-14 02:19:25,363 | INFO    | src.tiktok_listener | Meta de likes batida por @pedrocaos -> zumbi
+2026-06-14 02:19:25,363 | INFO    | src.command_queue | Enfileirado: __likes__ por @pedrocaos (fila=1)
+2026-06-14 02:19:25,367 | INFO    | src.command_queue | Executado: __likes__ por @pedrocaos
+2026-06-14 02:19:41,623 | INFO    | src.command_queue | Enfileirado: !cura por @ana.gamer (fila=1)
+2026-06-14 02:19:41,624 | WARNING | src.command_queue | Jogo fora de foco; descartando !cura
+2026-06-14 02:19:55,771 | INFO    | src.command_queue | Enfileirado: !barril por @ana.gamer (fila=1)
+2026-06-14 02:19:55,772 | WARNING | src.command_queue | Jogo fora de foco; descartando !barril
+2026-06-14 02:20:02,354 | INFO    | src.tiktok_listener | Meta de likes batida por @lua_fps -> zumbi
+2026-06-14 02:20:02,354 | INFO    | src.command_queue | Enfileirado: __likes__ por @lua_fps (fila=1)
+2026-06-14 02:20:02,358 | INFO    | src.command_queue | Executado: __likes__ por @lua_fps
+2026-06-14 02:20:13,280 | INFO    | src.tiktok_listener | Novo seguidor @joao_zoeira -> fogo
+2026-06-14 02:20:13,280 | INFO    | src.command_queue | Enfileirado: __follow__ por @joao_zoeira (fila=1)
+2026-06-14 02:20:13,284 | INFO    | src.command_queue | Executado: __follow__ por @joao_zoeira
+2026-06-14 02:20:16,956 | INFO    | src.command_queue | Enfileirado: !barril por @joao_zoeira (fila=1)
+2026-06-14 02:20:16,957 | WARNING | src.command_queue | Jogo fora de foco; descartando !barril
+2026-06-14 02:20:16,957 | INFO    | src.tiktok_listener | Simulacao rodando (tick 160)
+2026-06-14 02:20:18,594 | INFO    | src.tiktok_listener | Novo seguidor @pedrocaos -> fogo
+2026-06-14 02:20:18,594 | INFO    | src.command_queue | Enfileirado: __follow__ por @pedrocaos (fila=1)
+2026-06-14 02:20:18,597 | INFO    | src.command_queue | Executado: __follow__ por @pedrocaos
+2026-06-14 02:20:22,132 | INFO    | src.cooldown | Descartado por cooldown global: !barril (user=@lua_fps)
+2026-06-14 02:20:29,982 | INFO    | src.command_queue | Enfileirado: !barril por @lua_fps (fila=1)
+2026-06-14 02:20:29,982 | WARNING | src.command_queue | Jogo fora de foco; descartando !barril
+2026-06-14 02:20:38,033 | INFO    | src.cooldown | Descartado por cooldown de usuario: !barril (user=@lua_fps)
+2026-06-14 02:20:40,291 | INFO    | src.tiktok_listener | Meta de likes batida por @ana.gamer -> zumbi
+2026-06-14 02:20:40,291 | INFO    | src.command_queue | Enfileirado: __likes__ por @ana.gamer (fila=1)
+2026-06-14 02:20:40,296 | INFO    | src.command_queue | Executado: __likes__ por @ana.gamer
+2026-06-14 02:20:45,548 | INFO    | src.cooldown | Descartado por cooldown de usuario: !barril (user=@lua_fps)
+2026-06-14 02:20:47,480 | INFO    | src.command_queue | Enfileirado: !barril por @ana.gamer (fila=1)
+2026-06-14 02:20:47,481 | WARNING | src.command_queue | Jogo fora de foco; descartando !barril
+2026-06-14 02:20:50,419 | INFO    | src.command_queue | Enfileirado: !cura por @joao_zoeira (fila=1)
+2026-06-14 02:20:50,419 | WARNING | src.command_queue | Jogo fora de foco; descartando !cura
+2026-06-14 02:20:55,781 | INFO    | src.tiktok_listener | Novo seguidor @lua_fps -> fogo
+2026-06-14 02:20:55,782 | INFO    | src.command_queue | Enfileirado: __follow__ por @lua_fps (fila=1)
+2026-06-14 02:20:55,785 | INFO    | src.command_queue | Executado: __follow__ por @lua_fps
+2026-06-14 02:21:09,416 | INFO    | src.tiktok_listener | Simulacao rodando (tick 180)
+2026-06-14 02:21:12,322 | INFO    | src.tiktok_listener | Novo seguidor @pedrocaos -> fogo
+2026-06-14 02:21:12,322 | INFO    | src.command_queue | Enfileirado: __follow__ por @pedrocaos (fila=1)
+2026-06-14 02:21:12,327 | INFO    | src.command_queue | Executado: __follow__ por @pedrocaos
+2026-06-14 02:21:21,606 | INFO    | src.tiktok_listener | Novo seguidor @ana.gamer -> fogo
+2026-06-14 02:21:21,606 | INFO    | src.command_queue | Enfileirado: __follow__ por @ana.gamer (fila=1)
+2026-06-14 02:21:21,610 | INFO    | src.command_queue | Executado: __follow__ por @ana.gamer
+2026-06-14 02:21:29,738 | INFO    | src.command_queue | Enfileirado: !cura por @pedrocaos (fila=1)
+2026-06-14 02:21:29,739 | WARNING | src.command_queue | Jogo fora de foco; descartando !cura
+2026-06-14 02:21:38,764 | INFO    | src.command_queue | Enfileirado: !barril por @lua_fps (fila=1)
+2026-06-14 02:21:38,765 | WARNING | src.command_queue | Jogo fora de foco; descartando !barril
+2026-06-14 02:21:40,634 | INFO    | src.cooldown | Descartado por cooldown global: !barril (user=@ana.gamer)
+2026-06-14 02:21:43,522 | INFO    | src.cooldown | Descartado por cooldown global: !barril (user=@lua_fps)
+2026-06-14 02:21:47,416 | INFO    | src.command_queue | Enfileirado: !barril por @ana.gamer (fila=1)
+2026-06-14 02:21:47,416 | WARNING | src.command_queue | Jogo fora de foco; descartando !barril
+2026-06-14 02:21:51,325 | INFO    | src.tiktok_listener | Meta de likes batida por @joao_zoeira -> zumbi
+2026-06-14 02:21:51,325 | INFO    | src.command_queue | Enfileirado: __likes__ por @joao_zoeira (fila=1)
+2026-06-14 02:21:51,329 | INFO    | src.command_queue | Executado: __likes__ por @joao_zoeira
+2026-06-14 02:21:53,845 | INFO    | src.command_queue | Enfileirado: !cura por @joao_zoeira (fila=1)
+2026-06-14 02:21:53,846 | WARNING | src.command_queue | Jogo fora de foco; descartando !cura
+2026-06-14 02:22:02,730 | INFO    | src.cooldown | Descartado por cooldown de usuario: !barril (user=@lua_fps)
+2026-06-14 02:22:05,715 | INFO    | src.tiktok_listener | Simulacao rodando (tick 200)
+2026-06-14 02:22:08,282 | INFO    | src.command_queue | Enfileirado: !barril por @joao_zoeira (fila=1)
+2026-06-14 02:22:08,283 | WARNING | src.command_queue | Jogo fora de foco; descartando !barril
+2026-06-14 02:22:11,822 | INFO    | src.cooldown | Descartado por cooldown global: !cura (user=@ana.gamer)
+2026-06-14 02:22:15,065 | INFO    | src.tiktok_listener | Novo seguidor @lua_fps -> fogo
+2026-06-14 02:22:15,065 | INFO    | src.command_queue | Enfileirado: __follow__ por @lua_fps (fila=1)
+2026-06-14 02:22:15,069 | INFO    | src.command_queue | Executado: __follow__ por @lua_fps
+2026-06-14 02:22:16,643 | INFO    | src.cooldown | Descartado por cooldown de usuario: !barril (user=@joao_zoeira)
+2026-06-14 02:22:19,290 | INFO    | src.command_queue | Enfileirado: !barril por @pedrocaos (fila=1)
+2026-06-14 02:22:19,291 | WARNING | src.command_queue | Jogo fora de foco; descartando !barril
+2026-06-14 02:22:21,361 | INFO    | src.cooldown | Descartado por cooldown global: !barril (user=@joao_zoeira)
+2026-06-14 02:22:23,186 | INFO    | src.command_queue | Enfileirado: !drop por @joao_zoeira (fila=1)
+2026-06-14 02:22:23,186 | WARNING | src.command_queue | Jogo fora de foco; descartando !drop
+2026-06-14 02:22:29,863 | INFO    | src.command_queue | Enfileirado: !barril por @ana.gamer (fila=1)
+2026-06-14 02:22:29,864 | WARNING | src.command_queue | Jogo fora de foco; descartando !barril
+2026-06-14 02:22:33,004 | INFO    | src.cooldown | Descartado por cooldown global: !barril (user=@joao_zoeira)
+2026-06-14 02:22:37,330 | INFO    | src.cooldown | Descartado por cooldown global: !barril (user=@joao_zoeira)
+2026-06-14 02:22:40,575 | INFO    | src.tiktok_listener | Novo seguidor @pedrocaos -> fogo
+2026-06-14 02:22:40,575 | INFO    | src.command_queue | Enfileirado: __follow__ por @pedrocaos (fila=1)
+2026-06-14 02:22:40,578 | INFO    | src.command_queue | Executado: __follow__ por @pedrocaos
+2026-06-14 02:22:52,678 | INFO    | src.cooldown | Descartado por cooldown de usuario: !drop (user=@joao_zoeira)
+2026-06-14 02:22:56,494 | INFO    | src.tiktok_listener | Simulacao rodando (tick 220)
+2026-06-14 02:22:58,396 | INFO    | src.command_queue | Enfileirado: !barril por @lua_fps (fila=1)
+2026-06-14 02:22:58,396 | WARNING | src.command_queue | Jogo fora de foco; descartando !barril
+2026-06-14 02:23:00,450 | INFO    | src.tiktok_listener | Novo seguidor @joao_zoeira -> fogo
+2026-06-14 02:23:00,450 | INFO    | src.command_queue | Enfileirado: __follow__ por @joao_zoeira (fila=1)
+2026-06-14 02:23:00,454 | INFO    | src.command_queue | Executado: __follow__ por @joao_zoeira
+2026-06-14 02:23:03,883 | INFO    | src.command_queue | Enfileirado: !drop por @lua_fps (fila=1)
+2026-06-14 02:23:03,884 | WARNING | src.command_queue | Jogo fora de foco; descartando !drop
+2026-06-14 02:23:11,411 | INFO    | src.tiktok_listener | Novo seguidor @pedrocaos -> fogo
+2026-06-14 02:23:11,411 | INFO    | src.command_queue | Enfileirado: __follow__ por @pedrocaos (fila=1)
+2026-06-14 02:23:11,415 | INFO    | src.command_queue | Executado: __follow__ por @pedrocaos
+2026-06-14 02:23:15,121 | INFO    | src.command_queue | Enfileirado: !drop por @ana.gamer (fila=1)
+2026-06-14 02:23:15,122 | WARNING | src.command_queue | Jogo fora de foco; descartando !drop
+2026-06-14 02:23:18,244 | INFO    | src.command_queue | Enfileirado: !barril por @ana.gamer (fila=1)
+2026-06-14 02:23:18,245 | WARNING | src.command_queue | Jogo fora de foco; descartando !barril
+2026-06-14 02:23:22,047 | INFO    | src.cooldown | Descartado por cooldown global: !barril (user=@ana.gamer)
+2026-06-14 02:23:24,815 | INFO    | src.cooldown | Descartado por cooldown global: !barril (user=@joao_zoeira)
+2026-06-14 02:23:28,200 | INFO    | src.command_queue | Enfileirado: !barril por @joao_zoeira (fila=1)
+2026-06-14 02:23:28,201 | WARNING | src.command_queue | Jogo fora de foco; descartando !barril
+2026-06-14 02:23:40,825 | INFO    | src.command_queue | Enfileirado: !cura por @lua_fps (fila=1)
+2026-06-14 02:23:40,826 | WARNING | src.command_queue | Jogo fora de foco; descartando !cura
+2026-06-14 02:23:44,571 | INFO    | src.cooldown | Descartado por cooldown global: !cura (user=@ana.gamer)
+2026-06-14 02:23:47,266 | INFO    | src.tiktok_listener | Simulacao rodando (tick 240)
+2026-06-14 02:23:50,407 | INFO    | src.cooldown | Descartado por cooldown de usuario: !barril (user=@joao_zoeira)
+2026-06-14 02:23:53,626 | INFO    | src.command_queue | Enfileirado: !barril por @lua_fps (fila=1)
+2026-06-14 02:23:53,628 | WARNING | src.command_queue | Jogo fora de foco; descartando !barril
+2026-06-14 02:23:59,582 | INFO    | src.cooldown | Descartado por cooldown global: !barril (user=@ana.gamer)
+2026-06-14 02:24:02,351 | INFO    | src.command_queue | Enfileirado: !drop por @joao_zoeira (fila=1)
+2026-06-14 02:24:02,352 | WARNING | src.command_queue | Jogo fora de foco; descartando !drop
+2026-06-14 02:24:05,305 | INFO    | src.command_queue | Enfileirado: !barril por @pedrocaos (fila=1)
+2026-06-14 02:24:05,306 | WARNING | src.command_queue | Jogo fora de foco; descartando !barril
+2026-06-14 02:24:08,416 | INFO    | src.cooldown | Descartado por cooldown global: !drop (user=@ana.gamer)
+2026-06-14 02:24:21,016 | INFO    | src.tiktok_listener | Meta de likes batida por @ana.gamer -> zumbi
+2026-06-14 02:24:21,016 | INFO    | src.command_queue | Enfileirado: __likes__ por @ana.gamer (fila=1)
+2026-06-14 02:24:21,023 | INFO    | src.command_queue | Executado: __likes__ por @ana.gamer
+2026-06-14 02:24:29,172 | INFO    | src.command_queue | Enfileirado: !barril por @lua_fps (fila=1)
+2026-06-14 02:24:29,173 | WARNING | src.command_queue | Jogo fora de foco; descartando !barril
+2026-06-14 02:24:39,784 | INFO    | src.command_queue | Enfileirado: !barril por @joao_zoeira (fila=1)
+2026-06-14 02:24:39,785 | WARNING | src.command_queue | Jogo fora de foco; descartando !barril
+2026-06-14 02:24:42,996 | INFO    | src.cooldown | Descartado por cooldown global: !barril (user=@ana.gamer)
+2026-06-14 02:24:47,598 | INFO    | src.tiktok_listener | Simulacao rodando (tick 260)
+2026-06-14 02:24:50,843 | INFO    | src.command_queue | Enfileirado: !barril por @pedrocaos (fila=1)
+2026-06-14 02:24:50,843 | WARNING | src.command_queue | Jogo fora de foco; descartando !barril
+2026-06-14 02:24:58,851 | INFO    | src.tiktok_listener | Meta de likes batida por @ana.gamer -> zumbi
+2026-06-14 02:24:58,852 | INFO    | src.command_queue | Enfileirado: __likes__ por @ana.gamer (fila=1)
+2026-06-14 02:24:58,855 | INFO    | src.command_queue | Executado: __likes__ por @ana.gamer
+2026-06-14 02:25:10,716 | INFO    | src.command_queue | Enfileirado: !drop por @ana.gamer (fila=1)
+2026-06-14 02:25:10,869 | INFO    | src.command_queue | Executado: !drop por @ana.gamer
+2026-06-14 02:25:15,459 | INFO    | src.command_queue | Enfileirado: !barril por @ana.gamer (fila=1)
+2026-06-14 02:25:15,611 | INFO    | src.command_queue | Executado: !barril por @ana.gamer
+2026-06-14 02:25:17,567 | INFO    | src.tiktok_listener | Novo seguidor @ana.gamer -> fogo
+2026-06-14 02:25:17,567 | INFO    | src.command_queue | Enfileirado: __follow__ por @ana.gamer (fila=1)
+2026-06-14 02:25:17,572 | INFO    | src.command_queue | Executado: __follow__ por @ana.gamer
+2026-06-14 02:25:19,566 | INFO    | src.cooldown | Descartado por cooldown global: !barril (user=@lua_fps)
+2026-06-14 02:25:25,270 | INFO    | src.command_queue | Enfileirado: !drop por @lua_fps (fila=1)
+2026-06-14 02:25:25,423 | INFO    | src.command_queue | Executado: !drop por @lua_fps
+2026-06-14 02:25:28,494 | INFO    | src.command_queue | Enfileirado: !barril por @lua_fps (fila=1)
+2026-06-14 02:25:28,646 | INFO    | src.command_queue | Executado: !barril por @lua_fps
+2026-06-14 02:25:30,896 | INFO    | src.cooldown | Descartado por cooldown global: !drop (user=@joao_zoeira)
+2026-06-14 02:25:34,818 | INFO    | src.tiktok_listener | Meta de likes batida por @joao_zoeira -> zumbi
+2026-06-14 02:25:34,818 | INFO    | src.command_queue | Enfileirado: __likes__ por @joao_zoeira (fila=1)
+2026-06-14 02:25:34,822 | INFO    | src.command_queue | Executado: __likes__ por @joao_zoeira
+2026-06-14 02:25:42,506 | INFO    | src.tiktok_listener | Novo seguidor @joao_zoeira -> fogo
+2026-06-14 02:25:42,506 | INFO    | src.command_queue | Enfileirado: __follow__ por @joao_zoeira (fila=1)
+2026-06-14 02:25:42,507 | INFO    | src.tiktok_listener | Simulacao rodando (tick 280)
+2026-06-14 02:25:42,510 | INFO    | src.command_queue | Executado: __follow__ por @joao_zoeira
+2026-06-14 02:25:44,970 | INFO    | src.command_queue | Enfileirado: !drop por @ana.gamer (fila=1)
+2026-06-14 02:25:45,122 | INFO    | src.command_queue | Executado: !drop por @ana.gamer
+2026-06-14 02:25:48,954 | INFO    | src.command_queue | Enfileirado: !barril por @ana.gamer (fila=1)
+2026-06-14 02:25:49,106 | INFO    | src.command_queue | Executado: !barril por @ana.gamer
+2026-06-14 02:25:59,370 | INFO    | src.tiktok_listener | Novo seguidor @ana.gamer -> fogo
+2026-06-14 02:25:59,370 | INFO    | src.command_queue | Enfileirado: __follow__ por @ana.gamer (fila=1)
+2026-06-14 02:25:59,374 | INFO    | src.command_queue | Executado: __follow__ por @ana.gamer
+2026-06-14 02:26:01,509 | INFO    | src.tiktok_listener | Novo seguidor @pedrocaos -> fogo
+2026-06-14 02:26:01,509 | INFO    | src.command_queue | Enfileirado: __follow__ por @pedrocaos (fila=1)
+2026-06-14 02:26:01,513 | INFO    | src.command_queue | Executado: __follow__ por @pedrocaos
+2026-06-14 02:26:10,530 | INFO    | src.cooldown | Descartado por cooldown de usuario: !barril (user=@ana.gamer)
+2026-06-14 02:26:13,180 | INFO    | src.cooldown | Descartado por cooldown de usuario: !barril (user=@ana.gamer)
+2026-06-14 02:26:20,310 | INFO    | src.command_queue | Enfileirado: !cura por @ana.gamer (fila=1)
+2026-06-14 02:26:20,463 | INFO    | src.command_queue | Executado: !cura por @ana.gamer
+2026-06-14 02:26:25,471 | INFO    | src.tiktok_listener | Novo seguidor @joao_zoeira -> fogo
+2026-06-14 02:26:25,471 | INFO    | src.command_queue | Enfileirado: __follow__ por @joao_zoeira (fila=1)
+2026-06-14 02:26:25,475 | INFO    | src.command_queue | Executado: __follow__ por @joao_zoeira
+2026-06-14 02:26:30,586 | INFO    | src.tiktok_listener | Novo seguidor @lua_fps -> fogo
+2026-06-14 02:26:30,586 | INFO    | src.command_queue | Enfileirado: __follow__ por @lua_fps (fila=1)
+2026-06-14 02:26:30,591 | INFO    | src.command_queue | Executado: __follow__ por @lua_fps
+2026-06-14 02:26:34,105 | INFO    | src.command_queue | Enfileirado: !barril por @joao_zoeira (fila=1)
+2026-06-14 02:26:34,257 | INFO    | src.command_queue | Executado: !barril por @joao_zoeira
+2026-06-14 02:26:36,244 | INFO    | src.cooldown | Descartado por cooldown global: !barril (user=@ana.gamer)
+2026-06-14 02:26:36,244 | INFO    | src.tiktok_listener | Simulacao rodando (tick 300)
+2026-06-14 02:26:43,234 | INFO    | src.command_queue | Enfileirado: !barril por @ana.gamer (fila=1)
+2026-06-14 02:26:43,387 | INFO    | src.command_queue | Executado: !barril por @ana.gamer
+2026-06-14 02:26:54,812 | INFO    | src.cooldown | Descartado por cooldown de usuario: !barril (user=@ana.gamer)
+2026-06-14 02:26:57,323 | INFO    | src.command_queue | Enfileirado: !barril por @lua_fps (fila=1)
+2026-06-14 02:26:57,476 | INFO    | src.command_queue | Executado: !barril por @lua_fps
+2026-06-14 02:26:59,136 | INFO    | src.cooldown | Descartado por cooldown global: !barril (user=@pedrocaos)
+2026-06-14 02:27:00,963 | INFO    | src.tiktok_listener | Meta de likes batida por @ana.gamer -> zumbi
+2026-06-14 02:27:00,963 | INFO    | src.command_queue | Enfileirado: __likes__ por @ana.gamer (fila=1)
+2026-06-14 02:27:00,985 | INFO    | src.command_queue | Executado: __likes__ por @ana.gamer
+2026-06-14 02:27:18,150 | INFO    | src.cooldown | Descartado por cooldown de usuario: !barril (user=@lua_fps)
+2026-06-14 02:27:21,013 | INFO    | src.tiktok_listener | Novo seguidor @joao_zoeira -> fogo
+2026-06-14 02:27:21,014 | INFO    | src.command_queue | Enfileirado: __follow__ por @joao_zoeira (fila=1)
+2026-06-14 02:27:21,016 | INFO    | src.command_queue | Executado: __follow__ por @joao_zoeira
+2026-06-14 02:27:24,508 | INFO    | src.command_queue | Enfileirado: !barril por @pedrocaos (fila=1)
+2026-06-14 02:27:24,508 | WARNING | src.command_queue | Jogo fora de foco; descartando !barril
+2026-06-14 02:27:28,454 | INFO    | src.tiktok_listener | Novo seguidor @ana.gamer -> fogo
+2026-06-14 02:27:28,454 | INFO    | src.command_queue | Enfileirado: __follow__ por @ana.gamer (fila=1)
+2026-06-14 02:27:28,459 | INFO    | src.command_queue | Executado: __follow__ por @ana.gamer
+2026-06-14 02:27:31,252 | INFO    | src.command_queue | Enfileirado: !drop por @joao_zoeira (fila=1)
+2026-06-14 02:27:31,252 | WARNING | src.command_queue | Jogo fora de foco; descartando !drop
+2026-06-14 02:27:31,253 | INFO    | src.tiktok_listener | Simulacao rodando (tick 320)
+2026-06-14 02:27:34,375 | INFO    | src.cooldown | Descartado por cooldown de usuario: !barril (user=@pedrocaos)
+2026-06-14 02:27:36,819 | INFO    | src.command_queue | Enfileirado: !barril por @lua_fps (fila=1)
+2026-06-14 02:27:36,820 | WARNING | src.command_queue | Jogo fora de foco; descartando !barril
+2026-06-14 02:27:40,190 | INFO    | src.tiktok_listener | Novo seguidor @pedrocaos -> fogo
+2026-06-14 02:27:40,191 | INFO    | src.command_queue | Enfileirado: __follow__ por @pedrocaos (fila=1)
+2026-06-14 02:27:40,194 | INFO    | src.command_queue | Executado: __follow__ por @pedrocaos
+2026-06-14 02:27:51,185 | INFO    | src.command_queue | Enfileirado: !cura por @joao_zoeira (fila=1)
+2026-06-14 02:27:51,186 | WARNING | src.command_queue | Jogo fora de foco; descartando !cura
+2026-06-14 02:28:11,563 | INFO    | src.command_queue | Enfileirado: !drop por @joao_zoeira (fila=1)
+2026-06-14 02:28:11,564 | WARNING | src.command_queue | Jogo fora de foco; descartando !drop
+2026-06-14 02:28:14,174 | INFO    | src.tiktok_listener | Meta de likes batida por @joao_zoeira -> zumbi
+2026-06-14 02:28:14,175 | INFO    | src.command_queue | Enfileirado: __likes__ por @joao_zoeira (fila=1)
+2026-06-14 02:28:14,179 | INFO    | src.command_queue | Executado: __likes__ por @joao_zoeira
+2026-06-14 02:28:21,581 | INFO    | src.command_queue | Enfileirado: !drop por @ana.gamer (fila=1)
+2026-06-14 02:28:21,582 | WARNING | src.command_queue | Jogo fora de foco; descartando !drop
+2026-06-14 02:28:21,582 | INFO    | src.tiktok_listener | Simulacao rodando (tick 340)
+2026-06-14 02:28:27,599 | INFO    | src.tiktok_listener | Novo seguidor @ana.gamer -> fogo
+2026-06-14 02:28:27,599 | INFO    | src.command_queue | Enfileirado: __follow__ por @ana.gamer (fila=1)
+2026-06-14 02:28:27,603 | INFO    | src.command_queue | Executado: __follow__ por @ana.gamer
+2026-06-14 02:28:31,173 | INFO    | src.command_queue | Enfileirado: !barril por @lua_fps (fila=1)
+2026-06-14 02:28:31,173 | WARNING | src.command_queue | Jogo fora de foco; descartando !barril
+2026-06-14 02:28:37,185 | INFO    | src.cooldown | Descartado por cooldown global: !barril (user=@joao_zoeira)
+2026-06-14 02:28:44,525 | INFO    | src.tiktok_listener | Meta de likes batida por @lua_fps -> zumbi
+2026-06-14 02:28:44,525 | INFO    | src.command_queue | Enfileirado: __likes__ por @lua_fps (fila=1)
+2026-06-14 02:28:44,529 | INFO    | src.command_queue | Executado: __likes__ por @lua_fps
+2026-06-14 02:28:47,509 | INFO    | src.cooldown | Descartado por cooldown de usuario: !barril (user=@lua_fps)
+2026-06-14 02:28:54,295 | INFO    | src.command_queue | Enfileirado: !drop por @lua_fps (fila=1)
+2026-06-14 02:28:54,296 | WARNING | src.command_queue | Jogo fora de foco; descartando !drop
+2026-06-14 02:29:00,080 | INFO    | src.command_queue | Enfileirado: !cura por @joao_zoeira (fila=1)
+2026-06-14 02:29:00,081 | WARNING | src.command_queue | Jogo fora de foco; descartando !cura
+2026-06-14 02:29:06,916 | INFO    | src.tiktok_listener | Novo seguidor @joao_zoeira -> fogo
+2026-06-14 02:29:06,916 | INFO    | src.command_queue | Enfileirado: __follow__ por @joao_zoeira (fila=1)
+2026-06-14 02:29:06,921 | INFO    | src.command_queue | Executado: __follow__ por @joao_zoeira
+2026-06-14 02:29:10,535 | INFO    | src.command_queue | Enfileirado: !drop por @joao_zoeira (fila=1)
+2026-06-14 02:29:10,536 | WARNING | src.command_queue | Jogo fora de foco; descartando !drop
+2026-06-14 02:29:13,088 | INFO    | src.command_queue | Enfileirado: !barril por @joao_zoeira (fila=1)
+2026-06-14 02:29:13,089 | WARNING | src.command_queue | Jogo fora de foco; descartando !barril
+2026-06-14 02:29:16,626 | INFO    | src.cooldown | Descartado por cooldown global: !barril (user=@pedrocaos)
+2026-06-14 02:29:21,235 | INFO    | src.tiktok_listener | Simulacao rodando (tick 360)
+2026-06-14 02:29:28,394 | INFO    | src.cooldown | Descartado por cooldown de usuario: !drop (user=@joao_zoeira)
+2026-06-14 02:29:30,931 | INFO    | src.command_queue | Enfileirado: !barril por @ana.gamer (fila=1)
+2026-06-14 02:29:30,932 | WARNING | src.command_queue | Jogo fora de foco; descartando !barril
+2026-06-14 02:29:34,111 | INFO    | src.tiktok_listener | Novo seguidor @lua_fps -> fogo
+2026-06-14 02:29:34,112 | INFO    | src.command_queue | Enfileirado: __follow__ por @lua_fps (fila=1)
+2026-06-14 02:29:34,115 | INFO    | src.command_queue | Executado: __follow__ por @lua_fps
+2026-06-14 02:29:39,134 | INFO    | src.cooldown | Descartado por cooldown de usuario: !drop (user=@joao_zoeira)
+2026-06-14 02:29:42,315 | INFO    | src.command_queue | Enfileirado: !barril por @lua_fps (fila=1)
+2026-06-14 02:29:42,316 | WARNING | src.command_queue | Jogo fora de foco; descartando !barril
+2026-06-14 02:29:48,800 | INFO    | src.tiktok_listener | Meta de likes batida por @pedrocaos -> zumbi
+2026-06-14 02:29:48,800 | INFO    | src.command_queue | Enfileirado: __likes__ por @pedrocaos (fila=1)
+2026-06-14 02:29:48,804 | INFO    | src.command_queue | Executado: __likes__ por @pedrocaos
+2026-06-14 02:29:53,920 | INFO    | src.command_queue | Enfileirado: !drop por @ana.gamer (fila=1)
+2026-06-14 02:29:53,921 | WARNING | src.command_queue | Jogo fora de foco; descartando !drop
+2026-06-14 02:30:11,956 | INFO    | src.tiktok_listener | Novo seguidor @ana.gamer -> fogo
+2026-06-14 02:30:11,956 | INFO    | src.command_queue | Enfileirado: __follow__ por @ana.gamer (fila=1)
+2026-06-14 02:30:11,959 | INFO    | src.command_queue | Executado: __follow__ por @ana.gamer
+2026-06-14 02:30:14,383 | INFO    | src.command_queue | Enfileirado: !barril por @joao_zoeira (fila=1)
+2026-06-14 02:30:14,384 | WARNING | src.command_queue | Jogo fora de foco; descartando !barril
+2026-06-14 02:30:14,384 | INFO    | src.tiktok_listener | Simulacao rodando (tick 380)
+2026-06-14 02:30:23,644 | INFO    | src.command_queue | Enfileirado: !cura por @pedrocaos (fila=1)
+2026-06-14 02:30:23,645 | WARNING | src.command_queue | Jogo fora de foco; descartando !cura
+2026-06-14 02:30:25,376 | INFO    | src.tiktok_listener | Meta de likes batida por @lua_fps -> zumbi
+2026-06-14 02:30:25,376 | INFO    | src.command_queue | Enfileirado: __likes__ por @lua_fps (fila=1)
+2026-06-14 02:30:25,380 | INFO    | src.command_queue | Executado: __likes__ por @lua_fps
+2026-06-14 02:30:29,100 | INFO    | src.command_queue | Enfileirado: !barril por @lua_fps (fila=1)
+2026-06-14 02:30:29,101 | WARNING | src.command_queue | Jogo fora de foco; descartando !barril
+2026-06-14 02:30:30,848 | INFO    | src.command_queue | Enfileirado: !drop por @pedrocaos (fila=1)
+2026-06-14 02:30:30,848 | WARNING | src.command_queue | Jogo fora de foco; descartando !drop
+2026-06-14 02:30:40,311 | INFO    | src.command_queue | Enfileirado: !barril por @joao_zoeira (fila=1)
+2026-06-14 02:30:40,312 | WARNING | src.command_queue | Jogo fora de foco; descartando !barril
+2026-06-14 02:30:56,171 | INFO    | src.cooldown | Descartado por cooldown de usuario: !barril (user=@joao_zoeira)
+2026-06-14 02:31:02,229 | INFO    | src.cooldown | Descartado por cooldown de usuario: !barril (user=@joao_zoeira)
+2026-06-14 02:31:03,834 | INFO    | src.tiktok_listener | Meta de likes batida por @pedrocaos -> zumbi
+2026-06-14 02:31:03,834 | INFO    | src.command_queue | Enfileirado: __likes__ por @pedrocaos (fila=1)
+2026-06-14 02:31:03,838 | INFO    | src.command_queue | Executado: __likes__ por @pedrocaos
+2026-06-14 02:31:05,873 | INFO    | src.tiktok_listener | Simulacao rodando (tick 400)
+2026-06-14 02:31:14,097 | INFO    | src.command_queue | Enfileirado: !drop por @joao_zoeira (fila=1)
+2026-06-14 02:31:14,098 | WARNING | src.command_queue | Jogo fora de foco; descartando !drop
+2026-06-14 02:31:16,167 | INFO    | src.command_queue | Enfileirado: !barril por @pedrocaos (fila=1)
+2026-06-14 02:31:16,168 | WARNING | src.command_queue | Jogo fora de foco; descartando !barril
+2026-06-14 02:31:18,843 | INFO    | src.cooldown | Descartado por cooldown global: !barril (user=@lua_fps)
+2026-06-14 02:31:29,629 | INFO    | src.command_queue | Enfileirado: !barril por @ana.gamer (fila=1)
+2026-06-14 02:31:29,630 | WARNING | src.command_queue | Jogo fora de foco; descartando !barril
+2026-06-14 02:31:31,378 | INFO    | src.cooldown | Descartado por cooldown global: !barril (user=@lua_fps)
+2026-06-14 02:31:37,826 | INFO    | src.command_queue | Enfileirado: !drop por @lua_fps (fila=1)
+2026-06-14 02:31:37,827 | WARNING | src.command_queue | Jogo fora de foco; descartando !drop
+2026-06-14 02:31:40,439 | INFO    | src.tiktok_listener | Meta de likes batida por @lua_fps -> zumbi
+2026-06-14 02:31:40,439 | INFO    | src.command_queue | Enfileirado: __likes__ por @lua_fps (fila=1)
+2026-06-14 02:31:40,442 | INFO    | src.command_queue | Executado: __likes__ por @lua_fps
+2026-06-14 02:31:52,479 | INFO    | src.tiktok_listener | Meta de likes batida por @lua_fps -> zumbi
+2026-06-14 02:31:52,479 | INFO    | src.command_queue | Enfileirado: __likes__ por @lua_fps (fila=1)
+2026-06-14 02:31:52,483 | INFO    | src.command_queue | Executado: __likes__ por @lua_fps
+2026-06-14 02:31:54,055 | INFO    | src.tiktok_listener | Novo seguidor @lua_fps -> fogo
+2026-06-14 02:31:54,055 | INFO    | src.command_queue | Enfileirado: __follow__ por @lua_fps (fila=1)
+2026-06-14 02:31:54,059 | INFO    | src.command_queue | Executado: __follow__ por @lua_fps
+2026-06-14 02:31:56,034 | INFO    | src.command_queue | Enfileirado: !barril por @ana.gamer (fila=1)
+2026-06-14 02:31:56,035 | WARNING | src.command_queue | Jogo fora de foco; descartando !barril
+2026-06-14 02:31:59,750 | INFO    | src.cooldown | Descartado por cooldown global: !barril (user=@pedrocaos)
+2026-06-14 02:31:59,750 | INFO    | src.tiktok_listener | Simulacao rodando (tick 420)
+2026-06-14 02:32:02,887 | INFO    | src.tiktok_listener | Novo seguidor @pedrocaos -> fogo
+2026-06-14 02:32:02,887 | INFO    | src.command_queue | Enfileirado: __follow__ por @pedrocaos (fila=1)
+2026-06-14 02:32:02,891 | INFO    | src.command_queue | Executado: __follow__ por @pedrocaos
+2026-06-14 02:32:06,675 | INFO    | src.cooldown | Descartado por cooldown de usuario: !barril (user=@ana.gamer)
+2026-06-14 02:32:08,391 | INFO    | src.command_queue | Enfileirado: !drop por @pedrocaos (fila=1)
+2026-06-14 02:32:08,391 | WARNING | src.command_queue | Jogo fora de foco; descartando !drop
+2026-06-14 02:32:10,556 | INFO    | src.cooldown | Descartado por cooldown de usuario: !barril (user=@ana.gamer)
+2026-06-14 02:32:12,675 | INFO    | src.tiktok_listener | Novo seguidor @ana.gamer -> fogo
+2026-06-14 02:32:12,676 | INFO    | src.command_queue | Enfileirado: __follow__ por @ana.gamer (fila=1)
+2026-06-14 02:32:12,680 | INFO    | src.command_queue | Executado: __follow__ por @ana.gamer
+2026-06-14 02:32:21,131 | INFO    | src.tiktok_listener | Novo seguidor @joao_zoeira -> fogo
+2026-06-14 02:32:21,131 | INFO    | src.command_queue | Enfileirado: __follow__ por @joao_zoeira (fila=1)
+2026-06-14 02:32:21,135 | INFO    | src.command_queue | Executado: __follow__ por @joao_zoeira
+2026-06-14 02:32:24,474 | INFO    | src.command_queue | Enfileirado: !cura por @joao_zoeira (fila=1)
+2026-06-14 02:32:24,626 | INFO    | src.command_queue | Executado: !cura por @joao_zoeira
+2026-06-14 02:32:32,813 | INFO    | src.cooldown | Descartado por cooldown global: !cura (user=@joao_zoeira)
+2026-06-14 02:32:38,514 | INFO    | src.panel_server | Overlay desconectado (1 ativos)
+2026-06-14 02:32:38,514 | INFO    | src.panel_server | Overlay desconectado (0 ativos)
+2026-06-14 02:32:38,515 | INFO    | __main__ | Encerrado pelo usuario (Ctrl+C)

@@ -1,0 +1,1135 @@
+2026-06-17 21:15:13,750 | INFO    | __main__ | Comandos: !barril, !cura, !drop, !formiga, !voa
+2026-06-17 21:15:13,750 | INFO    | __main__ | Presentes executaveis: gamepad, gg, ice cream cone, pop, rose, tiktok
+2026-06-17 21:15:13,750 | INFO    | __main__ | Acao de meta de likes: configurada (Python)
+2026-06-17 21:15:13,750 | INFO    | __main__ | Acao de seguir: configurada (Python)
+2026-06-17 21:15:13,750 | INFO    | __main__ | Acao de entrar na live: desligada (JOIN_ENABLED)
+2026-06-17 21:15:13,750 | INFO    | __main__ | Meta NUCLEAR: 1000 likes
+2026-06-17 21:15:13,774 | INFO    | __main__ | Ranking ATIVO (banco: live_caos.db)
+2026-06-17 21:15:13,774 | INFO    | src.key_executor | Backend de teclado: pydirectinput
+2026-06-17 21:15:13,774 | INFO    | src.file_bridge | Ponte por arquivo: C:\Program Files (x86)\Steam\steamapps\common\GarrysMod\garrysmod\data\live_caos\fila.txt
+2026-06-17 21:15:13,958 | INFO    | websockets.server | server listening on [::1]:8765
+2026-06-17 21:15:13,959 | INFO    | websockets.server | server listening on 127.0.0.1:8765
+2026-06-17 21:15:13,959 | INFO    | src.panel_server | Painel WebSocket ouvindo em ws://localhost:8765
+2026-06-17 21:15:13,959 | INFO    | src.command_queue | Worker da fila iniciado
+2026-06-17 21:15:13,959 | INFO    | src.tiktok_listener | MODO SIMULACAO ativo — gerando eventos falsos
+2026-06-17 21:15:13,959 | INFO    | src.tiktok_listener | Simulacao vai sortear presentes: gamepad, gg, Rose, ice cream cone, pop, tiktok
+2026-06-17 21:15:13,992 | INFO    | websockets.server | connection open
+2026-06-17 21:15:13,993 | INFO    | src.panel_server | Overlay conectado (1 ativos)
+2026-06-17 21:15:14,006 | INFO    | websockets.server | connection open
+2026-06-17 21:15:14,007 | INFO    | src.panel_server | Overlay conectado (2 ativos)
+2026-06-17 21:15:14,007 | ERROR   | websockets.server | opening handshake failed
+Traceback (most recent call last):
+  File "C:\Users\davi\Desktop\live_caos\live_caos\.venv\Lib\site-packages\websockets\http11.py", line 138, in parse
+    request_line = yield from parse_line(read_line)
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\davi\Desktop\live_caos\live_caos\.venv\Lib\site-packages\websockets\http11.py", line 320, in parse_line
+    line = yield from read_line(MAX_LINE_LENGTH)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\davi\Desktop\live_caos\live_caos\.venv\Lib\site-packages\websockets\streams.py", line 46, in read_line
+    raise EOFError(f"stream ends after {p} bytes, before end of line")
+EOFError: stream ends after 0 bytes, before end of line
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\davi\Desktop\live_caos\live_caos\.venv\Lib\site-packages\websockets\server.py", line 547, in parse
+    request = yield from Request.parse(
+              ^^^^^^^^^^^^^^^^^^^^^^^^^
+        self.reader.read_line,
+        ^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "C:\Users\davi\Desktop\live_caos\live_caos\.venv\Lib\site-packages\websockets\http11.py", line 140, in parse
+    raise EOFError("connection closed while reading HTTP request line") from exc
+EOFError: connection closed while reading HTTP request line
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\davi\Desktop\live_caos\live_caos\.venv\Lib\site-packages\websockets\asyncio\server.py", line 356, in conn_handler
+    await connection.handshake(
+    ...<3 lines>...
+    )
+  File "C:\Users\davi\Desktop\live_caos\live_caos\.venv\Lib\site-packages\websockets\asyncio\server.py", line 207, in handshake
+    raise self.protocol.handshake_exc
+websockets.exceptions.InvalidMessage: did not receive a valid HTTP request
+2026-06-17 21:15:16,636 | INFO    | websockets.server | connection open
+2026-06-17 21:15:16,636 | INFO    | src.panel_server | Overlay conectado (3 ativos)
+2026-06-17 21:15:17,318 | INFO    | src.tiktok_listener | Simulacao rodando (tick 0)
+2026-06-17 21:15:19,082 | INFO    | websockets.server | connection open
+2026-06-17 21:15:19,082 | INFO    | src.panel_server | Overlay conectado (4 ativos)
+2026-06-17 21:15:23,733 | INFO    | src.command_queue | Enfileirado: !drop por @ana.gamer (fila=1)
+2026-06-17 21:15:23,735 | WARNING | src.command_queue | Jogo fora de foco; descartando !drop
+2026-06-17 21:15:26,999 | INFO    | src.command_queue | Enfileirado: !cura por @joao_zoeira (fila=1)
+2026-06-17 21:15:27,000 | WARNING | src.command_queue | Jogo fora de foco; descartando !cura
+2026-06-17 21:15:27,993 | INFO    | src.panel_server | Overlay desconectado (3 ativos)
+2026-06-17 21:15:27,994 | INFO    | src.panel_server | Overlay desconectado (2 ativos)
+2026-06-17 21:15:27,994 | INFO    | src.panel_server | Overlay desconectado (1 ativos)
+2026-06-17 21:15:27,994 | INFO    | src.panel_server | Overlay desconectado (0 ativos)
+2026-06-17 21:15:27,995 | INFO    | __main__ | Encerrado pelo usuario (Ctrl+C)
+2026-06-17 21:17:34,992 | INFO    | __main__ | Comandos: !barril, !cura, !drop, !formiga, !voa
+2026-06-17 21:17:34,992 | INFO    | __main__ | Presentes executaveis: gamepad, gg, ice cream cone, pop, rose, tiktok
+2026-06-17 21:17:34,992 | INFO    | __main__ | Acao de meta de likes: configurada (Python)
+2026-06-17 21:17:34,992 | INFO    | __main__ | Acao de seguir: configurada (Python)
+2026-06-17 21:17:34,993 | INFO    | __main__ | Acao de entrar na live: desligada (JOIN_ENABLED)
+2026-06-17 21:17:34,993 | INFO    | __main__ | Meta NUCLEAR: 1000 likes
+2026-06-17 21:17:34,994 | INFO    | __main__ | Ranking ATIVO (banco: live_caos.db)
+2026-06-17 21:17:34,994 | INFO    | src.key_executor | Backend de teclado: pydirectinput
+2026-06-17 21:17:34,995 | INFO    | src.file_bridge | Ponte por arquivo: C:\Program Files (x86)\Steam\steamapps\common\GarrysMod\garrysmod\data\live_caos\fila.txt
+2026-06-17 21:17:35,040 | INFO    | websockets.server | server listening on [::1]:8765
+2026-06-17 21:17:35,040 | INFO    | websockets.server | server listening on 127.0.0.1:8765
+2026-06-17 21:17:35,040 | INFO    | src.panel_server | Painel WebSocket ouvindo em ws://localhost:8765
+2026-06-17 21:17:35,041 | INFO    | src.command_queue | Worker da fila iniciado
+2026-06-17 21:17:35,041 | INFO    | src.tiktok_listener | MODO SIMULACAO ativo — gerando eventos falsos
+2026-06-17 21:17:35,041 | INFO    | src.tiktok_listener | Simulacao vai sortear presentes: gamepad, gg, Rose, ice cream cone, pop, tiktok
+2026-06-17 21:17:35,195 | INFO    | websockets.server | connection open
+2026-06-17 21:17:35,196 | INFO    | src.panel_server | Overlay conectado (1 ativos)
+2026-06-17 21:17:37,422 | INFO    | websockets.server | connection open
+2026-06-17 21:17:37,422 | INFO    | src.panel_server | Overlay conectado (2 ativos)
+2026-06-17 21:17:37,508 | INFO    | src.command_queue | Enfileirado: !barril por @pedrocaos (fila=1)
+2026-06-17 21:17:37,510 | INFO    | src.tiktok_listener | Simulacao rodando (tick 0)
+2026-06-17 21:17:37,510 | WARNING | src.command_queue | Jogo fora de foco; descartando !barril
+2026-06-17 21:17:37,592 | INFO    | websockets.server | connection open
+2026-06-17 21:17:37,593 | INFO    | src.panel_server | Overlay conectado (3 ativos)
+2026-06-17 21:17:39,645 | INFO    | websockets.server | connection open
+2026-06-17 21:17:39,645 | INFO    | src.panel_server | Overlay conectado (4 ativos)
+2026-06-17 21:17:40,901 | INFO    | src.tiktok_listener | Novo seguidor @joao_zoeira -> fogo
+2026-06-17 21:17:40,901 | INFO    | src.command_queue | Enfileirado: __follow__ por @joao_zoeira (fila=1)
+2026-06-17 21:17:40,903 | INFO    | src.command_queue | Executado: __follow__ por @joao_zoeira
+2026-06-17 21:17:47,794 | INFO    | src.command_queue | Enfileirado: !cura por @ana.gamer (fila=1)
+2026-06-17 21:17:47,947 | INFO    | src.command_queue | Executado: !cura por @ana.gamer
+2026-06-17 21:17:51,714 | INFO    | src.cooldown | Descartado por cooldown de usuario: !barril (user=@pedrocaos)
+2026-06-17 21:17:54,900 | INFO    | src.tiktok_listener | Presente executavel: gamepad de @lua_fps
+2026-06-17 21:17:54,900 | INFO    | src.command_queue | Enfileirado: gamepad por @lua_fps (fila=1)
+2026-06-17 21:17:54,904 | INFO    | src.command_queue | Executado: gamepad por @lua_fps
+2026-06-17 21:18:01,764 | INFO    | src.tiktok_listener | Novo seguidor @pedrocaos -> fogo
+2026-06-17 21:18:01,765 | INFO    | src.command_queue | Enfileirado: __follow__ por @pedrocaos (fila=1)
+2026-06-17 21:18:01,769 | INFO    | src.command_queue | Executado: __follow__ por @pedrocaos
+2026-06-17 21:18:05,385 | INFO    | src.tiktok_listener | Presente executavel: ice cream cone de @joao_zoeira
+2026-06-17 21:18:05,385 | INFO    | src.command_queue | Enfileirado: ice cream cone por @joao_zoeira (fila=1)
+2026-06-17 21:18:05,387 | INFO    | src.command_queue | Executado: ice cream cone por @joao_zoeira
+2026-06-17 21:18:08,509 | INFO    | src.cooldown | Descartado por cooldown de usuario: !cura (user=@ana.gamer)
+2026-06-17 21:18:11,182 | INFO    | src.command_queue | Enfileirado: !drop por @pedrocaos (fila=1)
+2026-06-17 21:18:11,335 | INFO    | src.command_queue | Executado: !drop por @pedrocaos
+2026-06-17 21:18:16,622 | INFO    | src.command_queue | Enfileirado: !formiga por @lua_fps (fila=1)
+2026-06-17 21:18:16,623 | WARNING | src.command_queue | Jogo fora de foco; descartando !formiga
+2026-06-17 21:18:22,343 | INFO    | src.command_queue | Enfileirado: !cura por @pedrocaos (fila=1)
+2026-06-17 21:18:22,344 | WARNING | src.command_queue | Jogo fora de foco; descartando !cura
+2026-06-17 21:18:24,182 | INFO    | src.tiktok_listener | Presente executavel: pop de @ana.gamer
+2026-06-17 21:18:24,182 | INFO    | src.command_queue | Enfileirado: pop por @ana.gamer (fila=1)
+2026-06-17 21:18:24,184 | INFO    | src.command_queue | Executado: pop por @ana.gamer
+2026-06-17 21:18:27,560 | INFO    | src.cooldown | Descartado por cooldown global: !formiga (user=@lua_fps)
+2026-06-17 21:18:29,329 | INFO    | src.command_queue | Enfileirado: !barril por @ana.gamer (fila=1)
+2026-06-17 21:18:29,330 | WARNING | src.command_queue | Jogo fora de foco; descartando !barril
+2026-06-17 21:18:33,103 | INFO    | src.tiktok_listener | Novo seguidor @pedrocaos -> fogo
+2026-06-17 21:18:33,103 | INFO    | src.command_queue | Enfileirado: __follow__ por @pedrocaos (fila=1)
+2026-06-17 21:18:33,105 | INFO    | src.command_queue | Executado: __follow__ por @pedrocaos
+2026-06-17 21:18:36,551 | INFO    | websockets.server | connection open
+2026-06-17 21:18:36,551 | INFO    | src.panel_server | Overlay conectado (5 ativos)
+2026-06-17 21:18:38,341 | INFO    | src.tiktok_listener | Novo seguidor @lua_fps -> fogo
+2026-06-17 21:18:38,341 | INFO    | src.command_queue | Enfileirado: __follow__ por @lua_fps (fila=1)
+2026-06-17 21:18:38,343 | INFO    | src.tiktok_listener | Simulacao rodando (tick 20)
+2026-06-17 21:18:38,345 | INFO    | src.command_queue | Executado: __follow__ por @lua_fps
+2026-06-17 21:18:41,506 | INFO    | src.cooldown | Descartado por cooldown de usuario: !barril (user=@ana.gamer)
+2026-06-17 21:18:43,733 | INFO    | src.command_queue | Enfileirado: !barril por @pedrocaos (fila=1)
+2026-06-17 21:18:43,734 | WARNING | src.command_queue | Jogo fora de foco; descartando !barril
+2026-06-17 21:18:49,064 | INFO    | src.panel_server | Overlay desconectado (4 ativos)
+2026-06-17 21:18:54,786 | INFO    | src.tiktok_listener | Presente executavel: gamepad de @pedrocaos
+2026-06-17 21:18:54,786 | INFO    | src.command_queue | Enfileirado: gamepad por @pedrocaos (fila=1)
+2026-06-17 21:18:54,788 | INFO    | src.command_queue | Executado: gamepad por @pedrocaos
+2026-06-17 21:19:04,346 | INFO    | src.command_queue | Enfileirado: !barril por @ana.gamer (fila=1)
+2026-06-17 21:19:04,347 | WARNING | src.command_queue | Jogo fora de foco; descartando !barril
+2026-06-17 21:19:06,702 | INFO    | src.cooldown | Descartado por cooldown global: !barril (user=@ana.gamer)
+2026-06-17 21:19:06,789 | INFO    | websockets.server | connection open
+2026-06-17 21:19:06,790 | INFO    | src.panel_server | Overlay conectado (5 ativos)
+2026-06-17 21:19:09,159 | INFO    | src.cooldown | Descartado por cooldown global: !barril (user=@pedrocaos)
+2026-06-17 21:19:10,338 | INFO    | src.panel_server | Overlay desconectado (4 ativos)
+2026-06-17 21:19:11,865 | INFO    | websockets.server | connection open
+2026-06-17 21:19:11,866 | INFO    | src.panel_server | Overlay conectado (5 ativos)
+2026-06-17 21:19:16,640 | INFO    | src.cooldown | Descartado por cooldown de usuario: !barril (user=@ana.gamer)
+2026-06-17 21:19:18,981 | INFO    | src.panel_server | Overlay desconectado (4 ativos)
+2026-06-17 21:19:22,662 | INFO    | websockets.server | connection open
+2026-06-17 21:19:22,662 | INFO    | src.panel_server | Overlay conectado (5 ativos)
+2026-06-17 21:19:25,424 | INFO    | src.command_queue | Enfileirado: !cura por @ana.gamer (fila=1)
+2026-06-17 21:19:25,425 | WARNING | src.command_queue | Jogo fora de foco; descartando !cura
+2026-06-17 21:19:26,150 | INFO    | src.panel_server | Overlay desconectado (4 ativos)
+2026-06-17 21:19:28,762 | INFO    | src.command_queue | Enfileirado: !drop por @pedrocaos (fila=1)
+2026-06-17 21:19:28,762 | WARNING | src.command_queue | Jogo fora de foco; descartando !drop
+2026-06-17 21:19:31,531 | INFO    | src.tiktok_listener | Novo seguidor @ana.gamer -> fogo
+2026-06-17 21:19:31,531 | INFO    | src.command_queue | Enfileirado: __follow__ por @ana.gamer (fila=1)
+2026-06-17 21:19:31,533 | INFO    | src.command_queue | Executado: __follow__ por @ana.gamer
+2026-06-17 21:19:33,933 | INFO    | src.cooldown | Descartado por cooldown global: !cura (user=@joao_zoeira)
+2026-06-17 21:19:33,934 | INFO    | src.tiktok_listener | Simulacao rodando (tick 40)
+2026-06-17 21:19:37,135 | INFO    | src.command_queue | Enfileirado: !barril por @ana.gamer (fila=1)
+2026-06-17 21:19:37,136 | WARNING | src.command_queue | Jogo fora de foco; descartando !barril
+2026-06-17 21:19:39,588 | INFO    | src.cooldown | Descartado por cooldown global: !barril (user=@ana.gamer)
+2026-06-17 21:19:41,550 | INFO    | src.cooldown | Descartado por cooldown global: !cura (user=@pedrocaos)
+2026-06-17 21:19:45,548 | INFO    | src.tiktok_listener | Presente executavel: Rose de @lua_fps
+2026-06-17 21:19:45,548 | INFO    | src.command_queue | Enfileirado: Rose por @lua_fps (fila=1)
+2026-06-17 21:19:45,550 | INFO    | src.command_queue | Executado: Rose por @lua_fps
+2026-06-17 21:19:53,527 | INFO    | src.command_queue | Enfileirado: !drop por @joao_zoeira (fila=1)
+2026-06-17 21:19:53,679 | INFO    | src.command_queue | Executado: !drop por @joao_zoeira
+2026-06-17 21:19:56,569 | INFO    | src.tiktok_listener | Meta de likes batida por @ana.gamer -> zumbi
+2026-06-17 21:19:56,570 | INFO    | src.command_queue | Enfileirado: __likes__ por @ana.gamer (fila=1)
+2026-06-17 21:19:56,573 | INFO    | src.command_queue | Executado: __likes__ por @ana.gamer
+2026-06-17 21:20:12,427 | INFO    | src.command_queue | Enfileirado: !barril por @pedrocaos (fila=1)
+2026-06-17 21:20:12,428 | WARNING | src.command_queue | Jogo fora de foco; descartando !barril
+2026-06-17 21:20:17,880 | INFO    | src.tiktok_listener | Novo seguidor @pedrocaos -> fogo
+2026-06-17 21:20:17,880 | INFO    | src.command_queue | Enfileirado: __follow__ por @pedrocaos (fila=1)
+2026-06-17 21:20:17,882 | INFO    | src.command_queue | Executado: __follow__ por @pedrocaos
+2026-06-17 21:20:21,184 | INFO    | src.command_queue | Enfileirado: !formiga por @lua_fps (fila=1)
+2026-06-17 21:20:21,336 | INFO    | src.command_queue | Executado: !formiga por @lua_fps
+2026-06-17 21:20:25,036 | INFO    | src.tiktok_listener | Novo seguidor @joao_zoeira -> fogo
+2026-06-17 21:20:25,037 | INFO    | src.command_queue | Enfileirado: __follow__ por @joao_zoeira (fila=1)
+2026-06-17 21:20:25,040 | INFO    | src.command_queue | Executado: __follow__ por @joao_zoeira
+2026-06-17 21:20:26,689 | INFO    | src.cooldown | Descartado por cooldown global: !formiga (user=@pedrocaos)
+2026-06-17 21:20:29,789 | INFO    | src.tiktok_listener | Novo seguidor @ana.gamer -> fogo
+2026-06-17 21:20:29,789 | INFO    | src.command_queue | Enfileirado: __follow__ por @ana.gamer (fila=1)
+2026-06-17 21:20:29,793 | INFO    | src.command_queue | Executado: __follow__ por @ana.gamer
+2026-06-17 21:20:31,999 | INFO    | src.command_queue | Enfileirado: !drop por @pedrocaos (fila=1)
+2026-06-17 21:20:32,000 | WARNING | src.command_queue | Jogo fora de foco; descartando !drop
+2026-06-17 21:20:32,000 | INFO    | src.tiktok_listener | Simulacao rodando (tick 60)
+2026-06-17 21:20:34,981 | INFO    | src.tiktok_listener | Meta de likes batida por @lua_fps -> zumbi
+2026-06-17 21:20:34,981 | INFO    | src.command_queue | Enfileirado: __likes__ por @lua_fps (fila=1)
+2026-06-17 21:20:34,983 | INFO    | src.command_queue | Executado: __likes__ por @lua_fps
+2026-06-17 21:20:38,026 | INFO    | src.command_queue | Enfileirado: !barril por @joao_zoeira (fila=1)
+2026-06-17 21:20:38,027 | WARNING | src.command_queue | Jogo fora de foco; descartando !barril
+2026-06-17 21:20:41,810 | INFO    | src.tiktok_listener | Presente executavel: gamepad de @pedrocaos
+2026-06-17 21:20:41,810 | INFO    | src.command_queue | Enfileirado: gamepad por @pedrocaos (fila=1)
+2026-06-17 21:20:41,813 | INFO    | src.command_queue | Executado: gamepad por @pedrocaos
+2026-06-17 21:20:45,217 | INFO    | src.command_queue | Enfileirado: !drop por @joao_zoeira (fila=1)
+2026-06-17 21:20:45,370 | INFO    | src.command_queue | Executado: !drop por @joao_zoeira
+2026-06-17 21:20:48,993 | INFO    | src.cooldown | Descartado por cooldown global: !drop (user=@ana.gamer)
+2026-06-17 21:20:51,589 | INFO    | src.command_queue | Enfileirado: !barril por @pedrocaos (fila=1)
+2026-06-17 21:20:51,742 | INFO    | src.command_queue | Executado: !barril por @pedrocaos
+2026-06-17 21:20:53,464 | INFO    | src.tiktok_listener | Presente executavel: tiktok de @joao_zoeira
+2026-06-17 21:20:53,464 | INFO    | src.command_queue | Enfileirado: tiktok por @joao_zoeira (fila=1)
+2026-06-17 21:20:53,468 | INFO    | src.command_queue | Executado: tiktok por @joao_zoeira
+2026-06-17 21:20:56,472 | INFO    | src.command_queue | Enfileirado: !cura por @joao_zoeira (fila=1)
+2026-06-17 21:20:56,624 | INFO    | src.command_queue | Executado: !cura por @joao_zoeira
+2026-06-17 21:21:00,485 | INFO    | src.command_queue | Enfileirado: !drop por @lua_fps (fila=1)
+2026-06-17 21:21:00,638 | INFO    | src.command_queue | Executado: !drop por @lua_fps
+2026-06-17 21:21:03,647 | INFO    | src.command_queue | Enfileirado: !formiga por @pedrocaos (fila=1)
+2026-06-17 21:21:03,799 | INFO    | src.command_queue | Executado: !formiga por @pedrocaos
+2026-06-17 21:21:06,514 | INFO    | src.tiktok_listener | Novo seguidor @ana.gamer -> fogo
+2026-06-17 21:21:06,515 | INFO    | src.command_queue | Enfileirado: __follow__ por @ana.gamer (fila=1)
+2026-06-17 21:21:06,517 | INFO    | src.command_queue | Executado: __follow__ por @ana.gamer
+2026-06-17 21:21:09,335 | INFO    | src.command_queue | Enfileirado: !barril por @joao_zoeira (fila=1)
+2026-06-17 21:21:09,487 | INFO    | src.command_queue | Executado: !barril por @joao_zoeira
+2026-06-17 21:21:11,518 | INFO    | src.command_queue | Enfileirado: !drop por @pedrocaos (fila=1)
+2026-06-17 21:21:11,670 | INFO    | src.command_queue | Executado: !drop por @pedrocaos
+2026-06-17 21:21:16,564 | INFO    | src.cooldown | Descartado por cooldown global: !barril (user=@pedrocaos)
+2026-06-17 21:21:19,903 | INFO    | src.command_queue | Enfileirado: !formiga por @ana.gamer (fila=1)
+2026-06-17 21:21:20,056 | INFO    | src.command_queue | Executado: !formiga por @ana.gamer
+2026-06-17 21:21:25,988 | INFO    | src.cooldown | Descartado por cooldown de usuario: !drop (user=@lua_fps)
+2026-06-17 21:21:27,626 | INFO    | src.command_queue | Enfileirado: !barril por @ana.gamer (fila=1)
+2026-06-17 21:21:27,778 | INFO    | src.command_queue | Executado: !barril por @ana.gamer
+2026-06-17 21:21:29,599 | INFO    | src.cooldown | Descartado por cooldown global: !formiga (user=@pedrocaos)
+2026-06-17 21:21:29,599 | INFO    | src.tiktok_listener | Simulacao rodando (tick 80)
+2026-06-17 21:21:32,663 | INFO    | src.tiktok_listener | Novo seguidor @ana.gamer -> fogo
+2026-06-17 21:21:32,663 | INFO    | src.command_queue | Enfileirado: __follow__ por @ana.gamer (fila=1)
+2026-06-17 21:21:32,667 | INFO    | src.command_queue | Executado: __follow__ por @ana.gamer
+2026-06-17 21:21:36,260 | INFO    | src.tiktok_listener | Presente executavel: Rose de @ana.gamer
+2026-06-17 21:21:36,260 | INFO    | src.command_queue | Enfileirado: Rose por @ana.gamer (fila=1)
+2026-06-17 21:21:36,264 | INFO    | src.command_queue | Executado: Rose por @ana.gamer
+2026-06-17 21:21:41,671 | INFO    | src.cooldown | Descartado por cooldown de usuario: !barril (user=@ana.gamer)
+2026-06-17 21:21:58,452 | INFO    | src.tiktok_listener | Novo seguidor @lua_fps -> fogo
+2026-06-17 21:21:58,452 | INFO    | src.command_queue | Enfileirado: __follow__ por @lua_fps (fila=1)
+2026-06-17 21:21:58,456 | INFO    | src.command_queue | Executado: __follow__ por @lua_fps
+2026-06-17 21:22:01,727 | INFO    | src.tiktok_listener | Meta de likes batida por @joao_zoeira -> zumbi
+2026-06-17 21:22:01,727 | INFO    | src.command_queue | Enfileirado: __likes__ por @joao_zoeira (fila=1)
+2026-06-17 21:22:01,731 | INFO    | src.command_queue | Executado: __likes__ por @joao_zoeira
+2026-06-17 21:22:07,116 | INFO    | src.tiktok_listener | Presente executavel: gamepad de @lua_fps
+2026-06-17 21:22:07,116 | INFO    | src.command_queue | Enfileirado: gamepad por @lua_fps (fila=1)
+2026-06-17 21:22:07,120 | INFO    | src.command_queue | Executado: gamepad por @lua_fps
+2026-06-17 21:22:09,830 | INFO    | src.command_queue | Enfileirado: !drop por @joao_zoeira (fila=1)
+2026-06-17 21:22:09,983 | INFO    | src.command_queue | Executado: !drop por @joao_zoeira
+2026-06-17 21:22:14,789 | INFO    | src.tiktok_listener | Novo seguidor @lua_fps -> fogo
+2026-06-17 21:22:14,789 | INFO    | src.command_queue | Enfileirado: __follow__ por @lua_fps (fila=1)
+2026-06-17 21:22:14,793 | INFO    | src.command_queue | Executado: __follow__ por @lua_fps
+2026-06-17 21:22:21,948 | INFO    | src.command_queue | Enfileirado: !formiga por @pedrocaos (fila=1)
+2026-06-17 21:22:21,948 | WARNING | src.command_queue | Jogo fora de foco; descartando !formiga
+2026-06-17 21:22:25,078 | INFO    | src.command_queue | Enfileirado: !barril por @lua_fps (fila=1)
+2026-06-17 21:22:25,079 | WARNING | src.command_queue | Jogo fora de foco; descartando !barril
+2026-06-17 21:22:28,367 | INFO    | src.tiktok_listener | Simulacao rodando (tick 100)
+2026-06-17 21:22:31,396 | INFO    | src.tiktok_listener | Presente executavel: gg de @ana.gamer
+2026-06-17 21:22:31,396 | INFO    | src.command_queue | Enfileirado: gg por @ana.gamer (fila=1)
+2026-06-17 21:22:31,400 | INFO    | src.command_queue | Executado: gg por @ana.gamer
+2026-06-17 21:22:33,673 | INFO    | src.tiktok_listener | Novo seguidor @joao_zoeira -> fogo
+2026-06-17 21:22:33,673 | INFO    | src.command_queue | Enfileirado: __follow__ por @joao_zoeira (fila=1)
+2026-06-17 21:22:33,677 | INFO    | src.command_queue | Executado: __follow__ por @joao_zoeira
+2026-06-17 21:22:37,477 | INFO    | src.tiktok_listener | Presente executavel: Rose de @ana.gamer
+2026-06-17 21:22:37,477 | INFO    | src.command_queue | Enfileirado: Rose por @ana.gamer (fila=1)
+2026-06-17 21:22:37,480 | INFO    | src.command_queue | Executado: Rose por @ana.gamer
+2026-06-17 21:22:40,835 | INFO    | src.tiktok_listener | Novo seguidor @pedrocaos -> fogo
+2026-06-17 21:22:40,836 | INFO    | src.command_queue | Enfileirado: __follow__ por @pedrocaos (fila=1)
+2026-06-17 21:22:40,840 | INFO    | src.command_queue | Executado: __follow__ por @pedrocaos
+2026-06-17 21:22:46,075 | INFO    | src.tiktok_listener | Meta de likes batida por @ana.gamer -> zumbi
+2026-06-17 21:22:46,075 | INFO    | src.command_queue | Enfileirado: __likes__ por @ana.gamer (fila=1)
+2026-06-17 21:22:46,079 | INFO    | src.command_queue | Executado: __likes__ por @ana.gamer
+2026-06-17 21:22:49,261 | INFO    | src.tiktok_listener | Presente executavel: ice cream cone de @lua_fps
+2026-06-17 21:22:49,261 | INFO    | src.command_queue | Enfileirado: ice cream cone por @lua_fps (fila=1)
+2026-06-17 21:22:49,264 | INFO    | src.command_queue | Executado: ice cream cone por @lua_fps
+2026-06-17 21:22:53,168 | INFO    | src.command_queue | Enfileirado: !barril por @lua_fps (fila=1)
+2026-06-17 21:22:53,169 | WARNING | src.command_queue | Jogo fora de foco; descartando !barril
+2026-06-17 21:22:55,203 | INFO    | src.cooldown | Descartado por cooldown global: !barril (user=@joao_zoeira)
+2026-06-17 21:22:58,210 | INFO    | src.cooldown | Descartado por cooldown global: !barril (user=@lua_fps)
+2026-06-17 21:23:00,628 | INFO    | src.cooldown | Descartado por cooldown global: !barril (user=@ana.gamer)
+2026-06-17 21:23:05,576 | INFO    | src.tiktok_listener | Novo seguidor @pedrocaos -> fogo
+2026-06-17 21:23:05,576 | INFO    | src.command_queue | Enfileirado: __follow__ por @pedrocaos (fila=1)
+2026-06-17 21:23:05,580 | INFO    | src.command_queue | Executado: __follow__ por @pedrocaos
+2026-06-17 21:23:07,654 | INFO    | src.tiktok_listener | Novo seguidor @lua_fps -> fogo
+2026-06-17 21:23:07,654 | INFO    | src.command_queue | Enfileirado: __follow__ por @lua_fps (fila=1)
+2026-06-17 21:23:07,657 | INFO    | src.command_queue | Executado: __follow__ por @lua_fps
+2026-06-17 21:23:11,109 | INFO    | src.command_queue | Enfileirado: !cura por @pedrocaos (fila=1)
+2026-06-17 21:23:11,110 | WARNING | src.command_queue | Jogo fora de foco; descartando !cura
+2026-06-17 21:23:14,827 | INFO    | src.command_queue | Enfileirado: !barril por @pedrocaos (fila=1)
+2026-06-17 21:23:14,828 | WARNING | src.command_queue | Jogo fora de foco; descartando !barril
+2026-06-17 21:23:17,086 | INFO    | src.tiktok_listener | Presente executavel: ice cream cone de @joao_zoeira
+2026-06-17 21:23:17,086 | INFO    | src.command_queue | Enfileirado: ice cream cone por @joao_zoeira (fila=1)
+2026-06-17 21:23:17,090 | INFO    | src.command_queue | Executado: ice cream cone por @joao_zoeira
+2026-06-17 21:23:19,812 | INFO    | src.tiktok_listener | Novo seguidor @ana.gamer -> fogo
+2026-06-17 21:23:19,812 | INFO    | src.command_queue | Enfileirado: __follow__ por @ana.gamer (fila=1)
+2026-06-17 21:23:19,816 | INFO    | src.command_queue | Executado: __follow__ por @ana.gamer
+2026-06-17 21:23:23,644 | INFO    | src.tiktok_listener | Simulacao rodando (tick 120)
+2026-06-17 21:23:25,573 | INFO    | src.command_queue | Enfileirado: !formiga por @ana.gamer (fila=1)
+2026-06-17 21:23:25,574 | WARNING | src.command_queue | Jogo fora de foco; descartando !formiga
+2026-06-17 21:23:29,468 | INFO    | src.tiktok_listener | Novo seguidor @pedrocaos -> fogo
+2026-06-17 21:23:29,468 | INFO    | src.command_queue | Enfileirado: __follow__ por @pedrocaos (fila=1)
+2026-06-17 21:23:29,471 | INFO    | src.command_queue | Executado: __follow__ por @pedrocaos
+2026-06-17 21:23:31,357 | INFO    | src.command_queue | Enfileirado: !drop por @ana.gamer (fila=1)
+2026-06-17 21:23:31,358 | WARNING | src.command_queue | Jogo fora de foco; descartando !drop
+2026-06-17 21:23:34,579 | INFO    | src.cooldown | Descartado por cooldown global: !drop (user=@joao_zoeira)
+2026-06-17 21:23:38,401 | INFO    | src.cooldown | Descartado por cooldown global: !formiga (user=@joao_zoeira)
+2026-06-17 21:23:45,447 | INFO    | src.command_queue | Enfileirado: !barril por @lua_fps (fila=1)
+2026-06-17 21:23:45,448 | WARNING | src.command_queue | Jogo fora de foco; descartando !barril
+2026-06-17 21:23:47,204 | INFO    | src.cooldown | Descartado por cooldown de usuario: !cura (user=@pedrocaos)
+2026-06-17 21:23:51,083 | INFO    | src.tiktok_listener | Presente executavel: Rose de @ana.gamer
+2026-06-17 21:23:51,084 | INFO    | src.command_queue | Enfileirado: Rose por @ana.gamer (fila=1)
+2026-06-17 21:23:51,087 | INFO    | src.command_queue | Executado: Rose por @ana.gamer
+2026-06-17 21:24:00,257 | INFO    | src.command_queue | Enfileirado: !drop por @pedrocaos (fila=1)
+2026-06-17 21:24:00,257 | WARNING | src.command_queue | Jogo fora de foco; descartando !drop
+2026-06-17 21:24:02,139 | INFO    | src.cooldown | Descartado por cooldown de usuario: !barril (user=@lua_fps)
+2026-06-17 21:24:04,698 | INFO    | src.panel_server | Overlay desconectado (3 ativos)
+2026-06-17 21:24:04,706 | INFO    | src.panel_server | Overlay desconectado (2 ativos)
+2026-06-17 21:24:04,717 | INFO    | src.panel_server | Overlay desconectado (1 ativos)
+2026-06-17 21:24:04,721 | INFO    | src.panel_server | Overlay desconectado (0 ativos)
+2026-06-17 21:24:05,558 | INFO    | websockets.server | connection open
+2026-06-17 21:24:05,558 | INFO    | src.panel_server | Overlay conectado (1 ativos)
+2026-06-17 21:24:05,718 | INFO    | websockets.server | connection open
+2026-06-17 21:24:05,719 | INFO    | src.panel_server | Overlay conectado (2 ativos)
+2026-06-17 21:24:07,032 | INFO    | src.tiktok_listener | Presente executavel: gg de @ana.gamer
+2026-06-17 21:24:07,033 | INFO    | src.command_queue | Enfileirado: gg por @ana.gamer (fila=1)
+2026-06-17 21:24:07,037 | INFO    | src.command_queue | Executado: gg por @ana.gamer
+2026-06-17 21:24:08,706 | INFO    | src.panel_server | Overlay desconectado (1 ativos)
+2026-06-17 21:24:08,711 | INFO    | src.panel_server | Overlay desconectado (0 ativos)
+2026-06-17 21:24:08,954 | INFO    | src.tiktok_listener | Presente executavel: pop de @joao_zoeira
+2026-06-17 21:24:08,956 | INFO    | src.command_queue | Enfileirado: pop por @joao_zoeira (fila=1)
+2026-06-17 21:24:08,961 | INFO    | src.command_queue | Executado: pop por @joao_zoeira
+2026-06-17 21:24:09,468 | INFO    | websockets.server | connection open
+2026-06-17 21:24:09,469 | INFO    | src.panel_server | Overlay conectado (1 ativos)
+2026-06-17 21:24:09,567 | INFO    | websockets.server | connection open
+2026-06-17 21:24:09,567 | INFO    | src.panel_server | Overlay conectado (2 ativos)
+2026-06-17 21:24:10,017 | ERROR   | websockets.server | opening handshake failed
+Traceback (most recent call last):
+  File "C:\Users\davi\Desktop\live_caos\live_caos\.venv\Lib\site-packages\websockets\http11.py", line 138, in parse
+    request_line = yield from parse_line(read_line)
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\davi\Desktop\live_caos\live_caos\.venv\Lib\site-packages\websockets\http11.py", line 320, in parse_line
+    line = yield from read_line(MAX_LINE_LENGTH)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\davi\Desktop\live_caos\live_caos\.venv\Lib\site-packages\websockets\streams.py", line 46, in read_line
+    raise EOFError(f"stream ends after {p} bytes, before end of line")
+EOFError: stream ends after 0 bytes, before end of line
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\davi\Desktop\live_caos\live_caos\.venv\Lib\site-packages\websockets\server.py", line 547, in parse
+    request = yield from Request.parse(
+              ^^^^^^^^^^^^^^^^^^^^^^^^^
+        self.reader.read_line,
+        ^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "C:\Users\davi\Desktop\live_caos\live_caos\.venv\Lib\site-packages\websockets\http11.py", line 140, in parse
+    raise EOFError("connection closed while reading HTTP request line") from exc
+EOFError: connection closed while reading HTTP request line
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\davi\Desktop\live_caos\live_caos\.venv\Lib\site-packages\websockets\asyncio\server.py", line 356, in conn_handler
+    await connection.handshake(
+    ...<3 lines>...
+    )
+  File "C:\Users\davi\Desktop\live_caos\live_caos\.venv\Lib\site-packages\websockets\asyncio\server.py", line 207, in handshake
+    raise self.protocol.handshake_exc
+websockets.exceptions.InvalidMessage: did not receive a valid HTTP request
+2026-06-17 21:24:10,145 | INFO    | websockets.server | connection open
+2026-06-17 21:24:10,146 | INFO    | src.panel_server | Overlay conectado (3 ativos)
+2026-06-17 21:24:10,155 | INFO    | websockets.server | connection open
+2026-06-17 21:24:10,157 | INFO    | src.panel_server | Overlay conectado (4 ativos)
+2026-06-17 21:24:17,263 | INFO    | src.command_queue | Enfileirado: !barril por @lua_fps (fila=1)
+2026-06-17 21:24:17,264 | WARNING | src.command_queue | Jogo fora de foco; descartando !barril
+2026-06-17 21:24:17,264 | INFO    | src.tiktok_listener | Simulacao rodando (tick 140)
+2026-06-17 21:24:19,510 | INFO    | src.tiktok_listener | Novo seguidor @joao_zoeira -> fogo
+2026-06-17 21:24:19,510 | INFO    | src.command_queue | Enfileirado: __follow__ por @joao_zoeira (fila=1)
+2026-06-17 21:24:19,514 | INFO    | src.command_queue | Executado: __follow__ por @joao_zoeira
+2026-06-17 21:24:22,997 | INFO    | src.tiktok_listener | Presente executavel: ice cream cone de @ana.gamer
+2026-06-17 21:24:22,997 | INFO    | src.command_queue | Enfileirado: ice cream cone por @ana.gamer (fila=1)
+2026-06-17 21:24:23,001 | INFO    | src.command_queue | Executado: ice cream cone por @ana.gamer
+2026-06-17 21:24:24,951 | INFO    | src.command_queue | Enfileirado: !formiga por @lua_fps (fila=1)
+2026-06-17 21:24:24,951 | WARNING | src.command_queue | Jogo fora de foco; descartando !formiga
+2026-06-17 21:24:28,128 | INFO    | src.tiktok_listener | Novo seguidor @lua_fps -> fogo
+2026-06-17 21:24:28,129 | INFO    | src.command_queue | Enfileirado: __follow__ por @lua_fps (fila=1)
+2026-06-17 21:24:28,132 | INFO    | src.command_queue | Executado: __follow__ por @lua_fps
+2026-06-17 21:24:31,667 | INFO    | src.cooldown | Descartado por cooldown global: !formiga (user=@lua_fps)
+2026-06-17 21:24:33,579 | INFO    | src.panel_server | Overlay desconectado (3 ativos)
+2026-06-17 21:24:33,584 | INFO    | src.panel_server | Overlay desconectado (2 ativos)
+2026-06-17 21:24:33,590 | INFO    | src.panel_server | Overlay desconectado (1 ativos)
+2026-06-17 21:24:33,594 | INFO    | src.panel_server | Overlay desconectado (0 ativos)
+2026-06-17 21:24:34,097 | INFO    | src.command_queue | Enfileirado: !cura por @pedrocaos (fila=1)
+2026-06-17 21:24:34,097 | WARNING | src.command_queue | Jogo fora de foco; descartando !cura
+2026-06-17 21:24:34,415 | INFO    | websockets.server | connection open
+2026-06-17 21:24:34,415 | INFO    | src.panel_server | Overlay conectado (1 ativos)
+2026-06-17 21:24:34,459 | INFO    | websockets.server | connection open
+2026-06-17 21:24:34,459 | INFO    | src.panel_server | Overlay conectado (2 ativos)
+2026-06-17 21:24:36,599 | INFO    | src.tiktok_listener | Novo seguidor @lua_fps -> fogo
+2026-06-17 21:24:36,599 | INFO    | src.command_queue | Enfileirado: __follow__ por @lua_fps (fila=1)
+2026-06-17 21:24:36,602 | INFO    | src.command_queue | Executado: __follow__ por @lua_fps
+2026-06-17 21:24:38,595 | INFO    | src.tiktok_listener | Novo seguidor @lua_fps -> fogo
+2026-06-17 21:24:38,595 | INFO    | src.command_queue | Enfileirado: __follow__ por @lua_fps (fila=1)
+2026-06-17 21:24:38,598 | INFO    | src.command_queue | Executado: __follow__ por @lua_fps
+2026-06-17 21:24:47,206 | INFO    | src.command_queue | Enfileirado: !barril por @joao_zoeira (fila=1)
+2026-06-17 21:24:47,207 | WARNING | src.command_queue | Jogo fora de foco; descartando !barril
+2026-06-17 21:24:51,160 | INFO    | src.cooldown | Descartado por cooldown de usuario: !formiga (user=@lua_fps)
+2026-06-17 21:24:54,123 | INFO    | src.tiktok_listener | Novo seguidor @pedrocaos -> fogo
+2026-06-17 21:24:54,124 | INFO    | src.command_queue | Enfileirado: __follow__ por @pedrocaos (fila=1)
+2026-06-17 21:24:54,127 | INFO    | src.command_queue | Executado: __follow__ por @pedrocaos
+2026-06-17 21:24:57,958 | INFO    | src.command_queue | Enfileirado: !cura por @ana.gamer (fila=1)
+2026-06-17 21:24:57,958 | WARNING | src.command_queue | Jogo fora de foco; descartando !cura
+2026-06-17 21:25:02,783 | INFO    | src.tiktok_listener | Presente executavel: ice cream cone de @lua_fps
+2026-06-17 21:25:02,783 | INFO    | src.command_queue | Enfileirado: ice cream cone por @lua_fps (fila=1)
+2026-06-17 21:25:02,786 | INFO    | src.command_queue | Executado: ice cream cone por @lua_fps
+2026-06-17 21:25:04,758 | INFO    | src.tiktok_listener | Presente executavel: Rose de @ana.gamer
+2026-06-17 21:25:04,758 | INFO    | src.command_queue | Enfileirado: Rose por @ana.gamer (fila=1)
+2026-06-17 21:25:04,761 | INFO    | src.command_queue | Executado: Rose por @ana.gamer
+2026-06-17 21:25:08,361 | INFO    | src.command_queue | Enfileirado: !drop por @joao_zoeira (fila=1)
+2026-06-17 21:25:08,362 | WARNING | src.command_queue | Jogo fora de foco; descartando !drop
+2026-06-17 21:25:10,002 | INFO    | src.command_queue | Enfileirado: !formiga por @ana.gamer (fila=1)
+2026-06-17 21:25:10,003 | WARNING | src.command_queue | Jogo fora de foco; descartando !formiga
+2026-06-17 21:25:11,892 | INFO    | src.tiktok_listener | Meta de likes batida por @pedrocaos -> zumbi
+2026-06-17 21:25:11,893 | INFO    | src.command_queue | Enfileirado: __likes__ por @pedrocaos (fila=1)
+2026-06-17 21:25:11,893 | INFO    | src.tiktok_listener | Simulacao rodando (tick 160)
+2026-06-17 21:25:11,897 | INFO    | src.command_queue | Executado: __likes__ por @pedrocaos
+2026-06-17 21:25:14,854 | INFO    | src.command_queue | Enfileirado: !barril por @pedrocaos (fila=1)
+2026-06-17 21:25:14,855 | WARNING | src.command_queue | Jogo fora de foco; descartando !barril
+2026-06-17 21:25:16,205 | INFO    | src.panel_server | Overlay desconectado (1 ativos)
+2026-06-17 21:25:16,210 | INFO    | src.panel_server | Overlay desconectado (0 ativos)
+2026-06-17 21:25:16,912 | INFO    | websockets.server | connection open
+2026-06-17 21:25:16,912 | INFO    | src.panel_server | Overlay conectado (1 ativos)
+2026-06-17 21:25:16,989 | INFO    | websockets.server | connection open
+2026-06-17 21:25:16,989 | INFO    | src.panel_server | Overlay conectado (2 ativos)
+2026-06-17 21:25:17,301 | INFO    | websockets.server | connection open
+2026-06-17 21:25:17,302 | INFO    | src.panel_server | Overlay conectado (3 ativos)
+2026-06-17 21:25:17,594 | ERROR   | websockets.server | opening handshake failed
+Traceback (most recent call last):
+  File "C:\Users\davi\Desktop\live_caos\live_caos\.venv\Lib\site-packages\websockets\http11.py", line 138, in parse
+    request_line = yield from parse_line(read_line)
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\davi\Desktop\live_caos\live_caos\.venv\Lib\site-packages\websockets\http11.py", line 320, in parse_line
+    line = yield from read_line(MAX_LINE_LENGTH)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\davi\Desktop\live_caos\live_caos\.venv\Lib\site-packages\websockets\streams.py", line 46, in read_line
+    raise EOFError(f"stream ends after {p} bytes, before end of line")
+EOFError: stream ends after 0 bytes, before end of line
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\davi\Desktop\live_caos\live_caos\.venv\Lib\site-packages\websockets\server.py", line 547, in parse
+    request = yield from Request.parse(
+              ^^^^^^^^^^^^^^^^^^^^^^^^^
+        self.reader.read_line,
+        ^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "C:\Users\davi\Desktop\live_caos\live_caos\.venv\Lib\site-packages\websockets\http11.py", line 140, in parse
+    raise EOFError("connection closed while reading HTTP request line") from exc
+EOFError: connection closed while reading HTTP request line
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\davi\Desktop\live_caos\live_caos\.venv\Lib\site-packages\websockets\asyncio\server.py", line 356, in conn_handler
+    await connection.handshake(
+    ...<3 lines>...
+    )
+  File "C:\Users\davi\Desktop\live_caos\live_caos\.venv\Lib\site-packages\websockets\asyncio\server.py", line 207, in handshake
+    raise self.protocol.handshake_exc
+websockets.exceptions.InvalidMessage: did not receive a valid HTTP request
+2026-06-17 21:25:17,692 | INFO    | websockets.server | connection open
+2026-06-17 21:25:17,692 | INFO    | src.panel_server | Overlay conectado (4 ativos)
+2026-06-17 21:25:17,972 | INFO    | src.tiktok_listener | Novo seguidor @joao_zoeira -> fogo
+2026-06-17 21:25:17,973 | INFO    | src.command_queue | Enfileirado: __follow__ por @joao_zoeira (fila=1)
+2026-06-17 21:25:17,979 | INFO    | src.command_queue | Executado: __follow__ por @joao_zoeira
+2026-06-17 21:25:30,586 | INFO    | src.cooldown | Descartado por cooldown de usuario: !formiga (user=@ana.gamer)
+2026-06-17 21:25:33,782 | INFO    | src.command_queue | Enfileirado: !barril por @joao_zoeira (fila=1)
+2026-06-17 21:25:33,783 | WARNING | src.command_queue | Jogo fora de foco; descartando !barril
+2026-06-17 21:25:37,159 | INFO    | src.cooldown | Descartado por cooldown global: !barril (user=@joao_zoeira)
+2026-06-17 21:25:38,780 | INFO    | src.tiktok_listener | Novo seguidor @pedrocaos -> fogo
+2026-06-17 21:25:38,781 | INFO    | src.command_queue | Enfileirado: __follow__ por @pedrocaos (fila=1)
+2026-06-17 21:25:38,784 | INFO    | src.command_queue | Executado: __follow__ por @pedrocaos
+2026-06-17 21:25:42,438 | INFO    | src.command_queue | Enfileirado: !drop por @ana.gamer (fila=1)
+2026-06-17 21:25:42,590 | INFO    | src.command_queue | Executado: !drop por @ana.gamer
+2026-06-17 21:25:44,498 | INFO    | src.command_queue | Enfileirado: !barril por @lua_fps (fila=1)
+2026-06-17 21:25:44,651 | INFO    | src.command_queue | Executado: !barril por @lua_fps
+2026-06-17 21:25:54,713 | INFO    | src.command_queue | Enfileirado: !cura por @pedrocaos (fila=1)
+2026-06-17 21:25:54,866 | INFO    | src.command_queue | Executado: !cura por @pedrocaos
+2026-06-17 21:25:56,664 | INFO    | src.tiktok_listener | Novo seguidor @pedrocaos -> fogo
+2026-06-17 21:25:56,665 | INFO    | src.command_queue | Enfileirado: __follow__ por @pedrocaos (fila=1)
+2026-06-17 21:25:56,669 | INFO    | src.command_queue | Executado: __follow__ por @pedrocaos
+2026-06-17 21:26:02,072 | INFO    | src.command_queue | Enfileirado: !barril por @ana.gamer (fila=1)
+2026-06-17 21:26:02,225 | INFO    | src.command_queue | Executado: !barril por @ana.gamer
+2026-06-17 21:26:05,952 | INFO    | src.cooldown | Descartado por cooldown global: !barril (user=@pedrocaos)
+2026-06-17 21:26:09,843 | INFO    | src.tiktok_listener | Simulacao rodando (tick 180)
+2026-06-17 21:26:19,771 | INFO    | src.command_queue | Enfileirado: !cura por @joao_zoeira (fila=1)
+2026-06-17 21:26:19,924 | INFO    | src.command_queue | Executado: !cura por @joao_zoeira
+2026-06-17 21:26:23,211 | INFO    | src.tiktok_listener | Presente executavel: tiktok de @pedrocaos
+2026-06-17 21:26:23,212 | INFO    | src.command_queue | Enfileirado: tiktok por @pedrocaos (fila=1)
+2026-06-17 21:26:23,216 | INFO    | src.command_queue | Executado: tiktok por @pedrocaos
+2026-06-17 21:26:27,195 | INFO    | src.command_queue | Enfileirado: !formiga por @joao_zoeira (fila=1)
+2026-06-17 21:26:27,348 | INFO    | src.command_queue | Executado: !formiga por @joao_zoeira
+2026-06-17 21:26:33,673 | INFO    | src.command_queue | Enfileirado: !barril por @ana.gamer (fila=1)
+2026-06-17 21:26:33,826 | INFO    | src.command_queue | Executado: !barril por @ana.gamer
+2026-06-17 21:26:42,012 | INFO    | src.tiktok_listener | Novo seguidor @lua_fps -> fogo
+2026-06-17 21:26:42,012 | INFO    | src.command_queue | Enfileirado: __follow__ por @lua_fps (fila=1)
+2026-06-17 21:26:42,016 | INFO    | src.command_queue | Executado: __follow__ por @lua_fps
+2026-06-17 21:26:48,165 | INFO    | src.tiktok_listener | Novo seguidor @lua_fps -> fogo
+2026-06-17 21:26:48,166 | INFO    | src.command_queue | Enfileirado: __follow__ por @lua_fps (fila=1)
+2026-06-17 21:26:48,169 | INFO    | src.command_queue | Executado: __follow__ por @lua_fps
+2026-06-17 21:26:53,465 | INFO    | src.tiktok_listener | Presente executavel: ice cream cone de @pedrocaos
+2026-06-17 21:26:53,466 | INFO    | src.command_queue | Enfileirado: ice cream cone por @pedrocaos (fila=1)
+2026-06-17 21:26:53,470 | INFO    | src.command_queue | Executado: ice cream cone por @pedrocaos
+2026-06-17 21:26:56,625 | INFO    | src.tiktok_listener | Presente executavel: gg de @pedrocaos
+2026-06-17 21:26:56,626 | INFO    | src.command_queue | Enfileirado: gg por @pedrocaos (fila=1)
+2026-06-17 21:26:56,629 | INFO    | src.command_queue | Executado: gg por @pedrocaos
+2026-06-17 21:26:58,252 | INFO    | src.tiktok_listener | Novo seguidor @lua_fps -> fogo
+2026-06-17 21:26:58,253 | INFO    | src.command_queue | Enfileirado: __follow__ por @lua_fps (fila=1)
+2026-06-17 21:26:58,256 | INFO    | src.command_queue | Executado: __follow__ por @lua_fps
+2026-06-17 21:27:00,876 | INFO    | src.tiktok_listener | Meta de likes batida por @joao_zoeira -> zumbi
+2026-06-17 21:27:00,876 | INFO    | src.command_queue | Enfileirado: __likes__ por @joao_zoeira (fila=1)
+2026-06-17 21:27:00,879 | INFO    | src.command_queue | Executado: __likes__ por @joao_zoeira
+2026-06-17 21:27:06,420 | INFO    | src.command_queue | Enfileirado: !barril por @ana.gamer (fila=1)
+2026-06-17 21:27:06,421 | WARNING | src.command_queue | Jogo fora de foco; descartando !barril
+2026-06-17 21:27:06,422 | INFO    | src.tiktok_listener | Simulacao rodando (tick 200)
+2026-06-17 21:27:12,819 | INFO    | src.panel_server | Overlay desconectado (3 ativos)
+2026-06-17 21:27:12,819 | INFO    | src.panel_server | Overlay desconectado (2 ativos)
+2026-06-17 21:27:12,819 | INFO    | src.panel_server | Overlay desconectado (1 ativos)
+2026-06-17 21:27:12,819 | INFO    | src.panel_server | Overlay desconectado (0 ativos)
+2026-06-17 21:27:12,820 | INFO    | __main__ | Encerrado pelo usuario (Ctrl+C)
+2026-06-17 21:38:07,276 | INFO    | __main__ | Comandos: !barril, !cura, !drop, !formiga, !voa
+2026-06-17 21:38:07,276 | INFO    | __main__ | Presentes executaveis: gamepad, gg, ice cream cone, pop, rose, tiktok
+2026-06-17 21:38:07,276 | INFO    | __main__ | Acao de meta de likes: configurada (Python)
+2026-06-17 21:38:07,277 | INFO    | __main__ | Acao de seguir: configurada (Python)
+2026-06-17 21:38:07,277 | INFO    | __main__ | Acao de entrar na live: desligada (JOIN_ENABLED)
+2026-06-17 21:38:07,277 | INFO    | __main__ | Meta NUCLEAR: 1000 likes
+2026-06-17 21:38:07,278 | INFO    | __main__ | Ranking ATIVO (banco: live_caos.db)
+2026-06-17 21:38:07,279 | INFO    | src.key_executor | Backend de teclado: pydirectinput
+2026-06-17 21:38:07,279 | INFO    | src.file_bridge | Ponte por arquivo: C:\Program Files (x86)\Steam\steamapps\common\GarrysMod\garrysmod\data\live_caos\fila.txt
+2026-06-17 21:38:07,323 | INFO    | websockets.server | server listening on [::1]:8765
+2026-06-17 21:38:07,323 | INFO    | websockets.server | server listening on 127.0.0.1:8765
+2026-06-17 21:38:07,324 | INFO    | src.panel_server | Painel WebSocket ouvindo em ws://localhost:8765
+2026-06-17 21:38:07,324 | INFO    | src.command_queue | Worker da fila iniciado
+2026-06-17 21:38:07,324 | INFO    | src.tiktok_listener | MODO SIMULACAO ativo — gerando eventos falsos
+2026-06-17 21:38:07,324 | INFO    | src.tiktok_listener | Simulacao vai sortear presentes: gamepad, gg, Rose, ice cream cone, pop, tiktok
+2026-06-17 21:38:07,448 | INFO    | websockets.server | connection open
+2026-06-17 21:38:07,449 | INFO    | src.panel_server | Overlay conectado (1 ativos)
+2026-06-17 21:38:07,465 | INFO    | websockets.server | connection open
+2026-06-17 21:38:07,465 | INFO    | src.panel_server | Overlay conectado (2 ativos)
+2026-06-17 21:38:07,465 | ERROR   | websockets.server | opening handshake failed
+Traceback (most recent call last):
+  File "C:\Users\davi\Desktop\live_caos\live_caos\.venv\Lib\site-packages\websockets\http11.py", line 138, in parse
+    request_line = yield from parse_line(read_line)
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\davi\Desktop\live_caos\live_caos\.venv\Lib\site-packages\websockets\http11.py", line 320, in parse_line
+    line = yield from read_line(MAX_LINE_LENGTH)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\davi\Desktop\live_caos\live_caos\.venv\Lib\site-packages\websockets\streams.py", line 46, in read_line
+    raise EOFError(f"stream ends after {p} bytes, before end of line")
+EOFError: stream ends after 0 bytes, before end of line
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\davi\Desktop\live_caos\live_caos\.venv\Lib\site-packages\websockets\server.py", line 547, in parse
+    request = yield from Request.parse(
+              ^^^^^^^^^^^^^^^^^^^^^^^^^
+        self.reader.read_line,
+        ^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "C:\Users\davi\Desktop\live_caos\live_caos\.venv\Lib\site-packages\websockets\http11.py", line 140, in parse
+    raise EOFError("connection closed while reading HTTP request line") from exc
+EOFError: connection closed while reading HTTP request line
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\davi\Desktop\live_caos\live_caos\.venv\Lib\site-packages\websockets\asyncio\server.py", line 356, in conn_handler
+    await connection.handshake(
+    ...<3 lines>...
+    )
+  File "C:\Users\davi\Desktop\live_caos\live_caos\.venv\Lib\site-packages\websockets\asyncio\server.py", line 207, in handshake
+    raise self.protocol.handshake_exc
+websockets.exceptions.InvalidMessage: did not receive a valid HTTP request
+2026-06-17 21:38:10,077 | INFO    | src.tiktok_listener | Simulacao rodando (tick 0)
+2026-06-17 21:38:10,234 | INFO    | websockets.server | connection open
+2026-06-17 21:38:10,234 | INFO    | src.panel_server | Overlay conectado (3 ativos)
+2026-06-17 21:38:12,288 | INFO    | websockets.server | connection open
+2026-06-17 21:38:12,289 | INFO    | src.panel_server | Overlay conectado (4 ativos)
+2026-06-17 21:38:12,825 | INFO    | src.command_queue | Enfileirado: !cura por @pedrocaos (fila=1)
+2026-06-17 21:38:12,826 | WARNING | src.command_queue | Jogo fora de foco; descartando !cura
+2026-06-17 21:38:16,953 | INFO    | src.command_queue | Enfileirado: !barril por @joao_zoeira (fila=1)
+2026-06-17 21:38:16,953 | WARNING | src.command_queue | Jogo fora de foco; descartando !barril
+2026-06-17 21:38:19,337 | INFO    | src.cooldown | Descartado por cooldown global: !cura (user=@lua_fps)
+2026-06-17 21:38:21,928 | INFO    | src.tiktok_listener | Novo seguidor @ana.gamer -> fogo
+2026-06-17 21:38:21,928 | INFO    | src.command_queue | Enfileirado: __follow__ por @ana.gamer (fila=1)
+2026-06-17 21:38:21,931 | INFO    | src.command_queue | Executado: __follow__ por @ana.gamer
+2026-06-17 21:38:24,001 | INFO    | src.tiktok_listener | Presente executavel: pop de @pedrocaos
+2026-06-17 21:38:24,001 | INFO    | src.command_queue | Enfileirado: pop por @pedrocaos (fila=1)
+2026-06-17 21:38:24,005 | INFO    | src.command_queue | Executado: pop por @pedrocaos
+2026-06-17 21:38:34,995 | INFO    | src.command_queue | Enfileirado: !drop por @joao_zoeira (fila=1)
+2026-06-17 21:38:34,996 | WARNING | src.command_queue | Jogo fora de foco; descartando !drop
+2026-06-17 21:38:40,749 | INFO    | src.tiktok_listener | Novo seguidor @pedrocaos -> fogo
+2026-06-17 21:38:40,749 | INFO    | src.command_queue | Enfileirado: __follow__ por @pedrocaos (fila=1)
+2026-06-17 21:38:40,754 | INFO    | src.command_queue | Executado: __follow__ por @pedrocaos
+2026-06-17 21:38:43,005 | INFO    | websockets.server | connection open
+2026-06-17 21:38:43,006 | INFO    | src.panel_server | Overlay conectado (5 ativos)
+2026-06-17 21:38:44,419 | INFO    | src.cooldown | Descartado por cooldown global: !drop (user=@lua_fps)
+2026-06-17 21:38:46,977 | INFO    | src.panel_server | Overlay desconectado (4 ativos)
+2026-06-17 21:38:47,773 | INFO    | src.tiktok_listener | Presente executavel: tiktok de @joao_zoeira
+2026-06-17 21:38:47,773 | INFO    | src.command_queue | Enfileirado: tiktok por @joao_zoeira (fila=1)
+2026-06-17 21:38:47,777 | INFO    | src.command_queue | Executado: tiktok por @joao_zoeira
+2026-06-17 21:38:51,037 | INFO    | src.tiktok_listener | Presente executavel: pop de @ana.gamer
+2026-06-17 21:38:51,037 | INFO    | src.command_queue | Enfileirado: pop por @ana.gamer (fila=1)
+2026-06-17 21:38:51,042 | INFO    | src.command_queue | Executado: pop por @ana.gamer
+2026-06-17 21:38:51,586 | INFO    | src.panel_server | Overlay desconectado (3 ativos)
+2026-06-17 21:38:51,593 | INFO    | src.panel_server | Overlay desconectado (2 ativos)
+2026-06-17 21:38:51,598 | INFO    | src.panel_server | Overlay desconectado (1 ativos)
+2026-06-17 21:38:51,602 | INFO    | src.panel_server | Overlay desconectado (0 ativos)
+2026-06-17 21:38:53,004 | INFO    | websockets.server | connection open
+2026-06-17 21:38:53,004 | INFO    | src.panel_server | Overlay conectado (1 ativos)
+2026-06-17 21:38:53,069 | INFO    | src.command_queue | Enfileirado: !drop por @ana.gamer (fila=1)
+2026-06-17 21:38:53,069 | WARNING | src.command_queue | Jogo fora de foco; descartando !drop
+2026-06-17 21:38:53,076 | INFO    | websockets.server | connection open
+2026-06-17 21:38:53,076 | INFO    | src.panel_server | Overlay conectado (2 ativos)
+2026-06-17 21:38:54,867 | INFO    | src.tiktok_listener | Meta de likes batida por @lua_fps -> zumbi
+2026-06-17 21:38:54,868 | INFO    | src.command_queue | Enfileirado: __likes__ por @lua_fps (fila=1)
+2026-06-17 21:38:54,873 | INFO    | src.command_queue | Executado: __likes__ por @lua_fps
+2026-06-17 21:38:56,965 | INFO    | src.tiktok_listener | Presente executavel: pop de @pedrocaos
+2026-06-17 21:38:56,966 | INFO    | src.command_queue | Enfileirado: pop por @pedrocaos (fila=1)
+2026-06-17 21:38:56,968 | INFO    | src.command_queue | Executado: pop por @pedrocaos
+2026-06-17 21:38:57,674 | INFO    | src.panel_server | Overlay desconectado (1 ativos)
+2026-06-17 21:38:57,684 | INFO    | src.panel_server | Overlay desconectado (0 ativos)
+2026-06-17 21:38:58,341 | INFO    | websockets.server | connection open
+2026-06-17 21:38:58,341 | INFO    | src.panel_server | Overlay conectado (1 ativos)
+2026-06-17 21:38:58,413 | INFO    | websockets.server | connection open
+2026-06-17 21:38:58,414 | INFO    | src.panel_server | Overlay conectado (2 ativos)
+2026-06-17 21:38:58,886 | INFO    | websockets.server | connection open
+2026-06-17 21:38:58,887 | INFO    | src.panel_server | Overlay conectado (3 ativos)
+2026-06-17 21:38:58,894 | INFO    | websockets.server | connection open
+2026-06-17 21:38:58,895 | INFO    | src.panel_server | Overlay conectado (4 ativos)
+2026-06-17 21:38:59,753 | INFO    | src.tiktok_listener | Presente executavel: tiktok de @pedrocaos
+2026-06-17 21:38:59,753 | INFO    | src.command_queue | Enfileirado: tiktok por @pedrocaos (fila=1)
+2026-06-17 21:38:59,757 | INFO    | src.command_queue | Executado: tiktok por @pedrocaos
+2026-06-17 21:39:03,066 | INFO    | src.tiktok_listener | Simulacao rodando (tick 20)
+2026-06-17 21:39:07,610 | INFO    | src.panel_server | Overlay desconectado (3 ativos)
+2026-06-17 21:39:07,613 | INFO    | src.panel_server | Overlay desconectado (2 ativos)
+2026-06-17 21:39:07,614 | INFO    | src.panel_server | Overlay desconectado (1 ativos)
+2026-06-17 21:39:07,620 | INFO    | src.panel_server | Overlay desconectado (0 ativos)
+2026-06-17 21:39:09,497 | INFO    | src.tiktok_listener | Presente executavel: gg de @joao_zoeira
+2026-06-17 21:39:09,498 | INFO    | src.command_queue | Enfileirado: gg por @joao_zoeira (fila=1)
+2026-06-17 21:39:09,501 | INFO    | src.command_queue | Executado: gg por @joao_zoeira
+2026-06-17 21:39:11,738 | INFO    | src.tiktok_listener | Novo seguidor @lua_fps -> fogo
+2026-06-17 21:39:11,738 | INFO    | src.command_queue | Enfileirado: __follow__ por @lua_fps (fila=1)
+2026-06-17 21:39:11,742 | INFO    | src.command_queue | Executado: __follow__ por @lua_fps
+2026-06-17 21:39:13,602 | INFO    | src.command_queue | Enfileirado: !drop por @pedrocaos (fila=1)
+2026-06-17 21:39:13,603 | WARNING | src.command_queue | Jogo fora de foco; descartando !drop
+2026-06-17 21:39:13,795 | INFO    | __main__ | Encerrado pelo usuario (Ctrl+C)
+2026-06-17 21:41:14,843 | INFO    | __main__ | Comandos: !barril, !cura, !drop, !formiga, !voa
+2026-06-17 21:41:14,843 | INFO    | __main__ | Presentes executaveis: gamepad, gg, ice cream cone, pop, rose, tiktok
+2026-06-17 21:41:14,844 | INFO    | __main__ | Acao de meta de likes: configurada (Python)
+2026-06-17 21:41:14,844 | INFO    | __main__ | Acao de seguir: configurada (Python)
+2026-06-17 21:41:14,844 | INFO    | __main__ | Acao de entrar na live: desligada (JOIN_ENABLED)
+2026-06-17 21:41:14,844 | INFO    | __main__ | Meta NUCLEAR: 1000 likes
+2026-06-17 21:41:14,846 | INFO    | __main__ | Ranking ATIVO (banco: live_caos.db)
+2026-06-17 21:41:14,846 | INFO    | src.key_executor | Backend de teclado: pydirectinput
+2026-06-17 21:41:14,846 | INFO    | src.file_bridge | Ponte por arquivo: C:\Program Files (x86)\Steam\steamapps\common\GarrysMod\garrysmod\data\live_caos\fila.txt
+2026-06-17 21:41:14,891 | INFO    | websockets.server | server listening on 127.0.0.1:8765
+2026-06-17 21:41:14,891 | INFO    | websockets.server | server listening on [::1]:8765
+2026-06-17 21:41:14,891 | INFO    | src.panel_server | Painel WebSocket ouvindo em ws://localhost:8765
+2026-06-17 21:41:14,892 | INFO    | src.command_queue | Worker da fila iniciado
+2026-06-17 21:41:14,892 | INFO    | src.tiktok_listener | MODO SIMULACAO ativo — gerando eventos falsos
+2026-06-17 21:41:14,892 | INFO    | src.tiktok_listener | Simulacao vai sortear presentes: gamepad, gg, Rose, ice cream cone, pop, tiktok
+2026-06-17 21:41:14,937 | INFO    | websockets.server | connection open
+2026-06-17 21:41:14,937 | INFO    | src.panel_server | Overlay conectado (1 ativos)
+2026-06-17 21:41:14,953 | ERROR   | websockets.server | opening handshake failed
+Traceback (most recent call last):
+  File "C:\Users\davi\Desktop\live_caos\live_caos\.venv\Lib\site-packages\websockets\http11.py", line 138, in parse
+    request_line = yield from parse_line(read_line)
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\davi\Desktop\live_caos\live_caos\.venv\Lib\site-packages\websockets\http11.py", line 320, in parse_line
+    line = yield from read_line(MAX_LINE_LENGTH)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\davi\Desktop\live_caos\live_caos\.venv\Lib\site-packages\websockets\streams.py", line 46, in read_line
+    raise EOFError(f"stream ends after {p} bytes, before end of line")
+EOFError: stream ends after 0 bytes, before end of line
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\davi\Desktop\live_caos\live_caos\.venv\Lib\site-packages\websockets\server.py", line 547, in parse
+    request = yield from Request.parse(
+              ^^^^^^^^^^^^^^^^^^^^^^^^^
+        self.reader.read_line,
+        ^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "C:\Users\davi\Desktop\live_caos\live_caos\.venv\Lib\site-packages\websockets\http11.py", line 140, in parse
+    raise EOFError("connection closed while reading HTTP request line") from exc
+EOFError: connection closed while reading HTTP request line
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\davi\Desktop\live_caos\live_caos\.venv\Lib\site-packages\websockets\asyncio\server.py", line 356, in conn_handler
+    await connection.handshake(
+    ...<3 lines>...
+    )
+  File "C:\Users\davi\Desktop\live_caos\live_caos\.venv\Lib\site-packages\websockets\asyncio\server.py", line 207, in handshake
+    raise self.protocol.handshake_exc
+websockets.exceptions.InvalidMessage: did not receive a valid HTTP request
+2026-06-17 21:41:14,957 | INFO    | websockets.server | connection open
+2026-06-17 21:41:14,957 | INFO    | src.panel_server | Overlay conectado (2 ativos)
+2026-06-17 21:41:16,390 | INFO    | websockets.server | connection open
+2026-06-17 21:41:16,390 | INFO    | src.panel_server | Overlay conectado (3 ativos)
+2026-06-17 21:41:17,023 | INFO    | src.tiktok_listener | Simulacao rodando (tick 0)
+2026-06-17 21:41:18,510 | INFO    | websockets.server | connection open
+2026-06-17 21:41:18,510 | INFO    | src.panel_server | Overlay conectado (4 ativos)
+2026-06-17 21:41:21,139 | INFO    | src.tiktok_listener | Novo seguidor @joao_zoeira -> fogo
+2026-06-17 21:41:21,139 | INFO    | src.command_queue | Enfileirado: __follow__ por @joao_zoeira (fila=1)
+2026-06-17 21:41:21,143 | INFO    | src.command_queue | Executado: __follow__ por @joao_zoeira
+2026-06-17 21:41:24,673 | INFO    | src.command_queue | Enfileirado: !cura por @pedrocaos (fila=1)
+2026-06-17 21:41:24,674 | WARNING | src.command_queue | Jogo fora de foco; descartando !cura
+2026-06-17 21:41:27,195 | INFO    | src.cooldown | Descartado por cooldown global: !cura (user=@ana.gamer)
+2026-06-17 21:41:30,609 | INFO    | src.tiktok_listener | Presente executavel: gamepad de @ana.gamer
+2026-06-17 21:41:30,610 | INFO    | src.command_queue | Enfileirado: gamepad por @ana.gamer (fila=1)
+2026-06-17 21:41:30,612 | INFO    | src.command_queue | Executado: gamepad por @ana.gamer
+2026-06-17 21:41:38,113 | INFO    | src.command_queue | Enfileirado: !barril por @pedrocaos (fila=1)
+2026-06-17 21:41:38,114 | WARNING | src.command_queue | Jogo fora de foco; descartando !barril
+2026-06-17 21:41:40,586 | INFO    | src.tiktok_listener | Novo seguidor @joao_zoeira -> fogo
+2026-06-17 21:41:40,586 | INFO    | src.command_queue | Enfileirado: __follow__ por @joao_zoeira (fila=1)
+2026-06-17 21:41:40,589 | INFO    | src.command_queue | Executado: __follow__ por @joao_zoeira
+2026-06-17 21:41:44,371 | INFO    | src.tiktok_listener | Presente executavel: gg de @pedrocaos
+2026-06-17 21:41:44,371 | INFO    | src.command_queue | Enfileirado: gg por @pedrocaos (fila=1)
+2026-06-17 21:41:44,374 | INFO    | src.command_queue | Executado: gg por @pedrocaos
+2026-06-17 21:41:56,845 | INFO    | src.command_queue | Enfileirado: !drop por @lua_fps (fila=1)
+2026-06-17 21:41:56,845 | WARNING | src.command_queue | Jogo fora de foco; descartando !drop
+2026-06-17 21:41:58,703 | INFO    | src.cooldown | Descartado por cooldown global: !drop (user=@ana.gamer)
+2026-06-17 21:42:05,708 | INFO    | src.command_queue | Enfileirado: !cura por @joao_zoeira (fila=1)
+2026-06-17 21:42:05,709 | WARNING | src.command_queue | Jogo fora de foco; descartando !cura
+2026-06-17 21:42:16,802 | INFO    | src.tiktok_listener | Novo seguidor @ana.gamer -> fogo
+2026-06-17 21:42:16,802 | INFO    | src.command_queue | Enfileirado: __follow__ por @ana.gamer (fila=1)
+2026-06-17 21:42:16,803 | INFO    | src.tiktok_listener | Simulacao rodando (tick 20)
+2026-06-17 21:42:16,806 | INFO    | src.command_queue | Executado: __follow__ por @ana.gamer
+2026-06-17 21:42:24,187 | INFO    | src.cooldown | Descartado por cooldown global: !cura (user=@pedrocaos)
+2026-06-17 21:42:32,278 | INFO    | src.tiktok_listener | Presente executavel: tiktok de @ana.gamer
+2026-06-17 21:42:32,278 | INFO    | src.command_queue | Enfileirado: tiktok por @ana.gamer (fila=1)
+2026-06-17 21:42:32,283 | INFO    | src.command_queue | Executado: tiktok por @ana.gamer
+2026-06-17 21:42:34,417 | INFO    | src.tiktok_listener | Meta de likes batida por @ana.gamer -> zumbi
+2026-06-17 21:42:34,417 | INFO    | src.command_queue | Enfileirado: __likes__ por @ana.gamer (fila=1)
+2026-06-17 21:42:34,421 | INFO    | src.command_queue | Executado: __likes__ por @ana.gamer
+2026-06-17 21:42:36,809 | INFO    | src.cooldown | Descartado por cooldown de usuario: !cura (user=@joao_zoeira)
+2026-06-17 21:42:38,443 | INFO    | src.command_queue | Enfileirado: !drop por @pedrocaos (fila=1)
+2026-06-17 21:42:38,443 | WARNING | src.command_queue | Jogo fora de foco; descartando !drop
+2026-06-17 21:42:41,149 | INFO    | src.command_queue | Enfileirado: !formiga por @ana.gamer (fila=1)
+2026-06-17 21:42:41,149 | WARNING | src.command_queue | Jogo fora de foco; descartando !formiga
+2026-06-17 21:42:46,646 | INFO    | src.tiktok_listener | Novo seguidor @joao_zoeira -> fogo
+2026-06-17 21:42:46,646 | INFO    | src.command_queue | Enfileirado: __follow__ por @joao_zoeira (fila=1)
+2026-06-17 21:42:46,649 | INFO    | src.command_queue | Executado: __follow__ por @joao_zoeira
+2026-06-17 21:42:52,831 | INFO    | src.tiktok_listener | Presente executavel: gamepad de @joao_zoeira
+2026-06-17 21:42:52,831 | INFO    | src.command_queue | Enfileirado: gamepad por @joao_zoeira (fila=1)
+2026-06-17 21:42:52,835 | INFO    | src.command_queue | Executado: gamepad por @joao_zoeira
+2026-06-17 21:42:55,080 | INFO    | src.tiktok_listener | Novo seguidor @ana.gamer -> fogo
+2026-06-17 21:42:55,081 | INFO    | src.command_queue | Enfileirado: __follow__ por @ana.gamer (fila=1)
+2026-06-17 21:42:55,087 | INFO    | src.command_queue | Executado: __follow__ por @ana.gamer
+2026-06-17 21:43:00,122 | INFO    | src.tiktok_listener | Meta de likes batida por @lua_fps -> zumbi
+2026-06-17 21:43:00,122 | INFO    | src.command_queue | Enfileirado: __likes__ por @lua_fps (fila=1)
+2026-06-17 21:43:00,127 | INFO    | src.command_queue | Executado: __likes__ por @lua_fps
+2026-06-17 21:43:05,031 | INFO    | src.command_queue | Enfileirado: !barril por @lua_fps (fila=1)
+2026-06-17 21:43:05,032 | WARNING | src.command_queue | Jogo fora de foco; descartando !barril
+2026-06-17 21:43:06,920 | INFO    | src.tiktok_listener | Novo seguidor @ana.gamer -> fogo
+2026-06-17 21:43:06,920 | INFO    | src.command_queue | Enfileirado: __follow__ por @ana.gamer (fila=1)
+2026-06-17 21:43:06,922 | INFO    | src.tiktok_listener | Simulacao rodando (tick 40)
+2026-06-17 21:43:06,925 | INFO    | src.command_queue | Executado: __follow__ por @ana.gamer
+2026-06-17 21:43:08,490 | INFO    | src.tiktok_listener | Novo seguidor @ana.gamer -> fogo
+2026-06-17 21:43:08,490 | INFO    | src.command_queue | Enfileirado: __follow__ por @ana.gamer (fila=1)
+2026-06-17 21:43:08,493 | INFO    | src.command_queue | Executado: __follow__ por @ana.gamer
+2026-06-17 21:43:10,332 | INFO    | src.tiktok_listener | Presente executavel: Rose de @pedrocaos
+2026-06-17 21:43:10,332 | INFO    | src.command_queue | Enfileirado: Rose por @pedrocaos (fila=1)
+2026-06-17 21:43:10,336 | INFO    | src.command_queue | Executado: Rose por @pedrocaos
+2026-06-17 21:43:15,073 | INFO    | src.command_queue | Enfileirado: !cura por @ana.gamer (fila=1)
+2026-06-17 21:43:15,074 | WARNING | src.command_queue | Jogo fora de foco; descartando !cura
+2026-06-17 21:43:19,215 | INFO    | src.tiktok_listener | Presente executavel: gamepad de @pedrocaos
+2026-06-17 21:43:19,216 | INFO    | src.command_queue | Enfileirado: gamepad por @pedrocaos (fila=1)
+2026-06-17 21:43:19,220 | INFO    | src.command_queue | Executado: gamepad por @pedrocaos
+2026-06-17 21:43:22,546 | INFO    | src.tiktok_listener | Novo seguidor @lua_fps -> fogo
+2026-06-17 21:43:22,547 | INFO    | src.command_queue | Enfileirado: __follow__ por @lua_fps (fila=1)
+2026-06-17 21:43:22,552 | INFO    | src.command_queue | Executado: __follow__ por @lua_fps
+2026-06-17 21:43:27,630 | INFO    | src.tiktok_listener | Presente executavel: gg de @joao_zoeira
+2026-06-17 21:43:27,631 | INFO    | src.command_queue | Enfileirado: gg por @joao_zoeira (fila=1)
+2026-06-17 21:43:27,634 | INFO    | src.command_queue | Executado: gg por @joao_zoeira
+2026-06-17 21:43:30,016 | INFO    | src.tiktok_listener | Novo seguidor @ana.gamer -> fogo
+2026-06-17 21:43:30,017 | INFO    | src.command_queue | Enfileirado: __follow__ por @ana.gamer (fila=1)
+2026-06-17 21:43:30,019 | INFO    | src.command_queue | Executado: __follow__ por @ana.gamer
+2026-06-17 21:43:33,334 | INFO    | src.command_queue | Enfileirado: !barril por @joao_zoeira (fila=1)
+2026-06-17 21:43:33,334 | WARNING | src.command_queue | Jogo fora de foco; descartando !barril
+2026-06-17 21:43:38,856 | INFO    | src.cooldown | Descartado por cooldown global: !barril (user=@ana.gamer)
+2026-06-17 21:43:43,562 | INFO    | src.command_queue | Enfileirado: !formiga por @pedrocaos (fila=1)
+2026-06-17 21:43:43,563 | WARNING | src.command_queue | Jogo fora de foco; descartando !formiga
+2026-06-17 21:43:48,446 | INFO    | src.tiktok_listener | Presente executavel: tiktok de @lua_fps
+2026-06-17 21:43:48,446 | INFO    | src.command_queue | Enfileirado: tiktok por @lua_fps (fila=1)
+2026-06-17 21:43:48,450 | INFO    | src.command_queue | Executado: tiktok por @lua_fps
+2026-06-17 21:43:51,359 | INFO    | src.command_queue | Enfileirado: !drop por @lua_fps (fila=1)
+2026-06-17 21:43:51,512 | INFO    | src.command_queue | Executado: !drop por @lua_fps
+2026-06-17 21:43:53,147 | INFO    | src.cooldown | Descartado por cooldown global: !formiga (user=@ana.gamer)
+2026-06-17 21:43:55,674 | INFO    | src.tiktok_listener | Simulacao rodando (tick 60)
+2026-06-17 21:43:58,192 | INFO    | src.tiktok_listener | Novo seguidor @lua_fps -> fogo
+2026-06-17 21:43:58,192 | INFO    | src.command_queue | Enfileirado: __follow__ por @lua_fps (fila=1)
+2026-06-17 21:43:58,196 | INFO    | src.command_queue | Executado: __follow__ por @lua_fps
+2026-06-17 21:44:03,125 | INFO    | src.command_queue | Enfileirado: !barril por @ana.gamer (fila=1)
+2026-06-17 21:44:03,126 | WARNING | src.command_queue | Jogo fora de foco; descartando !barril
+2026-06-17 21:44:05,650 | INFO    | src.tiktok_listener | Novo seguidor @joao_zoeira -> fogo
+2026-06-17 21:44:05,650 | INFO    | src.command_queue | Enfileirado: __follow__ por @joao_zoeira (fila=1)
+2026-06-17 21:44:05,654 | INFO    | src.command_queue | Executado: __follow__ por @joao_zoeira
+2026-06-17 21:44:07,680 | INFO    | src.command_queue | Enfileirado: !drop por @ana.gamer (fila=1)
+2026-06-17 21:44:07,681 | WARNING | src.command_queue | Jogo fora de foco; descartando !drop
+2026-06-17 21:44:09,414 | INFO    | src.command_queue | Enfileirado: !formiga por @lua_fps (fila=1)
+2026-06-17 21:44:09,415 | WARNING | src.command_queue | Jogo fora de foco; descartando !formiga
+2026-06-17 21:44:12,261 | INFO    | src.tiktok_listener | Novo seguidor @pedrocaos -> fogo
+2026-06-17 21:44:12,261 | INFO    | src.command_queue | Enfileirado: __follow__ por @pedrocaos (fila=1)
+2026-06-17 21:44:12,265 | INFO    | src.command_queue | Executado: __follow__ por @pedrocaos
+2026-06-17 21:44:15,122 | INFO    | src.command_queue | Enfileirado: !barril por @joao_zoeira (fila=1)
+2026-06-17 21:44:15,122 | WARNING | src.command_queue | Jogo fora de foco; descartando !barril
+2026-06-17 21:44:16,771 | INFO    | src.cooldown | Descartado por cooldown global: !barril (user=@pedrocaos)
+2026-06-17 21:44:19,690 | INFO    | src.tiktok_listener | Novo seguidor @ana.gamer -> fogo
+2026-06-17 21:44:19,690 | INFO    | src.command_queue | Enfileirado: __follow__ por @ana.gamer (fila=1)
+2026-06-17 21:44:19,694 | INFO    | src.command_queue | Executado: __follow__ por @ana.gamer
+2026-06-17 21:44:22,787 | INFO    | src.tiktok_listener | Presente executavel: Rose de @ana.gamer
+2026-06-17 21:44:22,787 | INFO    | src.command_queue | Enfileirado: Rose por @ana.gamer (fila=1)
+2026-06-17 21:44:22,791 | INFO    | src.command_queue | Executado: Rose por @ana.gamer
+2026-06-17 21:44:25,885 | INFO    | src.cooldown | Descartado por cooldown de usuario: !drop (user=@ana.gamer)
+2026-06-17 21:44:28,653 | INFO    | src.command_queue | Enfileirado: !formiga por @pedrocaos (fila=1)
+2026-06-17 21:44:28,654 | WARNING | src.command_queue | Jogo fora de foco; descartando !formiga
+2026-06-17 21:44:32,399 | INFO    | src.tiktok_listener | Meta de likes batida por @ana.gamer -> zumbi
+2026-06-17 21:44:32,399 | INFO    | src.command_queue | Enfileirado: __likes__ por @ana.gamer (fila=1)
+2026-06-17 21:44:32,405 | INFO    | src.command_queue | Executado: __likes__ por @ana.gamer
+2026-06-17 21:44:37,402 | INFO    | src.tiktok_listener | Presente executavel: Rose de @joao_zoeira
+2026-06-17 21:44:37,403 | INFO    | src.command_queue | Enfileirado: Rose por @joao_zoeira (fila=1)
+2026-06-17 21:44:37,405 | INFO    | src.command_queue | Executado: Rose por @joao_zoeira
+2026-06-17 21:44:46,202 | INFO    | src.tiktok_listener | Simulacao rodando (tick 80)
+2026-06-17 21:44:49,646 | INFO    | src.tiktok_listener | Novo seguidor @ana.gamer -> fogo
+2026-06-17 21:44:49,646 | INFO    | src.command_queue | Enfileirado: __follow__ por @ana.gamer (fila=1)
+2026-06-17 21:44:49,650 | INFO    | src.command_queue | Executado: __follow__ por @ana.gamer
+2026-06-17 21:44:53,391 | INFO    | src.tiktok_listener | Novo seguidor @ana.gamer -> fogo
+2026-06-17 21:44:53,392 | INFO    | src.command_queue | Enfileirado: __follow__ por @ana.gamer (fila=1)
+2026-06-17 21:44:53,396 | INFO    | src.command_queue | Executado: __follow__ por @ana.gamer
+2026-06-17 21:44:56,205 | INFO    | src.tiktok_listener | Novo seguidor @lua_fps -> fogo
+2026-06-17 21:44:56,205 | INFO    | src.command_queue | Enfileirado: __follow__ por @lua_fps (fila=1)
+2026-06-17 21:44:56,207 | INFO    | src.command_queue | Executado: __follow__ por @lua_fps
+2026-06-17 21:44:57,856 | INFO    | src.panel_server | Overlay desconectado (3 ativos)
+2026-06-17 21:44:57,856 | INFO    | src.panel_server | Overlay desconectado (2 ativos)
+2026-06-17 21:44:57,856 | INFO    | src.panel_server | Overlay desconectado (1 ativos)
+2026-06-17 21:44:57,856 | INFO    | src.panel_server | Overlay desconectado (0 ativos)
+2026-06-17 21:44:57,857 | INFO    | __main__ | Encerrado pelo usuario (Ctrl+C)
+2026-06-17 22:30:02,653 | INFO    | __main__ | Comandos: !barril, !cura, !drop, !formiga, !voa
+2026-06-17 22:30:02,653 | INFO    | __main__ | Presentes executaveis: gamepad, gg, ice cream cone, pop, rose, tiktok
+2026-06-17 22:30:02,654 | INFO    | __main__ | Acao de meta de likes: configurada (Python)
+2026-06-17 22:30:02,654 | INFO    | __main__ | Acao de seguir: configurada (Python)
+2026-06-17 22:30:02,654 | INFO    | __main__ | Acao de entrar na live: desligada (JOIN_ENABLED)
+2026-06-17 22:30:02,654 | INFO    | __main__ | Meta NUCLEAR: 1000 likes
+2026-06-17 22:30:02,654 | INFO    | __main__ | Ranking ATIVO em MODO TESTE (banco separado: live_caos_teste.db). O banco real (live_caos.db) nao sera tocado.
+2026-06-17 22:30:02,672 | INFO    | src.key_executor | Backend de teclado: pydirectinput
+2026-06-17 22:30:02,673 | INFO    | src.file_bridge | Ponte por arquivo: C:\Program Files (x86)\Steam\steamapps\common\GarrysMod\garrysmod\data\live_caos\fila.txt
+2026-06-17 22:30:02,815 | INFO    | websockets.server | server listening on [::1]:8765
+2026-06-17 22:30:02,816 | INFO    | websockets.server | server listening on 127.0.0.1:8765
+2026-06-17 22:30:02,816 | INFO    | src.panel_server | Painel WebSocket ouvindo em ws://localhost:8765
+2026-06-17 22:30:02,816 | INFO    | src.command_queue | Worker da fila iniciado
+2026-06-17 22:30:02,816 | INFO    | src.tiktok_listener | MODO SIMULACAO ativo — gerando eventos falsos
+2026-06-17 22:30:02,816 | INFO    | src.tiktok_listener | Simulacao vai sortear presentes: gamepad, gg, Rose, ice cream cone, pop, tiktok
+2026-06-17 22:30:03,202 | INFO    | websockets.server | connection open
+2026-06-17 22:30:03,202 | INFO    | src.panel_server | Overlay conectado (1 ativos)
+2026-06-17 22:30:04,441 | INFO    | websockets.server | connection open
+2026-06-17 22:30:04,442 | INFO    | src.panel_server | Overlay conectado (2 ativos)
+2026-06-17 22:30:04,829 | INFO    | src.tiktok_listener | Simulacao rodando (tick 0)
+2026-06-17 22:30:06,751 | INFO    | websockets.server | connection open
+2026-06-17 22:30:06,751 | INFO    | src.panel_server | Overlay conectado (3 ativos)
+2026-06-17 22:30:07,443 | INFO    | src.tiktok_listener | Presente executavel: ice cream cone de @pedrocaos
+2026-06-17 22:30:07,443 | INFO    | src.command_queue | Enfileirado: ice cream cone por @pedrocaos (fila=1)
+2026-06-17 22:30:07,446 | INFO    | src.command_queue | Executado: ice cream cone por @pedrocaos
+2026-06-17 22:30:07,697 | INFO    | websockets.server | connection open
+2026-06-17 22:30:07,697 | INFO    | src.panel_server | Overlay conectado (4 ativos)
+2026-06-17 22:30:16,649 | INFO    | src.command_queue | Enfileirado: !formiga por @pedrocaos (fila=1)
+2026-06-17 22:30:16,803 | INFO    | src.command_queue | Executado: !formiga por @pedrocaos
+2026-06-17 22:30:26,213 | INFO    | src.command_queue | Enfileirado: !cura por @lua_fps (fila=1)
+2026-06-17 22:30:26,366 | INFO    | src.command_queue | Executado: !cura por @lua_fps
+2026-06-17 22:30:28,073 | INFO    | src.tiktok_listener | Presente executavel: pop de @lua_fps
+2026-06-17 22:30:28,073 | INFO    | src.command_queue | Enfileirado: pop por @lua_fps (fila=1)
+2026-06-17 22:30:28,077 | INFO    | src.command_queue | Executado: pop por @lua_fps
+2026-06-17 22:30:34,231 | INFO    | src.cooldown | Descartado por cooldown de usuario: !formiga (user=@pedrocaos)
+2026-06-17 22:30:37,714 | INFO    | src.command_queue | Enfileirado: !drop por @ana.gamer (fila=1)
+2026-06-17 22:30:37,867 | INFO    | src.command_queue | Executado: !drop por @ana.gamer
+2026-06-17 22:30:39,869 | INFO    | src.command_queue | Enfileirado: !barril por @ana.gamer (fila=1)
+2026-06-17 22:30:40,022 | INFO    | src.command_queue | Executado: !barril por @ana.gamer
+2026-06-17 22:30:42,555 | INFO    | src.cooldown | Descartado por cooldown global: !cura (user=@ana.gamer)
+2026-06-17 22:30:46,492 | INFO    | src.tiktok_listener | Meta de likes batida por @lua_fps -> zumbi
+2026-06-17 22:30:46,492 | INFO    | src.command_queue | Enfileirado: __likes__ por @lua_fps (fila=1)
+2026-06-17 22:30:46,497 | INFO    | src.command_queue | Executado: __likes__ por @lua_fps
+2026-06-17 22:30:55,137 | INFO    | src.tiktok_listener | Presente executavel: pop de @joao_zoeira
+2026-06-17 22:30:55,137 | INFO    | src.command_queue | Enfileirado: pop por @joao_zoeira (fila=1)
+2026-06-17 22:30:55,141 | INFO    | src.command_queue | Executado: pop por @joao_zoeira
+2026-06-17 22:30:59,724 | INFO    | src.tiktok_listener | Simulacao rodando (tick 20)
+2026-06-17 22:31:02,561 | INFO    | src.command_queue | Enfileirado: !barril por @lua_fps (fila=1)
+2026-06-17 22:31:02,713 | INFO    | src.command_queue | Executado: !barril por @lua_fps
+2026-06-17 22:31:04,498 | INFO    | src.tiktok_listener | Novo seguidor @lua_fps -> fogo
+2026-06-17 22:31:04,499 | INFO    | src.command_queue | Enfileirado: __follow__ por @lua_fps (fila=1)
+2026-06-17 22:31:04,502 | INFO    | src.command_queue | Executado: __follow__ por @lua_fps
+2026-06-17 22:31:07,629 | INFO    | src.tiktok_listener | Presente executavel: ice cream cone de @joao_zoeira
+2026-06-17 22:31:07,629 | INFO    | src.command_queue | Enfileirado: ice cream cone por @joao_zoeira (fila=1)
+2026-06-17 22:31:07,633 | INFO    | src.command_queue | Executado: ice cream cone por @joao_zoeira
+2026-06-17 22:31:10,621 | INFO    | src.tiktok_listener | Presente executavel: Rose de @ana.gamer
+2026-06-17 22:31:10,621 | INFO    | src.command_queue | Enfileirado: Rose por @ana.gamer (fila=1)
+2026-06-17 22:31:10,625 | INFO    | src.command_queue | Executado: Rose por @ana.gamer
+2026-06-17 22:31:24,539 | INFO    | src.command_queue | Enfileirado: !cura por @joao_zoeira (fila=1)
+2026-06-17 22:31:24,691 | INFO    | src.command_queue | Executado: !cura por @joao_zoeira
+2026-06-17 22:31:27,504 | INFO    | src.tiktok_listener | Meta de likes batida por @joao_zoeira -> zumbi
+2026-06-17 22:31:27,504 | INFO    | src.command_queue | Enfileirado: __likes__ por @joao_zoeira (fila=1)
+2026-06-17 22:31:27,508 | INFO    | src.command_queue | Executado: __likes__ por @joao_zoeira
+2026-06-17 22:31:30,305 | INFO    | src.command_queue | Enfileirado: !drop por @ana.gamer (fila=1)
+2026-06-17 22:31:30,457 | INFO    | src.command_queue | Executado: !drop por @ana.gamer
+2026-06-17 22:31:39,577 | INFO    | src.cooldown | Descartado por cooldown global: !cura (user=@ana.gamer)
+2026-06-17 22:31:46,314 | INFO    | src.command_queue | Enfileirado: !formiga por @joao_zoeira (fila=1)
+2026-06-17 22:31:46,467 | INFO    | src.command_queue | Executado: !formiga por @joao_zoeira
+2026-06-17 22:31:50,283 | INFO    | src.tiktok_listener | Presente executavel: ice cream cone de @ana.gamer
+2026-06-17 22:31:50,283 | INFO    | src.command_queue | Enfileirado: ice cream cone por @ana.gamer (fila=1)
+2026-06-17 22:31:50,287 | INFO    | src.command_queue | Executado: ice cream cone por @ana.gamer
+2026-06-17 22:31:55,232 | INFO    | src.tiktok_listener | Simulacao rodando (tick 40)
+2026-06-17 22:31:56,807 | INFO    | src.command_queue | Enfileirado: !barril por @ana.gamer (fila=1)
+2026-06-17 22:31:56,960 | INFO    | src.command_queue | Executado: !barril por @ana.gamer
+2026-06-17 22:32:02,946 | INFO    | src.tiktok_listener | Presente executavel: gamepad de @lua_fps
+2026-06-17 22:32:02,946 | INFO    | src.command_queue | Enfileirado: gamepad por @lua_fps (fila=1)
+2026-06-17 22:32:02,949 | INFO    | src.command_queue | Executado: gamepad por @lua_fps
+2026-06-17 22:32:05,021 | INFO    | src.tiktok_listener | Novo seguidor @pedrocaos -> fogo
+2026-06-17 22:32:05,021 | INFO    | src.command_queue | Enfileirado: __follow__ por @pedrocaos (fila=1)
+2026-06-17 22:32:05,026 | INFO    | src.command_queue | Executado: __follow__ por @pedrocaos
+2026-06-17 22:32:11,949 | INFO    | src.tiktok_listener | Presente executavel: gamepad de @joao_zoeira
+2026-06-17 22:32:11,949 | INFO    | src.command_queue | Enfileirado: gamepad por @joao_zoeira (fila=1)
+2026-06-17 22:32:11,953 | INFO    | src.command_queue | Executado: gamepad por @joao_zoeira
+2026-06-17 22:32:19,778 | INFO    | src.command_queue | Enfileirado: !formiga por @pedrocaos (fila=1)
+2026-06-17 22:32:19,931 | INFO    | src.command_queue | Executado: !formiga por @pedrocaos
+2026-06-17 22:32:22,894 | INFO    | src.command_queue | Enfileirado: !barril por @pedrocaos (fila=1)
+2026-06-17 22:32:23,047 | INFO    | src.command_queue | Executado: !barril por @pedrocaos
+2026-06-17 22:32:28,877 | INFO    | src.tiktok_listener | Presente executavel: gg de @lua_fps
+2026-06-17 22:32:28,877 | INFO    | src.command_queue | Enfileirado: gg por @lua_fps (fila=1)
+2026-06-17 22:32:28,881 | INFO    | src.command_queue | Executado: gg por @lua_fps
+2026-06-17 22:32:31,557 | INFO    | src.command_queue | Enfileirado: !drop por @lua_fps (fila=1)
+2026-06-17 22:32:31,710 | INFO    | src.command_queue | Executado: !drop por @lua_fps
+2026-06-17 22:32:33,961 | INFO    | src.tiktok_listener | Presente executavel: tiktok de @lua_fps
+2026-06-17 22:32:33,961 | INFO    | src.command_queue | Enfileirado: tiktok por @lua_fps (fila=1)
+2026-06-17 22:32:33,964 | INFO    | src.command_queue | Executado: tiktok por @lua_fps
+2026-06-17 22:32:37,619 | INFO    | src.tiktok_listener | Presente executavel: ice cream cone de @pedrocaos
+2026-06-17 22:32:37,619 | INFO    | src.command_queue | Enfileirado: ice cream cone por @pedrocaos (fila=1)
+2026-06-17 22:32:37,623 | INFO    | src.command_queue | Executado: ice cream cone por @pedrocaos
+2026-06-17 22:32:39,758 | INFO    | src.tiktok_listener | Presente executavel: Rose de @ana.gamer
+2026-06-17 22:32:39,758 | INFO    | src.command_queue | Enfileirado: Rose por @ana.gamer (fila=1)
+2026-06-17 22:32:39,762 | INFO    | src.command_queue | Executado: Rose por @ana.gamer
+2026-06-17 22:32:41,694 | INFO    | src.tiktok_listener | Presente executavel: pop de @joao_zoeira
+2026-06-17 22:32:41,694 | INFO    | src.command_queue | Enfileirado: pop por @joao_zoeira (fila=1)
+2026-06-17 22:32:41,697 | INFO    | src.command_queue | Executado: pop por @joao_zoeira
+2026-06-17 22:32:51,651 | INFO    | src.tiktok_listener | Simulacao rodando (tick 60)
+2026-06-17 22:32:55,303 | INFO    | src.command_queue | Enfileirado: !drop por @ana.gamer (fila=1)
+2026-06-17 22:32:55,456 | INFO    | src.command_queue | Executado: !drop por @ana.gamer
+2026-06-17 22:32:57,799 | INFO    | src.command_queue | Enfileirado: !cura por @ana.gamer (fila=1)
+2026-06-17 22:32:57,952 | INFO    | src.command_queue | Executado: !cura por @ana.gamer
+2026-06-17 22:33:00,357 | INFO    | src.tiktok_listener | Presente executavel: tiktok de @ana.gamer
+2026-06-17 22:33:00,357 | INFO    | src.command_queue | Enfileirado: tiktok por @ana.gamer (fila=1)
+2026-06-17 22:33:00,361 | INFO    | src.command_queue | Executado: tiktok por @ana.gamer
+2026-06-17 22:33:06,074 | INFO    | src.command_queue | Enfileirado: !barril por @lua_fps (fila=1)
+2026-06-17 22:33:06,227 | INFO    | src.command_queue | Executado: !barril por @lua_fps
+2026-06-17 22:33:08,451 | INFO    | src.cooldown | Descartado por cooldown global: !cura (user=@joao_zoeira)
+2026-06-17 22:33:09,970 | INFO    | src.cooldown | Descartado por cooldown global: !cura (user=@joao_zoeira)
+2026-06-17 22:33:15,039 | INFO    | src.tiktok_listener | Meta de likes batida por @lua_fps -> zumbi
+2026-06-17 22:33:15,039 | INFO    | src.command_queue | Enfileirado: __likes__ por @lua_fps (fila=1)
+2026-06-17 22:33:15,043 | INFO    | src.command_queue | Executado: __likes__ por @lua_fps
+2026-06-17 22:33:24,984 | INFO    | src.command_queue | Enfileirado: !cura por @pedrocaos (fila=1)
+2026-06-17 22:33:24,985 | WARNING | src.command_queue | Jogo fora de foco; descartando !cura
+2026-06-17 22:33:27,738 | INFO    | src.tiktok_listener | Presente executavel: gg de @lua_fps
+2026-06-17 22:33:27,739 | INFO    | src.command_queue | Enfileirado: gg por @lua_fps (fila=1)
+2026-06-17 22:33:27,742 | INFO    | src.command_queue | Executado: gg por @lua_fps
+2026-06-17 22:33:36,854 | INFO    | src.command_queue | Enfileirado: !barril por @pedrocaos (fila=1)
+2026-06-17 22:33:36,854 | WARNING | src.command_queue | Jogo fora de foco; descartando !barril
+2026-06-17 22:33:38,679 | INFO    | src.tiktok_listener | Novo seguidor @joao_zoeira -> fogo
+2026-06-17 22:33:38,679 | INFO    | src.command_queue | Enfileirado: __follow__ por @joao_zoeira (fila=1)
+2026-06-17 22:33:38,683 | INFO    | src.command_queue | Executado: __follow__ por @joao_zoeira
+2026-06-17 22:33:42,677 | INFO    | src.cooldown | Descartado por cooldown global: !barril (user=@joao_zoeira)
+2026-06-17 22:33:44,720 | INFO    | src.command_queue | Enfileirado: !formiga por @lua_fps (fila=1)
+2026-06-17 22:33:44,723 | WARNING | src.command_queue | Jogo fora de foco; descartando !formiga
+2026-06-17 22:33:45,563 | INFO    | src.panel_server | Overlay desconectado (3 ativos)
+2026-06-17 22:33:45,564 | INFO    | src.panel_server | Overlay desconectado (2 ativos)
+2026-06-17 22:33:45,564 | INFO    | src.panel_server | Overlay desconectado (1 ativos)
+2026-06-17 22:33:45,564 | INFO    | src.panel_server | Overlay desconectado (0 ativos)
+2026-06-17 22:33:45,565 | INFO    | __main__ | Encerrado pelo usuario (Ctrl+C)
+2026-06-17 22:35:48,428 | INFO    | __main__ | Comandos: !barril, !cura, !drop, !formiga, !voa
+2026-06-17 22:35:48,428 | INFO    | __main__ | Presentes executaveis: gamepad, gg, ice cream cone, pop, rose, tiktok
+2026-06-17 22:35:48,429 | INFO    | __main__ | Acao de meta de likes: configurada (Python)
+2026-06-17 22:35:48,429 | INFO    | __main__ | Acao de seguir: configurada (Python)
+2026-06-17 22:35:48,429 | INFO    | __main__ | Acao de entrar na live: desligada (JOIN_ENABLED)
+2026-06-17 22:35:48,429 | INFO    | __main__ | Meta NUCLEAR: 1000 likes
+2026-06-17 22:35:48,429 | INFO    | __main__ | Ranking ATIVO em MODO TESTE (banco separado: live_caos_teste.db). O banco real (live_caos.db) nao sera tocado.
+2026-06-17 22:35:48,431 | INFO    | src.key_executor | Backend de teclado: pydirectinput
+2026-06-17 22:35:48,432 | INFO    | src.file_bridge | Ponte por arquivo: C:\Program Files (x86)\Steam\steamapps\common\GarrysMod\garrysmod\data\live_caos\fila.txt
+2026-06-17 22:35:48,477 | INFO    | websockets.server | server listening on [::1]:8765
+2026-06-17 22:35:48,477 | INFO    | websockets.server | server listening on 127.0.0.1:8765
+2026-06-17 22:35:48,477 | INFO    | src.panel_server | Painel WebSocket ouvindo em ws://localhost:8765
+2026-06-17 22:35:48,477 | INFO    | src.command_queue | Worker da fila iniciado
+2026-06-17 22:35:48,478 | INFO    | src.tiktok_listener | MODO SIMULACAO ativo — gerando eventos falsos
+2026-06-17 22:35:48,478 | INFO    | src.tiktok_listener | Simulacao vai sortear presentes: gamepad, gg, Rose, ice cream cone, pop, tiktok
+2026-06-17 22:35:48,669 | INFO    | websockets.server | connection open
+2026-06-17 22:35:48,669 | INFO    | src.panel_server | Overlay conectado (1 ativos)
+2026-06-17 22:35:50,312 | INFO    | websockets.server | connection open
+2026-06-17 22:35:50,312 | INFO    | src.panel_server | Overlay conectado (2 ativos)
+2026-06-17 22:35:51,087 | INFO    | src.tiktok_listener | Presente executavel: Rose de @pedrocaos
+2026-06-17 22:35:51,087 | INFO    | src.command_queue | Enfileirado: Rose por @pedrocaos (fila=1)
+2026-06-17 22:35:51,088 | INFO    | src.tiktok_listener | Simulacao rodando (tick 0)
+2026-06-17 22:35:51,090 | INFO    | src.command_queue | Executado: Rose por @pedrocaos
+2026-06-17 22:35:51,242 | INFO    | websockets.server | connection open
+2026-06-17 22:35:51,242 | INFO    | src.panel_server | Overlay conectado (3 ativos)
+2026-06-17 22:35:53,453 | INFO    | websockets.server | connection open
+2026-06-17 22:35:53,454 | INFO    | src.panel_server | Overlay conectado (4 ativos)
+2026-06-17 22:36:02,428 | INFO    | src.command_queue | Enfileirado: !barril por @joao_zoeira (fila=1)
+2026-06-17 22:36:02,582 | INFO    | src.command_queue | Executado: !barril por @joao_zoeira
+2026-06-17 22:36:05,832 | INFO    | src.cooldown | Descartado por cooldown global: !barril (user=@lua_fps)
+2026-06-17 22:36:09,278 | INFO    | src.tiktok_listener | Presente executavel: Rose de @pedrocaos
+2026-06-17 22:36:09,278 | INFO    | src.command_queue | Enfileirado: Rose por @pedrocaos (fila=1)
+2026-06-17 22:36:09,282 | INFO    | src.command_queue | Executado: Rose por @pedrocaos
+2026-06-17 22:36:12,484 | INFO    | src.command_queue | Enfileirado: !barril por @ana.gamer (fila=1)
+2026-06-17 22:36:12,637 | INFO    | src.command_queue | Executado: !barril por @ana.gamer
+2026-06-17 22:36:16,356 | INFO    | src.tiktok_listener | Presente executavel: gamepad de @ana.gamer
+2026-06-17 22:36:16,356 | INFO    | src.command_queue | Enfileirado: gamepad por @ana.gamer (fila=1)
+2026-06-17 22:36:16,360 | INFO    | src.command_queue | Executado: gamepad por @ana.gamer
+2026-06-17 22:36:18,252 | INFO    | src.cooldown | Descartado por cooldown global: !barril (user=@pedrocaos)
+2026-06-17 22:36:25,236 | INFO    | src.command_queue | Enfileirado: !formiga por @ana.gamer (fila=1)
+2026-06-17 22:36:25,389 | INFO    | src.command_queue | Executado: !formiga por @ana.gamer
+2026-06-17 22:36:27,482 | INFO    | src.tiktok_listener | Novo seguidor @ana.gamer -> fogo
+2026-06-17 22:36:27,483 | INFO    | src.command_queue | Enfileirado: __follow__ por @ana.gamer (fila=1)
+2026-06-17 22:36:27,487 | INFO    | src.command_queue | Executado: __follow__ por @ana.gamer
+2026-06-17 22:36:29,840 | INFO    | src.command_queue | Enfileirado: !drop por @ana.gamer (fila=1)
+2026-06-17 22:36:29,993 | INFO    | src.command_queue | Executado: !drop por @ana.gamer
+2026-06-17 22:36:33,495 | INFO    | src.tiktok_listener | Novo seguidor @pedrocaos -> fogo
+2026-06-17 22:36:33,496 | INFO    | src.command_queue | Enfileirado: __follow__ por @pedrocaos (fila=1)
+2026-06-17 22:36:33,500 | INFO    | src.command_queue | Executado: __follow__ por @pedrocaos
+2026-06-17 22:36:35,990 | INFO    | src.tiktok_listener | Novo seguidor @ana.gamer -> fogo
+2026-06-17 22:36:35,990 | INFO    | src.command_queue | Enfileirado: __follow__ por @ana.gamer (fila=1)
+2026-06-17 22:36:35,994 | INFO    | src.command_queue | Executado: __follow__ por @ana.gamer
+2026-06-17 22:36:43,159 | INFO    | src.tiktok_listener | Presente executavel: gg de @lua_fps
+2026-06-17 22:36:43,159 | INFO    | src.command_queue | Enfileirado: gg por @lua_fps (fila=1)
+2026-06-17 22:36:43,163 | INFO    | src.command_queue | Executado: gg por @lua_fps
+2026-06-17 22:36:44,737 | INFO    | src.command_queue | Enfileirado: !cura por @ana.gamer (fila=1)
+2026-06-17 22:36:44,889 | INFO    | src.command_queue | Executado: !cura por @ana.gamer
+2026-06-17 22:36:49,702 | INFO    | src.tiktok_listener | Simulacao rodando (tick 20)
+2026-06-17 22:36:59,692 | INFO    | src.command_queue | Enfileirado: !barril por @lua_fps (fila=1)
+2026-06-17 22:36:59,845 | INFO    | src.command_queue | Executado: !barril por @lua_fps
+2026-06-17 22:37:03,645 | INFO    | src.tiktok_listener | Novo seguidor @ana.gamer -> fogo
+2026-06-17 22:37:03,645 | INFO    | src.command_queue | Enfileirado: __follow__ por @ana.gamer (fila=1)
+2026-06-17 22:37:03,648 | INFO    | src.command_queue | Executado: __follow__ por @ana.gamer
+2026-06-17 22:37:05,566 | INFO    | src.tiktok_listener | Presente executavel: gamepad de @lua_fps
+2026-06-17 22:37:05,566 | INFO    | src.command_queue | Enfileirado: gamepad por @lua_fps (fila=1)
+2026-06-17 22:37:05,569 | INFO    | src.command_queue | Executado: gamepad por @lua_fps
+2026-06-17 22:37:12,073 | INFO    | src.cooldown | Descartado por cooldown de usuario: !cura (user=@ana.gamer)
+2026-06-17 22:37:13,894 | INFO    | src.command_queue | Enfileirado: !formiga por @pedrocaos (fila=1)
+2026-06-17 22:37:13,896 | WARNING | src.command_queue | Jogo fora de foco; descartando !formiga
+2026-06-17 22:37:17,064 | INFO    | src.tiktok_listener | Presente executavel: tiktok de @pedrocaos
+2026-06-17 22:37:17,064 | INFO    | src.command_queue | Enfileirado: tiktok por @pedrocaos (fila=1)
+2026-06-17 22:37:17,068 | INFO    | src.command_queue | Executado: tiktok por @pedrocaos
+2026-06-17 22:37:18,891 | INFO    | src.command_queue | Enfileirado: !barril por @ana.gamer (fila=1)
+2026-06-17 22:37:18,892 | WARNING | src.command_queue | Jogo fora de foco; descartando !barril
+2026-06-17 22:37:21,215 | INFO    | src.tiktok_listener | Meta de likes batida por @pedrocaos -> zumbi
+2026-06-17 22:37:21,215 | INFO    | src.command_queue | Enfileirado: __likes__ por @pedrocaos (fila=1)
+2026-06-17 22:37:21,220 | INFO    | src.command_queue | Executado: __likes__ por @pedrocaos
+2026-06-17 22:37:23,939 | INFO    | src.cooldown | Descartado por cooldown global: !barril (user=@joao_zoeira)
+2026-06-17 22:37:27,262 | INFO    | src.tiktok_listener | Presente executavel: gg de @pedrocaos
+2026-06-17 22:37:27,262 | INFO    | src.command_queue | Enfileirado: gg por @pedrocaos (fila=1)
+2026-06-17 22:37:27,266 | INFO    | src.command_queue | Executado: gg por @pedrocaos
+2026-06-17 22:37:27,706 | INFO    | src.panel_server | Overlay desconectado (3 ativos)
+2026-06-17 22:37:27,707 | INFO    | src.panel_server | Overlay desconectado (2 ativos)
+2026-06-17 22:37:27,707 | INFO    | src.panel_server | Overlay desconectado (1 ativos)
+2026-06-17 22:37:27,707 | INFO    | src.panel_server | Overlay desconectado (0 ativos)
+2026-06-17 22:37:27,708 | INFO    | __main__ | Encerrado pelo usuario (Ctrl+C)
+2026-06-17 22:37:29,816 | INFO    | __main__ | Comandos: !barril, !cura, !drop, !formiga, !voa
+2026-06-17 22:37:29,816 | INFO    | __main__ | Presentes executaveis: gamepad, gg, ice cream cone, pop, rose, tiktok
+2026-06-17 22:37:29,816 | INFO    | __main__ | Acao de meta de likes: configurada (Python)
+2026-06-17 22:37:29,816 | INFO    | __main__ | Acao de seguir: configurada (Python)
+2026-06-17 22:37:29,817 | INFO    | __main__ | Acao de entrar na live: desligada (JOIN_ENABLED)
+2026-06-17 22:37:29,817 | INFO    | __main__ | Meta NUCLEAR: 1000 likes
+2026-06-17 22:37:29,817 | INFO    | __main__ | Ranking ATIVO em MODO TESTE (banco separado: live_caos_teste.db). O banco real (live_caos.db) nao sera tocado.
+2026-06-17 22:37:29,818 | INFO    | src.key_executor | Backend de teclado: pydirectinput
+2026-06-17 22:37:29,818 | INFO    | src.file_bridge | Ponte por arquivo: C:\Program Files (x86)\Steam\steamapps\common\GarrysMod\garrysmod\data\live_caos\fila.txt
+2026-06-17 22:37:29,863 | INFO    | websockets.server | server listening on [::1]:8765
+2026-06-17 22:37:29,863 | INFO    | websockets.server | server listening on 127.0.0.1:8765
+2026-06-17 22:37:29,863 | INFO    | src.panel_server | Painel WebSocket ouvindo em ws://localhost:8765
+2026-06-17 22:37:29,863 | INFO    | src.command_queue | Worker da fila iniciado
+2026-06-17 22:37:29,863 | INFO    | src.tiktok_listener | MODO SIMULACAO ativo — gerando eventos falsos
+2026-06-17 22:37:29,863 | INFO    | src.tiktok_listener | Simulacao vai sortear presentes: gamepad, gg, Rose, ice cream cone, pop, tiktok
+2026-06-17 22:37:32,311 | INFO    | src.tiktok_listener | Simulacao rodando (tick 0)
+2026-06-17 22:37:32,723 | INFO    | websockets.server | connection open
+2026-06-17 22:37:32,723 | INFO    | src.panel_server | Overlay conectado (1 ativos)
+2026-06-17 22:37:32,746 | INFO    | websockets.server | connection open
+2026-06-17 22:37:32,746 | INFO    | src.panel_server | Overlay conectado (2 ativos)
+2026-06-17 22:37:32,761 | INFO    | websockets.server | connection open
+2026-06-17 22:37:32,762 | INFO    | src.panel_server | Overlay conectado (3 ativos)
+2026-06-17 22:37:32,777 | INFO    | websockets.server | connection open
+2026-06-17 22:37:32,777 | INFO    | src.panel_server | Overlay conectado (4 ativos)
+2026-06-17 22:37:44,842 | INFO    | src.command_queue | Enfileirado: !barril por @joao_zoeira (fila=1)
+2026-06-17 22:37:44,843 | WARNING | src.command_queue | Jogo fora de foco; descartando !barril
+2026-06-17 22:37:54,947 | INFO    | src.tiktok_listener | Meta de likes batida por @lua_fps -> zumbi
+2026-06-17 22:37:54,947 | INFO    | src.command_queue | Enfileirado: __likes__ por @lua_fps (fila=1)
+2026-06-17 22:37:54,952 | INFO    | src.command_queue | Executado: __likes__ por @lua_fps
+2026-06-17 22:38:01,105 | INFO    | src.tiktok_listener | Novo seguidor @lua_fps -> fogo
+2026-06-17 22:38:01,106 | INFO    | src.command_queue | Enfileirado: __follow__ por @lua_fps (fila=1)
+2026-06-17 22:38:01,109 | INFO    | src.command_queue | Executado: __follow__ por @lua_fps
+2026-06-17 22:38:06,100 | INFO    | src.command_queue | Enfileirado: !drop por @lua_fps (fila=1)
+2026-06-17 22:38:06,101 | WARNING | src.command_queue | Jogo fora de foco; descartando !drop
+2026-06-17 22:38:12,969 | INFO    | src.command_queue | Enfileirado: !formiga por @lua_fps (fila=1)
+2026-06-17 22:38:12,969 | WARNING | src.command_queue | Jogo fora de foco; descartando !formiga
+2026-06-17 22:38:15,325 | INFO    | src.cooldown | Descartado por cooldown global: !drop (user=@pedrocaos)
+2026-06-17 22:38:18,456 | INFO    | src.command_queue | Enfileirado: !drop por @pedrocaos (fila=1)
+2026-06-17 22:38:18,609 | INFO    | src.command_queue | Executado: !drop por @pedrocaos
+2026-06-17 22:38:21,998 | INFO    | src.command_queue | Enfileirado: !barril por @lua_fps (fila=1)
+2026-06-17 22:38:21,999 | WARNING | src.command_queue | Jogo fora de foco; descartando !barril
+2026-06-17 22:38:23,595 | INFO    | src.cooldown | Descartado por cooldown global: !barril (user=@joao_zoeira)
+2026-06-17 22:38:30,391 | INFO    | src.tiktok_listener | Novo seguidor @ana.gamer -> fogo
+2026-06-17 22:38:30,391 | INFO    | src.command_queue | Enfileirado: __follow__ por @ana.gamer (fila=1)
+2026-06-17 22:38:30,392 | INFO    | src.tiktok_listener | Simulacao rodando (tick 20)
+2026-06-17 22:38:30,395 | INFO    | src.command_queue | Executado: __follow__ por @ana.gamer
+2026-06-17 22:38:33,194 | INFO    | src.command_queue | Enfileirado: !barril por @ana.gamer (fila=1)
+2026-06-17 22:38:33,194 | WARNING | src.command_queue | Jogo fora de foco; descartando !barril
+2026-06-17 22:38:38,531 | INFO    | src.cooldown | Descartado por cooldown global: !barril (user=@lua_fps)
+2026-06-17 22:38:41,418 | INFO    | src.command_queue | Enfileirado: !barril por @joao_zoeira (fila=1)
+2026-06-17 22:38:41,418 | WARNING | src.command_queue | Jogo fora de foco; descartando !barril
+2026-06-17 22:38:46,333 | INFO    | src.panel_server | Overlay desconectado (3 ativos)
+2026-06-17 22:38:46,333 | INFO    | src.panel_server | Overlay desconectado (2 ativos)
+2026-06-17 22:38:46,334 | INFO    | src.panel_server | Overlay desconectado (1 ativos)
+2026-06-17 22:38:46,334 | INFO    | src.panel_server | Overlay desconectado (0 ativos)
+2026-06-17 22:38:46,335 | INFO    | __main__ | Encerrado pelo usuario (Ctrl+C)
