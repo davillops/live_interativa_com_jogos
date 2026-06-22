@@ -115,7 +115,7 @@ def load_interactions(path: Path) -> "Interactions":
         )
         commands[config.trigger] = config
     if not commands:
-        raise CommandsFileError(f"Nenhum comando definido em {path}")
+        print(f"[LiveCaos] Nenhum comando de chat em {path} (OK para Hytale).")
 
     gifts: dict[str, CommandConfig] = {}
     for entry in raw.get("gifts", []):
@@ -226,3 +226,15 @@ def setup_logging(log_dir: Path) -> None:
     root.setLevel(logging.INFO)
     root.addHandler(file_handler)
     root.addHandler(console_handler)
+
+    # A lib 'websockets' registra como ERROR (com traceback gigante) as
+    # conexoes que abrem e fecham sem completar o handshake — ex: OBS ou
+    # navegador reconectando, health-checks, abas fechando. Isso e
+    # inofensivo e polui o log. Um filtro descarta SO esse caso especifico
+    # (handshake malsucedido), mantendo "server listening" e erros reais.
+    class _IgnoraHandshakeVazio(logging.Filter):
+        def filter(self, record: logging.LogRecord) -> bool:
+            msg = record.getMessage()
+            return "opening handshake failed" not in msg
+
+    logging.getLogger("websockets.server").addFilter(_IgnoraHandshakeVazio())

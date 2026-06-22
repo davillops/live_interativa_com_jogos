@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<title>Painel Hytale — Overlay</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@500;600;700;800&family=JetBrains+Mono:wght@600;700&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --bg:      rgba(15, 14, 20, 0.92);
+    --line:    rgba(255, 255, 255, 0.08);
+    --accent:  #a970ff;
+    --ink:     #f2f0f7;
+    --ink-dim: #8b8794;
+    --ok:      #4ade80;
+    --cyan:    #00f0ff;
+  }
+
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+
+  html, body {
+    width: 100%; height: 100%;
+    background: transparent;
+    font-family: 'Inter', sans-serif;
+    color: var(--ink);
+    -webkit-font-smoothing: antialiased;
+  }
+  body { display: flex; }
+
+  .painel {
+    position: relative;
+    width: 100%; height: 100%;
+    background: var(--bg);
+    border: 1px solid rgba(169,112,255,0.35);
+    border-radius: 18px;
+    padding: 18px 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+    overflow: hidden;
+    animation: entrada .6s cubic-bezier(.22,1,.36,1) both;
+  }
+  .painel::before {
+    content: '';
+    position: absolute;
+    top: 0; left: 0; right: 0; height: 3px;
+    background: linear-gradient(90deg, transparent, var(--accent), transparent);
+  }
+  @keyframes entrada {
+    from { transform: translateY(12px); opacity: 0; }
+    to   { transform: translateY(0);    opacity: 1; }
+  }
+
+  /* ===== BARRA DE LIKES ===== */
+  .topo { display: flex; align-items: center; gap: 14px; }
+  .topo .zicon {
+    width: 44px; height: 44px; border-radius: 10px;
+    object-fit: cover; background: rgba(255,255,255,0.04); padding: 3px;
+  }
+  .likes-info { flex: 1; }
+  .likes-row {
+    display: flex; justify-content: space-between; align-items: baseline;
+    margin-bottom: 7px;
+  }
+  .likes-label { font-size: 15px; font-weight: 700; }
+  .likes-label span { color: var(--cyan); }
+  .likes-num {
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 14px; font-weight: 800; color: var(--ink-dim);
+  }
+  .likes-num b { color: var(--cyan); }
+
+  /* barra ciano pulsante */
+  .likes-bar {
+    position: relative;
+    height: 9px; border-radius: 999px;
+    background: rgba(0,240,255,0.10);
+    border: 1px solid rgba(0,240,255,0.35);
+    animation: neonPulse 1.8s ease-in-out infinite;
+  }
+  @keyframes neonPulse {
+    0%,100% { box-shadow: 0 0 6px rgba(0,240,255,.5), 0 0 12px rgba(0,240,255,.25); border-color: rgba(0,240,255,.35); }
+    50%      { box-shadow: 0 0 12px rgba(0,240,255,.9), 0 0 22px rgba(0,240,255,.5); border-color: rgba(0,240,255,.7); }
+  }
+  .likes-fill {
+    height: 100%; width: 0%; border-radius: 999px;
+    background: linear-gradient(90deg, #00b8ff, #00f0ff);
+    box-shadow: 0 0 8px rgba(0,240,255,.8);
+    transition: width .45s cubic-bezier(.22,1,.36,1);
+    overflow: hidden;
+  }
+  .topo.meta-hit .likes-bar { animation: neonBoom .9s ease; }
+  @keyframes neonBoom {
+    0%   { box-shadow: 0 0 6px rgba(0,240,255,.5); }
+    30%  { box-shadow: 0 0 20px rgba(0,240,255,1), 0 0 40px rgba(0,240,255,.7); }
+    100% { box-shadow: 0 0 6px rgba(0,240,255,.5); }
+  }
+
+  /* ===== DIVISOR ===== */
+  .divisor {
+    height: 1px; background: var(--line); flex-shrink: 0;
+  }
+
+  /* ===== SECAO PRESENTES ===== */
+  .secao-label {
+    display: flex; align-items: center; gap: 8px;
+    font-size: 11px; font-weight: 700;
+    letter-spacing: 1.5px; text-transform: uppercase;
+    color: var(--ink-dim);
+  }
+  .secao-label .dot { width: 7px; height: 7px; border-radius: 50%; background: var(--ok); }
+
+  /* grade 4 colunas sem caixas */
+  .grade-icone {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 0 2px;
+  }
+  .row {
+    position: relative;
+    display: flex; flex-direction: column;
+    align-items: center; justify-content: center;
+    gap: 0; padding: 2px 2px 3px;
+    border-radius: 12px;
+  }
+  .row .ico {
+    display: flex; align-items: center; justify-content: center;
+    font-size: 42px; line-height: 1;
+  }
+  .row .ico img {
+    width: 62px; height: 62px;
+    object-fit: contain;
+    margin-bottom: -3px;
+    filter: drop-shadow(0 2px 8px rgba(0,0,0,.6));
+    transition: transform .2s, filter .3s;
+  }
+  .row .efeito {
+    font-size: 10px; font-weight: 700;
+    color: var(--accent);
+    text-align: center;
+    width: 100%;
+    letter-spacing: .2px;
+    text-shadow: 0 1px 3px rgba(0,0,0,.6);
+    white-space: normal;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    line-height: 1.2;
+  }
+  .row.fired .ico img { animation: imgPop .5s cubic-bezier(.18,1.3,.4,1); }
+  @keyframes imgPop {
+    0%   { transform: scale(1); }
+    45%  { transform: scale(1.4); filter: drop-shadow(0 0 14px rgba(169,112,255,.9)); }
+    100% { transform: scale(1); }
+  }
+  .row.cooling { opacity: .4; }
+
+  /* ===== RODAPE ===== */
+  .rodape {
+    display: flex; justify-content: space-between; align-items: center;
+    font-size: 11px; letter-spacing: .5px; text-transform: uppercase;
+    color: var(--ink-dim);
+    padding-top: 10px;
+    border-top: 1px solid var(--line);
+  }
+  .fila { font-family: 'JetBrains Mono', monospace; }
+  .fila b { color: var(--accent); }
+  .status { display: flex; align-items: center; gap: 6px; }
+  .ws-dot { width: 7px; height: 7px; border-radius: 50%; background: var(--ink-dim); }
+  .ws-dot.on { background: var(--ok); }
+
+  @media (prefers-reduced-motion: reduce) {
+    *, *::before, *::after { animation: none !important; transition: none !important; }
+  }
+</style>
+</head>
+<body>
+<div class="painel">
+
+  <div class="topo" id="topo">
+    <img class="zicon" src="assets/zzz.png" alt="Zumbi">
+    <div class="likes-info">
+      <div class="likes-row">
+        <span class="likes-label">Tap Tap <span>→</span> Lobo</span>
+        <span class="likes-num"><b id="likesNow">0</b>/<span id="likesGoal">10</span></span>
+      </div>
+      <div class="likes-bar"><div class="likes-fill" id="likesFill"></div></div>
+    </div>
+  </div>
+
+  <div class="divisor"></div>
+
+  <div class="secao-label">
+    <span class="dot"></span>🎁 Presentes
+  </div>
+
+  <div class="grade-icone" id="grade"></div>
+
+  <div class="rodape">
+    <span class="status"><span class="ws-dot" id="wsDot"></span><span id="wsLabel">offline</span></span>
+    <span class="fila">fila <b id="queueSize">0</b></span>
+  </div>
+
+</div>
+
+<script>
+(function () {
+  'use strict';
+
+  var FALLBACK = [
+    { id: 'Rose',           img: 'assets/rose.png',           efeito: 'Wolf Black' },
+    { id: 'ice cream cone', img: 'assets/ice_cream_cone.png', efeito: 'Outlander Berserker' },
+    { id: 'gg',             img: 'assets/gg.png',             efeito: 'Scorpion' },
+    { id: 'gamepad',        img: 'assets/gamepad.png',        efeito: 'Skeleton Ranger' },
+    { id: 'pop',            img: 'assets/pop.png',            efeito: 'Golem Firesteel' },
+    { id: 'tiktok',         img: 'assets/tiktok.png',         efeito: 'Crocodile' }
+  ];
+
+  function renderGrade(itens) {
+    var grade = document.getElementById('grade');
+    grade.innerHTML = '';
+    itens.forEach(function(item) {
+      var row = document.createElement('div');
+      row.className = 'row';
+      row.setAttribute('data-cmd', String(item.id || '').toLowerCase());
+
+      var ico = document.createElement('div');
+      ico.className = 'ico';
+      if (item.img) {
+        var img = document.createElement('img');
+        img.src = item.img; img.alt = '';
+        ico.appendChild(img);
+      } else {
+        ico.textContent = item.emoji || '•';
+      }
+      row.appendChild(ico);
+
+      var ef = document.createElement('div');
+      ef.className = 'efeito';
+      ef.textContent = item.efeito || item.label || '';
+      row.appendChild(ef);
+
+      grade.appendChild(row);
+    });
+  }
+
+  // carrega do commands_hytale.json
+  fetch('commands_hytale.json', { cache: 'no-store' })
+    .then(function(r) { if (!r.ok) throw new Error('http ' + r.status); return r.json(); })
+    .then(function(cfg) {
+      var itens = (cfg.gifts || []).map(function(g) {
+        return { id: g.gift_name, img: g.img, emoji: g.emoji, efeito: g.label };
+      });
+      if (itens.length) renderGrade(itens);
+      else renderGrade(FALLBACK);
+    })
+    .catch(function() { renderGrade(FALLBACK); });
+
+  // WebSocket
+  var WS_URL = 'ws://localhost:8765';
+  var RECONNECT_MS = 5000;
+  var wsDot   = document.getElementById('wsDot');
+  var wsLabel = document.getElementById('wsLabel');
+  var likesNow  = document.getElementById('likesNow');
+  var likesGoal = document.getElementById('likesGoal');
+  var likesFill = document.getElementById('likesFill');
+  var topo      = document.getElementById('topo');
+  var queueSize = document.getElementById('queueSize');
+
+  function row(cmd) {
+    return document.querySelector('.row[data-cmd="' + String(cmd).toLowerCase() + '"]');
+  }
+  function flashRow(cmd) {
+    var el = row(cmd);
+    if (!el) return;
+    el.classList.remove('fired');
+    void el.offsetWidth;
+    el.classList.add('fired');
+  }
+  function setLikes(current, goal, triggered) {
+    likesNow.textContent  = current;
+    likesGoal.textContent = goal;
+    likesFill.style.width = Math.min(100, (current / goal) * 100) + '%';
+    if (triggered) {
+      topo.classList.remove('meta-hit');
+      void topo.offsetWidth;
+      topo.classList.add('meta-hit');
+    }
+  }
+  function handleMessage(msg) {
+    switch (msg.type) {
+      case 'likes': setLikes(msg.current, msg.goal, msg.triggered); break;
+      case 'social':
+        if (msg.kind === 'gift') flashRow(msg.gift || '');
+        break;
+      case 'queue': queueSize.textContent = msg.size; break;
+    }
+  }
+
+  function connect() {
+    var ws;
+    try { ws = new WebSocket(WS_URL); } catch(e) { setTimeout(connect, RECONNECT_MS); return; }
+    ws.onopen    = function() { wsDot.classList.add('on'); wsLabel.textContent = 'ao vivo'; };
+    ws.onmessage = function(e) { try { handleMessage(JSON.parse(e.data)); } catch(_) {} };
+    ws.onclose   = function() { wsDot.classList.remove('on'); wsLabel.textContent = 'offline'; setTimeout(connect, RECONNECT_MS); };
+    ws.onerror   = function() { ws.close(); };
+  }
+  connect();
+})();
+</script>
+</body>
+</html>

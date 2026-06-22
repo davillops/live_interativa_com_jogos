@@ -1,0 +1,130 @@
+2026-06-22 20:34:14,813 | INFO    | __main__ | Comandos: 
+2026-06-22 20:34:14,813 | INFO    | __main__ | Presentes executaveis: gamepad, gg, ice cream cone, pop, rose, tiktok, tiny diny
+2026-06-22 20:34:14,813 | INFO    | __main__ | Acao de meta de likes: configurada (Python)
+2026-06-22 20:34:14,813 | INFO    | __main__ | Acao de seguir: nenhuma (Tikfinity)
+2026-06-22 20:34:14,813 | INFO    | __main__ | Acao de entrar na live: nenhuma
+2026-06-22 20:34:14,813 | INFO    | __main__ | Meta NUCLEAR: nenhuma
+2026-06-22 20:34:14,814 | INFO    | __main__ | Ranking ATIVO em MODO TESTE (banco separado: live_caos_teste.db). O banco real (live_caos.db) nao sera tocado.
+2026-06-22 20:34:14,826 | INFO    | src.key_executor | Backend de teclado: pydirectinput
+2026-06-22 20:34:14,827 | INFO    | src.file_bridge | Ponte por arquivo: C:\Users\davi\AppData\Roaming\Hytale\UserData\Saves\novo v2 (release)\mods\br.livecaos_livecaos\livecaos\fila.txt
+2026-06-22 20:34:15,062 | INFO    | websockets.server | server listening on [::1]:8765
+2026-06-22 20:34:15,062 | INFO    | websockets.server | server listening on 127.0.0.1:8765
+2026-06-22 20:34:15,062 | INFO    | src.panel_server | Painel WebSocket ouvindo em ws://localhost:8765
+2026-06-22 20:34:15,063 | INFO    | src.command_queue | Worker da fila iniciado
+2026-06-22 20:34:15,063 | INFO    | src.tiktok_listener | MODO SIMULACAO ativo — gerando eventos falsos
+2026-06-22 20:34:15,063 | INFO    | src.tiktok_listener | Simulacao vai sortear presentes: Rose, ice cream cone, gg, gamepad, pop, tiktok, tiny diny
+2026-06-22 20:34:15,176 | INFO    | websockets.server | connection open
+2026-06-22 20:34:15,176 | INFO    | src.panel_server | Overlay conectado (1 ativos)
+2026-06-22 20:34:15,185 | INFO    | websockets.server | connection open
+2026-06-22 20:34:15,186 | INFO    | src.panel_server | Overlay conectado (2 ativos)
+2026-06-22 20:34:16,920 | INFO    | websockets.server | connection open
+2026-06-22 20:34:16,920 | INFO    | src.panel_server | Overlay conectado (3 ativos)
+2026-06-22 20:34:18,780 | INFO    | src.tiktok_listener | Simulacao rodando (tick 0)
+2026-06-22 20:34:18,984 | INFO    | websockets.server | connection open
+2026-06-22 20:34:18,984 | INFO    | src.panel_server | Overlay conectado (4 ativos)
+2026-06-22 20:34:30,274 | INFO    | src.tiktok_listener | Presente executavel: tiny diny de @joao_zoeira
+2026-06-22 20:34:30,274 | INFO    | src.command_queue | Enfileirado: tiny diny por @joao_zoeira (fila=1)
+2026-06-22 20:34:30,280 | INFO    | src.command_queue | Executado: tiny diny por @joao_zoeira
+2026-06-22 20:34:43,575 | INFO    | src.tiktok_listener | Presente executavel: tiktok de @pedrocaos
+2026-06-22 20:34:43,575 | INFO    | src.command_queue | Enfileirado: tiktok por @pedrocaos (fila=1)
+2026-06-22 20:34:43,582 | INFO    | src.command_queue | Executado: tiktok por @pedrocaos
+2026-06-22 20:34:58,701 | INFO    | src.panel_server | Overlay desconectado (3 ativos)
+2026-06-22 20:34:58,702 | INFO    | src.panel_server | Overlay desconectado (2 ativos)
+2026-06-22 20:34:58,702 | INFO    | src.panel_server | Overlay desconectado (1 ativos)
+2026-06-22 20:34:58,702 | INFO    | src.panel_server | Overlay desconectado (0 ativos)
+2026-06-22 20:34:58,703 | INFO    | __main__ | Encerrado pelo usuario (Ctrl+C)
+2026-06-22 20:42:53,599 | INFO    | __main__ | Comandos: 
+2026-06-22 20:42:53,600 | INFO    | __main__ | Presentes executaveis: gamepad, gg, ice cream cone, pop, rose, tiktok, tiny diny
+2026-06-22 20:42:53,600 | INFO    | __main__ | Acao de meta de likes: configurada (Python)
+2026-06-22 20:42:53,600 | INFO    | __main__ | Acao de seguir: nenhuma (Tikfinity)
+2026-06-22 20:42:53,601 | INFO    | __main__ | Acao de entrar na live: nenhuma
+2026-06-22 20:42:53,601 | INFO    | __main__ | Meta NUCLEAR: nenhuma
+2026-06-22 20:42:53,601 | INFO    | __main__ | Ranking ATIVO em MODO TESTE (banco separado: live_caos_teste.db). O banco real (live_caos.db) nao sera tocado.
+2026-06-22 20:42:53,614 | INFO    | src.key_executor | Backend de teclado: pydirectinput
+2026-06-22 20:42:53,614 | INFO    | src.file_bridge | Ponte por arquivo: C:\Users\davi\AppData\Roaming\Hytale\UserData\Saves\novo v2 (release)\mods\br.livecaos_livecaos\livecaos\fila.txt
+2026-06-22 20:42:53,710 | INFO    | websockets.server | server listening on [::1]:8765
+2026-06-22 20:42:53,711 | INFO    | websockets.server | server listening on 127.0.0.1:8765
+2026-06-22 20:42:53,711 | INFO    | src.panel_server | Painel WebSocket ouvindo em ws://localhost:8765
+2026-06-22 20:42:53,711 | INFO    | src.command_queue | Worker da fila iniciado
+2026-06-22 20:42:53,711 | INFO    | src.tiktok_listener | MODO SIMULACAO ativo — gerando eventos falsos
+2026-06-22 20:42:53,712 | INFO    | src.tiktok_listener | Simulacao vai sortear presentes: Rose, ice cream cone, gg, gamepad, pop, tiktok, tiny diny
+2026-06-22 20:42:53,886 | INFO    | websockets.server | connection open
+2026-06-22 20:42:53,886 | INFO    | src.panel_server | Overlay conectado (1 ativos)
+2026-06-22 20:42:53,896 | INFO    | websockets.server | connection open
+2026-06-22 20:42:53,897 | INFO    | src.panel_server | Overlay conectado (2 ativos)
+2026-06-22 20:42:56,873 | INFO    | websockets.server | connection open
+2026-06-22 20:42:56,873 | INFO    | src.panel_server | Overlay conectado (3 ativos)
+2026-06-22 20:42:57,275 | INFO    | src.tiktok_listener | Simulacao rodando (tick 0)
+2026-06-22 20:42:57,679 | INFO    | websockets.server | connection open
+2026-06-22 20:42:57,679 | INFO    | src.panel_server | Overlay conectado (4 ativos)
+2026-06-22 20:42:58,806 | INFO    | src.tiktok_listener | Presente executavel: pop de @joao_zoeira
+2026-06-22 20:42:58,806 | INFO    | src.command_queue | Enfileirado: pop por @joao_zoeira (fila=1)
+2026-06-22 20:42:58,811 | INFO    | src.command_queue | Executado: pop por @joao_zoeira
+2026-06-22 20:43:03,955 | INFO    | src.panel_server | Overlay desconectado (3 ativos)
+2026-06-22 20:43:03,955 | INFO    | src.panel_server | Overlay desconectado (2 ativos)
+2026-06-22 20:43:03,955 | INFO    | src.panel_server | Overlay desconectado (1 ativos)
+2026-06-22 20:43:03,956 | INFO    | src.panel_server | Overlay desconectado (0 ativos)
+2026-06-22 20:43:03,956 | INFO    | __main__ | Encerrado pelo usuario (Ctrl+C)
+2026-06-22 20:45:29,233 | INFO    | __main__ | Comandos: 
+2026-06-22 20:45:29,233 | INFO    | __main__ | Presentes executaveis: gamepad, gg, ice cream cone, pop, rose, tiktok, tiny diny
+2026-06-22 20:45:29,233 | INFO    | __main__ | Acao de meta de likes: configurada (Python)
+2026-06-22 20:45:29,233 | INFO    | __main__ | Acao de seguir: nenhuma (Tikfinity)
+2026-06-22 20:45:29,233 | INFO    | __main__ | Acao de entrar na live: nenhuma
+2026-06-22 20:45:29,233 | INFO    | __main__ | Meta NUCLEAR: nenhuma
+2026-06-22 20:45:29,234 | INFO    | __main__ | Ranking ATIVO em MODO TESTE (banco separado: live_caos_teste.db). O banco real (live_caos.db) nao sera tocado.
+2026-06-22 20:45:29,235 | INFO    | src.key_executor | Backend de teclado: pydirectinput
+2026-06-22 20:45:29,236 | INFO    | src.file_bridge | Ponte por arquivo: C:\Users\davi\AppData\Roaming\Hytale\UserData\Saves\novo v2 (release)\mods\br.livecaos_livecaos\livecaos\fila.txt
+2026-06-22 20:45:29,281 | INFO    | websockets.server | server listening on [::1]:8765
+2026-06-22 20:45:29,281 | INFO    | websockets.server | server listening on 127.0.0.1:8765
+2026-06-22 20:45:29,281 | INFO    | src.panel_server | Painel WebSocket ouvindo em ws://localhost:8765
+2026-06-22 20:45:29,282 | INFO    | src.command_queue | Worker da fila iniciado
+2026-06-22 20:45:29,282 | INFO    | src.tiktok_listener | MODO SIMULACAO ativo — gerando eventos falsos
+2026-06-22 20:45:29,282 | INFO    | src.tiktok_listener | Simulacao vai sortear presentes: Rose, ice cream cone, gg, gamepad, pop, tiktok, tiny diny
+2026-06-22 20:45:29,436 | INFO    | websockets.server | connection open
+2026-06-22 20:45:29,437 | INFO    | src.panel_server | Overlay conectado (1 ativos)
+2026-06-22 20:45:29,452 | INFO    | websockets.server | connection open
+2026-06-22 20:45:29,452 | INFO    | src.panel_server | Overlay conectado (2 ativos)
+2026-06-22 20:45:30,337 | INFO    | websockets.server | connection open
+2026-06-22 20:45:30,337 | INFO    | src.panel_server | Overlay conectado (3 ativos)
+2026-06-22 20:45:32,387 | INFO    | websockets.server | connection open
+2026-06-22 20:45:32,388 | INFO    | src.panel_server | Overlay conectado (4 ativos)
+2026-06-22 20:45:32,442 | INFO    | src.tiktok_listener | Simulacao rodando (tick 0)
+2026-06-22 20:45:34,496 | INFO    | src.panel_server | Overlay desconectado (3 ativos)
+2026-06-22 20:45:34,498 | INFO    | src.panel_server | Overlay desconectado (2 ativos)
+2026-06-22 20:45:34,520 | INFO    | src.panel_server | Overlay desconectado (1 ativos)
+2026-06-22 20:45:34,521 | INFO    | src.panel_server | Overlay desconectado (0 ativos)
+2026-06-22 20:45:38,219 | INFO    | websockets.server | connection open
+2026-06-22 20:45:38,220 | INFO    | src.panel_server | Overlay conectado (1 ativos)
+2026-06-22 20:45:38,333 | INFO    | websockets.server | connection open
+2026-06-22 20:45:38,333 | INFO    | src.panel_server | Overlay conectado (2 ativos)
+2026-06-22 20:45:38,444 | INFO    | websockets.server | connection open
+2026-06-22 20:45:38,445 | INFO    | src.panel_server | Overlay conectado (3 ativos)
+2026-06-22 20:45:38,462 | INFO    | websockets.server | connection open
+2026-06-22 20:45:38,463 | INFO    | src.panel_server | Overlay conectado (4 ativos)
+2026-06-22 20:45:44,249 | INFO    | src.tiktok_listener | Presente executavel: Rose de @lua_fps
+2026-06-22 20:45:44,249 | INFO    | src.command_queue | Enfileirado: Rose por @lua_fps (fila=1)
+2026-06-22 20:45:44,257 | INFO    | src.command_queue | Executado: Rose por @lua_fps
+2026-06-22 20:45:47,364 | INFO    | src.tiktok_listener | Presente executavel: tiny diny de @pedrocaos
+2026-06-22 20:45:47,365 | INFO    | src.command_queue | Enfileirado: tiny diny por @pedrocaos (fila=1)
+2026-06-22 20:45:47,371 | INFO    | src.command_queue | Executado: tiny diny por @pedrocaos
+2026-06-22 20:45:56,447 | INFO    | src.tiktok_listener | Presente executavel: tiktok de @ana.gamer
+2026-06-22 20:45:56,447 | INFO    | src.command_queue | Enfileirado: tiktok por @ana.gamer (fila=1)
+2026-06-22 20:45:56,452 | INFO    | src.command_queue | Executado: tiktok por @ana.gamer
+2026-06-22 20:46:12,397 | INFO    | src.tiktok_listener | Presente executavel: tiktok de @joao_zoeira
+2026-06-22 20:46:12,397 | INFO    | src.command_queue | Enfileirado: tiktok por @joao_zoeira (fila=1)
+2026-06-22 20:46:12,404 | INFO    | src.command_queue | Executado: tiktok por @joao_zoeira
+2026-06-22 20:46:22,754 | INFO    | src.tiktok_listener | Presente executavel: Rose de @joao_zoeira
+2026-06-22 20:46:22,757 | INFO    | src.command_queue | Enfileirado: Rose por @joao_zoeira (fila=1)
+2026-06-22 20:46:22,787 | INFO    | src.command_queue | Executado: Rose por @joao_zoeira
+2026-06-22 20:46:26,475 | INFO    | src.tiktok_listener | Simulacao rodando (tick 20)
+2026-06-22 20:46:57,769 | INFO    | src.tiktok_listener | Meta de likes batida por @joao_zoeira -> zumbi
+2026-06-22 20:46:57,770 | INFO    | src.command_queue | Enfileirado: __likes__ por @joao_zoeira (fila=1)
+2026-06-22 20:46:57,775 | INFO    | src.command_queue | Executado: __likes__ por @joao_zoeira
+2026-06-22 20:47:01,326 | INFO    | src.tiktok_listener | Presente executavel: ice cream cone de @ana.gamer
+2026-06-22 20:47:01,326 | INFO    | src.command_queue | Enfileirado: ice cream cone por @ana.gamer (fila=1)
+2026-06-22 20:47:01,332 | INFO    | src.command_queue | Executado: ice cream cone por @ana.gamer
+2026-06-22 20:47:06,624 | INFO    | src.panel_server | Overlay desconectado (3 ativos)
+2026-06-22 20:47:06,624 | INFO    | src.panel_server | Overlay desconectado (2 ativos)
+2026-06-22 20:47:06,624 | INFO    | src.panel_server | Overlay desconectado (1 ativos)
+2026-06-22 20:47:06,624 | INFO    | src.panel_server | Overlay desconectado (0 ativos)
+2026-06-22 20:47:06,625 | INFO    | __main__ | Encerrado pelo usuario (Ctrl+C)

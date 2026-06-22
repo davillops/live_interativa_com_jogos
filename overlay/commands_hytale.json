@@ -1,0 +1,63 @@
+{
+  "_ajuda": {
+    "likes_meta": "Evento enviado para a fila quando a meta de likes e batida.",
+    "gifts": "Presentes do TikTok. gift_name = nome exato do presente no TikTok. file = evento que vai para a fila (deve ser IGUAL ao 'evento' no mobs.json do Hytale)."
+  },
+  "likes_meta": {
+    "file": "lobo",
+    "label": "Lobo",
+    "emoji": "🐺"
+  },
+  "gifts": [
+    {
+      "gift_name": "Rose",
+      "file": "rose",
+      "label": "2x Raptor",
+      "emoji": "🌹",
+      "img": "assets/rose.png"
+    },
+    {
+      "gift_name": "ice cream cone",
+      "file": "ice_cream_cone",
+      "label": "3x Berserker",
+      "emoji": "🍦",
+      "img": "assets/ice_cream_cone.png"
+    },
+    {
+      "gift_name": "gg",
+      "file": "gg",
+      "label": "2x Escorpiao",
+      "emoji": "GG",
+      "img": "assets/gg.png"
+    },
+    {
+      "gift_name": "gamepad",
+      "file": "gamepad",
+      "label": "4x Golem de Fogo",
+      "emoji": "🎮",
+      "img": "assets/gamepad.png"
+    },
+    {
+      "gift_name": "pop",
+      "file": "pop",
+      "label": "3x Arqueiro",
+      "emoji": "🎤",
+      "img": "assets/pop.png"
+    },
+    {
+      "gift_name": "tiktok",
+      "file": "tiktok",
+      "label": "3x Crocodilo",
+      "emoji": "🗿",
+      "img": "assets/tiktok.png"
+    },
+    {
+      "gift_name": "tiny diny",
+      "file": "tiny_diny",
+      "label": "3x T-Rex",
+      "emoji": "🦖",
+      "img": "assets/trex.png"
+    }
+  ],
+  "commands": []
+}

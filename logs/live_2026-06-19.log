@@ -1,0 +1,15 @@
+2026-06-19 20:50:32,006 | INFO    | __main__ | Comandos: !barril, !cura, !drop, !formiga, !voa
+2026-06-19 20:50:32,006 | INFO    | __main__ | Presentes executaveis: gamepad, gg, ice cream cone, pop, rose, tiktok
+2026-06-19 20:50:32,006 | INFO    | __main__ | Acao de meta de likes: configurada (Python)
+2026-06-19 20:50:32,007 | INFO    | __main__ | Acao de seguir: configurada (Python)
+2026-06-19 20:50:32,007 | INFO    | __main__ | Acao de entrar na live: desligada (JOIN_ENABLED)
+2026-06-19 20:50:32,007 | INFO    | __main__ | Meta NUCLEAR: 1000 likes
+2026-06-19 20:50:32,007 | INFO    | __main__ | Ranking ATIVO em MODO TESTE (banco separado: live_caos_teste.db). O banco real (live_caos.db) nao sera tocado.
+2026-06-19 20:50:32,016 | INFO    | src.key_executor | Backend de teclado: pydirectinput
+2026-06-19 20:50:32,018 | INFO    | src.file_bridge | Ponte por arquivo: C:\Program Files (x86)\Steam\steamapps\common\GarrysMod\garrysmod\data\live_caos\fila.txt
+2026-06-19 20:50:32,305 | INFO    | websockets.server | server listening on 127.0.0.1:8765
+2026-06-19 20:50:32,306 | INFO    | websockets.server | server listening on [::1]:8765
+2026-06-19 20:50:32,306 | INFO    | src.panel_server | Painel WebSocket ouvindo em ws://localhost:8765
+2026-06-19 20:50:32,306 | INFO    | src.command_queue | Worker da fila iniciado
+2026-06-19 20:50:32,307 | INFO    | src.tiktok_listener | MODO SIMULACAO ativo — gerando eventos falsos
+2026-06-19 20:50:32,307 | INFO    | src.tiktok_listener | Simulacao vai sortear presentes: gamepad, gg, Rose, ice cream cone, pop, tiktok

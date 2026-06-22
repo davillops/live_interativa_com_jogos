@@ -28,7 +28,7 @@
     },
     "likes": {
       "arquivo": "sons/morte-roblox.mp3",
-      "volume": 1.0,
+      "volume": 0.5,
       "gif": "gifs/morte-roblox.gif"
     },
     "follow": {
@@ -45,12 +45,12 @@
     },
     "gg": {
       "arquivo": "sons/zerei-todos.mp3",
-      "volume": 1.0,
+      "volume": 0.5,
       "gif": "gifs/zerei-todos.jpeg"
     },
     "gamepad": {
       "arquivo": "sons/bomba.mp3",
-      "volume": 1.0,
+      "volume": 0.5,
       "gif": "gifs/bomba.gif"
     }
   },
