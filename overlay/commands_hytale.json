@@ -59,5 +59,31 @@
       "img": "assets/trex.png"
     }
   ],
-  "commands": []
+  "commands": [
+    {
+      "trigger": "!mob1",
+      "file": "mob1",
+      "label": "Mob 1",
+      "emoji": "👾",
+      "cooldown_global": 10,
+      "cooldown_user": 30
+    },
+    {
+      "trigger": "!mob2",
+      "file": "mob2",
+      "label": "Mob 2",
+      "emoji": "👾",
+      "cooldown_global": 10,
+      "cooldown_user": 30
+    },
+    {
+      "trigger": "!mob3",
+      "file": "mob3",
+      "label": "Mob 3",
+      "emoji": "👾",
+      "cooldown_global": 10,
+      "cooldown_user": 30
+    }
+
+  ]
 }
