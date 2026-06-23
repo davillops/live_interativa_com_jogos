@@ -1,0 +1,7 @@
+{
+  "Group": "br.livecaos",
+  "Name": "livecaos",
+  "Version": "1.0.0",
+  "ServerVersion": "*",
+  "Main": "br.livecaos.LiveCaosPlugin"
+}

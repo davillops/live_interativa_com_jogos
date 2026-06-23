@@ -1,0 +1,16 @@
+{
+  "_ajuda": {
+    "evento": "Nome do evento que vem na fila.txt — deve ser IGUAL ao 'file' do commands_hytale.json",
+    "role":   "Role name do NPC no Hytale",
+    "modelo": "Opcional — null usa o modelo padrao do role"
+  },
+  "mobs": [
+    { "evento": "zumbi",             "role": "Zombie",                    "modelo": null },
+    { "evento": "werewolf",          "role": "Werewolf",                  "modelo": null },
+    { "evento": "outlander_brute",   "role": "Outlander_Brute",           "modelo": null },
+    { "evento": "trork_warrior",     "role": "trork_warrior",             "modelo": null },
+    { "evento": "skeleton_alchemist","role": "skeleton_burnt_alchemist",  "modelo": null },
+    { "evento": "trex",              "role": "Zombie",                    "modelo": null },
+    { "evento": "backrooms",         "role": "Zombie",                    "modelo": null }
+  ]
+}
