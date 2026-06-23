@@ -8,5 +8,5 @@ echo  Cole esse endereco na fonte LINK do
 echo  TikTok Live Studio. Deixe esta janela
 echo  aberta durante a live.
 echo ============================================
-cd /d "%~dp0overlay"
+cd /d "%~dp0hytale\overlay"
 python -m http.server 8080
