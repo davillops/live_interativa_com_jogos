@@ -1,30 +1,56 @@
-# Live Caos — TikTok Live interativa no Garry's Mod
+# TikTok Live interativa (GMod + Hytale)
 
-O chat controla a live: comandos como `!barril` e `!cura` viram teclas no
-GMod, com fila, cooldowns e um painel (overlay) que reage em tempo real
-via WebSocket. Likes, follows e presentes são executados pelo **Tikfinity**;
-o Python apenas exibe esses eventos no painel.
+O chat e os presentes do TikTok controlam a live: comandos, likes e
+presentes spawnaoMonstros, disparam efeitos e reagem em tempo real via
+WebSocket no painel do OBS. Funciona tanto no **Garry's Mod** quanto
+no **Hytale** — com configs separadas por jogo.
 
-## Divisão de responsabilidades
+---
 
-| Evento | Quem executa | Tecla |
-|---|---|---|
-| `!drop`, `!barril`, `!cura`, `!formiga`, `!barco` | **Python** | ver `commands.json` |
-| 5 likes → zumbi | python | F9 |
-| Seguir → fogo | python | F10 |
-| Urso Misha → FNAF Nextbot | Tikfinity | F11 |
-| Rosa → galinha explosiva | Tikfinity | Ctrl+3 |
+## Estrutura do projeto
+
+```
+integracao_ttk/
+├── shared/               # Python compartilhado pelos dois jogos
+│   ├── src/              # código (config, fila, cooldown, listener...)
+│   ├── tests/            # testes unitários (pytest)
+│   ├── .env              # config ativa (QUEUE_FILE, COMMANDS_FILE)
+│   └── requirements.txt
+│
+├── gmod/                 # tudo exclusivo do Garry's Mod
+│   ├── commands.json     # comandos de chat, presentes e metas
+│   ├── binds_gmod.cfg    # binds para autoexec.cfg
+│   ├── lua/
+│   │   └── live_caos_ponte.lua   # addon Lua (copiar para garrysmod/lua/autorun/)
+│   └── overlay/
+│       ├── painel.html / painel_config.json
+│       ├── nuclear.html / ranking.html / toasts.html
+│       ├── sons_config.json
+│       └── assets/ sons/ gifs/
+│
+└── hytale/               # tudo exclusivo do Hytale
+    ├── plugin/
+    │   └── livecaos-hytale/    # projeto Java (compilar com gradlew jar)
+    └── overlay/
+        ├── painel_hytale.html
+        └── commands_hytale.json
+```
+
+---
 
 ## Pré-requisitos
 
-- Windows com **Python 3.11+** (https://python.org — marque "Add to PATH")
-- Garry's Mod com `lua_run` liberado (jogo local)
+- Windows com **Python 3.11+**
 - OBS / TikTok Live Studio
+- **GMod**: Garry's Mod com `lua_run` liberado
+- **Hytale**: Hytale instalado (Early Access)
 
-## Instalação (PC novo)
+---
+
+## Instalação
 
 ```bat
-cd live_caos
+cd shared
 python -m venv .venv
 .venv\Scripts\activate
 pip install -r requirements.txt
@@ -33,88 +59,100 @@ copy .env.example .env
 
 Edite o `.env` e preencha `TIKTOK_USERNAME=seu_usuario` (sem @).
 
-## Configurar o GMod
+---
 
-**Ponte por arquivo (zumbi com nome, sem abrir console):**
-copie `gmod_lua/live_caos_ponte.lua` para `garrysmod/lua/autorun/`,
-troque os placeholders de classname e ajuste `QUEUE_FILE` no `.env`.
-Veja o passo a passo em `GUIA_PONTE_ARQUIVO.md`.
+## Trocar entre GMod e Hytale
 
-**Binds de tecla (comandos de chat):**
-cole o conteúdo de `binds_gmod.cfg` no `garrysmod/cfg/autoexec.cfg`.
+No `.env`, mude duas variáveis:
 
-⚠️ **Combos com Ctrl**: o Source não suporta `bind "ctrl+1"` nativamente.
-Se `!formiga`/`!barco` não dispararem no jogo, troque por teclas simples
-(F4, F5...) no `autoexec.cfg` **e** no `commands.json` (`"keys": ["f4"]`).
+**Para GMod:**
+```
+COMMANDS_FILE=../gmod/commands.json
+QUEUE_FILE=C:/...caminho.../garrysmod/data/live_caos/fila.txt
+GAME_WINDOW_TITLE=Garry's Mod
+```
 
-⚠️ **Tecla `+` do barril**: o bind `"="` corresponde à tecla `=`/`+` da
-fileira superior. Se não funcionar, teste `"keys": ["add"]` no
-`commands.json` (tecla + do numpad) e `bind "kp_plus"` no GMod.
+**Para Hytale:**
+```
+COMMANDS_FILE=../hytale/overlay/commands_hytale.json
+QUEUE_FILE=C:/Users/.../Hytale/UserData/Saves/<mundo>/livecaos/fila.txt
+```
+> O `QUEUE_FILE` do Hytale aparece no log do jogo quando você entra no mundo:
+> `[LiveCaos] Mundo: <nome> | Fila: C:\...`
 
-## Configurar o overlay
+---
 
-**TikTok Live Studio** (usa fonte "Link", que exige URL):
+## GMod — configuração
 
-1. Dê dois cliques em `abrir_overlay.bat` (deixe a janela aberta)
-2. No Live Studio: **Fontes → + Adicionar fonte → Link**
-3. Cole `http://localhost:8080/painel.html`
-4. Posicione na lateral do layout vertical
+**Addon Lua:**
+Copie `gmod/lua/live_caos_ponte.lua` para `garrysmod/lua/autorun/`.
 
-**OBS** (aceita arquivo local direto):
+**Binds de tecla:**
+Cole o conteúdo de `gmod/binds_gmod.cfg` no `garrysmod/cfg/autoexec.cfg`.
 
-1. **Fonte → Navegador (Browser Source)**
-2. Marque "Arquivo local" e aponte para `overlay/painel.html`
-3. Largura 520 / Altura 900 (ajuste à vontade)
+**Comandos e presentes:**
+Edite `gmod/commands.json` — gatilho, teclas, cooldowns e rótulo do painel.
 
-O painel funciona mesmo com o script desligado (fica estático) e
-reconecta sozinho a cada 5s quando o script subir.
+**Overlay:**
+```bat
+cd gmod/overlay
+python -m http.server 8080
+```
+Adicione no OBS/Live Studio: `http://localhost:8080/painel.html`
 
-## Rodar
+---
+
+## Hytale — configuração
+
+**Plugin Java:**
+```bat
+cd hytale/plugin/livecaos-hytale
+.\gradlew.bat jar
+copy build\libs\livecaos-hytale-1.0.0.jar %APPDATA%\Hytale\UserData\Mods\
+```
+Reinicie o Hytale e entre no mundo. O plugin cria automaticamente a pasta
+`livecaos/` dentro do save ativo com o `mobs.json` e `fila.txt`.
+
+**Mobs por evento:**
+Edite `Saves/<mundo>/livecaos/mobs.json` — evento, role do Hytale, quantidade.
+Não precisa recompilar para mudar mobs ou quantidades.
+
+**Presentes e comandos:**
+Edite `hytale/overlay/commands_hytale.json` — gift_name, file, label, cooldowns.
+O campo `file` deve ser idêntico ao `evento` no `mobs.json`.
+
+**Overlay:**
+```bat
+cd hytale/overlay
+python -m http.server 8081
+```
+Adicione no OBS: `http://localhost:8081/painel_hytale.html`
+
+---
+
+## Rodar o Python
 
 ```bat
+cd shared
 .venv\Scripts\activate
 python -m src.main
 ```
 
-### Testar sem live no ar (modo simulação)
+**Modo simulação** (testar sem live):
+No `.env`, mude `SIMULATION=true`.
 
-No `.env`, mude `SIMULATION=true` e rode normalmente. O sistema gera
-chat/likes/follows/presentes falsos — perfeito para validar painel,
-fila e teclas antes de abrir a live. **Importante**: as teclas são
-pressionadas de verdade; deixe o GMod em foco (ou um bloco de notas
-para ver as teclas chegando).
-
-## Ajustar comandos e cooldowns
-
-Tudo em `commands.json` — gatilho, teclas, cooldowns e rótulo do
-painel. Não precisa mexer em código. Campos:
-
-- `cooldown_global`: segundos até QUALQUER pessoa usar de novo
-- `cooldown_user`: segundos até o MESMO viewer repetir
-- `keys`: `["f7"]` tecla simples, `["ctrl", "1"]` combo
-
-## Estrutura
-
-```
-live_caos/
-├── src/                  # código (config, fila, cooldown, executor, listener...)
-├── tests/                # testes unitários (pytest)
-├── overlay/painel.html   # overlay para Browser Source
-├── overlay/assets/       # fundo.png + ícones
-├── commands.json         # mapeamento comando → tecla → cooldown
-├── binds_gmod.cfg        # binds prontos p/ autoexec.cfg
-├── .env.example          # modelo de configuração
-└── requirements.txt
-```
+---
 
 ## Logs
 
-Cada sessão grava em `logs/live_AAAA-MM-DD.log`: comandos recebidos,
-executados e descartados por cooldown — útil para auditar a live.
+Cada sessão grava em `shared/logs/live_AAAA-MM-DD.log`.
+
+---
 
 ## Testes
 
 ```bat
+cd shared
 pip install -r requirements-dev.txt
 python -m pytest tests/ -v
 ```

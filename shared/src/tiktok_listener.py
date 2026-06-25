@@ -109,12 +109,15 @@ class TikTokListener:
 
         if crossed and self._likes_action is not None:
             actor = user or self._last_liker
-            logger.info("Meta de likes batida por %s -> zumbi", actor)
-            await self._queue.put(
-                ChatCommand(
-                    user=actor, config=self._likes_action, actor=actor
+            if self._settings.likes_enabled:
+                logger.info("Meta de likes batida por %s -> zumbi", actor)
+                await self._queue.put(
+                    ChatCommand(
+                        user=actor, config=self._likes_action, actor=actor
+                    )
                 )
-            )
+            else:
+                logger.info("Meta de likes batida por %s (LIKES_ENABLED=false, ignorado)", actor)
 
         await self._panel.broadcast(
             {

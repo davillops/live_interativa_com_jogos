@@ -40,13 +40,14 @@ class Settings:
     game_window_title: str
     console_key: str
     queue_file: Path
-    simulation: bool
-    join_enabled: bool
-    ranking_enabled: bool
     ranking_db: str
     nuclear_goal: int
     commands_file: Path
     log_dir: Path
+    simulation: bool = False
+    join_enabled: bool = False
+    likes_enabled: bool = True
+    ranking_enabled: bool = True
 
     @classmethod
     def from_env(cls) -> "Settings":
@@ -72,6 +73,7 @@ class Settings:
             ),
             simulation=_env("SIMULATION", "false").lower() == "true",
             join_enabled=_env("JOIN_ENABLED", "false").lower() == "true",
+            likes_enabled=_env("LIKES_ENABLED", "true").lower() == "true",
             ranking_enabled=_env("RANKING_ENABLED", "true").lower() == "true",
             ranking_db=_env("RANKING_DB", "live_caos.db"),
             nuclear_goal=int(_env("NUCLEAR_GOAL", "1000")),
