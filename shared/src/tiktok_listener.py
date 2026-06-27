@@ -124,7 +124,7 @@ class TikTokListener:
                 "type": "likes",
                 "current": self._likes_current,
                 "goal": goal,
-                "triggered": crossed,
+                "triggered": crossed and self._settings.likes_enabled,
                 "user": user or self._last_liker,
             }
         )
