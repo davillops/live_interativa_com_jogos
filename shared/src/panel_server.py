@@ -17,11 +17,12 @@ class PanelServer:
     conectar simultaneamente.
     """
 
-    def __init__(self, host: str, port: int) -> None:
+    def __init__(self, host: str, port: int, config: dict[str, Any] | None = None) -> None:
         self._host = host
         self._port = port
         self._clients: set[Any] = set()
         self._server: Any = None
+        self._config = config or {}
 
     async def start(self) -> None:
         """Sobe o servidor WebSocket e passa a aceitar conexoes."""
@@ -37,6 +38,13 @@ class PanelServer:
     async def _handle_client(self, websocket: Any) -> None:
         self._clients.add(websocket)
         logger.info("Overlay conectado (%d ativos)", len(self._clients))
+        # manda config inicial para o overlay recem conectado
+        if self._config:
+            try:
+                import json
+                await websocket.send(json.dumps({"type": "config", **self._config}))
+            except Exception:
+                pass
         try:
             async for _ in websocket:
                 pass  # overlay nao envia comandos

@@ -1,0 +1,75 @@
+2026-06-27 16:52:27,239 | INFO    | __main__ | Comandos: !mob1, !mob2, !mob3
+2026-06-27 16:52:27,239 | INFO    | __main__ | Presentes executaveis: gamepad, gg, ice cream cone, pop, rose, tiktok, tiny diny
+2026-06-27 16:52:27,239 | INFO    | __main__ | Acao de meta de likes: configurada (Python)
+2026-06-27 16:52:27,239 | INFO    | __main__ | Acao de seguir: nenhuma (Tikfinity)
+2026-06-27 16:52:27,240 | INFO    | __main__ | Acao de entrar na live: nenhuma
+2026-06-27 16:52:27,240 | INFO    | __main__ | Meta NUCLEAR: nenhuma
+2026-06-27 16:52:27,240 | INFO    | __main__ | Ranking ATIVO em MODO TESTE (banco separado: live_caos_teste.db). O banco real (live_caos.db) nao sera tocado.
+2026-06-27 16:52:27,262 | INFO    | src.key_executor | Backend de teclado: pydirectinput
+2026-06-27 16:52:27,263 | INFO    | src.file_bridge | Ponte por arquivo: C:\Users\davi\AppData\Roaming\Hytale\UserData\Saves\novo v2 (release)\mods\br.livecaos_livecaos\livecaos\fila.txt
+2026-06-27 16:52:27,497 | INFO    | websockets.server | server listening on [::1]:8765
+2026-06-27 16:52:27,498 | INFO    | websockets.server | server listening on 127.0.0.1:8765
+2026-06-27 16:52:27,498 | INFO    | src.panel_server | Painel WebSocket ouvindo em ws://localhost:8765
+2026-06-27 16:52:27,498 | INFO    | src.command_queue | Worker da fila iniciado
+2026-06-27 16:52:27,498 | INFO    | src.tiktok_listener | MODO SIMULACAO ativo — gerando eventos falsos
+2026-06-27 16:52:27,498 | INFO    | src.tiktok_listener | Simulacao vai sortear presentes: Rose, ice cream cone, gg, gamepad, pop, tiktok, tiny diny
+2026-06-27 16:52:30,816 | INFO    | src.tiktok_listener | Presente executavel: tiny diny de @ana.gamer
+2026-06-27 16:52:30,817 | INFO    | src.command_queue | Enfileirado: tiny diny por @ana.gamer (fila=1)
+2026-06-27 16:52:30,817 | INFO    | src.tiktok_listener | Simulacao rodando (tick 0)
+2026-06-27 16:52:30,822 | INFO    | src.command_queue | Executado: tiny diny por @ana.gamer
+2026-06-27 16:52:40,326 | INFO    | src.tiktok_listener | Presente executavel: gg de @pedrocaos
+2026-06-27 16:52:40,326 | INFO    | src.command_queue | Enfileirado: gg por @pedrocaos (fila=1)
+2026-06-27 16:52:40,333 | INFO    | src.command_queue | Executado: gg por @pedrocaos
+2026-06-27 16:52:50,481 | INFO    | src.tiktok_listener | Presente executavel: tiny diny de @joao_zoeira
+2026-06-27 16:52:50,481 | INFO    | src.command_queue | Enfileirado: tiny diny por @joao_zoeira (fila=1)
+2026-06-27 16:52:50,488 | INFO    | src.command_queue | Executado: tiny diny por @joao_zoeira
+2026-06-27 16:53:04,745 | INFO    | src.tiktok_listener | Presente executavel: pop de @lua_fps
+2026-06-27 16:53:04,745 | INFO    | src.command_queue | Enfileirado: pop por @lua_fps (fila=1)
+2026-06-27 16:53:04,751 | INFO    | src.command_queue | Executado: pop por @lua_fps
+2026-06-27 16:53:07,927 | INFO    | src.tiktok_listener | Presente executavel: gg de @joao_zoeira
+2026-06-27 16:53:07,927 | INFO    | src.command_queue | Enfileirado: gg por @joao_zoeira (fila=1)
+2026-06-27 16:53:07,934 | INFO    | src.command_queue | Executado: gg por @joao_zoeira
+2026-06-27 16:53:23,261 | INFO    | src.tiktok_listener | Simulacao rodando (tick 20)
+2026-06-27 16:53:25,649 | INFO    | src.tiktok_listener | Presente executavel: Rose de @pedrocaos
+2026-06-27 16:53:25,649 | INFO    | src.command_queue | Enfileirado: Rose por @pedrocaos (fila=1)
+2026-06-27 16:53:25,655 | INFO    | src.command_queue | Executado: Rose por @pedrocaos
+2026-06-27 16:53:27,742 | INFO    | src.tiktok_listener | Presente executavel: pop de @ana.gamer
+2026-06-27 16:53:27,742 | INFO    | src.command_queue | Enfileirado: pop por @ana.gamer (fila=1)
+2026-06-27 16:53:27,748 | INFO    | src.command_queue | Executado: pop por @ana.gamer
+2026-06-27 16:53:43,729 | INFO    | src.tiktok_listener | Presente executavel: ice cream cone de @pedrocaos
+2026-06-27 16:53:43,729 | INFO    | src.command_queue | Enfileirado: ice cream cone por @pedrocaos (fila=1)
+2026-06-27 16:53:43,734 | INFO    | src.command_queue | Executado: ice cream cone por @pedrocaos
+2026-06-27 16:54:13,861 | INFO    | src.tiktok_listener | Simulacao rodando (tick 40)
+2026-06-27 16:54:19,711 | INFO    | src.tiktok_listener | Presente executavel: gg de @joao_zoeira
+2026-06-27 16:54:19,711 | INFO    | src.command_queue | Enfileirado: gg por @joao_zoeira (fila=1)
+2026-06-27 16:54:19,717 | INFO    | src.command_queue | Executado: gg por @joao_zoeira
+2026-06-27 16:54:28,850 | INFO    | src.tiktok_listener | Presente executavel: pop de @ana.gamer
+2026-06-27 16:54:28,850 | INFO    | src.command_queue | Enfileirado: pop por @ana.gamer (fila=1)
+2026-06-27 16:54:28,857 | INFO    | src.command_queue | Executado: pop por @ana.gamer
+2026-06-27 16:54:34,439 | INFO    | src.tiktok_listener | Presente executavel: tiktok de @pedrocaos
+2026-06-27 16:54:34,439 | INFO    | src.command_queue | Enfileirado: tiktok por @pedrocaos (fila=1)
+2026-06-27 16:54:34,443 | INFO    | src.command_queue | Executado: tiktok por @pedrocaos
+2026-06-27 16:54:49,565 | INFO    | src.tiktok_listener | Presente executavel: gg de @pedrocaos
+2026-06-27 16:54:49,565 | INFO    | src.command_queue | Enfileirado: gg por @pedrocaos (fila=1)
+2026-06-27 16:54:49,569 | INFO    | src.command_queue | Executado: gg por @pedrocaos
+2026-06-27 16:54:52,659 | INFO    | src.tiktok_listener | Presente executavel: tiny diny de @joao_zoeira
+2026-06-27 16:54:52,659 | INFO    | src.command_queue | Enfileirado: tiny diny por @joao_zoeira (fila=1)
+2026-06-27 16:54:52,662 | INFO    | src.command_queue | Executado: tiny diny por @joao_zoeira
+2026-06-27 16:54:55,878 | INFO    | src.tiktok_listener | Meta de likes batida por @joao_zoeira (LIKES_ENABLED=false, ignorado)
+2026-06-27 16:55:01,513 | INFO    | src.tiktok_listener | Presente executavel: gamepad de @lua_fps
+2026-06-27 16:55:01,514 | INFO    | src.command_queue | Enfileirado: gamepad por @lua_fps (fila=1)
+2026-06-27 16:55:01,517 | INFO    | src.command_queue | Executado: gamepad por @lua_fps
+2026-06-27 16:55:04,574 | INFO    | src.tiktok_listener | Presente executavel: Rose de @pedrocaos
+2026-06-27 16:55:04,575 | INFO    | src.command_queue | Enfileirado: Rose por @pedrocaos (fila=1)
+2026-06-27 16:55:04,577 | INFO    | src.command_queue | Executado: Rose por @pedrocaos
+2026-06-27 16:55:09,106 | INFO    | src.tiktok_listener | Simulacao rodando (tick 60)
+2026-06-27 16:55:14,706 | INFO    | src.tiktok_listener | Presente executavel: tiktok de @ana.gamer
+2026-06-27 16:55:14,706 | INFO    | src.command_queue | Enfileirado: tiktok por @ana.gamer (fila=1)
+2026-06-27 16:55:14,709 | INFO    | src.command_queue | Executado: tiktok por @ana.gamer
+2026-06-27 16:55:29,194 | INFO    | src.tiktok_listener | Presente executavel: ice cream cone de @pedrocaos
+2026-06-27 16:55:29,194 | INFO    | src.command_queue | Enfileirado: ice cream cone por @pedrocaos (fila=1)
+2026-06-27 16:55:29,197 | INFO    | src.command_queue | Executado: ice cream cone por @pedrocaos
+2026-06-27 16:55:36,149 | INFO    | src.tiktok_listener | Presente executavel: ice cream cone de @lua_fps
+2026-06-27 16:55:36,149 | INFO    | src.command_queue | Enfileirado: ice cream cone por @lua_fps (fila=1)
+2026-06-27 16:55:36,153 | INFO    | src.command_queue | Executado: ice cream cone por @lua_fps
+2026-06-27 16:55:59,819 | INFO    | __main__ | Encerrado pelo usuario (Ctrl+C)

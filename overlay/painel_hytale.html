@@ -182,7 +182,7 @@
     <img class="zicon" src="assets/zzz.png" alt="Zumbi">
     <div class="likes-info">
       <div class="likes-row">
-        <span class="likes-label">Tap Tap <span>→</span> Lobo</span>
+        <span class="likes-label">Likes <span>→</span> Zumbi</span>
         <span class="likes-num"><b id="likesNow">0</b>/<span id="likesGoal">10</span></span>
       </div>
       <div class="likes-bar"><div class="likes-fill" id="likesFill"></div></div>
@@ -290,6 +290,15 @@
   }
   function handleMessage(msg) {
     switch (msg.type) {
+      case 'config':
+        if (msg.likes_enabled === false) {
+          document.getElementById('topo').style.display = 'none';
+          document.querySelector('.divisor').style.display = 'none';
+        } else {
+          document.getElementById('topo').style.display = '';
+          document.querySelector('.divisor').style.display = '';
+        }
+        break;
       case 'likes': setLikes(msg.current, msg.goal, msg.triggered); break;
       case 'social':
         if (msg.kind === 'gift') flashRow(msg.gift || '');

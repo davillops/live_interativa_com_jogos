@@ -80,7 +80,11 @@ async def run() -> None:
     else:
         logger.info("Ranking desligado (RANKING_ENABLED)")
 
-    panel = PanelServer(settings.ws_host, settings.ws_port)
+    panel = PanelServer(
+        settings.ws_host,
+        settings.ws_port,
+        config={"likes_enabled": settings.likes_enabled},
+    )
     executor = KeyExecutor(settings.game_window_title, settings.console_key)
     file_bridge = FileBridge(settings.queue_file)
     queue = CommandQueue(

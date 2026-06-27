@@ -1,0 +1,304 @@
+2026-06-26 22:16:42,903 | INFO    | __main__ | Comandos: !mob1, !mob2, !mob3
+2026-06-26 22:16:42,904 | INFO    | __main__ | Presentes executaveis: gamepad, gg, ice cream cone, pop, rose, tiktok, tiny diny
+2026-06-26 22:16:42,904 | INFO    | __main__ | Acao de meta de likes: configurada (Python)
+2026-06-26 22:16:42,904 | INFO    | __main__ | Acao de seguir: nenhuma (Tikfinity)
+2026-06-26 22:16:42,904 | INFO    | __main__ | Acao de entrar na live: nenhuma
+2026-06-26 22:16:42,904 | INFO    | __main__ | Meta NUCLEAR: nenhuma
+2026-06-26 22:16:42,904 | INFO    | __main__ | Ranking ATIVO (banco: live_caos.db)
+2026-06-26 22:16:42,928 | INFO    | src.key_executor | Backend de teclado: pydirectinput
+2026-06-26 22:16:42,929 | INFO    | src.file_bridge | Ponte por arquivo: C:\Users\davi\AppData\Roaming\Hytale\UserData\Saves\novo v2 (release)\mods\br.livecaos_livecaos\livecaos\fila.txt
+2026-06-26 22:16:43,152 | INFO    | websockets.server | server listening on 127.0.0.1:8765
+2026-06-26 22:16:43,152 | INFO    | websockets.server | server listening on [::1]:8765
+2026-06-26 22:16:43,152 | INFO    | src.panel_server | Painel WebSocket ouvindo em ws://localhost:8765
+2026-06-26 22:16:43,152 | INFO    | src.command_queue | Worker da fila iniciado
+2026-06-26 22:16:44,677 | INFO    | src.tiktok_listener | Chave da API EulerStream configurada.
+2026-06-26 22:16:45,581 | INFO    | src.tiktok_listener | Conectando a @davillops...
+2026-06-26 22:16:45,602 | INFO    | websockets.server | connection open
+2026-06-26 22:16:45,602 | INFO    | src.panel_server | Overlay conectado (1 ativos)
+2026-06-26 22:16:45,602 | INFO    | websockets.server | connection open
+2026-06-26 22:16:45,602 | INFO    | src.panel_server | Overlay conectado (2 ativos)
+2026-06-26 22:16:47,053 | INFO    | httpx | HTTP Request: GET https://www.tiktok.com/@davillops/live? "HTTP/1.1 200 OK"
+2026-06-26 22:16:47,685 | ERROR   | src.tiktok_listener | Conexao com o TikTok caiu; nova tentativa em 15s. (erro 500 do EulerStream e instabilidade do servico, costuma resolver sozinho)
+2026-06-26 22:16:48,591 | INFO    | websockets.server | connection open
+2026-06-26 22:16:48,591 | INFO    | src.panel_server | Overlay conectado (3 ativos)
+2026-06-26 22:16:50,362 | INFO    | websockets.server | connection open
+2026-06-26 22:16:50,363 | INFO    | src.panel_server | Overlay conectado (4 ativos)
+2026-06-26 22:17:02,913 | INFO    | src.tiktok_listener | Conectando a @davillops...
+2026-06-26 22:17:03,653 | INFO    | httpx | HTTP Request: GET https://www.tiktok.com/@davillops/live? "HTTP/1.1 200 OK"
+2026-06-26 22:17:03,696 | ERROR   | src.tiktok_listener | Conexao com o TikTok caiu; nova tentativa em 30s. (erro 500 do EulerStream e instabilidade do servico, costuma resolver sozinho)
+2026-06-26 22:17:33,900 | INFO    | src.tiktok_listener | Conectando a @davillops...
+2026-06-26 22:17:35,405 | INFO    | httpx | HTTP Request: GET https://www.tiktok.com/@davillops/live? "HTTP/1.1 200 OK"
+2026-06-26 22:17:36,051 | ERROR   | src.tiktok_listener | Conexao com o TikTok caiu; nova tentativa em 60s. (erro 500 do EulerStream e instabilidade do servico, costuma resolver sozinho)
+2026-06-26 22:18:36,262 | INFO    | src.tiktok_listener | Conectando a @davillops...
+2026-06-26 22:18:36,964 | INFO    | httpx | HTTP Request: GET https://www.tiktok.com/@davillops/live? "HTTP/1.1 200 OK"
+2026-06-26 22:18:37,720 | INFO    | httpx | HTTP Request: GET https://webcast.tiktok.com/webcast/room/check_alive/?aid=1988&app_language=en&app_name=tiktok_web&browser_language=en-AU&browser_name=Mozilla&browser_online=true&browser_platform=Win32&browser_version=5.0%20%28Windows%20NT%2010.0%3B%20Win64%3B%20x64%3B%20rv%3A130.0%29%20Gecko%2F20100101%20Firefox%2F130.0&cookie_enabled=true&device_platform=web_pc&focus_state=true&from_page=&history_len=12&is_fullscreen=false&is_page_visible=true&screen_height=1080&screen_width=1920&tz_name=Australia/Sydney&channel=tiktok_web&data_collection_enabled=true&os=windows&priority_region=AU&region=AU&user_is_login=false&webcast_language=en&msToken=&referer=https://www.tiktok.com/@davillops/live&root_referer=https://www.tiktok.com/@davillops/live&device_id=84485489333756304972&room_id=7655878218319088402&room_ids=7655878218319088402 "HTTP/1.1 200 OK"
+2026-06-26 22:18:39,193 | INFO    | httpx | HTTP Request: GET https://tiktok.eulerstream.com/webcast/fetch/?client=ttlive-python&room_id=7655878218319088402&user_agent=Mozilla%2F5.0+%28Windows+NT+10.0%3B+Win64%3B+x64%3B+rv%3A130.0%29+Gecko%2F20100101+Firefox%2F130.0&platform=web&client_enter=true "HTTP/1.1 200 OK"
+2026-06-26 22:18:40,152 | INFO    | src.tiktok_listener | Conectado a live de @davillops
+2026-06-26 22:18:48,607 | INFO    | src.tiktok_listener | GiftEvent recebido: nome='Rose' de Eca TEXTURA (diamantes=1, streakable=True, streaking=True)
+2026-06-26 22:18:51,940 | INFO    | src.tiktok_listener | GiftEvent recebido: nome='Rose' de Eca TEXTURA (diamantes=1, streakable=True, streaking=False)
+2026-06-26 22:18:51,953 | INFO    | src.tiktok_listener | Presente executavel: Rose de Eca TEXTURA
+2026-06-26 22:18:51,954 | INFO    | src.command_queue | Enfileirado: Rose por Eca TEXTURA (fila=1)
+2026-06-26 22:18:51,961 | INFO    | src.command_queue | Executado: Rose por Eca TEXTURA
+2026-06-26 22:19:06,813 | INFO    | src.tiktok_listener | Meta de likes batida por Eca TEXTURA (LIKES_ENABLED=false, ignorado)
+2026-06-26 22:19:06,813 | INFO    | src.tiktok_listener | Meta de likes batida por Eca TEXTURA (LIKES_ENABLED=false, ignorado)
+2026-06-26 22:19:08,366 | INFO    | src.tiktok_listener | Meta de likes batida por Eca TEXTURA (LIKES_ENABLED=false, ignorado)
+2026-06-26 22:19:09,218 | INFO    | src.tiktok_listener | Meta de likes batida por Eca TEXTURA (LIKES_ENABLED=false, ignorado)
+2026-06-26 22:19:10,065 | INFO    | src.tiktok_listener | Meta de likes batida por Eca TEXTURA (LIKES_ENABLED=false, ignorado)
+2026-06-26 22:19:12,472 | INFO    | src.tiktok_listener | Meta de likes batida por Eca TEXTURA (LIKES_ENABLED=false, ignorado)
+2026-06-26 22:19:12,472 | INFO    | src.tiktok_listener | Meta de likes batida por Eca TEXTURA (LIKES_ENABLED=false, ignorado)
+2026-06-26 22:19:13,317 | INFO    | src.tiktok_listener | Meta de likes batida por Eca TEXTURA (LIKES_ENABLED=false, ignorado)
+2026-06-26 22:19:14,868 | INFO    | src.tiktok_listener | Meta de likes batida por Eca TEXTURA (LIKES_ENABLED=false, ignorado)
+2026-06-26 22:19:15,669 | INFO    | src.tiktok_listener | Meta de likes batida por Eca TEXTURA (LIKES_ENABLED=false, ignorado)
+2026-06-26 22:19:18,016 | INFO    | src.tiktok_listener | Meta de likes batida por Eca TEXTURA (LIKES_ENABLED=false, ignorado)
+2026-06-26 22:19:19,674 | INFO    | src.tiktok_listener | Meta de likes batida por Eca TEXTURA (LIKES_ENABLED=false, ignorado)
+2026-06-26 22:19:19,674 | INFO    | src.tiktok_listener | Meta de likes batida por Eca TEXTURA (LIKES_ENABLED=false, ignorado)
+2026-06-26 22:19:20,479 | INFO    | src.tiktok_listener | Meta de likes batida por Eca TEXTURA (LIKES_ENABLED=false, ignorado)
+2026-06-26 22:19:49,496 | INFO    | src.tiktok_listener | Meta de likes batida por Eca TEXTURA (LIKES_ENABLED=false, ignorado)
+2026-06-26 22:19:51,195 | INFO    | src.tiktok_listener | Meta de likes batida por Eca TEXTURA (LIKES_ENABLED=false, ignorado)
+2026-06-26 22:19:52,047 | INFO    | src.tiktok_listener | Meta de likes batida por Eca TEXTURA (LIKES_ENABLED=false, ignorado)
+2026-06-26 22:19:52,896 | INFO    | src.tiktok_listener | Meta de likes batida por Eca TEXTURA (LIKES_ENABLED=false, ignorado)
+2026-06-26 22:19:54,554 | INFO    | src.tiktok_listener | Meta de likes batida por Eca TEXTURA (LIKES_ENABLED=false, ignorado)
+2026-06-26 22:19:56,151 | INFO    | src.tiktok_listener | Meta de likes batida por Eca TEXTURA (LIKES_ENABLED=false, ignorado)
+2026-06-26 22:20:09,356 | INFO    | src.tiktok_listener | Meta de likes batida por Eca TEXTURA (LIKES_ENABLED=false, ignorado)
+2026-06-26 22:20:11,063 | INFO    | src.tiktok_listener | Meta de likes batida por Eca TEXTURA (LIKES_ENABLED=false, ignorado)
+2026-06-26 22:20:11,931 | INFO    | src.tiktok_listener | Meta de likes batida por Eca TEXTURA (LIKES_ENABLED=false, ignorado)
+2026-06-26 22:20:11,935 | INFO    | src.tiktok_listener | Meta de likes batida por Eca TEXTURA (LIKES_ENABLED=false, ignorado)
+2026-06-26 22:20:14,448 | INFO    | src.tiktok_listener | Meta de likes batida por Eca TEXTURA (LIKES_ENABLED=false, ignorado)
+2026-06-26 22:20:16,125 | INFO    | src.tiktok_listener | Meta de likes batida por Eca TEXTURA (LIKES_ENABLED=false, ignorado)
+2026-06-26 22:20:16,974 | INFO    | src.tiktok_listener | Meta de likes batida por Eca TEXTURA (LIKES_ENABLED=false, ignorado)
+2026-06-26 22:21:24,305 | INFO    | src.panel_server | Overlay desconectado (3 ativos)
+2026-06-26 22:21:24,305 | INFO    | src.panel_server | Overlay desconectado (2 ativos)
+2026-06-26 22:21:24,305 | INFO    | src.panel_server | Overlay desconectado (1 ativos)
+2026-06-26 22:21:24,305 | INFO    | src.panel_server | Overlay desconectado (0 ativos)
+2026-06-26 22:21:24,560 | INFO    | __main__ | Encerrado pelo usuario (Ctrl+C)
+2026-06-26 22:21:27,369 | INFO    | __main__ | Comandos: !mob1, !mob2, !mob3
+2026-06-26 22:21:27,369 | INFO    | __main__ | Presentes executaveis: gamepad, gg, ice cream cone, pop, rose, tiktok, tiny diny
+2026-06-26 22:21:27,369 | INFO    | __main__ | Acao de meta de likes: configurada (Python)
+2026-06-26 22:21:27,369 | INFO    | __main__ | Acao de seguir: nenhuma (Tikfinity)
+2026-06-26 22:21:27,369 | INFO    | __main__ | Acao de entrar na live: nenhuma
+2026-06-26 22:21:27,369 | INFO    | __main__ | Meta NUCLEAR: nenhuma
+2026-06-26 22:21:27,370 | INFO    | __main__ | Ranking ATIVO (banco: live_caos.db)
+2026-06-26 22:21:27,372 | INFO    | src.key_executor | Backend de teclado: pydirectinput
+2026-06-26 22:21:27,372 | INFO    | src.file_bridge | Ponte por arquivo: C:\Users\davi\AppData\Roaming\Hytale\UserData\Saves\novo v2 (release)\mods\br.livecaos_livecaos\livecaos\fila.txt
+2026-06-26 22:21:27,443 | INFO    | websockets.server | server listening on [::1]:8765
+2026-06-26 22:21:27,443 | INFO    | websockets.server | server listening on 127.0.0.1:8765
+2026-06-26 22:21:27,444 | INFO    | src.panel_server | Painel WebSocket ouvindo em ws://localhost:8765
+2026-06-26 22:21:27,444 | INFO    | src.command_queue | Worker da fila iniciado
+2026-06-26 22:21:28,104 | INFO    | src.tiktok_listener | Chave da API EulerStream configurada.
+2026-06-26 22:21:28,403 | INFO    | src.tiktok_listener | Conectando a @davillops...
+2026-06-26 22:21:29,607 | INFO    | websockets.server | connection open
+2026-06-26 22:21:29,607 | INFO    | src.panel_server | Overlay conectado (1 ativos)
+2026-06-26 22:21:29,625 | INFO    | websockets.server | connection open
+2026-06-26 22:21:29,626 | INFO    | src.panel_server | Overlay conectado (2 ativos)
+2026-06-26 22:21:29,642 | INFO    | websockets.server | connection open
+2026-06-26 22:21:29,642 | INFO    | src.panel_server | Overlay conectado (3 ativos)
+2026-06-26 22:21:29,657 | INFO    | websockets.server | connection open
+2026-06-26 22:21:29,657 | INFO    | src.panel_server | Overlay conectado (4 ativos)
+2026-06-26 22:21:30,261 | INFO    | httpx | HTTP Request: GET https://www.tiktok.com/@davillops/live? "HTTP/1.1 200 OK"
+2026-06-26 22:21:31,061 | INFO    | httpx | HTTP Request: GET https://webcast.tiktok.com/webcast/room/check_alive/?aid=1988&app_language=en&app_name=tiktok_web&browser_language=en-JM&browser_name=Mozilla&browser_online=true&browser_platform=Win32&browser_version=5.0%20%28Windows%20NT%2010.0%3B%20Win64%3B%20x64%3B%20rv%3A130.0%29%20Gecko%2F20100101%20Firefox%2F130.0&cookie_enabled=true&device_platform=web_pc&focus_state=true&from_page=&history_len=14&is_fullscreen=false&is_page_visible=true&screen_height=1080&screen_width=1920&tz_name=America/Jamaica&channel=tiktok_web&data_collection_enabled=true&os=windows&priority_region=JM&region=JM&user_is_login=false&webcast_language=en&msToken=&referer=https://www.tiktok.com/@davillops/live&root_referer=https://www.tiktok.com/@davillops/live&device_id=37319156997726333909&room_id=7655878218319088402&room_ids=7655878218319088402 "HTTP/1.1 200 OK"
+2026-06-26 22:21:32,053 | INFO    | httpx | HTTP Request: GET https://tiktok.eulerstream.com/webcast/fetch/?client=ttlive-python&room_id=7655878218319088402&user_agent=Mozilla%2F5.0+%28Windows+NT+10.0%3B+Win64%3B+x64%3B+rv%3A130.0%29+Gecko%2F20100101+Firefox%2F130.0&platform=web&client_enter=true "HTTP/1.1 200 OK"
+2026-06-26 22:21:32,823 | INFO    | src.tiktok_listener | Conectado a live de @davillops
+2026-06-26 22:21:52,404 | INFO    | src.tiktok_listener | GiftEvent recebido: nome='GG' de Eca TEXTURA (diamantes=1, streakable=True, streaking=True)
+2026-06-26 22:21:55,745 | INFO    | src.tiktok_listener | GiftEvent recebido: nome='GG' de Eca TEXTURA (diamantes=1, streakable=True, streaking=False)
+2026-06-26 22:21:55,766 | INFO    | src.tiktok_listener | Presente executavel: GG de Eca TEXTURA
+2026-06-26 22:21:55,766 | INFO    | src.command_queue | Enfileirado: gg por Eca TEXTURA (fila=1)
+2026-06-26 22:21:55,775 | INFO    | src.command_queue | Executado: gg por Eca TEXTURA
+2026-06-26 22:29:19,152 | INFO    | src.tiktok_listener | Meta de likes batida por carlbgs (LIKES_ENABLED=false, ignorado)
+2026-06-26 22:35:25,569 | INFO    | src.tiktok_listener | Meta de likes batida por Eca TEXTURA (LIKES_ENABLED=false, ignorado)
+2026-06-26 22:35:26,412 | INFO    | src.tiktok_listener | Meta de likes batida por Eca TEXTURA (LIKES_ENABLED=false, ignorado)
+2026-06-26 22:35:28,096 | INFO    | src.tiktok_listener | Meta de likes batida por Eca TEXTURA (LIKES_ENABLED=false, ignorado)
+2026-06-26 22:35:28,096 | INFO    | src.tiktok_listener | Meta de likes batida por Eca TEXTURA (LIKES_ENABLED=false, ignorado)
+2026-06-26 22:35:30,572 | INFO    | src.tiktok_listener | Meta de likes batida por Eca TEXTURA (LIKES_ENABLED=false, ignorado)
+2026-06-26 22:35:31,376 | INFO    | src.tiktok_listener | Meta de likes batida por Eca TEXTURA (LIKES_ENABLED=false, ignorado)
+2026-06-26 22:35:32,220 | INFO    | src.tiktok_listener | Meta de likes batida por Eca TEXTURA (LIKES_ENABLED=false, ignorado)
+2026-06-26 22:35:33,011 | INFO    | src.tiktok_listener | Meta de likes batida por Eca TEXTURA (LIKES_ENABLED=false, ignorado)
+2026-06-26 22:35:34,711 | INFO    | src.tiktok_listener | Meta de likes batida por Eca TEXTURA (LIKES_ENABLED=false, ignorado)
+2026-06-26 22:35:36,416 | INFO    | src.tiktok_listener | Meta de likes batida por Eca TEXTURA (LIKES_ENABLED=false, ignorado)
+2026-06-26 22:35:38,006 | INFO    | src.tiktok_listener | Meta de likes batida por Eca TEXTURA (LIKES_ENABLED=false, ignorado)
+2026-06-26 22:35:38,790 | INFO    | src.tiktok_listener | Meta de likes batida por Eca TEXTURA (LIKES_ENABLED=false, ignorado)
+2026-06-26 22:35:39,659 | INFO    | src.tiktok_listener | Meta de likes batida por Eca TEXTURA (LIKES_ENABLED=false, ignorado)
+2026-06-26 22:35:40,438 | INFO    | src.tiktok_listener | Meta de likes batida por Eca TEXTURA (LIKES_ENABLED=false, ignorado)
+2026-06-26 22:35:51,241 | INFO    | src.tiktok_listener | Meta de likes batida por Eca TEXTURA (LIKES_ENABLED=false, ignorado)
+2026-06-26 22:35:52,790 | INFO    | src.tiktok_listener | Meta de likes batida por Eca TEXTURA (LIKES_ENABLED=false, ignorado)
+2026-06-26 22:35:53,679 | INFO    | src.tiktok_listener | Meta de likes batida por Eca TEXTURA (LIKES_ENABLED=false, ignorado)
+2026-06-26 22:35:55,311 | INFO    | src.tiktok_listener | Meta de likes batida por Eca TEXTURA (LIKES_ENABLED=false, ignorado)
+2026-06-26 22:35:56,166 | INFO    | src.tiktok_listener | Meta de likes batida por Eca TEXTURA (LIKES_ENABLED=false, ignorado)
+2026-06-26 22:35:56,992 | INFO    | src.tiktok_listener | Meta de likes batida por Eca TEXTURA (LIKES_ENABLED=false, ignorado)
+2026-06-26 22:35:57,757 | INFO    | src.tiktok_listener | Meta de likes batida por Eca TEXTURA (LIKES_ENABLED=false, ignorado)
+2026-06-26 22:35:59,478 | INFO    | src.tiktok_listener | Meta de likes batida por Eca TEXTURA (LIKES_ENABLED=false, ignorado)
+2026-06-26 22:36:01,076 | INFO    | src.tiktok_listener | Meta de likes batida por Eca TEXTURA (LIKES_ENABLED=false, ignorado)
+2026-06-26 22:36:02,775 | INFO    | src.tiktok_listener | Meta de likes batida por Eca TEXTURA (LIKES_ENABLED=false, ignorado)
+2026-06-26 22:36:03,572 | INFO    | src.tiktok_listener | Meta de likes batida por Eca TEXTURA (LIKES_ENABLED=false, ignorado)
+2026-06-26 22:36:04,338 | INFO    | src.tiktok_listener | Meta de likes batida por Eca TEXTURA (LIKES_ENABLED=false, ignorado)
+2026-06-26 22:36:05,151 | INFO    | src.tiktok_listener | Meta de likes batida por Eca TEXTURA (LIKES_ENABLED=false, ignorado)
+2026-06-26 22:41:49,489 | INFO    | src.tiktok_listener | Meta de likes batida por Eca TEXTURA (LIKES_ENABLED=false, ignorado)
+2026-06-26 22:41:50,370 | INFO    | src.tiktok_listener | Meta de likes batida por Eca TEXTURA (LIKES_ENABLED=false, ignorado)
+2026-06-26 22:41:51,173 | INFO    | src.tiktok_listener | Meta de likes batida por Eca TEXTURA (LIKES_ENABLED=false, ignorado)
+2026-06-26 22:41:52,885 | INFO    | src.tiktok_listener | Meta de likes batida por Eca TEXTURA (LIKES_ENABLED=false, ignorado)
+2026-06-26 22:41:53,731 | INFO    | src.tiktok_listener | Meta de likes batida por Eca TEXTURA (LIKES_ENABLED=false, ignorado)
+2026-06-26 22:41:55,375 | INFO    | src.tiktok_listener | Meta de likes batida por Eca TEXTURA (LIKES_ENABLED=false, ignorado)
+2026-06-26 22:41:56,990 | INFO    | src.tiktok_listener | Meta de likes batida por Eca TEXTURA (LIKES_ENABLED=false, ignorado)
+2026-06-26 22:41:57,790 | INFO    | src.tiktok_listener | Meta de likes batida por Eca TEXTURA (LIKES_ENABLED=false, ignorado)
+2026-06-26 22:41:58,651 | INFO    | src.tiktok_listener | Meta de likes batida por Eca TEXTURA (LIKES_ENABLED=false, ignorado)
+2026-06-26 22:41:59,456 | INFO    | src.tiktok_listener | Meta de likes batida por Eca TEXTURA (LIKES_ENABLED=false, ignorado)
+2026-06-26 22:42:01,134 | INFO    | src.tiktok_listener | Meta de likes batida por Eca TEXTURA (LIKES_ENABLED=false, ignorado)
+2026-06-26 22:42:01,998 | INFO    | src.tiktok_listener | Meta de likes batida por Eca TEXTURA (LIKES_ENABLED=false, ignorado)
+2026-06-26 22:42:03,686 | INFO    | src.tiktok_listener | Meta de likes batida por Eca TEXTURA (LIKES_ENABLED=false, ignorado)
+2026-06-26 22:42:04,505 | INFO    | src.tiktok_listener | Meta de likes batida por Eca TEXTURA (LIKES_ENABLED=false, ignorado)
+2026-06-26 22:42:05,339 | INFO    | src.tiktok_listener | Meta de likes batida por Eca TEXTURA (LIKES_ENABLED=false, ignorado)
+2026-06-26 22:42:07,850 | INFO    | src.tiktok_listener | Meta de likes batida por Eca TEXTURA (LIKES_ENABLED=false, ignorado)
+2026-06-26 22:42:08,703 | INFO    | src.tiktok_listener | Meta de likes batida por Eca TEXTURA (LIKES_ENABLED=false, ignorado)
+2026-06-26 22:42:09,514 | INFO    | src.tiktok_listener | Meta de likes batida por Eca TEXTURA (LIKES_ENABLED=false, ignorado)
+2026-06-26 22:42:11,187 | INFO    | src.tiktok_listener | Meta de likes batida por Eca TEXTURA (LIKES_ENABLED=false, ignorado)
+2026-06-26 22:42:11,187 | INFO    | src.tiktok_listener | Meta de likes batida por Eca TEXTURA (LIKES_ENABLED=false, ignorado)
+2026-06-26 22:42:12,811 | INFO    | src.tiktok_listener | Meta de likes batida por Eca TEXTURA (LIKES_ENABLED=false, ignorado)
+2026-06-26 22:42:14,516 | INFO    | src.tiktok_listener | Meta de likes batida por Eca TEXTURA (LIKES_ENABLED=false, ignorado)
+2026-06-26 22:42:15,267 | INFO    | src.tiktok_listener | Meta de likes batida por Eca TEXTURA (LIKES_ENABLED=false, ignorado)
+2026-06-26 22:42:16,120 | INFO    | src.tiktok_listener | Meta de likes batida por Eca TEXTURA (LIKES_ENABLED=false, ignorado)
+2026-06-26 22:42:17,783 | INFO    | src.tiktok_listener | Meta de likes batida por Eca TEXTURA (LIKES_ENABLED=false, ignorado)
+2026-06-26 22:42:19,391 | INFO    | src.tiktok_listener | Meta de likes batida por Eca TEXTURA (LIKES_ENABLED=false, ignorado)
+2026-06-26 22:42:20,186 | INFO    | src.tiktok_listener | Meta de likes batida por Eca TEXTURA (LIKES_ENABLED=false, ignorado)
+2026-06-26 22:42:21,830 | INFO    | src.tiktok_listener | Meta de likes batida por Eca TEXTURA (LIKES_ENABLED=false, ignorado)
+2026-06-26 22:42:22,759 | INFO    | src.tiktok_listener | Meta de likes batida por Eca TEXTURA (LIKES_ENABLED=false, ignorado)
+2026-06-26 22:42:23,563 | INFO    | src.tiktok_listener | Meta de likes batida por Eca TEXTURA (LIKES_ENABLED=false, ignorado)
+2026-06-26 22:42:26,053 | INFO    | src.tiktok_listener | Meta de likes batida por Eca TEXTURA (LIKES_ENABLED=false, ignorado)
+2026-06-26 22:42:26,053 | INFO    | src.tiktok_listener | Meta de likes batida por Eca TEXTURA (LIKES_ENABLED=false, ignorado)
+2026-06-26 22:42:26,905 | INFO    | src.tiktok_listener | Meta de likes batida por Eca TEXTURA (LIKES_ENABLED=false, ignorado)
+2026-06-26 22:42:48,408 | INFO    | src.tiktok_listener | Meta de likes batida por Eca TEXTURA (LIKES_ENABLED=false, ignorado)
+2026-06-26 22:42:49,230 | INFO    | src.tiktok_listener | Meta de likes batida por Eca TEXTURA (LIKES_ENABLED=false, ignorado)
+2026-06-26 22:42:51,801 | INFO    | src.tiktok_listener | Meta de likes batida por Eca TEXTURA (LIKES_ENABLED=false, ignorado)
+2026-06-26 22:42:52,573 | INFO    | src.tiktok_listener | Meta de likes batida por Eca TEXTURA (LIKES_ENABLED=false, ignorado)
+2026-06-26 22:42:53,400 | INFO    | src.tiktok_listener | Meta de likes batida por Eca TEXTURA (LIKES_ENABLED=false, ignorado)
+2026-06-26 22:42:54,233 | INFO    | src.tiktok_listener | Meta de likes batida por Eca TEXTURA (LIKES_ENABLED=false, ignorado)
+2026-06-26 22:42:55,915 | INFO    | src.tiktok_listener | Meta de likes batida por Eca TEXTURA (LIKES_ENABLED=false, ignorado)
+2026-06-26 22:42:56,802 | INFO    | src.tiktok_listener | Meta de likes batida por Eca TEXTURA (LIKES_ENABLED=false, ignorado)
+2026-06-26 22:42:58,384 | INFO    | src.tiktok_listener | Meta de likes batida por Eca TEXTURA (LIKES_ENABLED=false, ignorado)
+2026-06-26 22:42:59,154 | INFO    | src.tiktok_listener | Meta de likes batida por Eca TEXTURA (LIKES_ENABLED=false, ignorado)
+2026-06-26 22:43:00,045 | INFO    | src.tiktok_listener | Meta de likes batida por Eca TEXTURA (LIKES_ENABLED=false, ignorado)
+2026-06-26 22:43:01,647 | INFO    | src.tiktok_listener | Meta de likes batida por Eca TEXTURA (LIKES_ENABLED=false, ignorado)
+2026-06-26 22:43:03,252 | INFO    | src.tiktok_listener | Meta de likes batida por Eca TEXTURA (LIKES_ENABLED=false, ignorado)
+2026-06-26 22:43:04,102 | INFO    | src.tiktok_listener | Meta de likes batida por Eca TEXTURA (LIKES_ENABLED=false, ignorado)
+2026-06-26 22:43:05,712 | INFO    | src.tiktok_listener | Meta de likes batida por Eca TEXTURA (LIKES_ENABLED=false, ignorado)
+2026-06-26 22:43:06,509 | INFO    | src.tiktok_listener | Meta de likes batida por Eca TEXTURA (LIKES_ENABLED=false, ignorado)
+2026-06-26 22:43:07,366 | INFO    | src.tiktok_listener | Meta de likes batida por Eca TEXTURA (LIKES_ENABLED=false, ignorado)
+2026-06-26 22:43:09,906 | INFO    | src.tiktok_listener | Meta de likes batida por Eca TEXTURA (LIKES_ENABLED=false, ignorado)
+2026-06-26 22:43:10,705 | INFO    | src.tiktok_listener | Meta de likes batida por Eca TEXTURA (LIKES_ENABLED=false, ignorado)
+2026-06-26 22:43:11,554 | INFO    | src.tiktok_listener | Meta de likes batida por Eca TEXTURA (LIKES_ENABLED=false, ignorado)
+2026-06-26 22:43:12,308 | INFO    | src.tiktok_listener | Meta de likes batida por Eca TEXTURA (LIKES_ENABLED=false, ignorado)
+2026-06-26 22:43:13,156 | INFO    | src.tiktok_listener | Meta de likes batida por Eca TEXTURA (LIKES_ENABLED=false, ignorado)
+2026-06-26 22:43:15,660 | INFO    | src.tiktok_listener | Meta de likes batida por Eca TEXTURA (LIKES_ENABLED=false, ignorado)
+2026-06-26 22:43:16,509 | INFO    | src.tiktok_listener | Meta de likes batida por Eca TEXTURA (LIKES_ENABLED=false, ignorado)
+2026-06-26 22:43:24,869 | INFO    | src.tiktok_listener | Meta de likes batida por Eca TEXTURA (LIKES_ENABLED=false, ignorado)
+2026-06-26 22:44:44,818 | INFO    | src.tiktok_listener | GiftEvent recebido: nome='Glow Stick' de Charles Edu∆ (diamantes=1, streakable=True, streaking=True)
+2026-06-26 22:44:48,128 | INFO    | src.tiktok_listener | GiftEvent recebido: nome='Glow Stick' de Charles Edu∆ (diamantes=1, streakable=True, streaking=False)
+2026-06-26 22:44:48,137 | INFO    | src.tiktok_listener | Presente 'Glow Stick' (de Charles Edu∆) nao esta em 'gifts'. Configurados: gamepad, gg, ice cream cone, pop, rose, tiktok, tiny diny
+2026-06-26 22:49:11,490 | INFO    | src.tiktok_listener | Meta de likes batida por Charles Edu∆ (LIKES_ENABLED=false, ignorado)
+2026-06-26 22:49:14,788 | INFO    | src.tiktok_listener | Meta de likes batida por Charles Edu∆ (LIKES_ENABLED=false, ignorado)
+2026-06-26 22:49:18,056 | INFO    | src.tiktok_listener | Meta de likes batida por Charles Edu∆ (LIKES_ENABLED=false, ignorado)
+2026-06-26 22:49:20,545 | INFO    | src.tiktok_listener | Meta de likes batida por Charles Edu∆ (LIKES_ENABLED=false, ignorado)
+2026-06-26 22:49:26,426 | INFO    | src.tiktok_listener | Meta de likes batida por Charles Edu∆ (LIKES_ENABLED=false, ignorado)
+2026-06-26 22:49:29,708 | INFO    | src.tiktok_listener | Meta de likes batida por Charles Edu∆ (LIKES_ENABLED=false, ignorado)
+2026-06-26 22:49:33,021 | INFO    | src.tiktok_listener | Meta de likes batida por Charles Edu∆ (LIKES_ENABLED=false, ignorado)
+2026-06-26 22:49:36,313 | INFO    | src.tiktok_listener | Meta de likes batida por Charles Edu∆ (LIKES_ENABLED=false, ignorado)
+2026-06-26 22:49:39,616 | INFO    | src.tiktok_listener | Meta de likes batida por Charles Edu∆ (LIKES_ENABLED=false, ignorado)
+2026-06-26 22:49:45,391 | INFO    | src.tiktok_listener | Meta de likes batida por Charles Edu∆ (LIKES_ENABLED=false, ignorado)
+2026-06-26 22:53:47,692 | INFO    | src.tiktok_listener | Meta de likes batida por Eca TEXTURA (LIKES_ENABLED=false, ignorado)
+2026-06-26 22:53:50,197 | INFO    | src.tiktok_listener | Meta de likes batida por Eca TEXTURA (LIKES_ENABLED=false, ignorado)
+2026-06-26 22:53:51,037 | INFO    | src.tiktok_listener | Meta de likes batida por Eca TEXTURA (LIKES_ENABLED=false, ignorado)
+2026-06-26 22:53:51,889 | INFO    | src.tiktok_listener | Meta de likes batida por Eca TEXTURA (LIKES_ENABLED=false, ignorado)
+2026-06-26 22:53:53,537 | INFO    | src.tiktok_listener | Meta de likes batida por Eca TEXTURA (LIKES_ENABLED=false, ignorado)
+2026-06-26 22:53:54,401 | INFO    | src.tiktok_listener | Meta de likes batida por Eca TEXTURA (LIKES_ENABLED=false, ignorado)
+2026-06-26 22:53:56,754 | INFO    | src.tiktok_listener | Meta de likes batida por Eca TEXTURA (LIKES_ENABLED=false, ignorado)
+2026-06-26 22:53:57,592 | INFO    | src.tiktok_listener | Meta de likes batida por Eca TEXTURA (LIKES_ENABLED=false, ignorado)
+2026-06-26 22:53:58,408 | INFO    | src.tiktok_listener | Meta de likes batida por Eca TEXTURA (LIKES_ENABLED=false, ignorado)
+2026-06-26 22:54:00,102 | INFO    | src.tiktok_listener | Meta de likes batida por Eca TEXTURA (LIKES_ENABLED=false, ignorado)
+2026-06-26 22:54:00,957 | INFO    | src.tiktok_listener | Meta de likes batida por Eca TEXTURA (LIKES_ENABLED=false, ignorado)
+2026-06-26 22:54:01,784 | INFO    | src.tiktok_listener | Meta de likes batida por Eca TEXTURA (LIKES_ENABLED=false, ignorado)
+2026-06-26 22:54:03,488 | INFO    | src.tiktok_listener | Meta de likes batida por Eca TEXTURA (LIKES_ENABLED=false, ignorado)
+2026-06-26 22:54:04,332 | INFO    | src.tiktok_listener | Meta de likes batida por Eca TEXTURA (LIKES_ENABLED=false, ignorado)
+2026-06-26 22:54:05,170 | INFO    | src.tiktok_listener | Meta de likes batida por Eca TEXTURA (LIKES_ENABLED=false, ignorado)
+2026-06-26 22:54:06,826 | INFO    | src.tiktok_listener | Meta de likes batida por Eca TEXTURA (LIKES_ENABLED=false, ignorado)
+2026-06-26 22:54:08,545 | INFO    | src.tiktok_listener | Meta de likes batida por Eca TEXTURA (LIKES_ENABLED=false, ignorado)
+2026-06-26 22:54:09,369 | INFO    | src.tiktok_listener | Meta de likes batida por Eca TEXTURA (LIKES_ENABLED=false, ignorado)
+2026-06-26 22:54:11,033 | INFO    | src.tiktok_listener | Meta de likes batida por Eca TEXTURA (LIKES_ENABLED=false, ignorado)
+2026-06-26 22:54:11,837 | INFO    | src.tiktok_listener | Meta de likes batida por Eca TEXTURA (LIKES_ENABLED=false, ignorado)
+2026-06-26 22:54:12,690 | INFO    | src.tiktok_listener | Meta de likes batida por Eca TEXTURA (LIKES_ENABLED=false, ignorado)
+2026-06-26 22:54:14,374 | INFO    | src.tiktok_listener | Meta de likes batida por Eca TEXTURA (LIKES_ENABLED=false, ignorado)
+2026-06-26 22:54:15,178 | INFO    | src.tiktok_listener | Meta de likes batida por Eca TEXTURA (LIKES_ENABLED=false, ignorado)
+2026-06-26 22:54:15,989 | INFO    | src.tiktok_listener | Meta de likes batida por Eca TEXTURA (LIKES_ENABLED=false, ignorado)
+2026-06-26 22:54:17,675 | INFO    | src.tiktok_listener | Meta de likes batida por Eca TEXTURA (LIKES_ENABLED=false, ignorado)
+2026-06-26 22:54:18,550 | INFO    | src.tiktok_listener | Meta de likes batida por Eca TEXTURA (LIKES_ENABLED=false, ignorado)
+2026-06-26 22:54:20,204 | INFO    | src.tiktok_listener | Meta de likes batida por Eca TEXTURA (LIKES_ENABLED=false, ignorado)
+2026-06-26 22:54:21,890 | INFO    | src.tiktok_listener | Meta de likes batida por Eca TEXTURA (LIKES_ENABLED=false, ignorado)
+2026-06-26 22:54:22,748 | INFO    | src.tiktok_listener | Meta de likes batida por Eca TEXTURA (LIKES_ENABLED=false, ignorado)
+2026-06-26 22:54:23,596 | INFO    | src.tiktok_listener | Meta de likes batida por Eca TEXTURA (LIKES_ENABLED=false, ignorado)
+2026-06-26 22:54:24,403 | INFO    | src.tiktok_listener | Meta de likes batida por Eca TEXTURA (LIKES_ENABLED=false, ignorado)
+2026-06-26 22:54:26,861 | INFO    | src.tiktok_listener | Meta de likes batida por Eca TEXTURA (LIKES_ENABLED=false, ignorado)
+2026-06-26 22:54:27,713 | INFO    | src.tiktok_listener | Meta de likes batida por Eca TEXTURA (LIKES_ENABLED=false, ignorado)
+2026-06-26 22:55:04,981 | INFO    | src.tiktok_listener | Meta de likes batida por Eca TEXTURA (LIKES_ENABLED=false, ignorado)
+2026-06-26 22:55:06,677 | INFO    | src.tiktok_listener | Meta de likes batida por Eca TEXTURA (LIKES_ENABLED=false, ignorado)
+2026-06-26 22:55:07,480 | INFO    | src.tiktok_listener | Meta de likes batida por Eca TEXTURA (LIKES_ENABLED=false, ignorado)
+2026-06-26 22:55:09,984 | INFO    | src.tiktok_listener | Meta de likes batida por Eca TEXTURA (LIKES_ENABLED=false, ignorado)
+2026-06-26 23:02:52,743 | INFO    | src.tiktok_listener | Meta de likes batida por Charles Edu∆ (LIKES_ENABLED=false, ignorado)
+2026-06-26 23:02:56,089 | INFO    | src.tiktok_listener | Meta de likes batida por Charles Edu∆ (LIKES_ENABLED=false, ignorado)
+2026-06-26 23:02:59,410 | INFO    | src.tiktok_listener | Meta de likes batida por Charles Edu∆ (LIKES_ENABLED=false, ignorado)
+2026-06-26 23:03:02,728 | INFO    | src.tiktok_listener | Meta de likes batida por Charles Edu∆ (LIKES_ENABLED=false, ignorado)
+2026-06-26 23:03:06,069 | INFO    | src.tiktok_listener | Meta de likes batida por Charles Edu∆ (LIKES_ENABLED=false, ignorado)
+2026-06-26 23:03:24,125 | INFO    | src.tiktok_listener | Meta de likes batida por Charles Edu∆ (LIKES_ENABLED=false, ignorado)
+2026-06-26 23:03:29,030 | INFO    | src.tiktok_listener | Meta de likes batida por Charles Edu∆ (LIKES_ENABLED=false, ignorado)
+2026-06-26 23:03:31,539 | INFO    | src.tiktok_listener | Meta de likes batida por Charles Edu∆ (LIKES_ENABLED=false, ignorado)
+2026-06-26 23:03:34,095 | INFO    | src.tiktok_listener | Meta de likes batida por Charles Edu∆ (LIKES_ENABLED=false, ignorado)
+2026-06-26 23:03:36,557 | INFO    | src.tiktok_listener | Meta de likes batida por Charles Edu∆ (LIKES_ENABLED=false, ignorado)
+2026-06-26 23:03:39,030 | INFO    | src.tiktok_listener | Meta de likes batida por Charles Edu∆ (LIKES_ENABLED=false, ignorado)
+2026-06-26 23:03:43,215 | INFO    | src.tiktok_listener | Meta de likes batida por Charles Edu∆ (LIKES_ENABLED=false, ignorado)
+2026-06-26 23:03:45,768 | INFO    | src.tiktok_listener | Meta de likes batida por Charles Edu∆ (LIKES_ENABLED=false, ignorado)
+2026-06-26 23:03:48,148 | INFO    | src.tiktok_listener | Meta de likes batida por Charles Edu∆ (LIKES_ENABLED=false, ignorado)
+2026-06-26 23:03:50,697 | INFO    | src.tiktok_listener | Meta de likes batida por Charles Edu∆ (LIKES_ENABLED=false, ignorado)
+2026-06-26 23:03:53,161 | INFO    | src.tiktok_listener | Meta de likes batida por Charles Edu∆ (LIKES_ENABLED=false, ignorado)
+2026-06-26 23:03:58,119 | INFO    | src.tiktok_listener | Meta de likes batida por Charles Edu∆ (LIKES_ENABLED=false, ignorado)
+2026-06-26 23:04:00,572 | INFO    | src.tiktok_listener | Meta de likes batida por Charles Edu∆ (LIKES_ENABLED=false, ignorado)
+2026-06-26 23:04:29,809 | INFO    | src.tiktok_listener | Meta de likes batida por Eca TEXTURA (LIKES_ENABLED=false, ignorado)
+2026-06-26 23:04:52,602 | INFO    | src.tiktok_listener | Meta de likes batida por Charles Edu∆ (LIKES_ENABLED=false, ignorado)
+2026-06-26 23:04:58,344 | INFO    | src.tiktok_listener | Meta de likes batida por Charles Edu∆ (LIKES_ENABLED=false, ignorado)
+2026-06-26 23:06:08,227 | INFO    | src.tiktok_listener | Meta de likes batida por Charles Edu∆ (LIKES_ENABLED=false, ignorado)
+2026-06-26 23:09:40,746 | INFO    | src.tiktok_listener | Meta de likes batida por Charles Edu∆ (LIKES_ENABLED=false, ignorado)
+2026-06-26 23:09:44,891 | INFO    | src.tiktok_listener | Meta de likes batida por Charles Edu∆ (LIKES_ENABLED=false, ignorado)
+2026-06-26 23:09:48,230 | INFO    | src.tiktok_listener | Meta de likes batida por Charles Edu∆ (LIKES_ENABLED=false, ignorado)
+2026-06-26 23:09:51,581 | INFO    | src.tiktok_listener | Meta de likes batida por Charles Edu∆ (LIKES_ENABLED=false, ignorado)
+2026-06-26 23:11:38,718 | INFO    | src.tiktok_listener | GiftEvent recebido: nome='Rose' de ailuj (diamantes=1, streakable=True, streaking=True)
+2026-06-26 23:11:42,125 | INFO    | src.tiktok_listener | GiftEvent recebido: nome='Rose' de ailuj (diamantes=1, streakable=True, streaking=False)
+2026-06-26 23:11:42,136 | INFO    | src.tiktok_listener | Presente executavel: Rose de ailuj
+2026-06-26 23:11:42,142 | INFO    | src.command_queue | Enfileirado: Rose por ailuj (fila=1)
+2026-06-26 23:11:42,177 | INFO    | src.command_queue | Executado: Rose por ailuj
+2026-06-26 23:14:06,832 | INFO    | src.tiktok_listener | Meta de likes batida por Eca TEXTURA (LIKES_ENABLED=false, ignorado)
+2026-06-26 23:16:16,968 | INFO    | src.tiktok_listener | Meta de likes batida por Charles Edu∆ (LIKES_ENABLED=false, ignorado)
+2026-06-26 23:16:18,663 | INFO    | src.tiktok_listener | Meta de likes batida por Charles Edu∆ (LIKES_ENABLED=false, ignorado)
+2026-06-26 23:16:21,108 | INFO    | src.tiktok_listener | Meta de likes batida por Charles Edu∆ (LIKES_ENABLED=false, ignorado)
+2026-06-26 23:16:26,133 | INFO    | src.tiktok_listener | Meta de likes batida por Charles Edu∆ (LIKES_ENABLED=false, ignorado)
+2026-06-26 23:16:28,640 | INFO    | src.tiktok_listener | Meta de likes batida por Charles Edu∆ (LIKES_ENABLED=false, ignorado)
+2026-06-26 23:16:31,203 | INFO    | src.tiktok_listener | Meta de likes batida por Charles Edu∆ (LIKES_ENABLED=false, ignorado)
+2026-06-26 23:16:33,700 | INFO    | src.tiktok_listener | Meta de likes batida por Charles Edu∆ (LIKES_ENABLED=false, ignorado)
+2026-06-26 23:16:35,431 | INFO    | src.tiktok_listener | Meta de likes batida por Charles Edu∆ (LIKES_ENABLED=false, ignorado)
+2026-06-26 23:20:56,345 | INFO    | src.tiktok_listener | GiftEvent recebido: nome='Rose' de Mary (diamantes=1, streakable=True, streaking=True)
+2026-06-26 23:20:59,691 | INFO    | src.tiktok_listener | GiftEvent recebido: nome='Rose' de Mary (diamantes=1, streakable=True, streaking=False)
+2026-06-26 23:20:59,701 | INFO    | src.tiktok_listener | Presente executavel: Rose de Mary
+2026-06-26 23:20:59,701 | INFO    | src.command_queue | Enfileirado: Rose por Mary (fila=1)
+2026-06-26 23:20:59,708 | INFO    | src.command_queue | Executado: Rose por Mary
+2026-06-26 23:33:45,667 | INFO    | src.tiktok_listener | Conexao encerrada (live offline?).
+2026-06-26 23:34:00,930 | INFO    | src.tiktok_listener | Conectando a @davillops...
+2026-06-26 23:34:01,705 | INFO    | httpx | HTTP Request: GET https://www.tiktok.com/@davillops/live? "HTTP/1.1 200 OK"
+2026-06-26 23:34:01,738 | ERROR   | src.tiktok_listener | Conexao com o TikTok caiu; nova tentativa em 15s. (erro 500 do EulerStream e instabilidade do servico, costuma resolver sozinho)
+2026-06-26 23:34:16,938 | INFO    | src.tiktok_listener | Conectando a @davillops...
+2026-06-26 23:34:17,748 | INFO    | httpx | HTTP Request: GET https://www.tiktok.com/@davillops/live? "HTTP/1.1 200 OK"
+2026-06-26 23:34:17,792 | ERROR   | src.tiktok_listener | Conexao com o TikTok caiu; nova tentativa em 30s. (erro 500 do EulerStream e instabilidade do servico, costuma resolver sozinho)
+2026-06-26 23:34:19,686 | INFO    | src.panel_server | Overlay desconectado (3 ativos)
+2026-06-26 23:34:19,692 | INFO    | src.panel_server | Overlay desconectado (2 ativos)
+2026-06-26 23:34:19,693 | INFO    | src.panel_server | Overlay desconectado (1 ativos)
+2026-06-26 23:34:19,696 | INFO    | src.panel_server | Overlay desconectado (0 ativos)
+2026-06-26 23:34:47,975 | INFO    | src.tiktok_listener | Conectando a @davillops...
+2026-06-26 23:34:49,372 | INFO    | httpx | HTTP Request: GET https://www.tiktok.com/@davillops/live? "HTTP/1.1 200 OK"
+2026-06-26 23:34:50,017 | ERROR   | src.tiktok_listener | Conexao com o TikTok caiu; nova tentativa em 60s. (erro 500 do EulerStream e instabilidade do servico, costuma resolver sozinho)
+2026-06-26 23:35:50,192 | INFO    | src.tiktok_listener | Conectando a @davillops...
+2026-06-26 23:35:51,605 | INFO    | httpx | HTTP Request: GET https://www.tiktok.com/@davillops/live? "HTTP/1.1 200 OK"
+2026-06-26 23:35:52,262 | ERROR   | src.tiktok_listener | Conexao com o TikTok caiu; nova tentativa em 120s. (erro 500 do EulerStream e instabilidade do servico, costuma resolver sozinho)
+2026-06-26 23:36:48,195 | INFO    | __main__ | Encerrado pelo usuario (Ctrl+C)
